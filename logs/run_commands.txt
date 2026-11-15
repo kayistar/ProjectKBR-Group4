@@ -1,0 +1,42 @@
+# Daftar perintah yang benar-benar dijalankan di terminal
+# Tanggal: 2026-11-08
+
+# --- Langkah 0: Persiapan ---
+java -version
+robot --version
+Get-FileHash -Algorithm SHA256 .\chebi_terms.txt, .\dron_terms.txt, .\KB\chebi.owl, .\KB\dron.owl | Select-Object Path, Hash
+Get-Item .\chebi_terms.txt, .\dron_terms.txt, .\KB\chebi.owl, .\KB\dron.owl | Select-Object Name, Length, FullName
+New-Item -ItemType Directory -Force -Path .\out, .\logs
+
+# --- Langkah 1: Pra-cek Seed ---
+python scratch/check_seeds.py
+
+# --- Pemasangan ROBOT oleh Pengguna ---
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" --version
+
+# --- Langkah 2: Uji Satu Term ---
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" extract --method BOT --input "KB/chebi.owl" --term "CHEBI:2668" --output "out/test_term.owl"
+
+# --- Langkah 3: Ekstraksi ChEBI Lengkap ---
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" extract --method BOT --input "KB/chebi.owl" --term-file "out/seed_chebi_work.txt" --copy-ontology-annotations true --annotate-with-source true --output "out/chebi_modul.owl"
+
+# --- Langkah 4: Ekstraksi DrON ---
+# 1. Deteksi kegagalan parsing KB/dron.owl (file sumber terpotong pada line 11120110)
+# 2. Pembuatan salinan sementara dengan tag penutup valid di out/dron_fixed.owl
+# 3. Ekstraksi modul DrON:
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" extract --method BOT --input "out/dron_fixed.owl" --term-file "out/seed_dron_work.txt" --individuals exclude --copy-ontology-annotations true --annotate-with-source true --output "out/dron_modul.owl"
+
+# --- Langkah 5: Bersihkan Sinonim Brand dari ChEBI ---
+java -jar "D:\UNS\ROBOT\robot.jar" remove --input "out/chebi_modul.owl" --term "oboInOwl:hasExactSynonym" --term "oboInOwl:hasRelatedSynonym" --term "oboInOwl:hasBroadSynonym" --term "oboInOwl:hasNarrowSynonym" --axioms annotation --output "out/chebi_modul_clean.owl"
+java -jar "D:\UNS\ROBOT\robot.jar" remove --input "out/chebi_modul_clean.owl" --term "oboInOwl:hasExactSynonym" --term "oboInOwl:hasRelatedSynonym" --term "oboInOwl:hasBroadSynonym" --term "oboInOwl:hasNarrowSynonym" --output "out/chebi_modul_clean.owl"
+
+# --- Langkah 6: Validasi 6a s/d 6f ---
+python scratch/validate_6a.py
+python scratch/validate_6b.py
+python scratch/validate_6c.py
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/chebi_modul_clean.owl"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/dron_modul.owl"
+
+# --- Langkah 7: Penggabungan Modul (Merge) & Evaluasi Ulang ---
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/chebi_modul_clean.owl" --input "out/dron_modul.owl" --output "out/referensi_modul.owl"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/referensi_modul.owl"

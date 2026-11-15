@@ -1,0 +1,176 @@
+id,nama,zat_aktif,kategori,golongan,nie_bpom,pabrik,kemasan,harga
+M_001,Amlodipine Hexpharm 5 mg,Amlodipine,Antihipertensi (CCB),Obat Keras (PRB BPJS),GKL0708514110A1,PT Hexpharm Jaya (Kalbe),Tablet 5 mg (Strip @ 10),Rp 5.000 - Rp 10.000
+M_002,Amlodipine Kimia Farma 10 mg,Amlodipine,Antihipertensi (CCB),Obat Keras (PRB BPJS),GKL0812523910B1,PT Kimia Farma Tbk,Tablet 10 mg (Strip @ 10),Rp 8.000 - Rp 15.000
+M_003,Norvask 5 mg Tablet,Amlodipine,Antihipertensi (CCB),Obat Keras (Paten),DKL9319803110A1,PT Pfizer Indonesia,Tablet 5 mg (Blister @ 10),Rp 95.000 - Rp 120.000
+M_004,Norvask 10 mg Tablet,Amlodipine,Antihipertensi (CCB),Obat Keras (Paten),DKL9319803110B1,PT Pfizer Indonesia,Tablet 10 mg (Blister @ 10),Rp 160.000 - Rp 190.000
+M_005,Intervask 5 mg Tablet,Amlodipine,Antihipertensi (CCB),Obat Keras,DKL0017616610A1,PT Interbat,Tablet 5 mg (Strip @ 10),Rp 70.000 - Rp 90.000
+M_006,Captopril Kimia Farma 12.5 mg,Captopril,Antihipertensi (ACEI),Obat Keras (Generik),GKL9912519710A1,PT Kimia Farma Tbk,Tablet 12.5 mg (Strip @ 10),Rp 2.500 - Rp 5.000
+M_007,Captopril Kimia Farma 25 mg,Captopril,Antihipertensi (ACEI),Obat Keras (PRB BPJS),GKL9912519710B1,PT Kimia Farma Tbk,Tablet 25 mg (Strip @ 10),Rp 3.500 - Rp 7.000
+M_008,Captopril Dexa 25 mg,Captopril,Antihipertensi (ACEI),Obat Keras (Generik),GKL9912519710B1,PT Dexa Medica,Tablet 25 mg (Strip @ 10),Rp 4.000 - Rp 7.500
+M_009,Capoten 25 mg Tablet,Captopril,Antihipertensi (ACEI),Obat Keras (Paten),DKL8324400410B1,PT Taisho Pharmaceutical,Tablet 25 mg (Strip @ 10),Rp 55.000 - Rp 75.000
+M_010,Candesartan Dexa 8 mg,Candesartan,Antihipertensi (ARB),Obat Keras (PRB BPJS),GKL1308517710A1,PT Dexa Medica,Tablet 8 mg (Strip @ 10),Rp 35.000 - Rp 50.000
+M_011,Candesartan Kimia Farma 16 mg,Candesartan,Antihipertensi (ARB),Obat Keras (PRB BPJS),GKL1412525510B1,PT Kimia Farma Tbk,Tablet 16 mg (Strip @ 10),Rp 50.000 - Rp 75.000
+M_012,Blopress 8 mg Tablet,Candesartan,Antihipertensi (ARB),Obat Keras (Paten),DKL9825802110A1,PT Takeda Indonesia,Tablet 8 mg (Blister @ 14),Rp 140.000 - Rp 175.000
+M_013,Valsartan Novartis 80 mg,Valsartan,Antihipertensi (ARB),Obat Keras,DKI9767502410A1,PT Novartis Indonesia,Tablet salut selaput 80 mg,Rp 130.000 - Rp 160.000
+M_014,Micardis 40 mg Tablet,Telmisartan,Antihipertensi (ARB),Obat Keras,DKI0052500810A1,PT Boehringer Ingelheim,Tablet 40 mg (Blister @ 10),Rp 150.000 - Rp 180.000
+M_015,Bisoprolol Dexa 5 mg,Bisoprolol,Antihipertensi (Beta Blocker),Obat Keras (PRB BPJS),GKL0708514410B1,PT Dexa Medica,Tablet 5 mg (Strip @ 10),Rp 15.000 - Rp 25.000
+M_016,Concor 2.5 mg Tablet,Bisoprolol,Antihipertensi (Beta Blocker),Obat Keras (Paten),DKI0386400317A1,PT Merck Tbk,Tablet 2.5 mg (Blister @ 10),Rp 65.000 - Rp 85.000
+M_017,Propranolol 10 mg Dexa,Propranolol,Beta Blocker Non-Selektif,Obat Keras (Generik),GKL9208501110A1,PT Dexa Medica,Tablet 10 mg (Strip @ 10),Rp 3.000 - Rp 6.000
+M_018,Furosemide Kimia Farma 40 mg,Furosemide,Diuretik Loop,Obat Keras (Generik),GKL9912519810A1,PT Kimia Farma Tbk,Tablet 40 mg (Strip @ 10),Rp 4.000 - Rp 8.000
+M_019,Lasix 40 mg Tablet,Furosemide,Diuretik Loop,Obat Keras (Paten),DKL0121201510A1,PT Sanofi-Aventis,Tablet 40 mg (Strip @ 10),Rp 65.000 - Rp 85.000
+M_020,Spironolactone 25 mg Dexa,Spironolactone,Diuretik Hemat Kalium,Obat Keras (Generik),GKL0208505510A1,PT Dexa Medica,Tablet 25 mg (Strip @ 10),Rp 12.000 - Rp 20.000
+M_021,Fargoxin 0.25 mg Tablet,Digoxin,Glikosida Jantung,Obat Keras (Indeks Sempit),DKL8831502410A1,PT Fahrenheit,Tablet 0.25 mg (Strip @ 10),Rp 15.000 - Rp 25.000
+M_022,Digoxin Yarindo 0.25 mg,Digoxin,Glikosida Jantung,Obat Keras (Generik),GKL0632711710A1,PT Yarindo Farmatama,Tablet 0.25 mg (Strip @ 10),Rp 8.000 - Rp 15.000
+M_023,Herbesser 30 mg Tablet,Diltiazem,Antagonis Kalsium Non-DHP,Obat Keras,DKL8825200910A1,PT Tanabe Indonesia,Tablet 30 mg (Blister @ 10),Rp 35.000 - Rp 50.000
+M_024,Simarc-2 Tablet (Warfarin),Warfarin,Antikoagulan (Vit K Antagonist),Obat Keras (Monitor INR),DKL9331504910A1,PT Fahrenheit,Tablet 2 mg (Blister @ 10),Rp 25.000 - Rp 35.000
+M_025,Aspilet 80 mg Tablet Kunyah,Acetylsalicylic Acid,Antiplatelet (Pengencer Darah),Obat Keras,DKL7214704763A1,PT Medifarma Laboratories,Tablet kunyah 80 mg (Strip @ 10),Rp 8.000 - Rp 14.000
+M_026,Miniaspi 80 mg Enterik,Acetylsalicylic Acid,Antiplatelet,Obat Keras,DKL9115606415A1,PT Mersi Farma,Tablet enterik 80 mg (Strip @ 10),Rp 6.000 - Rp 12.000
+M_027,Ascardia 80 mg Tablet,Acetylsalicylic Acid,Antiplatelet,Obat Keras,DKL9119603515A1,PT Phapros Tbk,Tablet salut 80 mg (Strip @ 10),Rp 9.000 - Rp 15.000
+M_028,Clopidogrel Dexa 75 mg,Clopidogrel,Antiplatelet P2Y12,Obat Keras (PRB BPJS),GKL1108516717A1,PT Dexa Medica,Tablet salut 75 mg (Strip @ 10),Rp 40.000 - Rp 65.000
+M_029,Plavix 75 mg Tablet,Clopidogrel,Antiplatelet (Paten),Obat Keras,DKI0021200117A1,PT Sanofi-Aventis,Tablet 75 mg (Blister @ 14),Rp 260.000 - Rp 310.000
+M_030,Pletaal 100 mg Tablet,Cilostazol,Antiplatelet & Vasodilator,Obat Keras,DKI9687100310B1,PT Otsuka Indonesia,Tablet 100 mg (Blister @ 10),Rp 120.000 - Rp 150.000
+M_031,Simvastatin Kimia Farma 10 mg,Simvastatin,Antikolesterol (Statin),Obat Keras (PRB BPJS),GKL0312521710A1,PT Kimia Farma Tbk,Tablet 10 mg (Strip @ 10),Rp 7.000 - Rp 14.000
+M_032,Simvastatin Dexa 20 mg,Simvastatin,Antikolesterol (Statin),Obat Keras (PRB BPJS),GKL0308507210B1,PT Dexa Medica,Tablet 20 mg (Strip @ 10),Rp 10.000 - Rp 20.000
+M_033,Zocor 10 mg Tablet,Simvastatin,Antikolesterol (Statin),Obat Keras (Paten),DKI9376400217A1,PT Organon Pharma,Tablet 10 mg (Strip @ 10),Rp 110.000 - Rp 140.000
+M_034,Zocor 20 mg Tablet,Simvastatin,Antikolesterol (Statin),Obat Keras (Paten),DKI9376400217B1,PT Organon Pharma,Tablet 20 mg (Strip @ 10),Rp 160.000 - Rp 195.000
+M_035,Valemia 10 mg Tablet,Simvastatin,Antikolesterol (Statin),Obat Keras,DKL0433511310A1,PT Novell Pharmaceutical,Tablet 10 mg (Strip @ 10),Rp 45.000 - Rp 65.000
+M_036,Atorvastatin Dexa 20 mg,Atorvastatin,Antikolesterol (Statin Kuat),Obat Keras (PRB BPJS),GKL1308517610A1,PT Dexa Medica,Tablet 20 mg (Strip @ 10),Rp 35.000 - Rp 55.000
+M_037,Lipitor 10 mg Tablet,Atorvastatin,Antikolesterol (Paten),Obat Keras,DKI9790700417A1,PT Pfizer Indonesia,Tablet 10 mg (Blister @ 10),Rp 175.000 - Rp 215.000
+M_038,Lipitor 20 mg Tablet,Atorvastatin,Antikolesterol (Paten),Obat Keras,DKI9790700417B1,PT Pfizer Indonesia,Tablet 20 mg (Blister @ 10),Rp 220.000 - Rp 260.000
+M_039,Rosuvastatin Dexa 10 mg,Rosuvastatin,Antikolesterol (Statin),Obat Keras (PRB BPJS),GKL1508518310A1,PT Dexa Medica,Tablet 10 mg (Strip @ 10),Rp 55.000 - Rp 80.000
+M_040,Crestor 10 mg Tablet,Rosuvastatin,Antikolesterol (Paten),Obat Keras,DKI0351500317A1,PT AstraZeneca Indonesia,Tablet 10 mg (Blister @ 14),Rp 290.000 - Rp 340.000
+M_041,Fenofibrate 100 mg Kimia Farma,Fenofibrate,Trigliserida (Fibrat),Obat Keras (Generik),GKL0712523201A1,PT Kimia Farma Tbk,Kapsul 100 mg (Strip @ 10),Rp 15.000 - Rp 25.000
+M_042,Lipanthyl 200 M Kapsul,Fenofibrate,Trigliserida (Fibrat),Obat Keras (Paten),DKI9787100401A1,PT Abbott Indonesia,Kapsul 200 mg (Blister @ 10),Rp 160.000 - Rp 195.000
+M_043,Metformin HCl Bernofarm 500 mg,Metformin,Antidiabetes (Biguanid),Obat Keras (PRB BPJS),GKL0602338110A1,PT Bernofarm,Tablet 500 mg (Strip @ 10),Rp 4.000 - Rp 9.000
+M_044,Metformin Kimia Farma 850 mg,Metformin,Antidiabetes (Biguanid),Obat Keras (Generik),GKL0412522410B1,PT Kimia Farma Tbk,Tablet 850 mg (Strip @ 10),Rp 7.000 - Rp 14.000
+M_045,Glucophage 500 mg,Metformin,Antidiabetes (Paten),Obat Keras,DKL8715801417A1,PT Merck Tbk,Tablet 500 mg (Strip @ 10),Rp 35.000 - Rp 50.000
+M_046,Glucophage XR 750 mg,Metformin,Antidiabetes (Lepas Lambat),Obat Keras,DKI0786400614A1,PT Merck Tbk,Tablet XR 750 mg (Blister @ 15),Rp 85.000 - Rp 110.000
+M_047,Glimepiride Dexa 2 mg,Glimepiride,Antidiabetes (Sulfonilurea),Obat Keras (PRB BPJS),GKL0608513510A1,PT Dexa Medica,Tablet 2 mg (Strip @ 10),Rp 8.000 - Rp 16.000
+M_048,Glimepiride Kimia Farma 3 mg,Glimepiride,Antidiabetes (Sulfonilurea),Obat Keras (PRB BPJS),GKL0812523910C1,PT Kimia Farma Tbk,Tablet 3 mg (Strip @ 10),Rp 12.000 - Rp 22.000
+M_049,Amaryl 2 mg Tablet,Glimepiride,Antidiabetes (Paten),Obat Keras,DKL9721200210A1,PT Sanofi-Aventis,Tablet 2 mg (Blister @ 15),Rp 90.000 - Rp 115.000
+M_050,Amaryl 3 mg Tablet,Glimepiride,Antidiabetes (Paten),Obat Keras,DKL9721200210B1,PT Sanofi-Aventis,Tablet 3 mg (Blister @ 15),Rp 120.000 - Rp 150.000
+M_051,Glibenclamide Kimia Farma 5 mg,Glibenclamide,Antidiabetes (Sulfonilurea),Obat Keras (Generik),GKL9912519510A1,PT Kimia Farma Tbk,Tablet 5 mg (Strip @ 10),Rp 3.000 - Rp 6.000
+M_052,Diamicron MR 60 mg,Gliclazide,Antidiabetes (Sulfonilurea),Obat Keras,DKI0768600714A1,PT Servier Indonesia,Tablet MR 60 mg (Blister @ 15),Rp 85.000 - Rp 115.000
+M_053,Glucobay 50 mg Tablet,Acarbose,Antidiabetes (Penghambat Alfa-Glukosidase),Obat Keras (PRB BPJS),DKI0351601610A1,PT Bayer Indonesia,Tablet 50 mg (Strip @ 10),Rp 30.000 - Rp 45.000
+M_054,Actos 15 mg Tablet,Pioglitazone,Antidiabetes (Tiazolidindion),Obat Keras,DKI0125800110A1,PT Takeda Indonesia,Tablet 15 mg (Strip @ 10),Rp 110.000 - Rp 140.000
+M_055,Januvia 50 mg Tablet,Sitagliptin,Antidiabetes (DPP-4 Inhibitor),Obat Keras,DKI0863500417A1,PT Organon Pharma,Tablet 50 mg (Blister @ 14),Rp 210.000 - Rp 250.000
+M_056,Omeprazole Kimia Farma 20 mg,Omeprazole,PPI Lambung,Obat Keras (DOWA),GKL0412522301A1,PT Kimia Farma Tbk,Kapsul 20 mg (Strip @ 10),Rp 6.000 - Rp 12.000
+M_057,Omeprazole Dexa 20 mg,Omeprazole,PPI Lambung,Obat Keras (DOWA),GKL0408510701A1,PT Dexa Medica,Kapsul 20 mg (Strip @ 10),Rp 7.000 - Rp 13.000
+M_058,Ozid 20 mg Kapsul,Omeprazole,PPI Lambung,Obat Keras,DKL0004514501A1,PT Darya-Varia,Kapsul 20 mg (Strip @ 10),Rp 120.000 - Rp 145.000
+M_059,Losec MUPS 20 mg,Omeprazole,PPI Lambung (Paten),Obat Keras,DKI9031502801A1,PT AstraZeneca Indonesia,Tablet 20 mg (Strip @ 7),Rp 175.000 - Rp 210.000
+M_060,Lansoprazole Dexa 30 mg,Lansoprazole,PPI Lambung,Obat Keras (DOWA),GKL0608513301A1,PT Dexa Medica,Kapsul 30 mg (Strip @ 10),Rp 12.000 - Rp 22.000
+M_061,Prosogan FD 30 mg,Lansoprazole,PPI Lambung,Obat Keras (Paten),DKL0425801214A1,PT Takeda Indonesia,Tablet cepat larut 30 mg,Rp 210.000 - Rp 250.000
+M_062,Pantoprazole Kimia Farma 40 mg,Pantoprazole,PPI Lambung,Obat Keras,GKL1212524715A1,PT Kimia Farma Tbk,Tablet enterik 40 mg,Rp 35.000 - Rp 50.000
+M_063,Nexium 20 mg Tablet,Esomeprazole,PPI Lambung,Obat Keras,DKI0151500214A1,PT AstraZeneca Indonesia,Tablet MUPS 20 mg (Strip @ 7),Rp 160.000 - Rp 195.000
+M_064,Antasida Doen Kimia Farma,Aluminium Hydroxide & Magnesium Hydroxide,Antasida,Obat Bebas (Hijau),GBL9912520063A1,PT Kimia Farma Tbk,Tablet kunyah (Strip @ 10),Rp 3.000 - Rp 6.000
+M_065,Mylanta Tablet Kunyah,Aluminium Hydroxide & Simethicone,Antasida,Obat Bebas (Hijau),DBL1441200263A1,PT Johnson & Johnson,Tablet kunyah (Blister @ 10),Rp 9.500 - Rp 14.000
+M_066,Mylanta Sirup 150 mL,Aluminium Hydroxide & Simethicone,Antasida Cair,Obat Bebas (Hijau),DBL1441200133A1,PT Johnson & Johnson,Suspensi cair (Botol 150 mL),Rp 42.000 - Rp 52.000
+M_067,Promag Tablet Kunyah,Hydrotalcite & Magnesium Hydroxide,Antasida Maag,Obat Bebas (Hijau),DBL9111601963A1,PT Kalbe Farma Tbk,Tablet kunyah (Blister @ 10),Rp 9.000 - Rp 13.000
+M_068,Promag Cair Sachet,Hydrotalcite & Magnesium Hydroxide,Antasida Maag Cair,Obat Bebas (Hijau),DBL1111641036A1,PT Kalbe Farma Tbk,Suspensi sachet 7 mL (Dus @ 6),Rp 15.000 - Rp 20.000
+M_069,Polysilane Tablet Kunyah,Aluminium Hydroxide & Dimethylpolysiloxane,Antasida & Antikembung,Obat Bebas (Hijau),DBL7821624263A1,PT Pharos Indonesia,Tablet kunyah (Strip @ 8),Rp 10.000 - Rp 15.000
+M_070,Inpepsa Sirup 100 mL,Sucralfate,Mukoprotektor Lambung,Obat Keras,DKL9306709833A1,PT Fahrenheit,Suspensi 500 mg/5 mL (100 mL),Rp 75.000 - Rp 95.000
+M_071,Vometa 10 mg Tablet,Domperidone,Antiemetik / Prokinetik,Obat Keras,DKL8905004110A1,PT Dexa Medica,Tablet 10 mg (Strip @ 10),Rp 45.000 - Rp 60.000
+M_072,Domperidone Kimia Farma 10 mg,Domperidone,Antiemetik / Mual Lambung,Obat Keras (Generik),GKL0612522810A1,PT Kimia Farma Tbk,Tablet 10 mg (Strip @ 10),Rp 4.000 - Rp 8.000
+M_073,Ondansetron Dexa 4 mg,Ondansetron,Antiemetik Antagonis 5-HT3,Obat Keras,GKL0308507810A1,PT Dexa Medica,Tablet salut 4 mg (Strip @ 10),Rp 18.000 - Rp 30.000
+M_074,New Diatabs Tablet,Attapulgite Aktif,Antidiare Adsorben,Obat Bebas (Hijau),DBL8714702110A1,PT Medifarma Laboratories,Tablet 600 mg (Strip @ 4),Rp 3.500 - Rp 6.000
+M_075,Entrostop Tablet,Attapulgite & Pektin,Antidiare,Obat Bebas (Hijau),DBL9111602410A1,PT Kalbe Farma Tbk,Tablet (Blister @ 12),Rp 12.000 - Rp 16.000
+M_076,Imodium 2 mg Tablet,Loperamide HCl,Antidiare Antimotilitas,Obat Keras,DKL8913303810A1,PT Johnson & Johnson,Tablet 2 mg (Strip @ 6),Rp 35.000 - Rp 48.000
+M_077,Oralit 200 Kimia Farma,"Sodium Chloride, Potassium, Glukosa",Rehidrasi Diare,Obat Bebas (Hijau),GBL9812519223A1,PT Kimia Farma Tbk,Serbuk sachet 4.1 g,Rp 1.000 - Rp 2.000 / sachet
+M_078,Dulcolax 5 mg Tablet,Bisacodyl,Pencahar Stimulan (Konstipasi),Obat Bebas Terbatas (Biru),DTL1821200815A1,PT Sanofi-Aventis,Tablet salut enterik (Blister @ 4),Rp 8.000 - Rp 12.000
+M_079,Microlax Enema 5 mL,Sodium Lauryl Sulfoacetate & Sorbitol,Pencahar Rektal,Obat Bebas (Hijau),DBL7221628958A1,PT Pharos Indonesia,Tube rektal 5 mL,Rp 26.000 - Rp 34.000
+M_080,Sanmol 500 mg Tablet,Paracetamol,Analgesik & Antipiretik,Obat Bebas (Hijau),DBL7622235610A2,PT Sanbe Farma,Tablet 500 mg (Strip @ 4),Rp 2.500 - Rp 4.500
+M_081,Sanmol Forte 650 mg,Paracetamol,Analgesik & Antipiretik,Obat Bebas (Hijau),DBL7622235610B1,PT Sanbe Farma,Tablet 650 mg (Strip @ 4),Rp 3.500 - Rp 6.000
+M_082,Sanmol Sirup Anak 60 mL,Paracetamol,Pereda Demam Anak,Obat Bebas (Hijau),DBL7622235637A1,PT Sanbe Farma,Sirup 120 mg/5 mL (Botol 60 mL),Rp 20.000 - Rp 27.000
+M_083,Panadol 500 mg Biru,Paracetamol,Analgesik & Antipiretik,Obat Bebas (Hijau),DBL9624502804A1,PT Glaxo Wellcome,Kaplet 500 mg (Blister @ 10),Rp 12.000 - Rp 16.000
+M_084,Panadol Extra Merah,Paracetamol & Caffeine,Analgesik Sakit Kepala,Obat Bebas Terbatas (Biru),DTL9424502004A1,PT Glaxo Wellcome,Kaplet (Blister @ 10),Rp 14.000 - Rp 18.000
+M_085,Biogesic 500 mg Tablet,Paracetamol,Analgesik & Antipiretik,Obat Bebas (Hijau),DBL9114704710A1,PT Medifarma,Tablet 500 mg (Strip @ 4),Rp 2.500 - Rp 4.500
+M_086,Dumin 500 mg Tablet,Paracetamol,Analgesik & Antipiretik,Obat Bebas (Hijau),DBL830Acta01,PT Actavis Indonesia,Tablet 500 mg (Strip @ 10),Rp 7.000 - Rp 12.000
+M_087,Bodrex Tablet,Paracetamol & Caffeine,Analgesik Sakit Kepala,Obat Bebas (Hijau),DBL7225201010A1,PT Tempo Scan Pacific,Tablet (Strip @ 20),Rp 9.000 - Rp 13.000
+M_088,Bodrex Extra Tablet,"Paracetamol, Ibuprofen, Caffeine",Analgesik Kombinasi,Obat Bebas Terbatas (Biru),DTL0625202610A1,PT Tempo Scan Pacific,Kaplet (Blister @ 4),Rp 3.000 - Rp 5.000
+M_089,Paracetamol Kimia Farma 500 mg,Paracetamol,Analgesik (Generik),Obat Bebas (Hijau),GBL9612514804A1,PT Kimia Farma Tbk,Tablet 500 mg (Strip @ 10),Rp 3.500 - Rp 7.000
+M_090,Proris 200 mg Kaplet,Ibuprofen,NSAID,Obat Bebas Terbatas (Biru),DTL9821620604A1,PT Pharos Indonesia,Kaplet 200 mg (Strip @ 10),Rp 10.000 - Rp 15.000
+M_091,Proris Forte Sirup Anak,Ibuprofen,NSAID Sirup,Obat Bebas Terbatas (Biru),DTL9921620636A1,PT Pharos Indonesia,Suspensi 200 mg/5 mL (50 mL),Rp 35.000 - Rp 45.000
+M_092,Ibuprofen Kimia Farma 400 mg,Ibuprofen,NSAID,Obat Bebas Terbatas (Biru),GTL9912520304A1,PT Kimia Farma Tbk,Tablet 400 mg (Strip @ 10),Rp 5.000 - Rp 9.000
+M_093,Bufect 400 mg Tablet,Ibuprofen,NSAID,Obat Keras,DKL8822206704A1,PT Sanbe Farma,Kaplet 400 mg (Strip @ 10),Rp 25.000 - Rp 35.000
+M_094,Ponstan 500 mg,Mefenamic Acid,NSAID (Nyeri Gigi),Obat Keras,DKL8319801809A1,PT Pfizer Indonesia,Tablet 500 mg (Strip @ 10),Rp 35.000 - Rp 48.000
+M_095,Asam Mefenamat Dexa 500 mg,Mefenamic Acid,NSAID (Generik),Obat Keras,GKL9908502309A1,PT Dexa Medica,Kaplet 500 mg (Strip @ 10),Rp 5.000 - Rp 10.000
+M_096,Voltaren 50 mg Tablet,Diclofenac Sodium,NSAID (Nyeri Sendi),Obat Keras,DKL9930408015A1,PT Novartis Indonesia,Tablet 50 mg (Strip @ 10),Rp 85.000 - Rp 110.000
+M_097,Natrium Diklofenak KF 50 mg,Diclofenac Sodium,NSAID,Obat Keras (Generik),GKL9812518815A1,PT Kimia Farma Tbk,Tablet enterik 50 mg (Strip @ 10),Rp 4.000 - Rp 8.000
+M_098,Cataflam 50 mg Tablet,Diclofenac Potassium,NSAID (Reaksi Cepat),Obat Keras,DKL9930407916A1,PT Novartis Indonesia,Tablet 50 mg (Strip @ 10),Rp 90.000 - Rp 115.000
+M_099,Meloxicam Dexa 15 mg,Meloxicam,NSAID Penghambat COX-2,Obat Keras (PRB BPJS),GKL0408511210B1,PT Dexa Medica,Tablet 15 mg (Strip @ 10),Rp 12.000 - Rp 20.000
+M_100,Celebrex 200 mg Kapsul,Celecoxib,NSAID COX-2 Selektif,Obat Keras,DKI9990700801B1,PT Pfizer Indonesia,Kapsul 200 mg (Blister @ 10),Rp 190.000 - Rp 230.000
+M_101,Ketokor 10 mg Tablet,Ketorolac Tromethamine,NSAID Poten Pasca Operasi,Obat Keras,DKL0004514210A1,PT Darya-Varia,Tablet 10 mg (Strip @ 10),Rp 50.000 - Rp 70.000
+M_102,Dexamethasone Kimia Farma 0.5 mg,Dexamethasone,Kortikosteroid Antiinflamasi,Obat Keras,GKL9912519610A1,PT Kimia Farma Tbk,Tablet 0.5 mg (Strip @ 10),Rp 2.500 - Rp 5.000
+M_103,Methylprednisolone Dexa 4 mg,Methylprednisolone,Kortikosteroid Antiinflamasi,Obat Keras,GKL0608512810A1,PT Dexa Medica,Tablet 4 mg (Strip @ 10),Rp 6.000 - Rp 11.000
+M_104,Methylprednisolone Dexa 8 mg,Methylprednisolone,Kortikosteroid Antiinflamasi,Obat Keras,GKL0608512810B1,PT Dexa Medica,Tablet 8 mg (Strip @ 10),Rp 10.000 - Rp 18.000
+M_105,Medixon 4 mg Tablet,Methylprednisolone,Kortikosteroid (Paten),Obat Keras,DKL0006703510A1,PT Fahrenheit,Tablet 4 mg (Strip @ 10),Rp 22.000 - Rp 32.000
+M_106,Ventolin Inhaler 100 mcg,Salbutamol,Bronkodilator Asma Akut,Obat Keras,DKI9174201339A1,PT Glaxo Wellcome,Inhaler aerosol (200 dosis),Rp 135.000 - Rp 165.000
+M_107,Salbutamol Kimia Farma 2 mg,Salbutamol,Bronkodilator Oral,Obat Keras (Generik),GKL9912520410A1,PT Kimia Farma Tbk,Tablet 2 mg (Strip @ 10),Rp 3.000 - Rp 6.000
+M_108,Symbicort Turbuhaler 160/4.5,Budesonide & Formoterol,Asma Kontroler,Obat Keras,DKI0451500467A1,PT AstraZeneca Indonesia,Inhaler 120 dosis,Rp 320.000 - Rp 380.000
+M_109,Fluimucil 200 mg Kapsul,Acetylcysteine,Mukolitik Pengencer Dahak,Obat Keras,DKL8930403301A1,PT Zambon Indonesia,Kapsul 200 mg (Blister @ 10),Rp 55.000 - Rp 70.000
+M_110,Fluimucil Effervescent 600 mg,Acetylcysteine,Mukolitik & Antioksidan,Obat Keras,DKI9930403414A1,PT Zambon Indonesia,Tablet larut air (Dus @ 10),Rp 160.000 - Rp 195.000
+M_111,Ambroxol Kimia Farma 30 mg,Ambroxol HCl,Mukolitik Batuk Berdahak,Obat Keras (Generik),GKL0612522510A1,PT Kimia Farma Tbk,Tablet 30 mg (Strip @ 10),Rp 3.500 - Rp 7.000
+M_112,Mucopect 30 mg Tablet,Ambroxol HCl,Mukolitik (Paten),Obat Keras,DKL0021200310A1,PT Boehringer Ingelheim,Tablet 30 mg (Strip @ 10),Rp 50.000 - Rp 65.000
+M_113,Bisolvon Tablet 8 mg,Bromhexine HCl,Mukolitik,Obat Bebas Terbatas (Biru),DTL1821201110A1,PT Sanofi-Aventis,Tablet 8 mg (Strip @ 10),Rp 24.000 - Rp 32.000
+M_114,OBH Combi Batuk Berdahak,Succus Liquiritiae & Ammonium Chloride,Obat Batuk Hitam,Obat Bebas (Hijau),DBL7204116137A1,PT Combiphar,Sirup 100 mL,Rp 18.000 - Rp 25.000
+M_115,OBH Combi Batuk Flu Menthol,"Paracetamol, Ephedrine, Chlorpheniramine",Batuk & Flu Kombinasi,Obat Bebas Terbatas (Biru),DTL9804123737A1,PT Combiphar,Sirup 100 mL,Rp 22.000 - Rp 28.000
+M_116,Siladex Mucolytic Sirup,Bromhexine HCl & Guaifenesin,Batuk Berdahak Bebas Gula,Obat Bebas Terbatas (Biru),DTL9913018437A1,PT Konimex,Sirup 60 mL,Rp 15.000 - Rp 20.000
+M_117,Siladex Antitussive Sirup,Dextromethorphan HBr & Doxylamine,Batuk Kering / Alergi,Obat Bebas Terbatas (Biru),DTL1613025637A1,PT Konimex,Sirup 60 mL,Rp 16.000 - Rp 21.000
+M_118,Actifed Kuning Sirup,Pseudoephedrine & Triprolidine,Pereda Flu & Bersin,Obat Bebas Terbatas (Biru),DTL1624504137A1,PT Glaxo Wellcome,Sirup 60 mL,Rp 65.000 - Rp 78.000
+M_119,Actifed Merah Sirup Batuk,"Dextromethorphan, Pseudoephedrine, Triprolidine",Batuk Kering & Flu,Obat Bebas Terbatas (Biru),DTL1624504237A1,PT Glaxo Wellcome,Sirup 60 mL,Rp 68.000 - Rp 80.000
+M_120,Rhinos SR Kapsul Lepas Lambat,Loratadine & Pseudoephedrine,Rinitis Alergi & Hidung Tersumbat,Obat Keras,DKL9905028303A1,PT Dexa Medica,Kapsul lepas lambat (Blister @ 10),Rp 85.000 - Rp 110.000
+M_121,Amoxicillin Kimia Farma 500 mg,Amoxicillin,Antibiotik Penicillin,Obat Keras,GKL9612515704A1,PT Kimia Farma Tbk,Kaplet 500 mg (Strip @ 10),Rp 6.000 - Rp 11.000
+M_122,Amoxsan 500 mg Kapsul,Amoxicillin,Antibiotik Penicillin,Obat Keras (Paten),DKL7822221601A1,PT Sanbe Farma,Kapsul 500 mg (Strip @ 10),Rp 38.000 - Rp 50.000
+M_123,Amoxsan Sirup Kering 60 mL,Amoxicillin,Antibiotik Anak,Obat Keras,DKL7822221738A1,PT Sanbe Farma,Sirup kering 125 mg/5 mL (60 mL),Rp 32.000 - Rp 42.000
+M_124,Kalmoxillin 500 mg,Amoxicillin,Antibiotik Penicillin,Obat Keras,DKL8111603504A1,PT Kalbe Farma Tbk,Kaplet 500 mg (Strip @ 10),Rp 32.000 - Rp 45.000
+M_125,Augmentin 625 mg Tablet,Amoxicillin & Clavulanate Potassium,Antibiotik Spektrum Luas,Obat Keras (Paten),DKI9924501610A1,PT Glaxo Wellcome,Tablet 625 mg (Strip @ 5),Rp 120.000 - Rp 145.000
+M_126,Ciprofloxacin Kimia Farma 500 mg,Ciprofloxacin,Antibiotik Fluorokuinolon,Obat Keras,GKL9912519909A1,PT Kimia Farma Tbk,Kaplet salut 500 mg (Strip @ 10),Rp 8.000 - Rp 15.000
+M_127,Baquinor Forte 500 mg,Ciprofloxacin,Antibiotik Fluorokuinolon,Obat Keras (Paten),DKL8922209109A1,PT Sanbe Farma,Kaplet 500 mg (Strip @ 10),Rp 110.000 - Rp 140.000
+M_128,Cefixime Dexa 100 mg,Cefixime,Antibiotik Sefalosporin Gen 3,Obat Keras,GKL0708514001A1,PT Dexa Medica,Kapsul 100 mg (Strip @ 10),Rp 25.000 - Rp 40.000
+M_129,Cefixime Kimia Farma 200 mg,Cefixime,Antibiotik Sefalosporin Gen 3,Obat Keras,GKL1212524601A1,PT Kimia Farma Tbk,Kapsul 200 mg (Strip @ 10),Rp 45.000 - Rp 65.000
+M_130,Cefspan 100 mg Kapsul,Cefixime,Antibiotik Sefalosporin (Paten),Obat Keras,DKL9011003701A1,PT Kalbe Farma Tbk,Kapsul 100 mg (Blister @ 10),Rp 220.000 - Rp 260.000
+M_131,Cefadroxil Dexa 500 mg,Cefadroxil,Antibiotik Sefalosporin Gen 1,Obat Keras,GKL9208500201A1,PT Dexa Medica,Kapsul 500 mg (Strip @ 10),Rp 12.000 - Rp 20.000
+M_132,Azithromycin Kimia Farma 500 mg,Azithromycin,Antibiotik Makrolida,Obat Keras,GKL1112524410A1,PT Kimia Farma Tbk,Kaplet 500 mg (Strip @ 6),Rp 45.000 - Rp 65.000
+M_133,Zithromax 500 mg Tablet,Azithromycin,Antibiotik Makrolida (Paten),Obat Keras,DKI9319803010A1,PT Pfizer Indonesia,Tablet salut 500 mg (Box @ 3),Rp 280.000 - Rp 320.000
+M_134,Levofloxacin Kimia Farma 500 mg,Levofloxacin,Antibiotik Fluorokuinolon,Obat Keras,GKL0712523410A1,PT Kimia Farma Tbk,Tablet salut 500 mg (Strip @ 10),Rp 25.000 - Rp 45.000
+M_135,Cotrimoxazole 480 mg KF,Sulfamethoxazole & Trimethoprim,Antibiotik Kombinasi,Obat Keras (Generik),GKL9912519410A1,PT Kimia Farma Tbk,Tablet 480 mg (Strip @ 10),Rp 4.000 - Rp 8.000
+M_136,Acyclovir Kimia Farma 400 mg,Acyclovir,Antivirus Herpes / Cacar,Obat Keras,GKL9912519310A1,PT Kimia Farma Tbk,Tablet 400 mg (Strip @ 10),Rp 8.000 - Rp 15.000
+M_137,Combantrin Tablet 250 mg,Pyrantel Pamoate,Anticacing (Anthelmintik),Obat Bebas Terbatas (Biru),DTL7224403010A1,PT Taisho Pharmaceutical,Tablet 250 mg (Strip @ 2),Rp 18.000 - Rp 24.000
+M_138,Ketoconazole Kimia Farma 200 mg,Ketoconazole,Antijamur Azol (Inhibitor CYP3A4),Obat Keras,GKL9912520110A1,PT Kimia Farma Tbk,Tablet 200 mg (Strip @ 10),Rp 8.000 - Rp 14.000
+M_139,Sporacid 100 mg Kapsul,Itraconazole,Antijamur Triazol (Inhibitor Kuat CYP3A4),Obat Keras,DKL0008507801A1,PT Dexa Medica,Kapsul 100 mg (Blister @ 4),Rp 65.000 - Rp 85.000
+M_140,Diflucan 150 mg Kapsul,Fluconazole,Antijamur Triazol,Obat Keras (Paten),DKI9019802001B1,PT Pfizer Indonesia,Kapsul 150 mg (Dus @ 1),Rp 120.000 - Rp 150.000
+M_141,Canesten Krim Jamur 10 g,Clotrimazole,Antijamur Topikal,Obat Bebas Terbatas (Biru),DTL1102000629A1,PT Bayer Indonesia,Tube 10 g,Rp 45.000 - Rp 58.000
+M_142,Daktarin Krim 10 g,Miconazole Nitrate,Antijamur Kulit,Obat Bebas Terbatas (Biru),DTL1124401729A1,PT Taisho Pharmaceutical,Tube 10 g,Rp 40.000 - Rp 52.000
+M_143,Cetirizine Kimia Farma 10 mg,Cetirizine,Antihistamin Gen 2,Obat Keras (DOWA),GKL0612522710A1,PT Kimia Farma Tbk,Tablet 10 mg (Strip @ 10),Rp 5.000 - Rp 9.000
+M_144,Cetirizine Sirup Anak 60 mL,Cetirizine,Antihistamin Anak,Obat Keras (DOWA),GKL0808515037A1,PT Dexa Medica,Sirup 5 mg/5 mL (60 mL),Rp 18.000 - Rp 25.000
+M_145,Incidal-OD 10 mg Kapsul,Cetirizine,Antihistamin (Paten),Obat Keras,DKL9404511501A1,PT Bayer Indonesia,Kapsul 10 mg (Strip @ 4),Rp 24.000 - Rp 32.000
+M_146,Loratadine Kimia Farma 10 mg,Loratadine,Antihistamin Non-Sedatif,Obat Keras (DOWA),GKL0212521110A1,PT Kimia Farma Tbk,Tablet 10 mg (Strip @ 10),Rp 6.000 - Rp 11.000
+M_147,Claritine 10 mg Tablet,Loratadine,Antihistamin (Paten),Obat Keras,DKL9002000810A1,PT Bayer Indonesia,Tablet 10 mg (Blister @ 10),Rp 110.000 - Rp 135.000
+M_148,CTM 4 mg PIM,Chlorpheniramine Maleate,Antihistamin Gen 1,Obat Bebas Terbatas (Biru),DTL7218906310A1,PT PIM Pharmaceuticals,Tablet 4 mg (Strip @ 12),Rp 2.000 - Rp 4.000
+M_149,Neurobion Forte Tablet Pink,"Vitamin B1, B6, B12 Dosis Tinggi",Vitamin Neurotropik (Kebas/Kesemutan),Obat Bebas (Hijau),DBL9615806416A1,PT Merck Tbk,Tablet salut gula (Blister @ 10),Rp 45.000 - Rp 55.000
+M_150,Neurobion Putih Tablet,"Vitamin B1, B6, B12 Standar",Vitamin Neurotropik,Obat Bebas (Hijau),DBL7215807716A1,PT Merck Tbk,Tablet salut gula (Blister @ 10),Rp 25.000 - Rp 34.000
+M_151,Sangobion Kapsul,"Ferrous Gluconate, Asam Folat, Vitamin C",Suplemen Tambah Darah (Anemia),Obat Bebas (Hijau),DBL8815801601A1,PT Merck Tbk,Kapsul (Strip @ 10),Rp 20.000 - Rp 26.000
+M_152,Enervon-C Tablet Kuning,Vitamin C 500 mg & Vitamin B Kompleks,Multivitamin Daya Tahan Tubuh,Obat Bebas (Hijau),SD011500891,PT Medifarma Laboratories,Tablet salut gula (Strip @ 4),Rp 6.000 - Rp 9.000
+M_153,CDR Tablet Effervescent,"Kalsium, Vitamin D, Vitamin C, B6",Kalsium Tulang & Gigi,Suplemen Makanan,SD051520311,PT Bayer Indonesia,Tab larut air (Tube @ 10),Rp 48.000 - Rp 58.000
+M_154,Becom-C Kaplet,Vitamin B Kompleks & Vitamin C,Multivitamin Pemulihan Sakit,Obat Bebas (Hijau),DBL8122204104A1,PT Sanbe Farma,Kaplet salut selaput (Strip @ 10),Rp 18.000 - Rp 25.000
+M_155,Imboost Tablet,Echinacea purpurea & Zinc Picolinate,Imunomodulator Daya Tahan Tubuh,Suplemen Makanan,SD071531991,PT Soho Industri Pharmasi,Kaplet (Strip @ 10),Rp 38.000 - Rp 48.000
+M_156,Imboost Force Kaplet,"Echinacea purpurea, Black Elderberry, Zinc",Imunomodulator Ekstra,Suplemen Makanan,SD021503871,PT Soho Industri Pharmasi,Kaplet (Strip @ 10),Rp 75.000 - Rp 95.000
+M_157,Folavit 400 mcg Tablet,Folic Acid,Asam Folat Kehamilan,Suplemen Makanan,SD091536141,PT Sanbe Farma,Tablet 400 mcg (Strip @ 10),Rp 12.000 - Rp 18.000
+M_158,Mastin Kapsul Ekstrak Kulit Manggis,Alpha-Mangostin (Garcinia mangostana),Herbal Manggis (Inhibitor CYP3A4),Jamu / Obat Tradisional,POM TR 112325531,PT Industri Jamu Borobudur,Kapsul (Botol @ 60),Rp 50.000 - Rp 70.000
+M_159,Mastin Plus Kapsul,Alpha-Mangostin & Daun Sirsak,Herbal Manggis Kombinasi,Jamu / Obat Tradisional,POM TR 142376651,PT Industri Jamu Borobudur,Kapsul (Botol @ 60),Rp 60.000 - Rp 80.000
+M_160,Garcia Ekstrak Kulit Manggis,Alpha-Mangostin (Garcinia mangostana),Herbal Ekstrak Manggis,Jamu / Obat Tradisional,POM TR 113324671,PT Sumber Rejeki Makmur,Kapsul (Botol @ 60),Rp 65.000 - Rp 85.000
+M_161,Sido Muncul Kulit Manggis,Alpha-Mangostin (Garcinia mangostana),Herbal Ekstrak Manggis,Jamu / Obat Tradisional,POM TR 142380581,PT Industri Jamu Sido Muncul,Kapsul (Botol @ 50),Rp 70.000 - Rp 90.000
+M_162,Curcuma FCT Tablet,Curcumin (Curcuma xanthorrhiza),Suplemen Liver & Nafsu Makan,Suplemen Herbal,POM SD 041517411,PT Soho Industri Pharmasi,Tablet salut (Blister @ 10),Rp 14.000 - Rp 20.000
+M_163,Curcuma Force Tablet,Curcumin & Piperine,Suplemen Temulawak Terstandar,Suplemen Herbal,POM SD 192554761,PT Soho Industri Pharmasi,Tablet (Blister @ 12),Rp 18.000 - Rp 26.000
+M_164,Sari Kunyit Kapsul Sido Muncul,Curcumin (Curcuma domestica),Herbal Maag & Lambung,Jamu / Obat Tradisional,POM TR 092303861,PT Industri Jamu Sido Muncul,Kapsul (Botol @ 50),Rp 60.000 - Rp 80.000
+M_165,HerbaKOF Sirup 100 mL,Gingerol (Zingiber officinale & Ekstrak),Obat Herbal Terstandar Batuk,Obat Herbal Terstandar (OHT),POM TR 152687991,PT Dexa Medica,Sirup Herbal 100 mL,Rp 15.000 - Rp 22.000
+M_166,Tolak Angin Cair Sachet,"Gingerol, Adas, Cengkeh, Mint, Madu",Masuk Angin & Daya Tahan,Obat Herbal Terstandar (OHT),POM TR 122634441,PT Industri Jamu Sido Muncul,Cair 15 mL (Dus @ 12),Rp 40.000 - Rp 50.000
+M_167,Antangin JRG Cair Sachet,"Zingiber officinale, Ginseng, Royal Jelly",Herbal Masuk Angin & Mual,Jamu / Obat Tradisional,POM TR 082686731,PT Deltomed Laboratories,Cair 15 mL (Dus @ 12),Rp 38.000 - Rp 48.000
+M_168,Stimuno Forte Kapsul,Phyllanthus niruri (Meniran),Imunomodulator Fitofarmaka,Fitofarmaka (Kasta Tertinggi BPOM),POM FF 152300641,PT Dexa Medica,Kapsul (Blister @ 10),Rp 32.000 - Rp 45.000
+M_169,Tensigard Kapsul,Ekstrak Seledri & Kumis Kucing,Antihipertensi Herbal Fitofarmaka,Fitofarmaka (Uji Klinis),POM FF 142300631,PT Phapros Tbk,Kapsul (Blister @ 10),Rp 40.000 - Rp 55.000
+M_170,Diapet Kapsul,Ekstrak Daun Jambu Biji & Kunyit,Antidiare Herbal,Obat Herbal Terstandar (OHT),POM HT 112300091,PT Soho Industri Pharmasi,Kapsul (Strip @ 4),Rp 3.500 - Rp 6.000
+M_171,Diapet NR Kapsul,"Ekstrak Daun Jambu Biji, Kunyit, Karbon Aktif",Antidiare & Penyerap Racun,Obat Herbal Terstandar (OHT),POM HT 112300101,PT Soho Industri Pharmasi,Kapsul (Strip @ 4),Rp 4.000 - Rp 7.000
+M_172,Lelap Kapsul,Ekstrak Valerian & Pala (Myristica),Pereda Insomnia & Gangguan Tidur,Obat Herbal Terstandar (OHT),POM HT 142300441,PT Soho Industri Pharmasi,Kaplet (Blister @ 4),Rp 15.000 - Rp 22.000
+M_173,Fitolac Kapsul Pelancar ASI,Ekstrak Daun Katuk (Sauropus androgynus),Pelancar ASI Herbal,Jamu / Obat Tradisional,POM TR 042337771,PT Kimia Farma Tbk,Kapsul (Strip @ 10),Rp 25.000 - Rp 35.000
+M_174,Enkasari Cairan Kumur 120 mL,"Ekstrak Daun Sirih, Saga, Akar Kayu Manis",Obat Kumur Sariawan Herbal,Jamu / Obat Tradisional,POM TR 142678661,PT Kimia Farma Tbk,Cairan obat kumur (120 mL),Rp 20.000 - Rp 28.000
+M_175,Minyak Kayu Putih Cap Lang 60 mL,Cajuput Oil (Minyak Kayu Putih Asli),Minyak Gosok Hangat & Masuk Angin,Obat Tradisional,POM TR 142679841,PT Eagle Indo Pharma,Botol 60 mL,Rp 22.000 - Rp 28.000

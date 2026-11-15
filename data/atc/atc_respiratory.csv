@@ -1,0 +1,65 @@
+﻿atc_code,atc_name,class_type,atc_level
+R,RESPIRATORY SYSTEM,ATC1-4,1
+R01,NASAL PREPARATIONS,ATC1-4,2
+R01A,DECONGESTANTS AND OTHER NASAL PREPARATIONS FOR TOPICAL USE,ATC1-4,3
+R01AA,"Sympathomimetics, plain",ATC1-4,4
+R01AB,"Sympathomimetics, combinations excl. corticosteroids",ATC1-4,4
+R01AC,"Antiallergic agents, excl. corticosteroids",ATC1-4,4
+R01AD,Corticosteroids,ATC1-4,4
+R01AX,Other nasal preparations,ATC1-4,4
+R01B,NASAL DECONGESTANTS FOR SYSTEMIC USE,ATC1-4,3
+R01BA,Sympathomimetics,ATC1-4,4
+R02,THROAT PREPARATIONS,ATC1-4,2
+R02A,THROAT PREPARATIONS,ATC1-4,3
+R02AA,Antiseptics,ATC1-4,4
+R02AB,Antibiotics,ATC1-4,4
+R02AD,"Anesthetics, local",ATC1-4,4
+R02AX,Other throat preparations,ATC1-4,4
+R03,DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES,ATC1-4,2
+R03A,"ADRENERGICS, INHALANTS",ATC1-4,3
+R03AA,Alpha- and beta-adrenoreceptor agonists,ATC1-4,4
+R03AB,Non-selective beta-adrenoreceptor agonists,ATC1-4,4
+R03AC,Selective beta-2-adrenoreceptor agonists,ATC1-4,4
+R03AH,Combinations of adrenergics,ATC1-4,4
+R03AK,"Adrenergics in combination with corticosteroids or other drugs, excl. anticholinergics",ATC1-4,4
+R03AL,Adrenergics in combination with anticholinergics incl. triple combinations with corticosteroids,ATC1-4,4
+R03B,"OTHER DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES, INHALANTS",ATC1-4,3
+R03BA,Glucocorticoids,ATC1-4,4
+R03BB,Anticholinergics,ATC1-4,4
+R03BC,"Antiallergic agents, excl. corticosteroids",ATC1-4,4
+R03BX,"Other drugs for obstructive airway diseases, inhalants",ATC1-4,4
+R03C,ADRENERGICS FOR SYSTEMIC USE,ATC1-4,3
+R03CA,Alpha- and beta-adrenoreceptor agonists,ATC1-4,4
+R03CB,Non-selective beta-adrenoreceptor agonists,ATC1-4,4
+R03CC,Selective beta-2-adrenoreceptor agonists,ATC1-4,4
+R03CK,Adrenergics and other drugs for obstructive airway diseases,ATC1-4,4
+R03D,OTHER SYSTEMIC DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES,ATC1-4,3
+R03DA,Xanthines,ATC1-4,4
+R03DB,Xanthines and adrenergics,ATC1-4,4
+R03DC,Leukotriene receptor antagonists,ATC1-4,4
+R03DX,Other systemic drugs for obstructive airway diseases,ATC1-4,4
+R05,COUGH AND COLD PREPARATIONS,ATC1-4,2
+R05C,"EXPECTORANTS, EXCL. COMBINATIONS WITH COUGH SUPPRESSANTS",ATC1-4,3
+R05CA,Expectorants,ATC1-4,4
+R05CB,Mucolytics,ATC1-4,4
+R05D,"COUGH SUPPRESSANTS, EXCL. COMBINATIONS WITH EXPECTORANTS",ATC1-4,3
+R05DA,Opium alkaloids and derivatives,ATC1-4,4
+R05DB,Other cough suppressants,ATC1-4,4
+R05F,"COUGH SUPPRESSANTS AND EXPECTORANTS, COMBINATIONS",ATC1-4,3
+R05FA,Opium derivatives and expectorants,ATC1-4,4
+R05FB,Other cough suppressants and expectorants,ATC1-4,4
+R05X,OTHER COLD PREPARATIONS,ATC1-4,3
+R06,ANTIHISTAMINES FOR SYSTEMIC USE,ATC1-4,2
+R06A,ANTIHISTAMINES FOR SYSTEMIC USE,ATC1-4,3
+R06AA,Aminoalkyl ethers,ATC1-4,4
+R06AB,Substituted alkylamines,ATC1-4,4
+R06AC,Substituted ethylene diamines,ATC1-4,4
+R06AD,Phenothiazine derivatives,ATC1-4,4
+R06AE,Piperazine derivatives,ATC1-4,4
+R06AK,Combinations of antihistamines,ATC1-4,4
+R06AX,Other antihistamines for systemic use,ATC1-4,4
+R07,OTHER RESPIRATORY SYSTEM PRODUCTS,ATC1-4,2
+R07A,OTHER RESPIRATORY SYSTEM PRODUCTS,ATC1-4,3
+R07AA,Lung surfactants,ATC1-4,4
+R07AB,Respiratory stimulants,ATC1-4,4
+R07AX,Other respiratory system products,ATC1-4,4

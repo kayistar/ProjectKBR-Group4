@@ -1,0 +1,6601 @@
+{
+  "rxclassMinConceptList": {
+    "rxclassMinConcept": [
+      {
+        "classId": "0",
+        "className": "Anatomical Therapeutic Chemical",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A",
+        "className": "ALIMENTARY TRACT AND METABOLISM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A01",
+        "className": "STOMATOLOGICAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A01A",
+        "className": "STOMATOLOGICAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A01AA",
+        "className": "Caries prophylactic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A01AB",
+        "className": "Antiinfectives and antiseptics for local oral treatment",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A01AC",
+        "className": "Corticosteroids for local oral treatment",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A01AD",
+        "className": "Other agents for local oral treatment",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02",
+        "className": "DRUGS FOR ACID RELATED DISORDERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02A",
+        "className": "ANTACIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AA",
+        "className": "Magnesium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AB",
+        "className": "Aluminium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AC",
+        "className": "Calcium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AD",
+        "className": "Combinations and complexes of aluminium, calcium and magnesium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AF",
+        "className": "Antacids with antiflatulents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AG",
+        "className": "Antacids with antispasmodics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AH",
+        "className": "Antacids with sodium bicarbonate",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02AX",
+        "className": "Antacids, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02B",
+        "className": "DRUGS FOR PEPTIC ULCER AND GASTRO-OESOPHAGEAL REFLUX DISEASE (GORD)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02BA",
+        "className": "H2-receptor antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02BB",
+        "className": "Prostaglandins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02BC",
+        "className": "Proton pump inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02BD",
+        "className": "Combinations for eradication of Helicobacter pylori",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02BX",
+        "className": "Other drugs for peptic ulcer and gastro-oesophageal reflux disease (GORD)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A02X",
+        "className": "OTHER DRUGS FOR ACID RELATED DISORDERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03",
+        "className": "DRUGS FOR FUNCTIONAL GASTROINTESTINAL DISORDERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03A",
+        "className": "DRUGS FOR FUNCTIONAL GASTROINTESTINAL DISORDERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03AA",
+        "className": "Synthetic anticholinergics, esters with tertiary amino group",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03AB",
+        "className": "Synthetic anticholinergics, quaternary ammonium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03AC",
+        "className": "Synthetic antispasmodics, amides with tertiary amines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03AD",
+        "className": "Papaverine and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03AE",
+        "className": "Serotonin receptor antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03AX",
+        "className": "Other drugs for functional gastrointestinal disorders",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03B",
+        "className": "BELLADONNA AND DERIVATIVES, PLAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03BA",
+        "className": "Belladonna alkaloids, tertiary amines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03BB",
+        "className": "Belladonna alkaloids, semisynthetic, quaternary ammonium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03C",
+        "className": "ANTISPASMODICS IN COMBINATION WITH PSYCHOLEPTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03CA",
+        "className": "Synthetic anticholinergic agents in combination with psycholeptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03CB",
+        "className": "Belladonna and derivatives in combination with psycholeptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03CC",
+        "className": "Other antispasmodics in combination with psycholeptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03D",
+        "className": "ANTISPASMODICS IN COMBINATION WITH ANALGESICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03DA",
+        "className": "Synthetic anticholinergic agents in combination with analgesics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03DB",
+        "className": "Belladonna and derivatives in combination with analgesics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03DC",
+        "className": "Other antispasmodics in combination with analgesics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03E",
+        "className": "ANTISPASMODICS AND ANTICHOLINERGICS IN COMBINATION WITH OTHER DRUGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03EA",
+        "className": "Antispasmodics, psycholeptics and analgesics in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03ED",
+        "className": "Antispasmodics in combination with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03F",
+        "className": "PROPULSIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A03FA",
+        "className": "Propulsives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A04",
+        "className": "ANTIEMETICS AND ANTINAUSEANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A04A",
+        "className": "ANTIEMETICS AND ANTINAUSEANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A04AA",
+        "className": "Serotonin (5HT3) antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A04AD",
+        "className": "Other antiemetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05",
+        "className": "BILE AND LIVER THERAPY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05A",
+        "className": "BILE THERAPY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05AA",
+        "className": "Bile acids and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05AB",
+        "className": "Preparations for biliary tract therapy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05AX",
+        "className": "Other drugs for bile therapy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05B",
+        "className": "LIVER THERAPY, LIPOTROPICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05BA",
+        "className": "Liver therapy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A05C",
+        "className": "DRUGS FOR BILE THERAPY AND LIPOTROPICS IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06",
+        "className": "DRUGS FOR CONSTIPATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06A",
+        "className": "DRUGS FOR CONSTIPATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06AA",
+        "className": "Softeners, emollients",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06AB",
+        "className": "Contact laxatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06AC",
+        "className": "Bulk-forming laxatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06AD",
+        "className": "Osmotically acting laxatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06AG",
+        "className": "Enemas",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06AH",
+        "className": "Peripheral opioid receptor antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A06AX",
+        "className": "Other drugs for constipation",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07",
+        "className": "ANTIDIARRHEALS, INTESTINAL ANTIINFLAMMATORY/ANTIINFECTIVE AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07A",
+        "className": "INTESTINAL ANTIINFECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07AA",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07AB",
+        "className": "Sulfonamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07AC",
+        "className": "Imidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07AX",
+        "className": "Other intestinal antiinfectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07B",
+        "className": "INTESTINAL ADSORBENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07BA",
+        "className": "Charcoal preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07BB",
+        "className": "Bismuth preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07BC",
+        "className": "Other intestinal adsorbents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07C",
+        "className": "ELECTROLYTES WITH CARBOHYDRATES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07CA",
+        "className": "Oral rehydration salt formulations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07D",
+        "className": "ANTIPROPULSIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07DA",
+        "className": "Antipropulsives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07E",
+        "className": "INTESTINAL ANTIINFLAMMATORY AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07EA",
+        "className": "Corticosteroids acting locally",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07EB",
+        "className": "Antiallergic agents, excl. corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07EC",
+        "className": "Aminosalicylic acid and similar agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07F",
+        "className": "ANTIDIARRHEAL MICROORGANISMS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07FA",
+        "className": "Antidiarrheal microorganisms",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07X",
+        "className": "OTHER ANTIDIARRHEALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A07XA",
+        "className": "Other antidiarrheals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A08",
+        "className": "ANTIOBESITY PREPARATIONS, EXCL. DIET PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A08A",
+        "className": "ANTIOBESITY PREPARATIONS, EXCL. DIET PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A08AA",
+        "className": "Centrally acting antiobesity products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A08AB",
+        "className": "Peripherally acting antiobesity products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A08AX",
+        "className": "Other antiobesity drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A09",
+        "className": "DIGESTIVES, INCL. ENZYMES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A09A",
+        "className": "DIGESTIVES, INCL. ENZYMES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A09AA",
+        "className": "Enzyme preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A09AB",
+        "className": "Acid preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A09AC",
+        "className": "Enzyme and acid preparations, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10",
+        "className": "DRUGS USED IN DIABETES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10A",
+        "className": "INSULINS AND ANALOGUES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10AB",
+        "className": "Insulins and analogues for injection, fast-acting",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10AC",
+        "className": "Insulins and analogues for injection, intermediate-acting",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10AD",
+        "className": "Insulins and analogues for injection, intermediate- or long-acting combined with fast-acting",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10AE",
+        "className": "Insulins and analogues for injection, long-acting",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10AF",
+        "className": "Insulins and analogues for inhalation",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10B",
+        "className": "BLOOD GLUCOSE LOWERING DRUGS, EXCL. INSULINS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BA",
+        "className": "Biguanides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BB",
+        "className": "Sulfonylureas",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BC",
+        "className": "Sulfonamides (heterocyclic)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BD",
+        "className": "Combinations of oral blood glucose lowering drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BF",
+        "className": "Alpha glucosidase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BG",
+        "className": "Thiazolidinediones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BH",
+        "className": "Dipeptidyl peptidase 4 (DPP-4) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BJ",
+        "className": "Glucagon-like peptide-1 (GLP-1) analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BK",
+        "className": "Sodium-glucose co-transporter 2 (SGLT2) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10BX",
+        "className": "Other blood glucose lowering drugs, excl. insulins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10X",
+        "className": "OTHER DRUGS USED IN DIABETES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10XA",
+        "className": "Aldose reductase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A10XX",
+        "className": "Other drugs used in diabetes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11",
+        "className": "VITAMINS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11A",
+        "className": "MULTIVITAMINS, COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11AA",
+        "className": "Multivitamins with minerals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11AB",
+        "className": "Multivitamins, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11B",
+        "className": "MULTIVITAMINS, PLAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11BA",
+        "className": "Multivitamins, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11C",
+        "className": "VITAMIN A AND D, INCL. COMBINATIONS OF THE TWO",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11CA",
+        "className": "Vitamin A, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11CB",
+        "className": "Vitamin A and D in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11CC",
+        "className": "Vitamin D and analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11D",
+        "className": "VITAMIN B1, PLAIN AND IN COMBINATION WITH VITAMIN B6 AND B12",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11DA",
+        "className": "Vitamin B1, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11DB",
+        "className": "Vitamin B1 in combination with vitamin B6 and/or vitamin B12",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11E",
+        "className": "VITAMIN B-COMPLEX, INCL. COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11EA",
+        "className": "Vitamin B-complex, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11EB",
+        "className": "Vitamin B-complex with vitamin C",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11EC",
+        "className": "Vitamin B-complex with minerals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11ED",
+        "className": "Vitamin B-complex with anabolic steroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11EX",
+        "className": "Vitamin B-complex, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11G",
+        "className": "ASCORBIC ACID (VITAMIN C), INCL. COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11GA",
+        "className": "Ascorbic acid (vitamin C), plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11GB",
+        "className": "Ascorbic acid (vitamin C), combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11H",
+        "className": "OTHER PLAIN VITAMIN PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11HA",
+        "className": "Other plain vitamin preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11J",
+        "className": "OTHER VITAMIN PRODUCTS, COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11JA",
+        "className": "Combinations of vitamins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11JB",
+        "className": "Vitamins with minerals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A11JC",
+        "className": "Vitamins, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12",
+        "className": "MINERAL SUPPLEMENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12A",
+        "className": "CALCIUM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12AA",
+        "className": "Calcium",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12AX",
+        "className": "Calcium, combinations with vitamin D and/or other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12B",
+        "className": "POTASSIUM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12BA",
+        "className": "Potassium",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12C",
+        "className": "OTHER MINERAL SUPPLEMENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12CA",
+        "className": "Sodium",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12CB",
+        "className": "Zinc",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12CC",
+        "className": "Magnesium",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12CD",
+        "className": "Fluoride",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12CE",
+        "className": "Selenium",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A12CX",
+        "className": "Other mineral products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A13",
+        "className": "TONICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A13A",
+        "className": "TONICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A14",
+        "className": "ANABOLIC AGENTS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A14A",
+        "className": "ANABOLIC STEROIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A14AA",
+        "className": "Androstan derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A14AB",
+        "className": "Estren derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A14B",
+        "className": "OTHER ANABOLIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A15",
+        "className": "APPETITE STIMULANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A16",
+        "className": "OTHER ALIMENTARY TRACT AND METABOLISM PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A16A",
+        "className": "OTHER ALIMENTARY TRACT AND METABOLISM PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A16AA",
+        "className": "Amino acids and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A16AB",
+        "className": "Enzymes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "A16AX",
+        "className": "Various alimentary tract and metabolism products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B",
+        "className": "BLOOD AND BLOOD FORMING ORGANS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01",
+        "className": "ANTITHROMBOTIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01A",
+        "className": "ANTITHROMBOTIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01AA",
+        "className": "Vitamin K antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01AB",
+        "className": "Heparin group",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01AC",
+        "className": "Platelet aggregation inhibitors excl. heparin",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01AD",
+        "className": "Enzymes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01AE",
+        "className": "Direct thrombin inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01AF",
+        "className": "Direct factor Xa inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B01AX",
+        "className": "Other antithrombotic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02",
+        "className": "ANTIHEMORRHAGICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02A",
+        "className": "ANTIFIBRINOLYTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02AA",
+        "className": "Amino acids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02AB",
+        "className": "Proteinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02B",
+        "className": "VITAMIN K AND OTHER HEMOSTATICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02BA",
+        "className": "Vitamin K",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02BB",
+        "className": "Fibrinogen",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02BC",
+        "className": "Local hemostatics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02BD",
+        "className": "Blood coagulation factors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B02BX",
+        "className": "Other systemic hemostatics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03",
+        "className": "ANTIANEMIC PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03A",
+        "className": "IRON PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03AA",
+        "className": "Iron bivalent, oral preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03AB",
+        "className": "Iron trivalent, oral preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03AC",
+        "className": "Iron, parenteral preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03AD",
+        "className": "Iron in combination with folic acid",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03AE",
+        "className": "Iron in other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03B",
+        "className": "VITAMIN B12 AND FOLIC ACID",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03BA",
+        "className": "Vitamin B12 (cyanocobalamin and analogues)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03BB",
+        "className": "Folic acid and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03X",
+        "className": "OTHER ANTIANEMIC PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B03XA",
+        "className": "Other antianemic preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05",
+        "className": "BLOOD SUBSTITUTES AND PERFUSION SOLUTIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05A",
+        "className": "BLOOD AND RELATED PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05AA",
+        "className": "Blood substitutes and plasma protein fractions",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05AX",
+        "className": "Other blood products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05B",
+        "className": "I.V. SOLUTIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05BA",
+        "className": "Solutions for parenteral nutrition",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05BB",
+        "className": "Solutions affecting the electrolyte balance",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05BC",
+        "className": "Solutions producing osmotic diuresis",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05C",
+        "className": "IRRIGATING SOLUTIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05CA",
+        "className": "Antiinfectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05CB",
+        "className": "Salt solutions",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05CX",
+        "className": "Other irrigating solutions",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05D",
+        "className": "PERITONEAL DIALYTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05DA",
+        "className": "Isotonic solutions",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05DB",
+        "className": "Hypertonic solutions",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05X",
+        "className": "I.V. SOLUTION ADDITIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05XA",
+        "className": "Electrolyte solutions",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05XB",
+        "className": "Amino acids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05XC",
+        "className": "Vitamins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05XX",
+        "className": "Other i.v. solution additives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05Z",
+        "className": "HEMODIALYTICS AND HEMOFILTRATES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05ZA",
+        "className": "Hemodialytics, concentrates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B05ZB",
+        "className": "Hemofiltrates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B06",
+        "className": "OTHER HEMATOLOGICAL AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B06A",
+        "className": "OTHER HEMATOLOGICAL AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B06AA",
+        "className": "Enzymes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B06AB",
+        "className": "Heme products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B06AC",
+        "className": "Drugs used in hereditary angioedema",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "B06AX",
+        "className": "Other hematological agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C",
+        "className": "CARDIOVASCULAR SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01",
+        "className": "CARDIAC THERAPY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01A",
+        "className": "CARDIAC GLYCOSIDES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01AA",
+        "className": "Digitalis glycosides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01AB",
+        "className": "Scilla glycosides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01AC",
+        "className": "Strophanthus glycosides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01AX",
+        "className": "Other cardiac glycosides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01B",
+        "className": "ANTIARRHYTHMICS, CLASS I AND III",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01BA",
+        "className": "Antiarrhythmics, class Ia",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01BB",
+        "className": "Antiarrhythmics, class Ib",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01BC",
+        "className": "Antiarrhythmics, class Ic",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01BD",
+        "className": "Antiarrhythmics, class III",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01BG",
+        "className": "Other antiarrhythmics, class I and III",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01C",
+        "className": "CARDIAC STIMULANTS EXCL. CARDIAC GLYCOSIDES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01CA",
+        "className": "Adrenergic and dopaminergic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01CE",
+        "className": "Phosphodiesterase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01CX",
+        "className": "Other cardiac stimulants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01D",
+        "className": "VASODILATORS USED IN CARDIAC DISEASES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01DA",
+        "className": "Organic nitrates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01DB",
+        "className": "Quinolone vasodilators",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01DX",
+        "className": "Other vasodilators used in cardiac diseases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01E",
+        "className": "OTHER CARDIAC PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01EA",
+        "className": "Prostaglandins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01EB",
+        "className": "Other cardiac preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C01EX",
+        "className": "Other cardiac combination products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02",
+        "className": "ANTIHYPERTENSIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02A",
+        "className": "ANTIADRENERGIC AGENTS, CENTRALLY ACTING",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02AA",
+        "className": "Rauwolfia alkaloids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02AB",
+        "className": "Methyldopa",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02AC",
+        "className": "Imidazoline receptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02B",
+        "className": "ANTIADRENERGIC AGENTS, GANGLION-BLOCKING",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02BA",
+        "className": "Sulfonium derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02BB",
+        "className": "Secondary and tertiary amines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02BC",
+        "className": "Bisquaternary ammonium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02C",
+        "className": "ANTIADRENERGIC AGENTS, PERIPHERALLY ACTING",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02CA",
+        "className": "Alpha-adrenoreceptor antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02CC",
+        "className": "Guanidine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02D",
+        "className": "ARTERIOLAR SMOOTH MUSCLE, AGENTS ACTING ON",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02DA",
+        "className": "Thiazide derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02DB",
+        "className": "Hydrazinophthalazine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02DC",
+        "className": "Pyrimidine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02DD",
+        "className": "Nitroferricyanide derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02DG",
+        "className": "Guanidine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02K",
+        "className": "OTHER ANTIHYPERTENSIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02KA",
+        "className": "Alkaloids, excl. rauwolfia",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02KB",
+        "className": "Tyrosine hydroxylase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02KC",
+        "className": "MAO inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02KD",
+        "className": "Serotonin antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02KN",
+        "className": "Other antihypertensives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02KX",
+        "className": "Antihypertensives for pulmonary arterial hypertension",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02L",
+        "className": "ANTIHYPERTENSIVES AND DIURETICS IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LA",
+        "className": "Rauwolfia alkaloids and diuretics in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LB",
+        "className": "Methyldopa and diuretics in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LC",
+        "className": "Imidazoline receptor agonists in combination with diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LE",
+        "className": "Alpha-adrenoreceptor antagonists and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LF",
+        "className": "Guanidine derivatives and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LG",
+        "className": "Hydrazinophthalazine derivatives and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LK",
+        "className": "Alkaloids, excl. rauwolfia, in combination with diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LL",
+        "className": "MAO inhibitors and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LN",
+        "className": "Serotonin antagonists and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02LX",
+        "className": "Other antihypertensives and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C02N",
+        "className": "COMBINATIONS OF ANTIHYPERTENSIVES IN ATC-GR. C02",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03",
+        "className": "DIURETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03A",
+        "className": "LOW-CEILING DIURETICS, THIAZIDES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03AA",
+        "className": "Thiazides, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03AB",
+        "className": "Thiazides and potassium in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03AH",
+        "className": "Thiazides, combinations with psycholeptics and/or analgesics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03AX",
+        "className": "Thiazides, combinations with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03B",
+        "className": "LOW-CEILING DIURETICS, EXCL. THIAZIDES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03BA",
+        "className": "Sulfonamides, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03BB",
+        "className": "Sulfonamides and potassium in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03BC",
+        "className": "Mercurial diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03BD",
+        "className": "Xanthine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03BK",
+        "className": "Sulfonamides, combinations with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03BX",
+        "className": "Other low-ceiling diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03C",
+        "className": "HIGH-CEILING DIURETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03CA",
+        "className": "Sulfonamides, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03CB",
+        "className": "Sulfonamides and potassium in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03CC",
+        "className": "Aryloxyacetic acid derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03CD",
+        "className": "Pyrazolone derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03CX",
+        "className": "Other high-ceiling diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03D",
+        "className": "ALDOSTERONE ANTAGONISTS AND OTHER POTASSIUM-SPARING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03DA",
+        "className": "Aldosterone antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03DB",
+        "className": "Other potassium-sparing agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03E",
+        "className": "DIURETICS AND POTASSIUM-SPARING AGENTS IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03EA",
+        "className": "Low-ceiling diuretics and potassium-sparing agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03EB",
+        "className": "High-ceiling diuretics and potassium-sparing agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03X",
+        "className": "OTHER DIURETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C03XA",
+        "className": "Vasopressin antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04",
+        "className": "PERIPHERAL VASODILATORS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04A",
+        "className": "PERIPHERAL VASODILATORS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04AA",
+        "className": "2-amino-1-phenylethanol derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04AB",
+        "className": "Imidazoline derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04AC",
+        "className": "Nicotinic acid and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04AD",
+        "className": "Purine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04AE",
+        "className": "Ergot alkaloids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04AF",
+        "className": "Enzymes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C04AX",
+        "className": "Other peripheral vasodilators",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05",
+        "className": "VASOPROTECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05A",
+        "className": "AGENTS FOR TREATMENT OF HEMORRHOIDS AND ANAL FISSURES FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05AA",
+        "className": "Corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05AB",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05AD",
+        "className": "Local anesthetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05AE",
+        "className": "Muscle relaxants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05AX",
+        "className": "Other agents for treatment of hemorrhoids and anal fissures for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05B",
+        "className": "ANTIVARICOSE THERAPY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05BA",
+        "className": "Heparins or heparinoids for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05BB",
+        "className": "Sclerosing agents for local injection",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05BX",
+        "className": "Other sclerosing agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05C",
+        "className": "CAPILLARY STABILIZING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05CA",
+        "className": "Bioflavonoids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05CX",
+        "className": "Other capillary stabilizing agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05X",
+        "className": "OTHER VASOPROTECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C05XX",
+        "className": "Other vasoprotectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07",
+        "className": "BETA BLOCKING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07A",
+        "className": "BETA BLOCKING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07AA",
+        "className": "Beta blocking agents, non-selective",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07AB",
+        "className": "Beta blocking agents, selective",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07AG",
+        "className": "Alpha and beta blocking agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07B",
+        "className": "BETA BLOCKING AGENTS AND THIAZIDES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07BA",
+        "className": "Beta blocking agents, non-selective, and thiazides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07BB",
+        "className": "Beta blocking agents, selective, and thiazides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07BG",
+        "className": "Alpha and beta blocking agents and thiazides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07C",
+        "className": "BETA BLOCKING AGENTS AND OTHER DIURETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07CA",
+        "className": "Beta blocking agents, non-selective, and other diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07CB",
+        "className": "Beta blocking agents, selective, and other diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07CG",
+        "className": "Alpha and beta blocking agents and other diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07D",
+        "className": "BETA BLOCKING AGENTS, THIAZIDES AND OTHER DIURETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07DA",
+        "className": "Beta blocking agents, non-selective, thiazides and other diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07DB",
+        "className": "Beta blocking agents, selective, thiazides and other diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07E",
+        "className": "BETA BLOCKING AGENTS AND VASODILATORS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07EA",
+        "className": "Beta blocking agents, non-selective, and vasodilators",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07EB",
+        "className": "Beta blocking agents, selective, and vasodilators",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07F",
+        "className": "BETA BLOCKING AGENTS, OTHER COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07FB",
+        "className": "Beta blocking agents and calcium channel blockers",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C07FX",
+        "className": "Beta blocking agents, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08",
+        "className": "CALCIUM CHANNEL BLOCKERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08C",
+        "className": "SELECTIVE CALCIUM CHANNEL BLOCKERS WITH MAINLY VASCULAR EFFECTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08CA",
+        "className": "Dihydropyridine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08CX",
+        "className": "Other selective calcium channel blockers with mainly vascular effects",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08D",
+        "className": "SELECTIVE CALCIUM CHANNEL BLOCKERS WITH DIRECT CARDIAC EFFECTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08DA",
+        "className": "Phenylalkylamine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08DB",
+        "className": "Benzothiazepine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08E",
+        "className": "NON-SELECTIVE CALCIUM CHANNEL BLOCKERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08EA",
+        "className": "Phenylalkylamine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08EX",
+        "className": "Other non-selective calcium channel blockers",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08G",
+        "className": "CALCIUM CHANNEL BLOCKERS AND DIURETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C08GA",
+        "className": "Calcium channel blockers and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09",
+        "className": "AGENTS ACTING ON THE RENIN-ANGIOTENSIN SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09A",
+        "className": "ACE INHIBITORS, PLAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09AA",
+        "className": "ACE inhibitors, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09B",
+        "className": "ACE INHIBITORS, COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09BA",
+        "className": "ACE inhibitors and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09BB",
+        "className": "ACE inhibitors and calcium channel blockers",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09BX",
+        "className": "ACE inhibitors, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09C",
+        "className": "ANGIOTENSIN II RECEPTOR BLOCKERS (ARBs), PLAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09CA",
+        "className": "Angiotensin II receptor blockers (ARBs), plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09D",
+        "className": "ANGIOTENSIN II RECEPTOR BLOCKERS (ARBs), COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09DA",
+        "className": "Angiotensin II receptor blockers (ARBs) and diuretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09DB",
+        "className": "Angiotensin II receptor blockers (ARBs) and calcium channel blockers",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09DX",
+        "className": "Angiotensin II receptor blockers (ARBs), other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09X",
+        "className": "OTHER AGENTS ACTING ON THE RENIN-ANGIOTENSIN SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09XA",
+        "className": "Renin-inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C09XX",
+        "className": "Other agents acting on the renin-angiotensin system",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10",
+        "className": "LIPID MODIFYING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10A",
+        "className": "LIPID MODIFYING AGENTS, PLAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10AA",
+        "className": "HMG CoA reductase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10AB",
+        "className": "Fibrates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10AC",
+        "className": "Bile acid sequestrants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10AD",
+        "className": "Nicotinic acid and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10AX",
+        "className": "Other lipid modifying agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10B",
+        "className": "LIPID MODIFYING AGENTS, COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10BA",
+        "className": "Combinations of various lipid modifying agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "C10BX",
+        "className": "Lipid modifying agents in combination with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D",
+        "className": "DERMATOLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D01",
+        "className": "ANTIFUNGALS FOR DERMATOLOGICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D01A",
+        "className": "ANTIFUNGALS FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D01AA",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D01AC",
+        "className": "Imidazole and triazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D01AE",
+        "className": "Other antifungals for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D01B",
+        "className": "ANTIFUNGALS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D01BA",
+        "className": "Antifungals for systemic use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02",
+        "className": "EMOLLIENTS AND PROTECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02A",
+        "className": "EMOLLIENTS AND PROTECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02AA",
+        "className": "Silicone products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02AB",
+        "className": "Zinc products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02AC",
+        "className": "Soft paraffin and fat products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02AD",
+        "className": "Liquid plasters",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02AE",
+        "className": "Carbamide products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02AF",
+        "className": "Salicylic acid preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02AX",
+        "className": "Other emollients and protectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02B",
+        "className": "PROTECTIVES AGAINST UV-RADIATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02BA",
+        "className": "Protectives against UV-radiation for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D02BB",
+        "className": "Protectives against UV-radiation for systemic use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D03",
+        "className": "PREPARATIONS FOR TREATMENT OF WOUNDS AND ULCERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D03A",
+        "className": "CICATRIZANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D03AA",
+        "className": "Cod-liver oil ointments",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D03AX",
+        "className": "Other cicatrizants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D03B",
+        "className": "ENZYMES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D03BA",
+        "className": "Proteolytic enzymes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D04",
+        "className": "ANTIPRURITICS, INCL. ANTIHISTAMINES, ANESTHETICS, ETC.",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D04A",
+        "className": "ANTIPRURITICS, INCL. ANTIHISTAMINES, ANESTHETICS, ETC.",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D04AA",
+        "className": "Antihistamines for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D04AB",
+        "className": "Anesthetics for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D04AX",
+        "className": "Other antipruritics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05",
+        "className": "ANTIPSORIATICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05A",
+        "className": "ANTIPSORIATICS FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05AA",
+        "className": "Tars",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05AC",
+        "className": "Antracen derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05AD",
+        "className": "Psoralens for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05AX",
+        "className": "Other antipsoriatics for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05B",
+        "className": "ANTIPSORIATICS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05BA",
+        "className": "Psoralens for systemic use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05BB",
+        "className": "Retinoids for treatment of psoriasis",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D05BX",
+        "className": "Other antipsoriatics for systemic use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06",
+        "className": "ANTIBIOTICS AND CHEMOTHERAPEUTICS FOR DERMATOLOGICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06A",
+        "className": "ANTIBIOTICS FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06AA",
+        "className": "Tetracycline and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06AX",
+        "className": "Other antibiotics for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06B",
+        "className": "CHEMOTHERAPEUTICS FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06BA",
+        "className": "Sulfonamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06BB",
+        "className": "Antivirals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06BX",
+        "className": "Other chemotherapeutics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D06C",
+        "className": "ANTIBIOTICS AND CHEMOTHERAPEUTICS, COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07",
+        "className": "CORTICOSTEROIDS, DERMATOLOGICAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07A",
+        "className": "CORTICOSTEROIDS, PLAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07AA",
+        "className": "Corticosteroids, weak (group I)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07AB",
+        "className": "Corticosteroids, moderately potent (group II)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07AC",
+        "className": "Corticosteroids, potent (group III)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07AD",
+        "className": "Corticosteroids, very potent (group IV)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07B",
+        "className": "CORTICOSTEROIDS, COMBINATIONS WITH ANTISEPTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07BA",
+        "className": "Corticosteroids, weak, combinations with antiseptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07BB",
+        "className": "Corticosteroids, moderately potent, combinations with antiseptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07BC",
+        "className": "Corticosteroids, potent, combinations with antiseptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07BD",
+        "className": "Corticosteroids, very potent, combinations with antiseptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07C",
+        "className": "CORTICOSTEROIDS, COMBINATIONS WITH ANTIBIOTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07CA",
+        "className": "Corticosteroids, weak, combinations with antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07CB",
+        "className": "Corticosteroids, moderately potent, combinations with antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07CC",
+        "className": "Corticosteroids, potent, combinations with antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07CD",
+        "className": "Corticosteroids, very potent, combinations with antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07X",
+        "className": "CORTICOSTEROIDS, OTHER COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07XA",
+        "className": "Corticosteroids, weak, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07XB",
+        "className": "Corticosteroids, moderately potent, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07XC",
+        "className": "Corticosteroids, potent, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D07XD",
+        "className": "Corticosteroids, very potent, other combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08",
+        "className": "ANTISEPTICS AND DISINFECTANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08A",
+        "className": "ANTISEPTICS AND DISINFECTANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AA",
+        "className": "Acridine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AB",
+        "className": "Aluminium agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AC",
+        "className": "Biguanides and amidines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AD",
+        "className": "Boric acid products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AE",
+        "className": "Phenol and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AF",
+        "className": "Nitrofuran derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AG",
+        "className": "Iodine products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AH",
+        "className": "Quinoline derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AJ",
+        "className": "Quaternary ammonium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AK",
+        "className": "Mercurial products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AL",
+        "className": "Silver compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D08AX",
+        "className": "Other antiseptics and disinfectants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D09",
+        "className": "MEDICATED DRESSINGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D09A",
+        "className": "MEDICATED DRESSINGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D09AA",
+        "className": "Medicated dressings with antiinfectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D09AB",
+        "className": "Zinc bandages",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D09AX",
+        "className": "Soft paraffin dressings",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10",
+        "className": "ANTI-ACNE PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10A",
+        "className": "ANTI-ACNE PREPARATIONS FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10AA",
+        "className": "Corticosteroids, combinations for treatment of acne",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10AB",
+        "className": "Preparations containing sulfur",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10AD",
+        "className": "Retinoids for topical use in acne",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10AE",
+        "className": "Peroxides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10AF",
+        "className": "Antiinfectives for treatment of acne",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10AX",
+        "className": "Other anti-acne preparations for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10B",
+        "className": "ANTI-ACNE PREPARATIONS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10BA",
+        "className": "Retinoids for treatment of acne",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D10BX",
+        "className": "Other anti-acne preparations for systemic use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11",
+        "className": "OTHER DERMATOLOGICAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11A",
+        "className": "OTHER DERMATOLOGICAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11AA",
+        "className": "Antihidrotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11AC",
+        "className": "Medicated shampoos",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11AE",
+        "className": "Androgens for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11AF",
+        "className": "Wart and anti-corn preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11AH",
+        "className": "Agents for dermatitis, excluding corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "D11AX",
+        "className": "Other dermatologicals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G",
+        "className": "GENITO URINARY SYSTEM AND SEX HORMONES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01",
+        "className": "GYNECOLOGICAL ANTIINFECTIVES AND ANTISEPTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01A",
+        "className": "ANTIINFECTIVES AND ANTISEPTICS, EXCL. COMBINATIONS WITH CORTICOSTEROIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AA",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AB",
+        "className": "Arsenic compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AC",
+        "className": "Quinoline derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AD",
+        "className": "Organic acids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AE",
+        "className": "Sulfonamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AF",
+        "className": "Imidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AG",
+        "className": "Triazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01AX",
+        "className": "Other antiinfectives and antiseptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01B",
+        "className": "ANTIINFECTIVES/ANTISEPTICS IN COMBINATION WITH CORTICOSTEROIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01BA",
+        "className": "Antibiotics and corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01BC",
+        "className": "Quinoline derivatives and corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01BD",
+        "className": "Antiseptics and corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01BE",
+        "className": "Sulfonamides and corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G01BF",
+        "className": "Imidazole derivatives and corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02",
+        "className": "OTHER GYNECOLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02A",
+        "className": "UTEROTONICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02AB",
+        "className": "Ergot alkaloids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02AC",
+        "className": "Ergot alkaloids and oxytocin incl. analogues, in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02AD",
+        "className": "Prostaglandins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02AX",
+        "className": "Other uterotonics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02B",
+        "className": "CONTRACEPTIVES FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02BA",
+        "className": "Intrauterine contraceptives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02BB",
+        "className": "Intravaginal contraceptives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02C",
+        "className": "OTHER GYNECOLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02CA",
+        "className": "Sympathomimetics, labour repressants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02CB",
+        "className": "Prolactine inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02CC",
+        "className": "Antiinflammatory products for vaginal administration",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G02CX",
+        "className": "Other gynecologicals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03",
+        "className": "SEX HORMONES AND MODULATORS OF THE GENITAL SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03A",
+        "className": "HORMONAL CONTRACEPTIVES FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03AA",
+        "className": "Progestogens and estrogens, fixed combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03AB",
+        "className": "Progestogens and estrogens, sequential preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03AC",
+        "className": "Progestogens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03AD",
+        "className": "Emergency contraceptives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03B",
+        "className": "ANDROGENS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03BA",
+        "className": "3-oxoandrosten (4) derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03BB",
+        "className": "5-androstanon (3) derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03C",
+        "className": "ESTROGENS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03CA",
+        "className": "Natural and semisynthetic estrogens, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03CB",
+        "className": "Synthetic estrogens, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03CC",
+        "className": "Estrogens, combinations with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03CX",
+        "className": "Other estrogens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03D",
+        "className": "PROGESTOGENS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03DA",
+        "className": "Pregnen (4) derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03DB",
+        "className": "Pregnadien derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03DC",
+        "className": "Estren derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03E",
+        "className": "ANDROGENS AND FEMALE SEX HORMONES IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03EA",
+        "className": "Androgens and estrogens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03EB",
+        "className": "Androgen, progestogen and estrogen in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03EK",
+        "className": "Androgens and female sex hormones in combination with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03F",
+        "className": "PROGESTOGENS AND ESTROGENS IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03FA",
+        "className": "Progestogens and estrogens, fixed combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03FB",
+        "className": "Progestogens and estrogens, sequential preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03G",
+        "className": "GONADOTROPINS AND OTHER OVULATION STIMULANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03GA",
+        "className": "Gonadotropins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03GB",
+        "className": "Ovulation stimulants, synthetic",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03H",
+        "className": "ANTIANDROGENS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03HA",
+        "className": "Antiandrogens, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03HB",
+        "className": "Antiandrogens and estrogens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03X",
+        "className": "OTHER SEX HORMONES AND MODULATORS OF THE GENITAL SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03XA",
+        "className": "Antigonadotropins and similar agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03XB",
+        "className": "Progesterone receptor modulators",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03XC",
+        "className": "Selective estrogen receptor modulators",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G03XX",
+        "className": "Other sex hormones and modulators of the genital system",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04",
+        "className": "UROLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04B",
+        "className": "UROLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04BA",
+        "className": "Acidifiers",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04BC",
+        "className": "Urinary concrement solvents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04BD",
+        "className": "Drugs for urinary frequency and incontinence",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04BE",
+        "className": "Drugs used in erectile dysfunction",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04BX",
+        "className": "Other urologicals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04C",
+        "className": "DRUGS USED IN BENIGN PROSTATIC HYPERTROPHY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04CA",
+        "className": "Alpha-adrenoreceptor antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04CB",
+        "className": "Testosterone-5-alpha reductase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "G04CX",
+        "className": "Other drugs used in benign prostatic hypertrophy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H",
+        "className": "SYSTEMIC HORMONAL PREPARATIONS, EXCL. SEX HORMONES AND INSULINS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01",
+        "className": "PITUITARY AND HYPOTHALAMIC HORMONES AND ANALOGUES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01A",
+        "className": "ANTERIOR PITUITARY LOBE HORMONES AND ANALOGUES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01AA",
+        "className": "ACTH",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01AB",
+        "className": "Thyrotropin",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01AC",
+        "className": "Somatropin and somatropin agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01AX",
+        "className": "Other anterior pituitary lobe hormones and analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01B",
+        "className": "POSTERIOR PITUITARY LOBE HORMONES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01BA",
+        "className": "Vasopressin and analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01BB",
+        "className": "Oxytocin and analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01C",
+        "className": "HYPOTHALAMIC HORMONES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01CA",
+        "className": "Gonadotropin-releasing hormones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01CB",
+        "className": "Somatostatin and analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H01CC",
+        "className": "Anti-gonadotropin-releasing hormones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02",
+        "className": "CORTICOSTEROIDS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02A",
+        "className": "CORTICOSTEROIDS FOR SYSTEMIC USE, PLAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02AA",
+        "className": "Mineralocorticoids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02AB",
+        "className": "Glucocorticoids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02B",
+        "className": "CORTICOSTEROIDS FOR SYSTEMIC USE, COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02BX",
+        "className": "Corticosteroids for systemic use, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02C",
+        "className": "ANTIADRENAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H02CA",
+        "className": "Anticorticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03",
+        "className": "THYROID THERAPY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03A",
+        "className": "THYROID PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03AA",
+        "className": "Thyroid hormones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03B",
+        "className": "ANTITHYROID PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03BA",
+        "className": "Thiouracils",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03BB",
+        "className": "Sulfur-containing imidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03BC",
+        "className": "Perchlorates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03BX",
+        "className": "Other antithyroid preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03C",
+        "className": "IODINE THERAPY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H03CA",
+        "className": "Iodine therapy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H04",
+        "className": "PANCREATIC HORMONES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H04A",
+        "className": "GLYCOGENOLYTIC HORMONES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H04AA",
+        "className": "Glycogenolytic hormones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H05",
+        "className": "CALCIUM HOMEOSTASIS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H05A",
+        "className": "PARATHYROID HORMONES AND ANALOGUES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H05AA",
+        "className": "Parathyroid hormones and analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H05B",
+        "className": "ANTI-PARATHYROID AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H05BA",
+        "className": "Calcitonin preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "H05BX",
+        "className": "Other anti-parathyroid agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J",
+        "className": "ANTIINFECTIVES FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01",
+        "className": "ANTIBACTERIALS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01A",
+        "className": "TETRACYCLINES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01AA",
+        "className": "Tetracyclines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01B",
+        "className": "AMPHENICOLS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01BA",
+        "className": "Amphenicols",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01C",
+        "className": "BETA-LACTAM ANTIBACTERIALS, PENICILLINS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01CA",
+        "className": "Penicillins with extended spectrum",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01CE",
+        "className": "Beta-lactamase sensitive penicillins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01CF",
+        "className": "Beta-lactamase resistant penicillins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01CG",
+        "className": "Beta-lactamase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01CR",
+        "className": "Combinations of penicillins, incl. beta-lactamase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01D",
+        "className": "OTHER BETA-LACTAM ANTIBACTERIALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01DB",
+        "className": "First-generation cephalosporins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01DC",
+        "className": "Second-generation cephalosporins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01DD",
+        "className": "Third-generation cephalosporins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01DE",
+        "className": "Fourth-generation cephalosporins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01DF",
+        "className": "Monobactams",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01DH",
+        "className": "Carbapenems",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01DI",
+        "className": "Other cephalosporins and penems",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01E",
+        "className": "SULFONAMIDES AND TRIMETHOPRIM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01EA",
+        "className": "Trimethoprim and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01EB",
+        "className": "Short-acting sulfonamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01EC",
+        "className": "Intermediate-acting sulfonamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01ED",
+        "className": "Long-acting sulfonamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01EE",
+        "className": "Combinations of sulfonamides and trimethoprim, incl. derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01F",
+        "className": "MACROLIDES, LINCOSAMIDES AND STREPTOGRAMINS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01FA",
+        "className": "Macrolides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01FF",
+        "className": "Lincosamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01FG",
+        "className": "Streptogramins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01G",
+        "className": "AMINOGLYCOSIDE ANTIBACTERIALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01GA",
+        "className": "Streptomycins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01GB",
+        "className": "Other aminoglycosides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01M",
+        "className": "QUINOLONE ANTIBACTERIALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01MA",
+        "className": "Fluoroquinolones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01MB",
+        "className": "Other quinolones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01R",
+        "className": "COMBINATIONS OF ANTIBACTERIALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01RA",
+        "className": "Combinations of antibacterials",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01X",
+        "className": "OTHER ANTIBACTERIALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01XA",
+        "className": "Glycopeptide antibacterials",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01XB",
+        "className": "Polymyxins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01XC",
+        "className": "Steroid antibacterials",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01XD",
+        "className": "Imidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01XE",
+        "className": "Nitrofuran derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J01XX",
+        "className": "Other antibacterials",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J02",
+        "className": "ANTIMYCOTICS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J02A",
+        "className": "ANTIMYCOTICS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J02AA",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J02AB",
+        "className": "Imidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J02AC",
+        "className": "Triazole and tetrazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J02AX",
+        "className": "Other antimycotics for systemic use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04",
+        "className": "ANTIMYCOBACTERIALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04A",
+        "className": "DRUGS FOR TREATMENT OF TUBERCULOSIS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04AA",
+        "className": "Aminosalicylic acid and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04AB",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04AC",
+        "className": "Hydrazides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04AD",
+        "className": "Thiocarbamide derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04AK",
+        "className": "Other drugs for treatment of tuberculosis",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04AM",
+        "className": "Combinations of drugs for treatment of tuberculosis",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04B",
+        "className": "DRUGS FOR TREATMENT OF LEPRA",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J04BA",
+        "className": "Drugs for treatment of lepra",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05",
+        "className": "ANTIVIRALS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05A",
+        "className": "DIRECT ACTING ANTIVIRALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AA",
+        "className": "Thiosemicarbazones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AB",
+        "className": "Nucleosides and nucleotides excl. reverse transcriptase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AC",
+        "className": "Cyclic amines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AD",
+        "className": "Phosphonic acid derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AE",
+        "className": "Protease inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AF",
+        "className": "Nucleoside and nucleotide reverse transcriptase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AG",
+        "className": "Non-nucleoside reverse transcriptase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AH",
+        "className": "Neuraminidase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AJ",
+        "className": "Integrase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AP",
+        "className": "Antivirals for treatment of HCV infections",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AR",
+        "className": "Antivirals for treatment of HIV infections, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J05AX",
+        "className": "Other antivirals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06",
+        "className": "IMMUNE SERA AND IMMUNOGLOBULINS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06A",
+        "className": "IMMUNE SERA",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06AA",
+        "className": "Immune sera",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06B",
+        "className": "IMMUNOGLOBULINS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06BA",
+        "className": "Immunoglobulins, normal human",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06BB",
+        "className": "Specific immunoglobulins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06BC",
+        "className": "Antibacterial monoclonal antibodies",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J06BD",
+        "className": "Antiviral monoclonal antibodies",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07",
+        "className": "VACCINES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07A",
+        "className": "BACTERIAL VACCINES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AC",
+        "className": "Anthrax vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AD",
+        "className": "Brucellosis vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AE",
+        "className": "Cholera vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AF",
+        "className": "Diphtheria vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AG",
+        "className": "Haemophilus influenzae B vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AH",
+        "className": "Meningococcal vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AJ",
+        "className": "Pertussis vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AK",
+        "className": "Plague vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AL",
+        "className": "Pneumococcal vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AM",
+        "className": "Tetanus vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AN",
+        "className": "Tuberculosis vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AP",
+        "className": "Typhoid vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AR",
+        "className": "Typhus (exanthematicus) vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07AX",
+        "className": "Other bacterial vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07B",
+        "className": "VIRAL VACCINES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BA",
+        "className": "Encephalitis vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BB",
+        "className": "Influenza vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BC",
+        "className": "Hepatitis vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BD",
+        "className": "Measles vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BE",
+        "className": "Mumps vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BF",
+        "className": "Poliomyelitis vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BG",
+        "className": "Rabies vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BH",
+        "className": "Rota virus diarrhea vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BJ",
+        "className": "Rubella vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BK",
+        "className": "Varicella zoster vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BL",
+        "className": "Yellow fever vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BM",
+        "className": "Papillomavirus vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BN",
+        "className": "Covid-19 vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BP",
+        "className": "Chikungunya vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07BX",
+        "className": "Other viral vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07C",
+        "className": "BACTERIAL AND VIRAL VACCINES, COMBINED",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07CA",
+        "className": "Bacterial and viral vaccines, combined",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07X",
+        "className": "OTHER VACCINES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "J07XA",
+        "className": "Parasitic vaccines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L",
+        "className": "ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01",
+        "className": "ANTINEOPLASTIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01A",
+        "className": "ALKYLATING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01AA",
+        "className": "Nitrogen mustard analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01AB",
+        "className": "Alkyl sulfonates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01AC",
+        "className": "Ethylene imines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01AD",
+        "className": "Nitrosoureas",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01AG",
+        "className": "Epoxides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01AX",
+        "className": "Other alkylating agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01B",
+        "className": "ANTIMETABOLITES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01BA",
+        "className": "Folic acid analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01BB",
+        "className": "Purine analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01BC",
+        "className": "Pyrimidine analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01C",
+        "className": "PLANT ALKALOIDS AND OTHER NATURAL PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01CA",
+        "className": "Vinca alkaloids and analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01CB",
+        "className": "Podophyllotoxin derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01CC",
+        "className": "Colchicine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01CD",
+        "className": "Taxanes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01CE",
+        "className": "Topoisomerase 1 (TOP1) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01CX",
+        "className": "Other plant alkaloids and natural products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01D",
+        "className": "CYTOTOXIC ANTIBIOTICS AND RELATED SUBSTANCES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01DA",
+        "className": "Actinomycines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01DB",
+        "className": "Anthracyclines and related substances",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01DC",
+        "className": "Other cytotoxic antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01E",
+        "className": "PROTEIN KINASE INHIBITORS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EA",
+        "className": "BCR-ABL tyrosine kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EB",
+        "className": "Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EC",
+        "className": "B-Raf serine-threonine kinase (BRAF) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01ED",
+        "className": "Anaplastic lymphoma kinase (ALK) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EE",
+        "className": "Mitogen-activated protein kinase (MEK) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EF",
+        "className": "Cyclin-dependent kinase (CDK) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EG",
+        "className": "Mammalian target of rapamycin (mTOR) kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EH",
+        "className": "Human epidermal growth factor receptor 2 (HER2) tyrosine kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EJ",
+        "className": "Janus-associated kinase (JAK) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EK",
+        "className": "Vascular endothelial growth factor receptor (VEGFR) tyrosine kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EL",
+        "className": "Bruton's tyrosine kinase (BTK) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EM",
+        "className": "Phosphatidylinositol-3-kinase (Pi3K) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EN",
+        "className": "Fibroblast growth factor receptor (FGFR) tyrosine kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EP",
+        "className": "Cellular-mesenchymal-epithelial transition factor (c-MET) kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01EX",
+        "className": "Other protein kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01F",
+        "className": "MONOCLONAL ANTIBODIES AND ANTIBODY DRUG CONJUGATES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FA",
+        "className": "CD20 (Clusters of Differentiation 20) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FB",
+        "className": "CD22 (Clusters of Differentiation 22) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FC",
+        "className": "CD38 (Clusters of Differentiation 38) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FD",
+        "className": "HER2 (Human Epidermal Growth Factor Receptor 2) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FE",
+        "className": "EGFR (Epidermal Growth Factor Receptor) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FF",
+        "className": "PD-1/PD-L1 (Programmed cell death protein 1/death ligand 1) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FG",
+        "className": "VEGF/VEGFR (Vascular Endothelial Growth Factor / -Receptor) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FX",
+        "className": "Other monoclonal antibodies and antibody drug conjugates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01FY",
+        "className": "Combinations of monoclonal antibodies and antibody drug conjugates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01X",
+        "className": "OTHER ANTINEOPLASTIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XA",
+        "className": "Platinum compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XB",
+        "className": "Methylhydrazines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XD",
+        "className": "Sensitizers used in photodynamic/radiation therapy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XF",
+        "className": "Retinoids for cancer treatment",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XG",
+        "className": "Proteasome inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XH",
+        "className": "Histone deacetylase (HDAC) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XJ",
+        "className": "Hedgehog pathway inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XK",
+        "className": "Poly (ADP-ribose) polymerase (PARP) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XL",
+        "className": "Antineoplastic cell and gene therapy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XM",
+        "className": "Isocitrate dehydrogenase (IDH) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XU",
+        "className": "Other antineoplastic agents (cont.)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XX",
+        "className": "Other antineoplastic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L01XY",
+        "className": "Combinations of antineoplastic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02",
+        "className": "ENDOCRINE THERAPY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02A",
+        "className": "HORMONES AND RELATED AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02AA",
+        "className": "Estrogens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02AB",
+        "className": "Progestogens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02AE",
+        "className": "Gonadotropin releasing hormone analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02AX",
+        "className": "Other hormones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02B",
+        "className": "HORMONE ANTAGONISTS AND RELATED AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02BA",
+        "className": "Anti-estrogens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02BB",
+        "className": "Anti-androgens",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02BG",
+        "className": "Aromatase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L02BX",
+        "className": "Other hormone antagonists and related agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L03",
+        "className": "IMMUNOSTIMULANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L03A",
+        "className": "IMMUNOSTIMULANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L03AA",
+        "className": "Colony stimulating factors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L03AB",
+        "className": "Interferons",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L03AC",
+        "className": "Interleukins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L03AX",
+        "className": "Other immunostimulants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04",
+        "className": "IMMUNOSUPPRESSANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04A",
+        "className": "IMMUNOSUPPRESSANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AA",
+        "className": "Selective immunosuppressants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AB",
+        "className": "Tumor necrosis factor alpha (TNF-alpha) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AC",
+        "className": "Interleukin inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AD",
+        "className": "Calcineurin inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AE",
+        "className": "Sphingosine-1-phosphate (S1P) receptor modulators",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AF",
+        "className": "Janus-associated kinase (JAK) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AG",
+        "className": "Monoclonal antibodies",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AH",
+        "className": "Mammalian target of rapamycin (mTOR) kinase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AJ",
+        "className": "Complement inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AK",
+        "className": "Dihydroorotate dehydrogenase (DHODH) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AL",
+        "className": "Neonatal fragment crystallizable receptor (FcRn) inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "L04AX",
+        "className": "Other immunosuppressants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M",
+        "className": "MUSCULO-SKELETAL SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01",
+        "className": "ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01A",
+        "className": "ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS, NON-STEROIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01AA",
+        "className": "Butylpyrazolidines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01AB",
+        "className": "Acetic acid derivatives and related substances",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01AC",
+        "className": "Oxicams",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01AE",
+        "className": "Propionic acid derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01AG",
+        "className": "Fenamates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01AH",
+        "className": "Coxibs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01AX",
+        "className": "Other antiinflammatory and antirheumatic agents, non-steroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01B",
+        "className": "ANTIINFLAMMATORY/ANTIRHEUMATIC AGENTS IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01BA",
+        "className": "Antiinflammatory/antirheumatic agents in combination with corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01BX",
+        "className": "Other antiinflammatory/antirheumatic agents in combination with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01C",
+        "className": "SPECIFIC ANTIRHEUMATIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01CA",
+        "className": "Quinolines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01CB",
+        "className": "Gold preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01CC",
+        "className": "Penicillamine and similar agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M01CX",
+        "className": "Other specific antirheumatic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M02",
+        "className": "TOPICAL PRODUCTS FOR JOINT AND MUSCULAR PAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M02A",
+        "className": "TOPICAL PRODUCTS FOR JOINT AND MUSCULAR PAIN",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M02AA",
+        "className": "Antiinflammatory preparations, non-steroids for topical use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M02AB",
+        "className": "Capsaicin and similar agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M02AC",
+        "className": "Preparations with salicylic acid derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M02AX",
+        "className": "Other topical products for joint and muscular pain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03",
+        "className": "MUSCLE RELAXANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03A",
+        "className": "MUSCLE RELAXANTS, PERIPHERALLY ACTING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03AA",
+        "className": "Curare alkaloids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03AB",
+        "className": "Choline derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03AC",
+        "className": "Other quaternary ammonium compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03AX",
+        "className": "Other muscle relaxants, peripherally acting agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03B",
+        "className": "MUSCLE RELAXANTS, CENTRALLY ACTING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03BA",
+        "className": "Carbamic acid esters",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03BB",
+        "className": "Oxazol, thiazine, and triazine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03BC",
+        "className": "Ethers, chemically close to antihistamines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03BX",
+        "className": "Other centrally acting agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03C",
+        "className": "MUSCLE RELAXANTS, DIRECTLY ACTING AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M03CA",
+        "className": "Dantrolene and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M04",
+        "className": "ANTIGOUT PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M04A",
+        "className": "ANTIGOUT PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M04AA",
+        "className": "Preparations inhibiting uric acid production",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M04AB",
+        "className": "Preparations increasing uric acid excretion",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M04AC",
+        "className": "Preparations with no effect on uric acid metabolism",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M04AX",
+        "className": "Other antigout preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M05",
+        "className": "DRUGS FOR TREATMENT OF BONE DISEASES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M05B",
+        "className": "DRUGS AFFECTING BONE STRUCTURE AND MINERALIZATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M05BA",
+        "className": "Bisphosphonates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M05BB",
+        "className": "Bisphosphonates, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M05BC",
+        "className": "Bone morphogenetic proteins",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M05BX",
+        "className": "Other drugs affecting bone structure and mineralization",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M09",
+        "className": "OTHER DRUGS FOR DISORDERS OF THE MUSCULO-SKELETAL SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M09A",
+        "className": "OTHER DRUGS FOR DISORDERS OF THE MUSCULO-SKELETAL SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M09AA",
+        "className": "Quinine and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M09AB",
+        "className": "Enzymes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "M09AX",
+        "className": "Other drugs for disorders of the musculo-skeletal system",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N",
+        "className": "NERVOUS SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01",
+        "className": "ANESTHETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01A",
+        "className": "ANESTHETICS, GENERAL",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01AA",
+        "className": "Ethers",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01AB",
+        "className": "Halogenated hydrocarbons",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01AF",
+        "className": "Barbiturates, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01AG",
+        "className": "Barbiturates in combination with other drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01AH",
+        "className": "Opioid anesthetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01AX",
+        "className": "Other general anesthetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01B",
+        "className": "ANESTHETICS, LOCAL",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01BA",
+        "className": "Esters of aminobenzoic acid",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01BB",
+        "className": "Amides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01BC",
+        "className": "Esters of benzoic acid",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N01BX",
+        "className": "Other local anesthetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02",
+        "className": "ANALGESICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02A",
+        "className": "OPIOIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AA",
+        "className": "Natural opium alkaloids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AB",
+        "className": "Phenylpiperidine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AC",
+        "className": "Diphenylpropylamine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AD",
+        "className": "Benzomorphan derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AE",
+        "className": "Oripavine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AF",
+        "className": "Morphinan derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AG",
+        "className": "Opioids in combination with antispasmodics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AJ",
+        "className": "Opioids in combination with non-opioid analgesics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02AX",
+        "className": "Other opioids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02B",
+        "className": "OTHER ANALGESICS AND ANTIPYRETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02BA",
+        "className": "Salicylic acid and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02BB",
+        "className": "Pyrazolones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02BE",
+        "className": "Anilides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02BF",
+        "className": "Gabapentinoids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02BG",
+        "className": "Other analgesics and antipyretics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02C",
+        "className": "ANTIMIGRAINE PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02CA",
+        "className": "Ergot alkaloids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02CB",
+        "className": "Corticosteroid derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02CC",
+        "className": "Selective serotonin (5HT1) agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02CD",
+        "className": "Calcitonin gene-related peptide (CGRP) antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N02CX",
+        "className": "Other antimigraine preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03",
+        "className": "ANTIEPILEPTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03A",
+        "className": "ANTIEPILEPTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AA",
+        "className": "Barbiturates and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AB",
+        "className": "Hydantoin derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AC",
+        "className": "Oxazolidine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AD",
+        "className": "Succinimide derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AE",
+        "className": "Benzodiazepine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AF",
+        "className": "Carboxamide derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AG",
+        "className": "Fatty acid derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N03AX",
+        "className": "Other antiepileptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04",
+        "className": "ANTI-PARKINSON DRUGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04A",
+        "className": "ANTICHOLINERGIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04AA",
+        "className": "Tertiary amines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04AB",
+        "className": "Ethers chemically close to antihistamines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04AC",
+        "className": "Ethers of tropine or tropine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04B",
+        "className": "DOPAMINERGIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04BA",
+        "className": "Dopa and dopa derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04BB",
+        "className": "Adamantane derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04BC",
+        "className": "Dopamine agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04BD",
+        "className": "Monoamine oxidase B inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04BX",
+        "className": "Other dopaminergic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04C",
+        "className": "OTHER ANTIPARKINSON DRUGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N04CX",
+        "className": "Other antiparkinson drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05",
+        "className": "PSYCHOLEPTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05A",
+        "className": "ANTIPSYCHOTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AA",
+        "className": "Phenothiazines with aliphatic side-chain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AB",
+        "className": "Phenothiazines with piperazine structure",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AC",
+        "className": "Phenothiazines with piperidine structure",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AD",
+        "className": "Butyrophenone derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AE",
+        "className": "Indole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AF",
+        "className": "Thioxanthene derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AG",
+        "className": "Diphenylbutylpiperidine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AH",
+        "className": "Diazepines, oxazepines, thiazepines and oxepines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AL",
+        "className": "Benzamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AN",
+        "className": "Lithium",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05AX",
+        "className": "Other antipsychotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05B",
+        "className": "ANXIOLYTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05BA",
+        "className": "Benzodiazepine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05BB",
+        "className": "Diphenylmethane derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05BC",
+        "className": "Carbamates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05BD",
+        "className": "Dibenzo-bicyclo-octadiene derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05BE",
+        "className": "Azaspirodecanedione derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05BX",
+        "className": "Other anxiolytics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05C",
+        "className": "HYPNOTICS AND SEDATIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CA",
+        "className": "Barbiturates, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CB",
+        "className": "Barbiturates, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CC",
+        "className": "Aldehydes and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CD",
+        "className": "Benzodiazepine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CE",
+        "className": "Piperidinedione derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CF",
+        "className": "Benzodiazepine related drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CH",
+        "className": "Melatonin receptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CJ",
+        "className": "Orexin receptor antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CM",
+        "className": "Other hypnotics and sedatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N05CX",
+        "className": "Hypnotics and sedatives in combination, excl. barbiturates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06",
+        "className": "PSYCHOANALEPTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06A",
+        "className": "ANTIDEPRESSANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06AA",
+        "className": "Non-selective monoamine reuptake inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06AB",
+        "className": "Selective serotonin reuptake inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06AF",
+        "className": "Monoamine oxidase inhibitors, non-selective",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06AG",
+        "className": "Monoamine oxidase A inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06AX",
+        "className": "Other antidepressants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06B",
+        "className": "PSYCHOSTIMULANTS, AGENTS USED FOR ADHD AND NOOTROPICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06BA",
+        "className": "Centrally acting sympathomimetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06BC",
+        "className": "Xanthine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06BX",
+        "className": "Other psychostimulants and nootropics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06C",
+        "className": "PSYCHOLEPTICS AND PSYCHOANALEPTICS IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06CA",
+        "className": "Antidepressants in combination with psycholeptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06CB",
+        "className": "Psychostimulants in combination with psycholeptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06D",
+        "className": "ANTI-DEMENTIA DRUGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06DA",
+        "className": "Anticholinesterases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N06DX",
+        "className": "Other anti-dementia drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07",
+        "className": "OTHER NERVOUS SYSTEM DRUGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07A",
+        "className": "PARASYMPATHOMIMETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07AA",
+        "className": "Anticholinesterases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07AB",
+        "className": "Choline esters",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07AX",
+        "className": "Other parasympathomimetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07B",
+        "className": "DRUGS USED IN ADDICTIVE DISORDERS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07BA",
+        "className": "Drugs used in nicotine dependence",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07BB",
+        "className": "Drugs used in alcohol dependence",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07BC",
+        "className": "Drugs used in opioid dependence",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07C",
+        "className": "ANTIVERTIGO PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07CA",
+        "className": "Antivertigo preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07X",
+        "className": "OTHER NERVOUS SYSTEM DRUGS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07XA",
+        "className": "Gangliosides and ganglioside derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "N07XX",
+        "className": "Other nervous system drugs",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P",
+        "className": "ANTIPARASITIC PRODUCTS, INSECTICIDES AND REPELLENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01",
+        "className": "ANTIPROTOZOALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01A",
+        "className": "AGENTS AGAINST AMOEBIASIS AND OTHER PROTOZOAL DISEASES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01AA",
+        "className": "Hydroxyquinoline derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01AB",
+        "className": "Nitroimidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01AC",
+        "className": "Dichloroacetamide derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01AR",
+        "className": "Arsenic compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01AX",
+        "className": "Other agents against amoebiasis and other protozoal diseases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01B",
+        "className": "ANTIMALARIALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01BA",
+        "className": "Aminoquinolines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01BB",
+        "className": "Biguanides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01BC",
+        "className": "Methanolquinolines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01BD",
+        "className": "Diaminopyrimidines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01BE",
+        "className": "Artemisinin and derivatives, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01BF",
+        "className": "Artemisinin and derivatives, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01BX",
+        "className": "Other antimalarials",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01C",
+        "className": "AGENTS AGAINST LEISHMANIASIS AND TRYPANOSOMIASIS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01CA",
+        "className": "Nitroimidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01CB",
+        "className": "Antimony compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01CC",
+        "className": "Nitrofuran derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01CD",
+        "className": "Arsenic compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P01CX",
+        "className": "Other agents against leishmaniasis and trypanosomiasis",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02",
+        "className": "ANTHELMINTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02B",
+        "className": "ANTITREMATODALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02BA",
+        "className": "Quinoline derivatives and related substances",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02BB",
+        "className": "Organophosphorous compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02BX",
+        "className": "Other antitrematodal agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02C",
+        "className": "ANTINEMATODAL AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02CA",
+        "className": "Benzimidazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02CB",
+        "className": "Piperazine and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02CC",
+        "className": "Tetrahydropyrimidine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02CE",
+        "className": "Imidazothiazole derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02CF",
+        "className": "Avermectines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02CX",
+        "className": "Other antinematodals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02D",
+        "className": "ANTICESTODALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02DA",
+        "className": "Salicylic acid derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P02DX",
+        "className": "Other anticestodals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03",
+        "className": "ECTOPARASITICIDES, INCL. SCABICIDES, INSECTICIDES AND REPELLENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03A",
+        "className": "ECTOPARASITICIDES, INCL. SCABICIDES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03AA",
+        "className": "Sulfur containing products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03AB",
+        "className": "Chlorine containing products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03AC",
+        "className": "Pyrethrines, incl. synthetic compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03AX",
+        "className": "Other ectoparasiticides, incl. scabicides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03B",
+        "className": "INSECTICIDES AND REPELLENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03BA",
+        "className": "Pyrethrines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "P03BX",
+        "className": "Other insecticides and repellents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R",
+        "className": "RESPIRATORY SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01",
+        "className": "NASAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01A",
+        "className": "DECONGESTANTS AND OTHER NASAL PREPARATIONS FOR TOPICAL USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01AA",
+        "className": "Sympathomimetics, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01AB",
+        "className": "Sympathomimetics, combinations excl. corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01AC",
+        "className": "Antiallergic agents, excl. corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01AD",
+        "className": "Corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01AX",
+        "className": "Other nasal preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01B",
+        "className": "NASAL DECONGESTANTS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R01BA",
+        "className": "Sympathomimetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R02",
+        "className": "THROAT PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R02A",
+        "className": "THROAT PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R02AA",
+        "className": "Antiseptics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R02AB",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R02AD",
+        "className": "Anesthetics, local",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R02AX",
+        "className": "Other throat preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03",
+        "className": "DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03A",
+        "className": "ADRENERGICS, INHALANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03AA",
+        "className": "Alpha- and beta-adrenoreceptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03AB",
+        "className": "Non-selective beta-adrenoreceptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03AC",
+        "className": "Selective beta-2-adrenoreceptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03AH",
+        "className": "Combinations of adrenergics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03AK",
+        "className": "Adrenergics in combination with corticosteroids or other drugs, excl. anticholinergics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03AL",
+        "className": "Adrenergics in combination with anticholinergics incl. triple combinations with corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03B",
+        "className": "OTHER DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES, INHALANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03BA",
+        "className": "Glucocorticoids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03BB",
+        "className": "Anticholinergics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03BC",
+        "className": "Antiallergic agents, excl. corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03BX",
+        "className": "Other drugs for obstructive airway diseases, inhalants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03C",
+        "className": "ADRENERGICS FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03CA",
+        "className": "Alpha- and beta-adrenoreceptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03CB",
+        "className": "Non-selective beta-adrenoreceptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03CC",
+        "className": "Selective beta-2-adrenoreceptor agonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03CK",
+        "className": "Adrenergics and other drugs for obstructive airway diseases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03D",
+        "className": "OTHER SYSTEMIC DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03DA",
+        "className": "Xanthines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03DB",
+        "className": "Xanthines and adrenergics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03DC",
+        "className": "Leukotriene receptor antagonists",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R03DX",
+        "className": "Other systemic drugs for obstructive airway diseases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05",
+        "className": "COUGH AND COLD PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05C",
+        "className": "EXPECTORANTS, EXCL. COMBINATIONS WITH COUGH SUPPRESSANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05CA",
+        "className": "Expectorants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05CB",
+        "className": "Mucolytics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05D",
+        "className": "COUGH SUPPRESSANTS, EXCL. COMBINATIONS WITH EXPECTORANTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05DA",
+        "className": "Opium alkaloids and derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05DB",
+        "className": "Other cough suppressants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05F",
+        "className": "COUGH SUPPRESSANTS AND EXPECTORANTS, COMBINATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05FA",
+        "className": "Opium derivatives and expectorants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05FB",
+        "className": "Other cough suppressants and expectorants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R05X",
+        "className": "OTHER COLD PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06",
+        "className": "ANTIHISTAMINES FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06A",
+        "className": "ANTIHISTAMINES FOR SYSTEMIC USE",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06AA",
+        "className": "Aminoalkyl ethers",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06AB",
+        "className": "Substituted alkylamines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06AC",
+        "className": "Substituted ethylene diamines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06AD",
+        "className": "Phenothiazine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06AE",
+        "className": "Piperazine derivatives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06AK",
+        "className": "Combinations of antihistamines",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R06AX",
+        "className": "Other antihistamines for systemic use",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R07",
+        "className": "OTHER RESPIRATORY SYSTEM PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R07A",
+        "className": "OTHER RESPIRATORY SYSTEM PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R07AA",
+        "className": "Lung surfactants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R07AB",
+        "className": "Respiratory stimulants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "R07AX",
+        "className": "Other respiratory system products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S",
+        "className": "SENSORY ORGANS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01",
+        "className": "OPHTHALMOLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01A",
+        "className": "ANTIINFECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01AA",
+        "className": "Antibiotics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01AB",
+        "className": "Sulfonamides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01AD",
+        "className": "Antivirals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01AE",
+        "className": "Fluoroquinolones",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01AX",
+        "className": "Other antiinfectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01B",
+        "className": "ANTIINFLAMMATORY AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01BA",
+        "className": "Corticosteroids, plain",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01BB",
+        "className": "Corticosteroids and mydriatics in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01BC",
+        "className": "Antiinflammatory agents, non-steroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01C",
+        "className": "ANTIINFLAMMATORY AGENTS AND ANTIINFECTIVES IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01CA",
+        "className": "Corticosteroids and antiinfectives in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01CB",
+        "className": "Corticosteroids/antiinfectives/mydriatics in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01CC",
+        "className": "Antiinflammatory agents, non-steroids and antiinfectives in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01E",
+        "className": "ANTIGLAUCOMA PREPARATIONS AND MIOTICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01EA",
+        "className": "Sympathomimetics in glaucoma therapy",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01EB",
+        "className": "Parasympathomimetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01EC",
+        "className": "Carbonic anhydrase inhibitors",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01ED",
+        "className": "Beta blocking agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01EE",
+        "className": "Prostaglandin analogues",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01EX",
+        "className": "Other antiglaucoma preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01F",
+        "className": "MYDRIATICS AND CYCLOPLEGICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01FA",
+        "className": "Anticholinergics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01FB",
+        "className": "Sympathomimetics excl. antiglaucoma preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01G",
+        "className": "DECONGESTANTS AND ANTIALLERGICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01GA",
+        "className": "Sympathomimetics used as decongestants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01GX",
+        "className": "Other antiallergics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01H",
+        "className": "LOCAL ANESTHETICS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01HA",
+        "className": "Local anesthetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01J",
+        "className": "DIAGNOSTIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01JA",
+        "className": "Colouring agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01JX",
+        "className": "Other ophthalmological diagnostic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01K",
+        "className": "SURGICAL AIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01KA",
+        "className": "Viscoelastic substances",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01KX",
+        "className": "Other surgical aids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01L",
+        "className": "OCULAR VASCULAR DISORDER AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01LA",
+        "className": "Antineovascularisation agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01X",
+        "className": "OTHER OPHTHALMOLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S01XA",
+        "className": "Other ophthalmologicals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02",
+        "className": "OTOLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02A",
+        "className": "ANTIINFECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02AA",
+        "className": "Antiinfectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02B",
+        "className": "CORTICOSTEROIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02BA",
+        "className": "Corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02C",
+        "className": "CORTICOSTEROIDS AND ANTIINFECTIVES IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02CA",
+        "className": "Corticosteroids and antiinfectives in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02D",
+        "className": "OTHER OTOLOGICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02DA",
+        "className": "Analgesics and anesthetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S02DC",
+        "className": "Indifferent preparations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03",
+        "className": "OPHTHALMOLOGICAL AND OTOLOGICAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03A",
+        "className": "ANTIINFECTIVES",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03AA",
+        "className": "Antiinfectives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03B",
+        "className": "CORTICOSTEROIDS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03BA",
+        "className": "Corticosteroids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03C",
+        "className": "CORTICOSTEROIDS AND ANTIINFECTIVES IN COMBINATION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03CA",
+        "className": "Corticosteroids and antiinfectives in combination",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "S03D",
+        "className": "OTHER OPHTHALMOLOGICAL AND OTOLOGICAL PREPARATIONS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V",
+        "className": "VARIOUS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V01",
+        "className": "ALLERGENS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V01A",
+        "className": "ALLERGENS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V01AA",
+        "className": "Allergen extracts",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03",
+        "className": "ALL OTHER THERAPEUTIC PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03A",
+        "className": "ALL OTHER THERAPEUTIC PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AB",
+        "className": "Antidotes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AC",
+        "className": "Iron chelating agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AE",
+        "className": "Drugs for treatment of hyperkalemia and hyperphosphatemia",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AF",
+        "className": "Detoxifying agents for antineoplastic treatment",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AG",
+        "className": "Drugs for treatment of hypercalcemia",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AH",
+        "className": "Drugs for treatment of hypoglycemia",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AK",
+        "className": "Tissue adhesives",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AM",
+        "className": "Drugs for embolisation",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AN",
+        "className": "Medical gases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AX",
+        "className": "Other therapeutic products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V03AZ",
+        "className": "Nerve depressants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04",
+        "className": "DIAGNOSTIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04B",
+        "className": "URINE TESTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04C",
+        "className": "OTHER DIAGNOSTIC AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CA",
+        "className": "Tests for diabetes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CB",
+        "className": "Tests for fat absorption",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CC",
+        "className": "Tests for bile duct patency",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CD",
+        "className": "Tests for pituitary function",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CE",
+        "className": "Tests for liver functional capacity",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CF",
+        "className": "Tuberculosis diagnostics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CG",
+        "className": "Tests for gastric secretion",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CH",
+        "className": "Tests for renal function and ureteral injuries",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CJ",
+        "className": "Tests for thyreoidea function",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CK",
+        "className": "Tests for pancreatic function",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CL",
+        "className": "Tests for allergic diseases",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CM",
+        "className": "Tests for fertility disturbances",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V04CX",
+        "className": "Other diagnostic agents",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06",
+        "className": "GENERAL NUTRIENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06A",
+        "className": "DIET FORMULATIONS FOR TREATMENT OF OBESITY",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06AA",
+        "className": "Low-energy diets",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06B",
+        "className": "PROTEIN SUPPLEMENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06C",
+        "className": "INFANT FORMULAS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06CA",
+        "className": "Nutrients without phenylalanine",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06D",
+        "className": "OTHER NUTRIENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06DA",
+        "className": "Carbohydrates/proteins/minerals/vitamins, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06DB",
+        "className": "Fat/carbohydrates/proteins/minerals/vitamins, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06DC",
+        "className": "Carbohydrates",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06DD",
+        "className": "Amino acids, incl. combinations with polypeptides",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06DE",
+        "className": "Amino acids/carbohydrates/minerals/vitamins, combinations",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06DF",
+        "className": "Milk substitutes",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V06DX",
+        "className": "Other combinations of nutrients",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07",
+        "className": "ALL OTHER NON-THERAPEUTIC PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07A",
+        "className": "ALL OTHER NON-THERAPEUTIC PRODUCTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AA",
+        "className": "Plasters",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AB",
+        "className": "Solvents and diluting agents, incl. irrigating solutions",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AC",
+        "className": "Blood transfusion, auxiliary products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AD",
+        "className": "Blood tests, auxiliary products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AN",
+        "className": "Incontinence equipment",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AR",
+        "className": "Sensitivity tests, discs and tablets",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AS",
+        "className": "Stomi equipment",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AT",
+        "className": "Cosmetics",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AV",
+        "className": "Technical disinfectants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AX",
+        "className": "Washing agents etc.",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AY",
+        "className": "Other non-therapeutic auxiliary products",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V07AZ",
+        "className": "Chemicals and reagents for analysis",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08",
+        "className": "CONTRAST MEDIA",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08A",
+        "className": "X-RAY CONTRAST MEDIA, IODINATED",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08AA",
+        "className": "Watersoluble, nephrotropic, high osmolar X-ray contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08AB",
+        "className": "Watersoluble, nephrotropic, low osmolar X-ray contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08AC",
+        "className": "Watersoluble, hepatotropic X-ray contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08AD",
+        "className": "Non-watersoluble X-ray contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08B",
+        "className": "X-RAY CONTRAST MEDIA, NON-IODINATED",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08BA",
+        "className": "Barium sulfate containing X-ray contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08C",
+        "className": "MAGNETIC RESONANCE IMAGING CONTRAST MEDIA",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08CA",
+        "className": "Paramagnetic contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08CB",
+        "className": "Superparamagnetic contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08CX",
+        "className": "Other magnetic resonance imaging contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08D",
+        "className": "ULTRASOUND CONTRAST MEDIA",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V08DA",
+        "className": "Ultrasound contrast media",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09",
+        "className": "DIAGNOSTIC RADIOPHARMACEUTICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09A",
+        "className": "CENTRAL NERVOUS SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09AA",
+        "className": "Technetium (99mTc) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09AB",
+        "className": "Iodine (123I) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09AX",
+        "className": "Other central nervous system diagnostic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09B",
+        "className": "SKELETON",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09BA",
+        "className": "Technetium (99mTc) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09C",
+        "className": "RENAL SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09CA",
+        "className": "Technetium (99mTc) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09CX",
+        "className": "Other renal system diagnostic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09D",
+        "className": "HEPATIC AND RETICULO ENDOTHELIAL SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09DA",
+        "className": "Technetium (99mTc) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09DB",
+        "className": "Technetium (99mTc), particles and colloids",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09DX",
+        "className": "Other hepatic and reticulo endothelial system diagnostic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09E",
+        "className": "RESPIRATORY SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09EA",
+        "className": "Technetium (99mTc), inhalants",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09EB",
+        "className": "Technetium (99mTc), particles for injection",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09EX",
+        "className": "Other respiratory system diagnostic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09F",
+        "className": "THYROID",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09FX",
+        "className": "Various thyroid diagnostic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09G",
+        "className": "CARDIOVASCULAR SYSTEM",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09GA",
+        "className": "Technetium (99mTc) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09GB",
+        "className": "Iodine (125I) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09GX",
+        "className": "Other cardiovascular system diagnostic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09H",
+        "className": "INFLAMMATION AND INFECTION DETECTION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09HA",
+        "className": "Technetium (99mTc) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09HB",
+        "className": "Indium (111In) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09HX",
+        "className": "Other diagnostic radiopharmaceuticals for inflammation and infection detection",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09I",
+        "className": "TUMOUR DETECTION",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09IA",
+        "className": "Technetium (99mTc) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09IB",
+        "className": "Indium (111In) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09IX",
+        "className": "Other diagnostic radiopharmaceuticals for tumour detection",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09X",
+        "className": "OTHER DIAGNOSTIC RADIOPHARMACEUTICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09XA",
+        "className": "Iodine (131I) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V09XX",
+        "className": "Various diagnostic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10",
+        "className": "THERAPEUTIC RADIOPHARMACEUTICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10A",
+        "className": "ANTIINFLAMMATORY AGENTS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10AA",
+        "className": "Yttrium (90Y) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10AX",
+        "className": "Other antiinflammatory therapeutic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10B",
+        "className": "PAIN PALLIATION (BONE SEEKING AGENTS)",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10BX",
+        "className": "Various pain palliation radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10X",
+        "className": "OTHER THERAPEUTIC RADIOPHARMACEUTICALS",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10XA",
+        "className": "Iodine (131I) compounds",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V10XX",
+        "className": "Various therapeutic radiopharmaceuticals",
+        "classType": "ATC1-4"
+      },
+      {
+        "classId": "V20",
+        "className": "SURGICAL DRESSINGS",
+        "classType": "ATC1-4"
+      }
+    ]
+  }
+}

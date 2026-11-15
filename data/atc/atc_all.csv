@@ -1,0 +1,1320 @@
+﻿atc_code,atc_name,class_type,atc_level
+0,Anatomical Therapeutic Chemical,ATC1-4,1
+A,ALIMENTARY TRACT AND METABOLISM,ATC1-4,1
+A01,STOMATOLOGICAL PREPARATIONS,ATC1-4,2
+A01A,STOMATOLOGICAL PREPARATIONS,ATC1-4,3
+A01AA,Caries prophylactic agents,ATC1-4,4
+A01AB,Antiinfectives and antiseptics for local oral treatment,ATC1-4,4
+A01AC,Corticosteroids for local oral treatment,ATC1-4,4
+A01AD,Other agents for local oral treatment,ATC1-4,4
+A02,DRUGS FOR ACID RELATED DISORDERS,ATC1-4,2
+A02A,ANTACIDS,ATC1-4,3
+A02AA,Magnesium compounds,ATC1-4,4
+A02AB,Aluminium compounds,ATC1-4,4
+A02AC,Calcium compounds,ATC1-4,4
+A02AD,"Combinations and complexes of aluminium, calcium and magnesium compounds",ATC1-4,4
+A02AF,Antacids with antiflatulents,ATC1-4,4
+A02AG,Antacids with antispasmodics,ATC1-4,4
+A02AH,Antacids with sodium bicarbonate,ATC1-4,4
+A02AX,"Antacids, other combinations",ATC1-4,4
+A02B,DRUGS FOR PEPTIC ULCER AND GASTRO-OESOPHAGEAL REFLUX DISEASE (GORD),ATC1-4,3
+A02BA,H2-receptor antagonists,ATC1-4,4
+A02BB,Prostaglandins,ATC1-4,4
+A02BC,Proton pump inhibitors,ATC1-4,4
+A02BD,Combinations for eradication of Helicobacter pylori,ATC1-4,4
+A02BX,Other drugs for peptic ulcer and gastro-oesophageal reflux disease (GORD),ATC1-4,4
+A02X,OTHER DRUGS FOR ACID RELATED DISORDERS,ATC1-4,3
+A03,DRUGS FOR FUNCTIONAL GASTROINTESTINAL DISORDERS,ATC1-4,2
+A03A,DRUGS FOR FUNCTIONAL GASTROINTESTINAL DISORDERS,ATC1-4,3
+A03AA,"Synthetic anticholinergics, esters with tertiary amino group",ATC1-4,4
+A03AB,"Synthetic anticholinergics, quaternary ammonium compounds",ATC1-4,4
+A03AC,"Synthetic antispasmodics, amides with tertiary amines",ATC1-4,4
+A03AD,Papaverine and derivatives,ATC1-4,4
+A03AE,Serotonin receptor antagonists,ATC1-4,4
+A03AX,Other drugs for functional gastrointestinal disorders,ATC1-4,4
+A03B,"BELLADONNA AND DERIVATIVES, PLAIN",ATC1-4,3
+A03BA,"Belladonna alkaloids, tertiary amines",ATC1-4,4
+A03BB,"Belladonna alkaloids, semisynthetic, quaternary ammonium compounds",ATC1-4,4
+A03C,ANTISPASMODICS IN COMBINATION WITH PSYCHOLEPTICS,ATC1-4,3
+A03CA,Synthetic anticholinergic agents in combination with psycholeptics,ATC1-4,4
+A03CB,Belladonna and derivatives in combination with psycholeptics,ATC1-4,4
+A03CC,Other antispasmodics in combination with psycholeptics,ATC1-4,4
+A03D,ANTISPASMODICS IN COMBINATION WITH ANALGESICS,ATC1-4,3
+A03DA,Synthetic anticholinergic agents in combination with analgesics,ATC1-4,4
+A03DB,Belladonna and derivatives in combination with analgesics,ATC1-4,4
+A03DC,Other antispasmodics in combination with analgesics,ATC1-4,4
+A03E,ANTISPASMODICS AND ANTICHOLINERGICS IN COMBINATION WITH OTHER DRUGS,ATC1-4,3
+A03EA,"Antispasmodics, psycholeptics and analgesics in combination",ATC1-4,4
+A03ED,Antispasmodics in combination with other drugs,ATC1-4,4
+A03F,PROPULSIVES,ATC1-4,3
+A03FA,Propulsives,ATC1-4,4
+A04,ANTIEMETICS AND ANTINAUSEANTS,ATC1-4,2
+A04A,ANTIEMETICS AND ANTINAUSEANTS,ATC1-4,3
+A04AA,Serotonin (5HT3) antagonists,ATC1-4,4
+A04AD,Other antiemetics,ATC1-4,4
+A05,BILE AND LIVER THERAPY,ATC1-4,2
+A05A,BILE THERAPY,ATC1-4,3
+A05AA,Bile acids and derivatives,ATC1-4,4
+A05AB,Preparations for biliary tract therapy,ATC1-4,4
+A05AX,Other drugs for bile therapy,ATC1-4,4
+A05B,"LIVER THERAPY, LIPOTROPICS",ATC1-4,3
+A05BA,Liver therapy,ATC1-4,4
+A05C,DRUGS FOR BILE THERAPY AND LIPOTROPICS IN COMBINATION,ATC1-4,3
+A06,DRUGS FOR CONSTIPATION,ATC1-4,2
+A06A,DRUGS FOR CONSTIPATION,ATC1-4,3
+A06AA,"Softeners, emollients",ATC1-4,4
+A06AB,Contact laxatives,ATC1-4,4
+A06AC,Bulk-forming laxatives,ATC1-4,4
+A06AD,Osmotically acting laxatives,ATC1-4,4
+A06AG,Enemas,ATC1-4,4
+A06AH,Peripheral opioid receptor antagonists,ATC1-4,4
+A06AX,Other drugs for constipation,ATC1-4,4
+A07,"ANTIDIARRHEALS, INTESTINAL ANTIINFLAMMATORY/ANTIINFECTIVE AGENTS",ATC1-4,2
+A07A,INTESTINAL ANTIINFECTIVES,ATC1-4,3
+A07AA,Antibiotics,ATC1-4,4
+A07AB,Sulfonamides,ATC1-4,4
+A07AC,Imidazole derivatives,ATC1-4,4
+A07AX,Other intestinal antiinfectives,ATC1-4,4
+A07B,INTESTINAL ADSORBENTS,ATC1-4,3
+A07BA,Charcoal preparations,ATC1-4,4
+A07BB,Bismuth preparations,ATC1-4,4
+A07BC,Other intestinal adsorbents,ATC1-4,4
+A07C,ELECTROLYTES WITH CARBOHYDRATES,ATC1-4,3
+A07CA,Oral rehydration salt formulations,ATC1-4,4
+A07D,ANTIPROPULSIVES,ATC1-4,3
+A07DA,Antipropulsives,ATC1-4,4
+A07E,INTESTINAL ANTIINFLAMMATORY AGENTS,ATC1-4,3
+A07EA,Corticosteroids acting locally,ATC1-4,4
+A07EB,"Antiallergic agents, excl. corticosteroids",ATC1-4,4
+A07EC,Aminosalicylic acid and similar agents,ATC1-4,4
+A07F,ANTIDIARRHEAL MICROORGANISMS,ATC1-4,3
+A07FA,Antidiarrheal microorganisms,ATC1-4,4
+A07X,OTHER ANTIDIARRHEALS,ATC1-4,3
+A07XA,Other antidiarrheals,ATC1-4,4
+A08,"ANTIOBESITY PREPARATIONS, EXCL. DIET PRODUCTS",ATC1-4,2
+A08A,"ANTIOBESITY PREPARATIONS, EXCL. DIET PRODUCTS",ATC1-4,3
+A08AA,Centrally acting antiobesity products,ATC1-4,4
+A08AB,Peripherally acting antiobesity products,ATC1-4,4
+A08AX,Other antiobesity drugs,ATC1-4,4
+A09,"DIGESTIVES, INCL. ENZYMES",ATC1-4,2
+A09A,"DIGESTIVES, INCL. ENZYMES",ATC1-4,3
+A09AA,Enzyme preparations,ATC1-4,4
+A09AB,Acid preparations,ATC1-4,4
+A09AC,"Enzyme and acid preparations, combinations",ATC1-4,4
+A10,DRUGS USED IN DIABETES,ATC1-4,2
+A10A,INSULINS AND ANALOGUES,ATC1-4,3
+A10AB,"Insulins and analogues for injection, fast-acting",ATC1-4,4
+A10AC,"Insulins and analogues for injection, intermediate-acting",ATC1-4,4
+A10AD,"Insulins and analogues for injection, intermediate- or long-acting combined with fast-acting",ATC1-4,4
+A10AE,"Insulins and analogues for injection, long-acting",ATC1-4,4
+A10AF,Insulins and analogues for inhalation,ATC1-4,4
+A10B,"BLOOD GLUCOSE LOWERING DRUGS, EXCL. INSULINS",ATC1-4,3
+A10BA,Biguanides,ATC1-4,4
+A10BB,Sulfonylureas,ATC1-4,4
+A10BC,Sulfonamides (heterocyclic),ATC1-4,4
+A10BD,Combinations of oral blood glucose lowering drugs,ATC1-4,4
+A10BF,Alpha glucosidase inhibitors,ATC1-4,4
+A10BG,Thiazolidinediones,ATC1-4,4
+A10BH,Dipeptidyl peptidase 4 (DPP-4) inhibitors,ATC1-4,4
+A10BJ,Glucagon-like peptide-1 (GLP-1) analogues,ATC1-4,4
+A10BK,Sodium-glucose co-transporter 2 (SGLT2) inhibitors,ATC1-4,4
+A10BX,"Other blood glucose lowering drugs, excl. insulins",ATC1-4,4
+A10X,OTHER DRUGS USED IN DIABETES,ATC1-4,3
+A10XA,Aldose reductase inhibitors,ATC1-4,4
+A10XX,Other drugs used in diabetes,ATC1-4,4
+A11,VITAMINS,ATC1-4,2
+A11A,"MULTIVITAMINS, COMBINATIONS",ATC1-4,3
+A11AA,Multivitamins with minerals,ATC1-4,4
+A11AB,"Multivitamins, other combinations",ATC1-4,4
+A11B,"MULTIVITAMINS, PLAIN",ATC1-4,3
+A11BA,"Multivitamins, plain",ATC1-4,4
+A11C,"VITAMIN A AND D, INCL. COMBINATIONS OF THE TWO",ATC1-4,3
+A11CA,"Vitamin A, plain",ATC1-4,4
+A11CB,Vitamin A and D in combination,ATC1-4,4
+A11CC,Vitamin D and analogues,ATC1-4,4
+A11D,"VITAMIN B1, PLAIN AND IN COMBINATION WITH VITAMIN B6 AND B12",ATC1-4,3
+A11DA,"Vitamin B1, plain",ATC1-4,4
+A11DB,Vitamin B1 in combination with vitamin B6 and/or vitamin B12,ATC1-4,4
+A11E,"VITAMIN B-COMPLEX, INCL. COMBINATIONS",ATC1-4,3
+A11EA,"Vitamin B-complex, plain",ATC1-4,4
+A11EB,Vitamin B-complex with vitamin C,ATC1-4,4
+A11EC,Vitamin B-complex with minerals,ATC1-4,4
+A11ED,Vitamin B-complex with anabolic steroids,ATC1-4,4
+A11EX,"Vitamin B-complex, other combinations",ATC1-4,4
+A11G,"ASCORBIC ACID (VITAMIN C), INCL. COMBINATIONS",ATC1-4,3
+A11GA,"Ascorbic acid (vitamin C), plain",ATC1-4,4
+A11GB,"Ascorbic acid (vitamin C), combinations",ATC1-4,4
+A11H,OTHER PLAIN VITAMIN PREPARATIONS,ATC1-4,3
+A11HA,Other plain vitamin preparations,ATC1-4,4
+A11J,"OTHER VITAMIN PRODUCTS, COMBINATIONS",ATC1-4,3
+A11JA,Combinations of vitamins,ATC1-4,4
+A11JB,Vitamins with minerals,ATC1-4,4
+A11JC,"Vitamins, other combinations",ATC1-4,4
+A12,MINERAL SUPPLEMENTS,ATC1-4,2
+A12A,CALCIUM,ATC1-4,3
+A12AA,Calcium,ATC1-4,4
+A12AX,"Calcium, combinations with vitamin D and/or other drugs",ATC1-4,4
+A12B,POTASSIUM,ATC1-4,3
+A12BA,Potassium,ATC1-4,4
+A12C,OTHER MINERAL SUPPLEMENTS,ATC1-4,3
+A12CA,Sodium,ATC1-4,4
+A12CB,Zinc,ATC1-4,4
+A12CC,Magnesium,ATC1-4,4
+A12CD,Fluoride,ATC1-4,4
+A12CE,Selenium,ATC1-4,4
+A12CX,Other mineral products,ATC1-4,4
+A13,TONICS,ATC1-4,2
+A13A,TONICS,ATC1-4,3
+A14,ANABOLIC AGENTS FOR SYSTEMIC USE,ATC1-4,2
+A14A,ANABOLIC STEROIDS,ATC1-4,3
+A14AA,Androstan derivatives,ATC1-4,4
+A14AB,Estren derivatives,ATC1-4,4
+A14B,OTHER ANABOLIC AGENTS,ATC1-4,3
+A15,APPETITE STIMULANTS,ATC1-4,2
+A16,OTHER ALIMENTARY TRACT AND METABOLISM PRODUCTS,ATC1-4,2
+A16A,OTHER ALIMENTARY TRACT AND METABOLISM PRODUCTS,ATC1-4,3
+A16AA,Amino acids and derivatives,ATC1-4,4
+A16AB,Enzymes,ATC1-4,4
+A16AX,Various alimentary tract and metabolism products,ATC1-4,4
+B,BLOOD AND BLOOD FORMING ORGANS,ATC1-4,1
+B01,ANTITHROMBOTIC AGENTS,ATC1-4,2
+B01A,ANTITHROMBOTIC AGENTS,ATC1-4,3
+B01AA,Vitamin K antagonists,ATC1-4,4
+B01AB,Heparin group,ATC1-4,4
+B01AC,Platelet aggregation inhibitors excl. heparin,ATC1-4,4
+B01AD,Enzymes,ATC1-4,4
+B01AE,Direct thrombin inhibitors,ATC1-4,4
+B01AF,Direct factor Xa inhibitors,ATC1-4,4
+B01AX,Other antithrombotic agents,ATC1-4,4
+B02,ANTIHEMORRHAGICS,ATC1-4,2
+B02A,ANTIFIBRINOLYTICS,ATC1-4,3
+B02AA,Amino acids,ATC1-4,4
+B02AB,Proteinase inhibitors,ATC1-4,4
+B02B,VITAMIN K AND OTHER HEMOSTATICS,ATC1-4,3
+B02BA,Vitamin K,ATC1-4,4
+B02BB,Fibrinogen,ATC1-4,4
+B02BC,Local hemostatics,ATC1-4,4
+B02BD,Blood coagulation factors,ATC1-4,4
+B02BX,Other systemic hemostatics,ATC1-4,4
+B03,ANTIANEMIC PREPARATIONS,ATC1-4,2
+B03A,IRON PREPARATIONS,ATC1-4,3
+B03AA,"Iron bivalent, oral preparations",ATC1-4,4
+B03AB,"Iron trivalent, oral preparations",ATC1-4,4
+B03AC,"Iron, parenteral preparations",ATC1-4,4
+B03AD,Iron in combination with folic acid,ATC1-4,4
+B03AE,Iron in other combinations,ATC1-4,4
+B03B,VITAMIN B12 AND FOLIC ACID,ATC1-4,3
+B03BA,Vitamin B12 (cyanocobalamin and analogues),ATC1-4,4
+B03BB,Folic acid and derivatives,ATC1-4,4
+B03X,OTHER ANTIANEMIC PREPARATIONS,ATC1-4,3
+B03XA,Other antianemic preparations,ATC1-4,4
+B05,BLOOD SUBSTITUTES AND PERFUSION SOLUTIONS,ATC1-4,2
+B05A,BLOOD AND RELATED PRODUCTS,ATC1-4,3
+B05AA,Blood substitutes and plasma protein fractions,ATC1-4,4
+B05AX,Other blood products,ATC1-4,4
+B05B,I.V. SOLUTIONS,ATC1-4,3
+B05BA,Solutions for parenteral nutrition,ATC1-4,4
+B05BB,Solutions affecting the electrolyte balance,ATC1-4,4
+B05BC,Solutions producing osmotic diuresis,ATC1-4,4
+B05C,IRRIGATING SOLUTIONS,ATC1-4,3
+B05CA,Antiinfectives,ATC1-4,4
+B05CB,Salt solutions,ATC1-4,4
+B05CX,Other irrigating solutions,ATC1-4,4
+B05D,PERITONEAL DIALYTICS,ATC1-4,3
+B05DA,Isotonic solutions,ATC1-4,4
+B05DB,Hypertonic solutions,ATC1-4,4
+B05X,I.V. SOLUTION ADDITIVES,ATC1-4,3
+B05XA,Electrolyte solutions,ATC1-4,4
+B05XB,Amino acids,ATC1-4,4
+B05XC,Vitamins,ATC1-4,4
+B05XX,Other i.v. solution additives,ATC1-4,4
+B05Z,HEMODIALYTICS AND HEMOFILTRATES,ATC1-4,3
+B05ZA,"Hemodialytics, concentrates",ATC1-4,4
+B05ZB,Hemofiltrates,ATC1-4,4
+B06,OTHER HEMATOLOGICAL AGENTS,ATC1-4,2
+B06A,OTHER HEMATOLOGICAL AGENTS,ATC1-4,3
+B06AA,Enzymes,ATC1-4,4
+B06AB,Heme products,ATC1-4,4
+B06AC,Drugs used in hereditary angioedema,ATC1-4,4
+B06AX,Other hematological agents,ATC1-4,4
+C,CARDIOVASCULAR SYSTEM,ATC1-4,1
+C01,CARDIAC THERAPY,ATC1-4,2
+C01A,CARDIAC GLYCOSIDES,ATC1-4,3
+C01AA,Digitalis glycosides,ATC1-4,4
+C01AB,Scilla glycosides,ATC1-4,4
+C01AC,Strophanthus glycosides,ATC1-4,4
+C01AX,Other cardiac glycosides,ATC1-4,4
+C01B,"ANTIARRHYTHMICS, CLASS I AND III",ATC1-4,3
+C01BA,"Antiarrhythmics, class Ia",ATC1-4,4
+C01BB,"Antiarrhythmics, class Ib",ATC1-4,4
+C01BC,"Antiarrhythmics, class Ic",ATC1-4,4
+C01BD,"Antiarrhythmics, class III",ATC1-4,4
+C01BG,"Other antiarrhythmics, class I and III",ATC1-4,4
+C01C,CARDIAC STIMULANTS EXCL. CARDIAC GLYCOSIDES,ATC1-4,3
+C01CA,Adrenergic and dopaminergic agents,ATC1-4,4
+C01CE,Phosphodiesterase inhibitors,ATC1-4,4
+C01CX,Other cardiac stimulants,ATC1-4,4
+C01D,VASODILATORS USED IN CARDIAC DISEASES,ATC1-4,3
+C01DA,Organic nitrates,ATC1-4,4
+C01DB,Quinolone vasodilators,ATC1-4,4
+C01DX,Other vasodilators used in cardiac diseases,ATC1-4,4
+C01E,OTHER CARDIAC PREPARATIONS,ATC1-4,3
+C01EA,Prostaglandins,ATC1-4,4
+C01EB,Other cardiac preparations,ATC1-4,4
+C01EX,Other cardiac combination products,ATC1-4,4
+C02,ANTIHYPERTENSIVES,ATC1-4,2
+C02A,"ANTIADRENERGIC AGENTS, CENTRALLY ACTING",ATC1-4,3
+C02AA,Rauwolfia alkaloids,ATC1-4,4
+C02AB,Methyldopa,ATC1-4,4
+C02AC,Imidazoline receptor agonists,ATC1-4,4
+C02B,"ANTIADRENERGIC AGENTS, GANGLION-BLOCKING",ATC1-4,3
+C02BA,Sulfonium derivatives,ATC1-4,4
+C02BB,Secondary and tertiary amines,ATC1-4,4
+C02BC,Bisquaternary ammonium compounds,ATC1-4,4
+C02C,"ANTIADRENERGIC AGENTS, PERIPHERALLY ACTING",ATC1-4,3
+C02CA,Alpha-adrenoreceptor antagonists,ATC1-4,4
+C02CC,Guanidine derivatives,ATC1-4,4
+C02D,"ARTERIOLAR SMOOTH MUSCLE, AGENTS ACTING ON",ATC1-4,3
+C02DA,Thiazide derivatives,ATC1-4,4
+C02DB,Hydrazinophthalazine derivatives,ATC1-4,4
+C02DC,Pyrimidine derivatives,ATC1-4,4
+C02DD,Nitroferricyanide derivatives,ATC1-4,4
+C02DG,Guanidine derivatives,ATC1-4,4
+C02K,OTHER ANTIHYPERTENSIVES,ATC1-4,3
+C02KA,"Alkaloids, excl. rauwolfia",ATC1-4,4
+C02KB,Tyrosine hydroxylase inhibitors,ATC1-4,4
+C02KC,MAO inhibitors,ATC1-4,4
+C02KD,Serotonin antagonists,ATC1-4,4
+C02KN,Other antihypertensives,ATC1-4,4
+C02KX,Antihypertensives for pulmonary arterial hypertension,ATC1-4,4
+C02L,ANTIHYPERTENSIVES AND DIURETICS IN COMBINATION,ATC1-4,3
+C02LA,Rauwolfia alkaloids and diuretics in combination,ATC1-4,4
+C02LB,Methyldopa and diuretics in combination,ATC1-4,4
+C02LC,Imidazoline receptor agonists in combination with diuretics,ATC1-4,4
+C02LE,Alpha-adrenoreceptor antagonists and diuretics,ATC1-4,4
+C02LF,Guanidine derivatives and diuretics,ATC1-4,4
+C02LG,Hydrazinophthalazine derivatives and diuretics,ATC1-4,4
+C02LK,"Alkaloids, excl. rauwolfia, in combination with diuretics",ATC1-4,4
+C02LL,MAO inhibitors and diuretics,ATC1-4,4
+C02LN,Serotonin antagonists and diuretics,ATC1-4,4
+C02LX,Other antihypertensives and diuretics,ATC1-4,4
+C02N,COMBINATIONS OF ANTIHYPERTENSIVES IN ATC-GR. C02,ATC1-4,3
+C03,DIURETICS,ATC1-4,2
+C03A,"LOW-CEILING DIURETICS, THIAZIDES",ATC1-4,3
+C03AA,"Thiazides, plain",ATC1-4,4
+C03AB,Thiazides and potassium in combination,ATC1-4,4
+C03AH,"Thiazides, combinations with psycholeptics and/or analgesics",ATC1-4,4
+C03AX,"Thiazides, combinations with other drugs",ATC1-4,4
+C03B,"LOW-CEILING DIURETICS, EXCL. THIAZIDES",ATC1-4,3
+C03BA,"Sulfonamides, plain",ATC1-4,4
+C03BB,Sulfonamides and potassium in combination,ATC1-4,4
+C03BC,Mercurial diuretics,ATC1-4,4
+C03BD,Xanthine derivatives,ATC1-4,4
+C03BK,"Sulfonamides, combinations with other drugs",ATC1-4,4
+C03BX,Other low-ceiling diuretics,ATC1-4,4
+C03C,HIGH-CEILING DIURETICS,ATC1-4,3
+C03CA,"Sulfonamides, plain",ATC1-4,4
+C03CB,Sulfonamides and potassium in combination,ATC1-4,4
+C03CC,Aryloxyacetic acid derivatives,ATC1-4,4
+C03CD,Pyrazolone derivatives,ATC1-4,4
+C03CX,Other high-ceiling diuretics,ATC1-4,4
+C03D,ALDOSTERONE ANTAGONISTS AND OTHER POTASSIUM-SPARING AGENTS,ATC1-4,3
+C03DA,Aldosterone antagonists,ATC1-4,4
+C03DB,Other potassium-sparing agents,ATC1-4,4
+C03E,DIURETICS AND POTASSIUM-SPARING AGENTS IN COMBINATION,ATC1-4,3
+C03EA,Low-ceiling diuretics and potassium-sparing agents,ATC1-4,4
+C03EB,High-ceiling diuretics and potassium-sparing agents,ATC1-4,4
+C03X,OTHER DIURETICS,ATC1-4,3
+C03XA,Vasopressin antagonists,ATC1-4,4
+C04,PERIPHERAL VASODILATORS,ATC1-4,2
+C04A,PERIPHERAL VASODILATORS,ATC1-4,3
+C04AA,2-amino-1-phenylethanol derivatives,ATC1-4,4
+C04AB,Imidazoline derivatives,ATC1-4,4
+C04AC,Nicotinic acid and derivatives,ATC1-4,4
+C04AD,Purine derivatives,ATC1-4,4
+C04AE,Ergot alkaloids,ATC1-4,4
+C04AF,Enzymes,ATC1-4,4
+C04AX,Other peripheral vasodilators,ATC1-4,4
+C05,VASOPROTECTIVES,ATC1-4,2
+C05A,AGENTS FOR TREATMENT OF HEMORRHOIDS AND ANAL FISSURES FOR TOPICAL USE,ATC1-4,3
+C05AA,Corticosteroids,ATC1-4,4
+C05AB,Antibiotics,ATC1-4,4
+C05AD,Local anesthetics,ATC1-4,4
+C05AE,Muscle relaxants,ATC1-4,4
+C05AX,Other agents for treatment of hemorrhoids and anal fissures for topical use,ATC1-4,4
+C05B,ANTIVARICOSE THERAPY,ATC1-4,3
+C05BA,Heparins or heparinoids for topical use,ATC1-4,4
+C05BB,Sclerosing agents for local injection,ATC1-4,4
+C05BX,Other sclerosing agents,ATC1-4,4
+C05C,CAPILLARY STABILIZING AGENTS,ATC1-4,3
+C05CA,Bioflavonoids,ATC1-4,4
+C05CX,Other capillary stabilizing agents,ATC1-4,4
+C05X,OTHER VASOPROTECTIVES,ATC1-4,3
+C05XX,Other vasoprotectives,ATC1-4,4
+C07,BETA BLOCKING AGENTS,ATC1-4,2
+C07A,BETA BLOCKING AGENTS,ATC1-4,3
+C07AA,"Beta blocking agents, non-selective",ATC1-4,4
+C07AB,"Beta blocking agents, selective",ATC1-4,4
+C07AG,Alpha and beta blocking agents,ATC1-4,4
+C07B,BETA BLOCKING AGENTS AND THIAZIDES,ATC1-4,3
+C07BA,"Beta blocking agents, non-selective, and thiazides",ATC1-4,4
+C07BB,"Beta blocking agents, selective, and thiazides",ATC1-4,4
+C07BG,Alpha and beta blocking agents and thiazides,ATC1-4,4
+C07C,BETA BLOCKING AGENTS AND OTHER DIURETICS,ATC1-4,3
+C07CA,"Beta blocking agents, non-selective, and other diuretics",ATC1-4,4
+C07CB,"Beta blocking agents, selective, and other diuretics",ATC1-4,4
+C07CG,Alpha and beta blocking agents and other diuretics,ATC1-4,4
+C07D,"BETA BLOCKING AGENTS, THIAZIDES AND OTHER DIURETICS",ATC1-4,3
+C07DA,"Beta blocking agents, non-selective, thiazides and other diuretics",ATC1-4,4
+C07DB,"Beta blocking agents, selective, thiazides and other diuretics",ATC1-4,4
+C07E,BETA BLOCKING AGENTS AND VASODILATORS,ATC1-4,3
+C07EA,"Beta blocking agents, non-selective, and vasodilators",ATC1-4,4
+C07EB,"Beta blocking agents, selective, and vasodilators",ATC1-4,4
+C07F,"BETA BLOCKING AGENTS, OTHER COMBINATIONS",ATC1-4,3
+C07FB,Beta blocking agents and calcium channel blockers,ATC1-4,4
+C07FX,"Beta blocking agents, other combinations",ATC1-4,4
+C08,CALCIUM CHANNEL BLOCKERS,ATC1-4,2
+C08C,SELECTIVE CALCIUM CHANNEL BLOCKERS WITH MAINLY VASCULAR EFFECTS,ATC1-4,3
+C08CA,Dihydropyridine derivatives,ATC1-4,4
+C08CX,Other selective calcium channel blockers with mainly vascular effects,ATC1-4,4
+C08D,SELECTIVE CALCIUM CHANNEL BLOCKERS WITH DIRECT CARDIAC EFFECTS,ATC1-4,3
+C08DA,Phenylalkylamine derivatives,ATC1-4,4
+C08DB,Benzothiazepine derivatives,ATC1-4,4
+C08E,NON-SELECTIVE CALCIUM CHANNEL BLOCKERS,ATC1-4,3
+C08EA,Phenylalkylamine derivatives,ATC1-4,4
+C08EX,Other non-selective calcium channel blockers,ATC1-4,4
+C08G,CALCIUM CHANNEL BLOCKERS AND DIURETICS,ATC1-4,3
+C08GA,Calcium channel blockers and diuretics,ATC1-4,4
+C09,AGENTS ACTING ON THE RENIN-ANGIOTENSIN SYSTEM,ATC1-4,2
+C09A,"ACE INHIBITORS, PLAIN",ATC1-4,3
+C09AA,"ACE inhibitors, plain",ATC1-4,4
+C09B,"ACE INHIBITORS, COMBINATIONS",ATC1-4,3
+C09BA,ACE inhibitors and diuretics,ATC1-4,4
+C09BB,ACE inhibitors and calcium channel blockers,ATC1-4,4
+C09BX,"ACE inhibitors, other combinations",ATC1-4,4
+C09C,"ANGIOTENSIN II RECEPTOR BLOCKERS (ARBs), PLAIN",ATC1-4,3
+C09CA,"Angiotensin II receptor blockers (ARBs), plain",ATC1-4,4
+C09D,"ANGIOTENSIN II RECEPTOR BLOCKERS (ARBs), COMBINATIONS",ATC1-4,3
+C09DA,Angiotensin II receptor blockers (ARBs) and diuretics,ATC1-4,4
+C09DB,Angiotensin II receptor blockers (ARBs) and calcium channel blockers,ATC1-4,4
+C09DX,"Angiotensin II receptor blockers (ARBs), other combinations",ATC1-4,4
+C09X,OTHER AGENTS ACTING ON THE RENIN-ANGIOTENSIN SYSTEM,ATC1-4,3
+C09XA,Renin-inhibitors,ATC1-4,4
+C09XX,Other agents acting on the renin-angiotensin system,ATC1-4,4
+C10,LIPID MODIFYING AGENTS,ATC1-4,2
+C10A,"LIPID MODIFYING AGENTS, PLAIN",ATC1-4,3
+C10AA,HMG CoA reductase inhibitors,ATC1-4,4
+C10AB,Fibrates,ATC1-4,4
+C10AC,Bile acid sequestrants,ATC1-4,4
+C10AD,Nicotinic acid and derivatives,ATC1-4,4
+C10AX,Other lipid modifying agents,ATC1-4,4
+C10B,"LIPID MODIFYING AGENTS, COMBINATIONS",ATC1-4,3
+C10BA,Combinations of various lipid modifying agents,ATC1-4,4
+C10BX,Lipid modifying agents in combination with other drugs,ATC1-4,4
+D,DERMATOLOGICALS,ATC1-4,1
+D01,ANTIFUNGALS FOR DERMATOLOGICAL USE,ATC1-4,2
+D01A,ANTIFUNGALS FOR TOPICAL USE,ATC1-4,3
+D01AA,Antibiotics,ATC1-4,4
+D01AC,Imidazole and triazole derivatives,ATC1-4,4
+D01AE,Other antifungals for topical use,ATC1-4,4
+D01B,ANTIFUNGALS FOR SYSTEMIC USE,ATC1-4,3
+D01BA,Antifungals for systemic use,ATC1-4,4
+D02,EMOLLIENTS AND PROTECTIVES,ATC1-4,2
+D02A,EMOLLIENTS AND PROTECTIVES,ATC1-4,3
+D02AA,Silicone products,ATC1-4,4
+D02AB,Zinc products,ATC1-4,4
+D02AC,Soft paraffin and fat products,ATC1-4,4
+D02AD,Liquid plasters,ATC1-4,4
+D02AE,Carbamide products,ATC1-4,4
+D02AF,Salicylic acid preparations,ATC1-4,4
+D02AX,Other emollients and protectives,ATC1-4,4
+D02B,PROTECTIVES AGAINST UV-RADIATION,ATC1-4,3
+D02BA,Protectives against UV-radiation for topical use,ATC1-4,4
+D02BB,Protectives against UV-radiation for systemic use,ATC1-4,4
+D03,PREPARATIONS FOR TREATMENT OF WOUNDS AND ULCERS,ATC1-4,2
+D03A,CICATRIZANTS,ATC1-4,3
+D03AA,Cod-liver oil ointments,ATC1-4,4
+D03AX,Other cicatrizants,ATC1-4,4
+D03B,ENZYMES,ATC1-4,3
+D03BA,Proteolytic enzymes,ATC1-4,4
+D04,"ANTIPRURITICS, INCL. ANTIHISTAMINES, ANESTHETICS, ETC.",ATC1-4,2
+D04A,"ANTIPRURITICS, INCL. ANTIHISTAMINES, ANESTHETICS, ETC.",ATC1-4,3
+D04AA,Antihistamines for topical use,ATC1-4,4
+D04AB,Anesthetics for topical use,ATC1-4,4
+D04AX,Other antipruritics,ATC1-4,4
+D05,ANTIPSORIATICS,ATC1-4,2
+D05A,ANTIPSORIATICS FOR TOPICAL USE,ATC1-4,3
+D05AA,Tars,ATC1-4,4
+D05AC,Antracen derivatives,ATC1-4,4
+D05AD,Psoralens for topical use,ATC1-4,4
+D05AX,Other antipsoriatics for topical use,ATC1-4,4
+D05B,ANTIPSORIATICS FOR SYSTEMIC USE,ATC1-4,3
+D05BA,Psoralens for systemic use,ATC1-4,4
+D05BB,Retinoids for treatment of psoriasis,ATC1-4,4
+D05BX,Other antipsoriatics for systemic use,ATC1-4,4
+D06,ANTIBIOTICS AND CHEMOTHERAPEUTICS FOR DERMATOLOGICAL USE,ATC1-4,2
+D06A,ANTIBIOTICS FOR TOPICAL USE,ATC1-4,3
+D06AA,Tetracycline and derivatives,ATC1-4,4
+D06AX,Other antibiotics for topical use,ATC1-4,4
+D06B,CHEMOTHERAPEUTICS FOR TOPICAL USE,ATC1-4,3
+D06BA,Sulfonamides,ATC1-4,4
+D06BB,Antivirals,ATC1-4,4
+D06BX,Other chemotherapeutics,ATC1-4,4
+D06C,"ANTIBIOTICS AND CHEMOTHERAPEUTICS, COMBINATIONS",ATC1-4,3
+D07,"CORTICOSTEROIDS, DERMATOLOGICAL PREPARATIONS",ATC1-4,2
+D07A,"CORTICOSTEROIDS, PLAIN",ATC1-4,3
+D07AA,"Corticosteroids, weak (group I)",ATC1-4,4
+D07AB,"Corticosteroids, moderately potent (group II)",ATC1-4,4
+D07AC,"Corticosteroids, potent (group III)",ATC1-4,4
+D07AD,"Corticosteroids, very potent (group IV)",ATC1-4,4
+D07B,"CORTICOSTEROIDS, COMBINATIONS WITH ANTISEPTICS",ATC1-4,3
+D07BA,"Corticosteroids, weak, combinations with antiseptics",ATC1-4,4
+D07BB,"Corticosteroids, moderately potent, combinations with antiseptics",ATC1-4,4
+D07BC,"Corticosteroids, potent, combinations with antiseptics",ATC1-4,4
+D07BD,"Corticosteroids, very potent, combinations with antiseptics",ATC1-4,4
+D07C,"CORTICOSTEROIDS, COMBINATIONS WITH ANTIBIOTICS",ATC1-4,3
+D07CA,"Corticosteroids, weak, combinations with antibiotics",ATC1-4,4
+D07CB,"Corticosteroids, moderately potent, combinations with antibiotics",ATC1-4,4
+D07CC,"Corticosteroids, potent, combinations with antibiotics",ATC1-4,4
+D07CD,"Corticosteroids, very potent, combinations with antibiotics",ATC1-4,4
+D07X,"CORTICOSTEROIDS, OTHER COMBINATIONS",ATC1-4,3
+D07XA,"Corticosteroids, weak, other combinations",ATC1-4,4
+D07XB,"Corticosteroids, moderately potent, other combinations",ATC1-4,4
+D07XC,"Corticosteroids, potent, other combinations",ATC1-4,4
+D07XD,"Corticosteroids, very potent, other combinations",ATC1-4,4
+D08,ANTISEPTICS AND DISINFECTANTS,ATC1-4,2
+D08A,ANTISEPTICS AND DISINFECTANTS,ATC1-4,3
+D08AA,Acridine derivatives,ATC1-4,4
+D08AB,Aluminium agents,ATC1-4,4
+D08AC,Biguanides and amidines,ATC1-4,4
+D08AD,Boric acid products,ATC1-4,4
+D08AE,Phenol and derivatives,ATC1-4,4
+D08AF,Nitrofuran derivatives,ATC1-4,4
+D08AG,Iodine products,ATC1-4,4
+D08AH,Quinoline derivatives,ATC1-4,4
+D08AJ,Quaternary ammonium compounds,ATC1-4,4
+D08AK,Mercurial products,ATC1-4,4
+D08AL,Silver compounds,ATC1-4,4
+D08AX,Other antiseptics and disinfectants,ATC1-4,4
+D09,MEDICATED DRESSINGS,ATC1-4,2
+D09A,MEDICATED DRESSINGS,ATC1-4,3
+D09AA,Medicated dressings with antiinfectives,ATC1-4,4
+D09AB,Zinc bandages,ATC1-4,4
+D09AX,Soft paraffin dressings,ATC1-4,4
+D10,ANTI-ACNE PREPARATIONS,ATC1-4,2
+D10A,ANTI-ACNE PREPARATIONS FOR TOPICAL USE,ATC1-4,3
+D10AA,"Corticosteroids, combinations for treatment of acne",ATC1-4,4
+D10AB,Preparations containing sulfur,ATC1-4,4
+D10AD,Retinoids for topical use in acne,ATC1-4,4
+D10AE,Peroxides,ATC1-4,4
+D10AF,Antiinfectives for treatment of acne,ATC1-4,4
+D10AX,Other anti-acne preparations for topical use,ATC1-4,4
+D10B,ANTI-ACNE PREPARATIONS FOR SYSTEMIC USE,ATC1-4,3
+D10BA,Retinoids for treatment of acne,ATC1-4,4
+D10BX,Other anti-acne preparations for systemic use,ATC1-4,4
+D11,OTHER DERMATOLOGICAL PREPARATIONS,ATC1-4,2
+D11A,OTHER DERMATOLOGICAL PREPARATIONS,ATC1-4,3
+D11AA,Antihidrotics,ATC1-4,4
+D11AC,Medicated shampoos,ATC1-4,4
+D11AE,Androgens for topical use,ATC1-4,4
+D11AF,Wart and anti-corn preparations,ATC1-4,4
+D11AH,"Agents for dermatitis, excluding corticosteroids",ATC1-4,4
+D11AX,Other dermatologicals,ATC1-4,4
+G,GENITO URINARY SYSTEM AND SEX HORMONES,ATC1-4,1
+G01,GYNECOLOGICAL ANTIINFECTIVES AND ANTISEPTICS,ATC1-4,2
+G01A,"ANTIINFECTIVES AND ANTISEPTICS, EXCL. COMBINATIONS WITH CORTICOSTEROIDS",ATC1-4,3
+G01AA,Antibiotics,ATC1-4,4
+G01AB,Arsenic compounds,ATC1-4,4
+G01AC,Quinoline derivatives,ATC1-4,4
+G01AD,Organic acids,ATC1-4,4
+G01AE,Sulfonamides,ATC1-4,4
+G01AF,Imidazole derivatives,ATC1-4,4
+G01AG,Triazole derivatives,ATC1-4,4
+G01AX,Other antiinfectives and antiseptics,ATC1-4,4
+G01B,ANTIINFECTIVES/ANTISEPTICS IN COMBINATION WITH CORTICOSTEROIDS,ATC1-4,3
+G01BA,Antibiotics and corticosteroids,ATC1-4,4
+G01BC,Quinoline derivatives and corticosteroids,ATC1-4,4
+G01BD,Antiseptics and corticosteroids,ATC1-4,4
+G01BE,Sulfonamides and corticosteroids,ATC1-4,4
+G01BF,Imidazole derivatives and corticosteroids,ATC1-4,4
+G02,OTHER GYNECOLOGICALS,ATC1-4,2
+G02A,UTEROTONICS,ATC1-4,3
+G02AB,Ergot alkaloids,ATC1-4,4
+G02AC,"Ergot alkaloids and oxytocin incl. analogues, in combination",ATC1-4,4
+G02AD,Prostaglandins,ATC1-4,4
+G02AX,Other uterotonics,ATC1-4,4
+G02B,CONTRACEPTIVES FOR TOPICAL USE,ATC1-4,3
+G02BA,Intrauterine contraceptives,ATC1-4,4
+G02BB,Intravaginal contraceptives,ATC1-4,4
+G02C,OTHER GYNECOLOGICALS,ATC1-4,3
+G02CA,"Sympathomimetics, labour repressants",ATC1-4,4
+G02CB,Prolactine inhibitors,ATC1-4,4
+G02CC,Antiinflammatory products for vaginal administration,ATC1-4,4
+G02CX,Other gynecologicals,ATC1-4,4
+G03,SEX HORMONES AND MODULATORS OF THE GENITAL SYSTEM,ATC1-4,2
+G03A,HORMONAL CONTRACEPTIVES FOR SYSTEMIC USE,ATC1-4,3
+G03AA,"Progestogens and estrogens, fixed combinations",ATC1-4,4
+G03AB,"Progestogens and estrogens, sequential preparations",ATC1-4,4
+G03AC,Progestogens,ATC1-4,4
+G03AD,Emergency contraceptives,ATC1-4,4
+G03B,ANDROGENS,ATC1-4,3
+G03BA,3-oxoandrosten (4) derivatives,ATC1-4,4
+G03BB,5-androstanon (3) derivatives,ATC1-4,4
+G03C,ESTROGENS,ATC1-4,3
+G03CA,"Natural and semisynthetic estrogens, plain",ATC1-4,4
+G03CB,"Synthetic estrogens, plain",ATC1-4,4
+G03CC,"Estrogens, combinations with other drugs",ATC1-4,4
+G03CX,Other estrogens,ATC1-4,4
+G03D,PROGESTOGENS,ATC1-4,3
+G03DA,Pregnen (4) derivatives,ATC1-4,4
+G03DB,Pregnadien derivatives,ATC1-4,4
+G03DC,Estren derivatives,ATC1-4,4
+G03E,ANDROGENS AND FEMALE SEX HORMONES IN COMBINATION,ATC1-4,3
+G03EA,Androgens and estrogens,ATC1-4,4
+G03EB,"Androgen, progestogen and estrogen in combination",ATC1-4,4
+G03EK,Androgens and female sex hormones in combination with other drugs,ATC1-4,4
+G03F,PROGESTOGENS AND ESTROGENS IN COMBINATION,ATC1-4,3
+G03FA,"Progestogens and estrogens, fixed combinations",ATC1-4,4
+G03FB,"Progestogens and estrogens, sequential preparations",ATC1-4,4
+G03G,GONADOTROPINS AND OTHER OVULATION STIMULANTS,ATC1-4,3
+G03GA,Gonadotropins,ATC1-4,4
+G03GB,"Ovulation stimulants, synthetic",ATC1-4,4
+G03H,ANTIANDROGENS,ATC1-4,3
+G03HA,"Antiandrogens, plain",ATC1-4,4
+G03HB,Antiandrogens and estrogens,ATC1-4,4
+G03X,OTHER SEX HORMONES AND MODULATORS OF THE GENITAL SYSTEM,ATC1-4,3
+G03XA,Antigonadotropins and similar agents,ATC1-4,4
+G03XB,Progesterone receptor modulators,ATC1-4,4
+G03XC,Selective estrogen receptor modulators,ATC1-4,4
+G03XX,Other sex hormones and modulators of the genital system,ATC1-4,4
+G04,UROLOGICALS,ATC1-4,2
+G04B,UROLOGICALS,ATC1-4,3
+G04BA,Acidifiers,ATC1-4,4
+G04BC,Urinary concrement solvents,ATC1-4,4
+G04BD,Drugs for urinary frequency and incontinence,ATC1-4,4
+G04BE,Drugs used in erectile dysfunction,ATC1-4,4
+G04BX,Other urologicals,ATC1-4,4
+G04C,DRUGS USED IN BENIGN PROSTATIC HYPERTROPHY,ATC1-4,3
+G04CA,Alpha-adrenoreceptor antagonists,ATC1-4,4
+G04CB,Testosterone-5-alpha reductase inhibitors,ATC1-4,4
+G04CX,Other drugs used in benign prostatic hypertrophy,ATC1-4,4
+H,"SYSTEMIC HORMONAL PREPARATIONS, EXCL. SEX HORMONES AND INSULINS",ATC1-4,1
+H01,PITUITARY AND HYPOTHALAMIC HORMONES AND ANALOGUES,ATC1-4,2
+H01A,ANTERIOR PITUITARY LOBE HORMONES AND ANALOGUES,ATC1-4,3
+H01AA,ACTH,ATC1-4,4
+H01AB,Thyrotropin,ATC1-4,4
+H01AC,Somatropin and somatropin agonists,ATC1-4,4
+H01AX,Other anterior pituitary lobe hormones and analogues,ATC1-4,4
+H01B,POSTERIOR PITUITARY LOBE HORMONES,ATC1-4,3
+H01BA,Vasopressin and analogues,ATC1-4,4
+H01BB,Oxytocin and analogues,ATC1-4,4
+H01C,HYPOTHALAMIC HORMONES,ATC1-4,3
+H01CA,Gonadotropin-releasing hormones,ATC1-4,4
+H01CB,Somatostatin and analogues,ATC1-4,4
+H01CC,Anti-gonadotropin-releasing hormones,ATC1-4,4
+H02,CORTICOSTEROIDS FOR SYSTEMIC USE,ATC1-4,2
+H02A,"CORTICOSTEROIDS FOR SYSTEMIC USE, PLAIN",ATC1-4,3
+H02AA,Mineralocorticoids,ATC1-4,4
+H02AB,Glucocorticoids,ATC1-4,4
+H02B,"CORTICOSTEROIDS FOR SYSTEMIC USE, COMBINATIONS",ATC1-4,3
+H02BX,"Corticosteroids for systemic use, combinations",ATC1-4,4
+H02C,ANTIADRENAL PREPARATIONS,ATC1-4,3
+H02CA,Anticorticosteroids,ATC1-4,4
+H03,THYROID THERAPY,ATC1-4,2
+H03A,THYROID PREPARATIONS,ATC1-4,3
+H03AA,Thyroid hormones,ATC1-4,4
+H03B,ANTITHYROID PREPARATIONS,ATC1-4,3
+H03BA,Thiouracils,ATC1-4,4
+H03BB,Sulfur-containing imidazole derivatives,ATC1-4,4
+H03BC,Perchlorates,ATC1-4,4
+H03BX,Other antithyroid preparations,ATC1-4,4
+H03C,IODINE THERAPY,ATC1-4,3
+H03CA,Iodine therapy,ATC1-4,4
+H04,PANCREATIC HORMONES,ATC1-4,2
+H04A,GLYCOGENOLYTIC HORMONES,ATC1-4,3
+H04AA,Glycogenolytic hormones,ATC1-4,4
+H05,CALCIUM HOMEOSTASIS,ATC1-4,2
+H05A,PARATHYROID HORMONES AND ANALOGUES,ATC1-4,3
+H05AA,Parathyroid hormones and analogues,ATC1-4,4
+H05B,ANTI-PARATHYROID AGENTS,ATC1-4,3
+H05BA,Calcitonin preparations,ATC1-4,4
+H05BX,Other anti-parathyroid agents,ATC1-4,4
+J,ANTIINFECTIVES FOR SYSTEMIC USE,ATC1-4,1
+J01,ANTIBACTERIALS FOR SYSTEMIC USE,ATC1-4,2
+J01A,TETRACYCLINES,ATC1-4,3
+J01AA,Tetracyclines,ATC1-4,4
+J01B,AMPHENICOLS,ATC1-4,3
+J01BA,Amphenicols,ATC1-4,4
+J01C,"BETA-LACTAM ANTIBACTERIALS, PENICILLINS",ATC1-4,3
+J01CA,Penicillins with extended spectrum,ATC1-4,4
+J01CE,Beta-lactamase sensitive penicillins,ATC1-4,4
+J01CF,Beta-lactamase resistant penicillins,ATC1-4,4
+J01CG,Beta-lactamase inhibitors,ATC1-4,4
+J01CR,"Combinations of penicillins, incl. beta-lactamase inhibitors",ATC1-4,4
+J01D,OTHER BETA-LACTAM ANTIBACTERIALS,ATC1-4,3
+J01DB,First-generation cephalosporins,ATC1-4,4
+J01DC,Second-generation cephalosporins,ATC1-4,4
+J01DD,Third-generation cephalosporins,ATC1-4,4
+J01DE,Fourth-generation cephalosporins,ATC1-4,4
+J01DF,Monobactams,ATC1-4,4
+J01DH,Carbapenems,ATC1-4,4
+J01DI,Other cephalosporins and penems,ATC1-4,4
+J01E,SULFONAMIDES AND TRIMETHOPRIM,ATC1-4,3
+J01EA,Trimethoprim and derivatives,ATC1-4,4
+J01EB,Short-acting sulfonamides,ATC1-4,4
+J01EC,Intermediate-acting sulfonamides,ATC1-4,4
+J01ED,Long-acting sulfonamides,ATC1-4,4
+J01EE,"Combinations of sulfonamides and trimethoprim, incl. derivatives",ATC1-4,4
+J01F,"MACROLIDES, LINCOSAMIDES AND STREPTOGRAMINS",ATC1-4,3
+J01FA,Macrolides,ATC1-4,4
+J01FF,Lincosamides,ATC1-4,4
+J01FG,Streptogramins,ATC1-4,4
+J01G,AMINOGLYCOSIDE ANTIBACTERIALS,ATC1-4,3
+J01GA,Streptomycins,ATC1-4,4
+J01GB,Other aminoglycosides,ATC1-4,4
+J01M,QUINOLONE ANTIBACTERIALS,ATC1-4,3
+J01MA,Fluoroquinolones,ATC1-4,4
+J01MB,Other quinolones,ATC1-4,4
+J01R,COMBINATIONS OF ANTIBACTERIALS,ATC1-4,3
+J01RA,Combinations of antibacterials,ATC1-4,4
+J01X,OTHER ANTIBACTERIALS,ATC1-4,3
+J01XA,Glycopeptide antibacterials,ATC1-4,4
+J01XB,Polymyxins,ATC1-4,4
+J01XC,Steroid antibacterials,ATC1-4,4
+J01XD,Imidazole derivatives,ATC1-4,4
+J01XE,Nitrofuran derivatives,ATC1-4,4
+J01XX,Other antibacterials,ATC1-4,4
+J02,ANTIMYCOTICS FOR SYSTEMIC USE,ATC1-4,2
+J02A,ANTIMYCOTICS FOR SYSTEMIC USE,ATC1-4,3
+J02AA,Antibiotics,ATC1-4,4
+J02AB,Imidazole derivatives,ATC1-4,4
+J02AC,Triazole and tetrazole derivatives,ATC1-4,4
+J02AX,Other antimycotics for systemic use,ATC1-4,4
+J04,ANTIMYCOBACTERIALS,ATC1-4,2
+J04A,DRUGS FOR TREATMENT OF TUBERCULOSIS,ATC1-4,3
+J04AA,Aminosalicylic acid and derivatives,ATC1-4,4
+J04AB,Antibiotics,ATC1-4,4
+J04AC,Hydrazides,ATC1-4,4
+J04AD,Thiocarbamide derivatives,ATC1-4,4
+J04AK,Other drugs for treatment of tuberculosis,ATC1-4,4
+J04AM,Combinations of drugs for treatment of tuberculosis,ATC1-4,4
+J04B,DRUGS FOR TREATMENT OF LEPRA,ATC1-4,3
+J04BA,Drugs for treatment of lepra,ATC1-4,4
+J05,ANTIVIRALS FOR SYSTEMIC USE,ATC1-4,2
+J05A,DIRECT ACTING ANTIVIRALS,ATC1-4,3
+J05AA,Thiosemicarbazones,ATC1-4,4
+J05AB,Nucleosides and nucleotides excl. reverse transcriptase inhibitors,ATC1-4,4
+J05AC,Cyclic amines,ATC1-4,4
+J05AD,Phosphonic acid derivatives,ATC1-4,4
+J05AE,Protease inhibitors,ATC1-4,4
+J05AF,Nucleoside and nucleotide reverse transcriptase inhibitors,ATC1-4,4
+J05AG,Non-nucleoside reverse transcriptase inhibitors,ATC1-4,4
+J05AH,Neuraminidase inhibitors,ATC1-4,4
+J05AJ,Integrase inhibitors,ATC1-4,4
+J05AP,Antivirals for treatment of HCV infections,ATC1-4,4
+J05AR,"Antivirals for treatment of HIV infections, combinations",ATC1-4,4
+J05AX,Other antivirals,ATC1-4,4
+J06,IMMUNE SERA AND IMMUNOGLOBULINS,ATC1-4,2
+J06A,IMMUNE SERA,ATC1-4,3
+J06AA,Immune sera,ATC1-4,4
+J06B,IMMUNOGLOBULINS,ATC1-4,3
+J06BA,"Immunoglobulins, normal human",ATC1-4,4
+J06BB,Specific immunoglobulins,ATC1-4,4
+J06BC,Antibacterial monoclonal antibodies,ATC1-4,4
+J06BD,Antiviral monoclonal antibodies,ATC1-4,4
+J07,VACCINES,ATC1-4,2
+J07A,BACTERIAL VACCINES,ATC1-4,3
+J07AC,Anthrax vaccines,ATC1-4,4
+J07AD,Brucellosis vaccines,ATC1-4,4
+J07AE,Cholera vaccines,ATC1-4,4
+J07AF,Diphtheria vaccines,ATC1-4,4
+J07AG,Haemophilus influenzae B vaccines,ATC1-4,4
+J07AH,Meningococcal vaccines,ATC1-4,4
+J07AJ,Pertussis vaccines,ATC1-4,4
+J07AK,Plague vaccines,ATC1-4,4
+J07AL,Pneumococcal vaccines,ATC1-4,4
+J07AM,Tetanus vaccines,ATC1-4,4
+J07AN,Tuberculosis vaccines,ATC1-4,4
+J07AP,Typhoid vaccines,ATC1-4,4
+J07AR,Typhus (exanthematicus) vaccines,ATC1-4,4
+J07AX,Other bacterial vaccines,ATC1-4,4
+J07B,VIRAL VACCINES,ATC1-4,3
+J07BA,Encephalitis vaccines,ATC1-4,4
+J07BB,Influenza vaccines,ATC1-4,4
+J07BC,Hepatitis vaccines,ATC1-4,4
+J07BD,Measles vaccines,ATC1-4,4
+J07BE,Mumps vaccines,ATC1-4,4
+J07BF,Poliomyelitis vaccines,ATC1-4,4
+J07BG,Rabies vaccines,ATC1-4,4
+J07BH,Rota virus diarrhea vaccines,ATC1-4,4
+J07BJ,Rubella vaccines,ATC1-4,4
+J07BK,Varicella zoster vaccines,ATC1-4,4
+J07BL,Yellow fever vaccines,ATC1-4,4
+J07BM,Papillomavirus vaccines,ATC1-4,4
+J07BN,Covid-19 vaccines,ATC1-4,4
+J07BP,Chikungunya vaccines,ATC1-4,4
+J07BX,Other viral vaccines,ATC1-4,4
+J07C,"BACTERIAL AND VIRAL VACCINES, COMBINED",ATC1-4,3
+J07CA,"Bacterial and viral vaccines, combined",ATC1-4,4
+J07X,OTHER VACCINES,ATC1-4,3
+J07XA,Parasitic vaccines,ATC1-4,4
+L,ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS,ATC1-4,1
+L01,ANTINEOPLASTIC AGENTS,ATC1-4,2
+L01A,ALKYLATING AGENTS,ATC1-4,3
+L01AA,Nitrogen mustard analogues,ATC1-4,4
+L01AB,Alkyl sulfonates,ATC1-4,4
+L01AC,Ethylene imines,ATC1-4,4
+L01AD,Nitrosoureas,ATC1-4,4
+L01AG,Epoxides,ATC1-4,4
+L01AX,Other alkylating agents,ATC1-4,4
+L01B,ANTIMETABOLITES,ATC1-4,3
+L01BA,Folic acid analogues,ATC1-4,4
+L01BB,Purine analogues,ATC1-4,4
+L01BC,Pyrimidine analogues,ATC1-4,4
+L01C,PLANT ALKALOIDS AND OTHER NATURAL PRODUCTS,ATC1-4,3
+L01CA,Vinca alkaloids and analogues,ATC1-4,4
+L01CB,Podophyllotoxin derivatives,ATC1-4,4
+L01CC,Colchicine derivatives,ATC1-4,4
+L01CD,Taxanes,ATC1-4,4
+L01CE,Topoisomerase 1 (TOP1) inhibitors,ATC1-4,4
+L01CX,Other plant alkaloids and natural products,ATC1-4,4
+L01D,CYTOTOXIC ANTIBIOTICS AND RELATED SUBSTANCES,ATC1-4,3
+L01DA,Actinomycines,ATC1-4,4
+L01DB,Anthracyclines and related substances,ATC1-4,4
+L01DC,Other cytotoxic antibiotics,ATC1-4,4
+L01E,PROTEIN KINASE INHIBITORS,ATC1-4,3
+L01EA,BCR-ABL tyrosine kinase inhibitors,ATC1-4,4
+L01EB,Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors,ATC1-4,4
+L01EC,B-Raf serine-threonine kinase (BRAF) inhibitors,ATC1-4,4
+L01ED,Anaplastic lymphoma kinase (ALK) inhibitors,ATC1-4,4
+L01EE,Mitogen-activated protein kinase (MEK) inhibitors,ATC1-4,4
+L01EF,Cyclin-dependent kinase (CDK) inhibitors,ATC1-4,4
+L01EG,Mammalian target of rapamycin (mTOR) kinase inhibitors,ATC1-4,4
+L01EH,Human epidermal growth factor receptor 2 (HER2) tyrosine kinase inhibitors,ATC1-4,4
+L01EJ,Janus-associated kinase (JAK) inhibitors,ATC1-4,4
+L01EK,Vascular endothelial growth factor receptor (VEGFR) tyrosine kinase inhibitors,ATC1-4,4
+L01EL,Bruton's tyrosine kinase (BTK) inhibitors,ATC1-4,4
+L01EM,Phosphatidylinositol-3-kinase (Pi3K) inhibitors,ATC1-4,4
+L01EN,Fibroblast growth factor receptor (FGFR) tyrosine kinase inhibitors,ATC1-4,4
+L01EP,Cellular-mesenchymal-epithelial transition factor (c-MET) kinase inhibitors,ATC1-4,4
+L01EX,Other protein kinase inhibitors,ATC1-4,4
+L01F,MONOCLONAL ANTIBODIES AND ANTIBODY DRUG CONJUGATES,ATC1-4,3
+L01FA,CD20 (Clusters of Differentiation 20) inhibitors,ATC1-4,4
+L01FB,CD22 (Clusters of Differentiation 22) inhibitors,ATC1-4,4
+L01FC,CD38 (Clusters of Differentiation 38) inhibitors,ATC1-4,4
+L01FD,HER2 (Human Epidermal Growth Factor Receptor 2) inhibitors,ATC1-4,4
+L01FE,EGFR (Epidermal Growth Factor Receptor) inhibitors,ATC1-4,4
+L01FF,PD-1/PD-L1 (Programmed cell death protein 1/death ligand 1) inhibitors,ATC1-4,4
+L01FG,VEGF/VEGFR (Vascular Endothelial Growth Factor / -Receptor) inhibitors,ATC1-4,4
+L01FX,Other monoclonal antibodies and antibody drug conjugates,ATC1-4,4
+L01FY,Combinations of monoclonal antibodies and antibody drug conjugates,ATC1-4,4
+L01X,OTHER ANTINEOPLASTIC AGENTS,ATC1-4,3
+L01XA,Platinum compounds,ATC1-4,4
+L01XB,Methylhydrazines,ATC1-4,4
+L01XD,Sensitizers used in photodynamic/radiation therapy,ATC1-4,4
+L01XF,Retinoids for cancer treatment,ATC1-4,4
+L01XG,Proteasome inhibitors,ATC1-4,4
+L01XH,Histone deacetylase (HDAC) inhibitors,ATC1-4,4
+L01XJ,Hedgehog pathway inhibitors,ATC1-4,4
+L01XK,Poly (ADP-ribose) polymerase (PARP) inhibitors,ATC1-4,4
+L01XL,Antineoplastic cell and gene therapy,ATC1-4,4
+L01XM,Isocitrate dehydrogenase (IDH) inhibitors,ATC1-4,4
+L01XU,Other antineoplastic agents (cont.),ATC1-4,4
+L01XX,Other antineoplastic agents,ATC1-4,4
+L01XY,Combinations of antineoplastic agents,ATC1-4,4
+L02,ENDOCRINE THERAPY,ATC1-4,2
+L02A,HORMONES AND RELATED AGENTS,ATC1-4,3
+L02AA,Estrogens,ATC1-4,4
+L02AB,Progestogens,ATC1-4,4
+L02AE,Gonadotropin releasing hormone analogues,ATC1-4,4
+L02AX,Other hormones,ATC1-4,4
+L02B,HORMONE ANTAGONISTS AND RELATED AGENTS,ATC1-4,3
+L02BA,Anti-estrogens,ATC1-4,4
+L02BB,Anti-androgens,ATC1-4,4
+L02BG,Aromatase inhibitors,ATC1-4,4
+L02BX,Other hormone antagonists and related agents,ATC1-4,4
+L03,IMMUNOSTIMULANTS,ATC1-4,2
+L03A,IMMUNOSTIMULANTS,ATC1-4,3
+L03AA,Colony stimulating factors,ATC1-4,4
+L03AB,Interferons,ATC1-4,4
+L03AC,Interleukins,ATC1-4,4
+L03AX,Other immunostimulants,ATC1-4,4
+L04,IMMUNOSUPPRESSANTS,ATC1-4,2
+L04A,IMMUNOSUPPRESSANTS,ATC1-4,3
+L04AA,Selective immunosuppressants,ATC1-4,4
+L04AB,Tumor necrosis factor alpha (TNF-alpha) inhibitors,ATC1-4,4
+L04AC,Interleukin inhibitors,ATC1-4,4
+L04AD,Calcineurin inhibitors,ATC1-4,4
+L04AE,Sphingosine-1-phosphate (S1P) receptor modulators,ATC1-4,4
+L04AF,Janus-associated kinase (JAK) inhibitors,ATC1-4,4
+L04AG,Monoclonal antibodies,ATC1-4,4
+L04AH,Mammalian target of rapamycin (mTOR) kinase inhibitors,ATC1-4,4
+L04AJ,Complement inhibitors,ATC1-4,4
+L04AK,Dihydroorotate dehydrogenase (DHODH) inhibitors,ATC1-4,4
+L04AL,Neonatal fragment crystallizable receptor (FcRn) inhibitors,ATC1-4,4
+L04AX,Other immunosuppressants,ATC1-4,4
+M,MUSCULO-SKELETAL SYSTEM,ATC1-4,1
+M01,ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS,ATC1-4,2
+M01A,"ANTIINFLAMMATORY AND ANTIRHEUMATIC PRODUCTS, NON-STEROIDS",ATC1-4,3
+M01AA,Butylpyrazolidines,ATC1-4,4
+M01AB,Acetic acid derivatives and related substances,ATC1-4,4
+M01AC,Oxicams,ATC1-4,4
+M01AE,Propionic acid derivatives,ATC1-4,4
+M01AG,Fenamates,ATC1-4,4
+M01AH,Coxibs,ATC1-4,4
+M01AX,"Other antiinflammatory and antirheumatic agents, non-steroids",ATC1-4,4
+M01B,ANTIINFLAMMATORY/ANTIRHEUMATIC AGENTS IN COMBINATION,ATC1-4,3
+M01BA,Antiinflammatory/antirheumatic agents in combination with corticosteroids,ATC1-4,4
+M01BX,Other antiinflammatory/antirheumatic agents in combination with other drugs,ATC1-4,4
+M01C,SPECIFIC ANTIRHEUMATIC AGENTS,ATC1-4,3
+M01CA,Quinolines,ATC1-4,4
+M01CB,Gold preparations,ATC1-4,4
+M01CC,Penicillamine and similar agents,ATC1-4,4
+M01CX,Other specific antirheumatic agents,ATC1-4,4
+M02,TOPICAL PRODUCTS FOR JOINT AND MUSCULAR PAIN,ATC1-4,2
+M02A,TOPICAL PRODUCTS FOR JOINT AND MUSCULAR PAIN,ATC1-4,3
+M02AA,"Antiinflammatory preparations, non-steroids for topical use",ATC1-4,4
+M02AB,Capsaicin and similar agents,ATC1-4,4
+M02AC,Preparations with salicylic acid derivatives,ATC1-4,4
+M02AX,Other topical products for joint and muscular pain,ATC1-4,4
+M03,MUSCLE RELAXANTS,ATC1-4,2
+M03A,"MUSCLE RELAXANTS, PERIPHERALLY ACTING AGENTS",ATC1-4,3
+M03AA,Curare alkaloids,ATC1-4,4
+M03AB,Choline derivatives,ATC1-4,4
+M03AC,Other quaternary ammonium compounds,ATC1-4,4
+M03AX,"Other muscle relaxants, peripherally acting agents",ATC1-4,4
+M03B,"MUSCLE RELAXANTS, CENTRALLY ACTING AGENTS",ATC1-4,3
+M03BA,Carbamic acid esters,ATC1-4,4
+M03BB,"Oxazol, thiazine, and triazine derivatives",ATC1-4,4
+M03BC,"Ethers, chemically close to antihistamines",ATC1-4,4
+M03BX,Other centrally acting agents,ATC1-4,4
+M03C,"MUSCLE RELAXANTS, DIRECTLY ACTING AGENTS",ATC1-4,3
+M03CA,Dantrolene and derivatives,ATC1-4,4
+M04,ANTIGOUT PREPARATIONS,ATC1-4,2
+M04A,ANTIGOUT PREPARATIONS,ATC1-4,3
+M04AA,Preparations inhibiting uric acid production,ATC1-4,4
+M04AB,Preparations increasing uric acid excretion,ATC1-4,4
+M04AC,Preparations with no effect on uric acid metabolism,ATC1-4,4
+M04AX,Other antigout preparations,ATC1-4,4
+M05,DRUGS FOR TREATMENT OF BONE DISEASES,ATC1-4,2
+M05B,DRUGS AFFECTING BONE STRUCTURE AND MINERALIZATION,ATC1-4,3
+M05BA,Bisphosphonates,ATC1-4,4
+M05BB,"Bisphosphonates, combinations",ATC1-4,4
+M05BC,Bone morphogenetic proteins,ATC1-4,4
+M05BX,Other drugs affecting bone structure and mineralization,ATC1-4,4
+M09,OTHER DRUGS FOR DISORDERS OF THE MUSCULO-SKELETAL SYSTEM,ATC1-4,2
+M09A,OTHER DRUGS FOR DISORDERS OF THE MUSCULO-SKELETAL SYSTEM,ATC1-4,3
+M09AA,Quinine and derivatives,ATC1-4,4
+M09AB,Enzymes,ATC1-4,4
+M09AX,Other drugs for disorders of the musculo-skeletal system,ATC1-4,4
+N,NERVOUS SYSTEM,ATC1-4,1
+N01,ANESTHETICS,ATC1-4,2
+N01A,"ANESTHETICS, GENERAL",ATC1-4,3
+N01AA,Ethers,ATC1-4,4
+N01AB,Halogenated hydrocarbons,ATC1-4,4
+N01AF,"Barbiturates, plain",ATC1-4,4
+N01AG,Barbiturates in combination with other drugs,ATC1-4,4
+N01AH,Opioid anesthetics,ATC1-4,4
+N01AX,Other general anesthetics,ATC1-4,4
+N01B,"ANESTHETICS, LOCAL",ATC1-4,3
+N01BA,Esters of aminobenzoic acid,ATC1-4,4
+N01BB,Amides,ATC1-4,4
+N01BC,Esters of benzoic acid,ATC1-4,4
+N01BX,Other local anesthetics,ATC1-4,4
+N02,ANALGESICS,ATC1-4,2
+N02A,OPIOIDS,ATC1-4,3
+N02AA,Natural opium alkaloids,ATC1-4,4
+N02AB,Phenylpiperidine derivatives,ATC1-4,4
+N02AC,Diphenylpropylamine derivatives,ATC1-4,4
+N02AD,Benzomorphan derivatives,ATC1-4,4
+N02AE,Oripavine derivatives,ATC1-4,4
+N02AF,Morphinan derivatives,ATC1-4,4
+N02AG,Opioids in combination with antispasmodics,ATC1-4,4
+N02AJ,Opioids in combination with non-opioid analgesics,ATC1-4,4
+N02AX,Other opioids,ATC1-4,4
+N02B,OTHER ANALGESICS AND ANTIPYRETICS,ATC1-4,3
+N02BA,Salicylic acid and derivatives,ATC1-4,4
+N02BB,Pyrazolones,ATC1-4,4
+N02BE,Anilides,ATC1-4,4
+N02BF,Gabapentinoids,ATC1-4,4
+N02BG,Other analgesics and antipyretics,ATC1-4,4
+N02C,ANTIMIGRAINE PREPARATIONS,ATC1-4,3
+N02CA,Ergot alkaloids,ATC1-4,4
+N02CB,Corticosteroid derivatives,ATC1-4,4
+N02CC,Selective serotonin (5HT1) agonists,ATC1-4,4
+N02CD,Calcitonin gene-related peptide (CGRP) antagonists,ATC1-4,4
+N02CX,Other antimigraine preparations,ATC1-4,4
+N03,ANTIEPILEPTICS,ATC1-4,2
+N03A,ANTIEPILEPTICS,ATC1-4,3
+N03AA,Barbiturates and derivatives,ATC1-4,4
+N03AB,Hydantoin derivatives,ATC1-4,4
+N03AC,Oxazolidine derivatives,ATC1-4,4
+N03AD,Succinimide derivatives,ATC1-4,4
+N03AE,Benzodiazepine derivatives,ATC1-4,4
+N03AF,Carboxamide derivatives,ATC1-4,4
+N03AG,Fatty acid derivatives,ATC1-4,4
+N03AX,Other antiepileptics,ATC1-4,4
+N04,ANTI-PARKINSON DRUGS,ATC1-4,2
+N04A,ANTICHOLINERGIC AGENTS,ATC1-4,3
+N04AA,Tertiary amines,ATC1-4,4
+N04AB,Ethers chemically close to antihistamines,ATC1-4,4
+N04AC,Ethers of tropine or tropine derivatives,ATC1-4,4
+N04B,DOPAMINERGIC AGENTS,ATC1-4,3
+N04BA,Dopa and dopa derivatives,ATC1-4,4
+N04BB,Adamantane derivatives,ATC1-4,4
+N04BC,Dopamine agonists,ATC1-4,4
+N04BD,Monoamine oxidase B inhibitors,ATC1-4,4
+N04BX,Other dopaminergic agents,ATC1-4,4
+N04C,OTHER ANTIPARKINSON DRUGS,ATC1-4,3
+N04CX,Other antiparkinson drugs,ATC1-4,4
+N05,PSYCHOLEPTICS,ATC1-4,2
+N05A,ANTIPSYCHOTICS,ATC1-4,3
+N05AA,Phenothiazines with aliphatic side-chain,ATC1-4,4
+N05AB,Phenothiazines with piperazine structure,ATC1-4,4
+N05AC,Phenothiazines with piperidine structure,ATC1-4,4
+N05AD,Butyrophenone derivatives,ATC1-4,4
+N05AE,Indole derivatives,ATC1-4,4
+N05AF,Thioxanthene derivatives,ATC1-4,4
+N05AG,Diphenylbutylpiperidine derivatives,ATC1-4,4
+N05AH,"Diazepines, oxazepines, thiazepines and oxepines",ATC1-4,4
+N05AL,Benzamides,ATC1-4,4
+N05AN,Lithium,ATC1-4,4
+N05AX,Other antipsychotics,ATC1-4,4
+N05B,ANXIOLYTICS,ATC1-4,3
+N05BA,Benzodiazepine derivatives,ATC1-4,4
+N05BB,Diphenylmethane derivatives,ATC1-4,4
+N05BC,Carbamates,ATC1-4,4
+N05BD,Dibenzo-bicyclo-octadiene derivatives,ATC1-4,4
+N05BE,Azaspirodecanedione derivatives,ATC1-4,4
+N05BX,Other anxiolytics,ATC1-4,4
+N05C,HYPNOTICS AND SEDATIVES,ATC1-4,3
+N05CA,"Barbiturates, plain",ATC1-4,4
+N05CB,"Barbiturates, combinations",ATC1-4,4
+N05CC,Aldehydes and derivatives,ATC1-4,4
+N05CD,Benzodiazepine derivatives,ATC1-4,4
+N05CE,Piperidinedione derivatives,ATC1-4,4
+N05CF,Benzodiazepine related drugs,ATC1-4,4
+N05CH,Melatonin receptor agonists,ATC1-4,4
+N05CJ,Orexin receptor antagonists,ATC1-4,4
+N05CM,Other hypnotics and sedatives,ATC1-4,4
+N05CX,"Hypnotics and sedatives in combination, excl. barbiturates",ATC1-4,4
+N06,PSYCHOANALEPTICS,ATC1-4,2
+N06A,ANTIDEPRESSANTS,ATC1-4,3
+N06AA,Non-selective monoamine reuptake inhibitors,ATC1-4,4
+N06AB,Selective serotonin reuptake inhibitors,ATC1-4,4
+N06AF,"Monoamine oxidase inhibitors, non-selective",ATC1-4,4
+N06AG,Monoamine oxidase A inhibitors,ATC1-4,4
+N06AX,Other antidepressants,ATC1-4,4
+N06B,"PSYCHOSTIMULANTS, AGENTS USED FOR ADHD AND NOOTROPICS",ATC1-4,3
+N06BA,Centrally acting sympathomimetics,ATC1-4,4
+N06BC,Xanthine derivatives,ATC1-4,4
+N06BX,Other psychostimulants and nootropics,ATC1-4,4
+N06C,PSYCHOLEPTICS AND PSYCHOANALEPTICS IN COMBINATION,ATC1-4,3
+N06CA,Antidepressants in combination with psycholeptics,ATC1-4,4
+N06CB,Psychostimulants in combination with psycholeptics,ATC1-4,4
+N06D,ANTI-DEMENTIA DRUGS,ATC1-4,3
+N06DA,Anticholinesterases,ATC1-4,4
+N06DX,Other anti-dementia drugs,ATC1-4,4
+N07,OTHER NERVOUS SYSTEM DRUGS,ATC1-4,2
+N07A,PARASYMPATHOMIMETICS,ATC1-4,3
+N07AA,Anticholinesterases,ATC1-4,4
+N07AB,Choline esters,ATC1-4,4
+N07AX,Other parasympathomimetics,ATC1-4,4
+N07B,DRUGS USED IN ADDICTIVE DISORDERS,ATC1-4,3
+N07BA,Drugs used in nicotine dependence,ATC1-4,4
+N07BB,Drugs used in alcohol dependence,ATC1-4,4
+N07BC,Drugs used in opioid dependence,ATC1-4,4
+N07C,ANTIVERTIGO PREPARATIONS,ATC1-4,3
+N07CA,Antivertigo preparations,ATC1-4,4
+N07X,OTHER NERVOUS SYSTEM DRUGS,ATC1-4,3
+N07XA,Gangliosides and ganglioside derivatives,ATC1-4,4
+N07XX,Other nervous system drugs,ATC1-4,4
+P,"ANTIPARASITIC PRODUCTS, INSECTICIDES AND REPELLENTS",ATC1-4,1
+P01,ANTIPROTOZOALS,ATC1-4,2
+P01A,AGENTS AGAINST AMOEBIASIS AND OTHER PROTOZOAL DISEASES,ATC1-4,3
+P01AA,Hydroxyquinoline derivatives,ATC1-4,4
+P01AB,Nitroimidazole derivatives,ATC1-4,4
+P01AC,Dichloroacetamide derivatives,ATC1-4,4
+P01AR,Arsenic compounds,ATC1-4,4
+P01AX,Other agents against amoebiasis and other protozoal diseases,ATC1-4,4
+P01B,ANTIMALARIALS,ATC1-4,3
+P01BA,Aminoquinolines,ATC1-4,4
+P01BB,Biguanides,ATC1-4,4
+P01BC,Methanolquinolines,ATC1-4,4
+P01BD,Diaminopyrimidines,ATC1-4,4
+P01BE,"Artemisinin and derivatives, plain",ATC1-4,4
+P01BF,"Artemisinin and derivatives, combinations",ATC1-4,4
+P01BX,Other antimalarials,ATC1-4,4
+P01C,AGENTS AGAINST LEISHMANIASIS AND TRYPANOSOMIASIS,ATC1-4,3
+P01CA,Nitroimidazole derivatives,ATC1-4,4
+P01CB,Antimony compounds,ATC1-4,4
+P01CC,Nitrofuran derivatives,ATC1-4,4
+P01CD,Arsenic compounds,ATC1-4,4
+P01CX,Other agents against leishmaniasis and trypanosomiasis,ATC1-4,4
+P02,ANTHELMINTICS,ATC1-4,2
+P02B,ANTITREMATODALS,ATC1-4,3
+P02BA,Quinoline derivatives and related substances,ATC1-4,4
+P02BB,Organophosphorous compounds,ATC1-4,4
+P02BX,Other antitrematodal agents,ATC1-4,4
+P02C,ANTINEMATODAL AGENTS,ATC1-4,3
+P02CA,Benzimidazole derivatives,ATC1-4,4
+P02CB,Piperazine and derivatives,ATC1-4,4
+P02CC,Tetrahydropyrimidine derivatives,ATC1-4,4
+P02CE,Imidazothiazole derivatives,ATC1-4,4
+P02CF,Avermectines,ATC1-4,4
+P02CX,Other antinematodals,ATC1-4,4
+P02D,ANTICESTODALS,ATC1-4,3
+P02DA,Salicylic acid derivatives,ATC1-4,4
+P02DX,Other anticestodals,ATC1-4,4
+P03,"ECTOPARASITICIDES, INCL. SCABICIDES, INSECTICIDES AND REPELLENTS",ATC1-4,2
+P03A,"ECTOPARASITICIDES, INCL. SCABICIDES",ATC1-4,3
+P03AA,Sulfur containing products,ATC1-4,4
+P03AB,Chlorine containing products,ATC1-4,4
+P03AC,"Pyrethrines, incl. synthetic compounds",ATC1-4,4
+P03AX,"Other ectoparasiticides, incl. scabicides",ATC1-4,4
+P03B,INSECTICIDES AND REPELLENTS,ATC1-4,3
+P03BA,Pyrethrines,ATC1-4,4
+P03BX,Other insecticides and repellents,ATC1-4,4
+R,RESPIRATORY SYSTEM,ATC1-4,1
+R01,NASAL PREPARATIONS,ATC1-4,2
+R01A,DECONGESTANTS AND OTHER NASAL PREPARATIONS FOR TOPICAL USE,ATC1-4,3
+R01AA,"Sympathomimetics, plain",ATC1-4,4
+R01AB,"Sympathomimetics, combinations excl. corticosteroids",ATC1-4,4
+R01AC,"Antiallergic agents, excl. corticosteroids",ATC1-4,4
+R01AD,Corticosteroids,ATC1-4,4
+R01AX,Other nasal preparations,ATC1-4,4
+R01B,NASAL DECONGESTANTS FOR SYSTEMIC USE,ATC1-4,3
+R01BA,Sympathomimetics,ATC1-4,4
+R02,THROAT PREPARATIONS,ATC1-4,2
+R02A,THROAT PREPARATIONS,ATC1-4,3
+R02AA,Antiseptics,ATC1-4,4
+R02AB,Antibiotics,ATC1-4,4
+R02AD,"Anesthetics, local",ATC1-4,4
+R02AX,Other throat preparations,ATC1-4,4
+R03,DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES,ATC1-4,2
+R03A,"ADRENERGICS, INHALANTS",ATC1-4,3
+R03AA,Alpha- and beta-adrenoreceptor agonists,ATC1-4,4
+R03AB,Non-selective beta-adrenoreceptor agonists,ATC1-4,4
+R03AC,Selective beta-2-adrenoreceptor agonists,ATC1-4,4
+R03AH,Combinations of adrenergics,ATC1-4,4
+R03AK,"Adrenergics in combination with corticosteroids or other drugs, excl. anticholinergics",ATC1-4,4
+R03AL,Adrenergics in combination with anticholinergics incl. triple combinations with corticosteroids,ATC1-4,4
+R03B,"OTHER DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES, INHALANTS",ATC1-4,3
+R03BA,Glucocorticoids,ATC1-4,4
+R03BB,Anticholinergics,ATC1-4,4
+R03BC,"Antiallergic agents, excl. corticosteroids",ATC1-4,4
+R03BX,"Other drugs for obstructive airway diseases, inhalants",ATC1-4,4
+R03C,ADRENERGICS FOR SYSTEMIC USE,ATC1-4,3
+R03CA,Alpha- and beta-adrenoreceptor agonists,ATC1-4,4
+R03CB,Non-selective beta-adrenoreceptor agonists,ATC1-4,4
+R03CC,Selective beta-2-adrenoreceptor agonists,ATC1-4,4
+R03CK,Adrenergics and other drugs for obstructive airway diseases,ATC1-4,4
+R03D,OTHER SYSTEMIC DRUGS FOR OBSTRUCTIVE AIRWAY DISEASES,ATC1-4,3
+R03DA,Xanthines,ATC1-4,4
+R03DB,Xanthines and adrenergics,ATC1-4,4
+R03DC,Leukotriene receptor antagonists,ATC1-4,4
+R03DX,Other systemic drugs for obstructive airway diseases,ATC1-4,4
+R05,COUGH AND COLD PREPARATIONS,ATC1-4,2
+R05C,"EXPECTORANTS, EXCL. COMBINATIONS WITH COUGH SUPPRESSANTS",ATC1-4,3
+R05CA,Expectorants,ATC1-4,4
+R05CB,Mucolytics,ATC1-4,4
+R05D,"COUGH SUPPRESSANTS, EXCL. COMBINATIONS WITH EXPECTORANTS",ATC1-4,3
+R05DA,Opium alkaloids and derivatives,ATC1-4,4
+R05DB,Other cough suppressants,ATC1-4,4
+R05F,"COUGH SUPPRESSANTS AND EXPECTORANTS, COMBINATIONS",ATC1-4,3
+R05FA,Opium derivatives and expectorants,ATC1-4,4
+R05FB,Other cough suppressants and expectorants,ATC1-4,4
+R05X,OTHER COLD PREPARATIONS,ATC1-4,3
+R06,ANTIHISTAMINES FOR SYSTEMIC USE,ATC1-4,2
+R06A,ANTIHISTAMINES FOR SYSTEMIC USE,ATC1-4,3
+R06AA,Aminoalkyl ethers,ATC1-4,4
+R06AB,Substituted alkylamines,ATC1-4,4
+R06AC,Substituted ethylene diamines,ATC1-4,4
+R06AD,Phenothiazine derivatives,ATC1-4,4
+R06AE,Piperazine derivatives,ATC1-4,4
+R06AK,Combinations of antihistamines,ATC1-4,4
+R06AX,Other antihistamines for systemic use,ATC1-4,4
+R07,OTHER RESPIRATORY SYSTEM PRODUCTS,ATC1-4,2
+R07A,OTHER RESPIRATORY SYSTEM PRODUCTS,ATC1-4,3
+R07AA,Lung surfactants,ATC1-4,4
+R07AB,Respiratory stimulants,ATC1-4,4
+R07AX,Other respiratory system products,ATC1-4,4
+S,SENSORY ORGANS,ATC1-4,1
+S01,OPHTHALMOLOGICALS,ATC1-4,2
+S01A,ANTIINFECTIVES,ATC1-4,3
+S01AA,Antibiotics,ATC1-4,4
+S01AB,Sulfonamides,ATC1-4,4
+S01AD,Antivirals,ATC1-4,4
+S01AE,Fluoroquinolones,ATC1-4,4
+S01AX,Other antiinfectives,ATC1-4,4
+S01B,ANTIINFLAMMATORY AGENTS,ATC1-4,3
+S01BA,"Corticosteroids, plain",ATC1-4,4
+S01BB,Corticosteroids and mydriatics in combination,ATC1-4,4
+S01BC,"Antiinflammatory agents, non-steroids",ATC1-4,4
+S01C,ANTIINFLAMMATORY AGENTS AND ANTIINFECTIVES IN COMBINATION,ATC1-4,3
+S01CA,Corticosteroids and antiinfectives in combination,ATC1-4,4
+S01CB,Corticosteroids/antiinfectives/mydriatics in combination,ATC1-4,4
+S01CC,"Antiinflammatory agents, non-steroids and antiinfectives in combination",ATC1-4,4
+S01E,ANTIGLAUCOMA PREPARATIONS AND MIOTICS,ATC1-4,3
+S01EA,Sympathomimetics in glaucoma therapy,ATC1-4,4
+S01EB,Parasympathomimetics,ATC1-4,4
+S01EC,Carbonic anhydrase inhibitors,ATC1-4,4
+S01ED,Beta blocking agents,ATC1-4,4
+S01EE,Prostaglandin analogues,ATC1-4,4
+S01EX,Other antiglaucoma preparations,ATC1-4,4
+S01F,MYDRIATICS AND CYCLOPLEGICS,ATC1-4,3
+S01FA,Anticholinergics,ATC1-4,4
+S01FB,Sympathomimetics excl. antiglaucoma preparations,ATC1-4,4
+S01G,DECONGESTANTS AND ANTIALLERGICS,ATC1-4,3
+S01GA,Sympathomimetics used as decongestants,ATC1-4,4
+S01GX,Other antiallergics,ATC1-4,4
+S01H,LOCAL ANESTHETICS,ATC1-4,3
+S01HA,Local anesthetics,ATC1-4,4
+S01J,DIAGNOSTIC AGENTS,ATC1-4,3
+S01JA,Colouring agents,ATC1-4,4
+S01JX,Other ophthalmological diagnostic agents,ATC1-4,4
+S01K,SURGICAL AIDS,ATC1-4,3
+S01KA,Viscoelastic substances,ATC1-4,4
+S01KX,Other surgical aids,ATC1-4,4
+S01L,OCULAR VASCULAR DISORDER AGENTS,ATC1-4,3
+S01LA,Antineovascularisation agents,ATC1-4,4
+S01X,OTHER OPHTHALMOLOGICALS,ATC1-4,3
+S01XA,Other ophthalmologicals,ATC1-4,4
+S02,OTOLOGICALS,ATC1-4,2
+S02A,ANTIINFECTIVES,ATC1-4,3
+S02AA,Antiinfectives,ATC1-4,4
+S02B,CORTICOSTEROIDS,ATC1-4,3
+S02BA,Corticosteroids,ATC1-4,4
+S02C,CORTICOSTEROIDS AND ANTIINFECTIVES IN COMBINATION,ATC1-4,3
+S02CA,Corticosteroids and antiinfectives in combination,ATC1-4,4
+S02D,OTHER OTOLOGICALS,ATC1-4,3
+S02DA,Analgesics and anesthetics,ATC1-4,4
+S02DC,Indifferent preparations,ATC1-4,4
+S03,OPHTHALMOLOGICAL AND OTOLOGICAL PREPARATIONS,ATC1-4,2
+S03A,ANTIINFECTIVES,ATC1-4,3
+S03AA,Antiinfectives,ATC1-4,4
+S03B,CORTICOSTEROIDS,ATC1-4,3
+S03BA,Corticosteroids,ATC1-4,4
+S03C,CORTICOSTEROIDS AND ANTIINFECTIVES IN COMBINATION,ATC1-4,3
+S03CA,Corticosteroids and antiinfectives in combination,ATC1-4,4
+S03D,OTHER OPHTHALMOLOGICAL AND OTOLOGICAL PREPARATIONS,ATC1-4,3
+V,VARIOUS,ATC1-4,1
+V01,ALLERGENS,ATC1-4,2
+V01A,ALLERGENS,ATC1-4,3
+V01AA,Allergen extracts,ATC1-4,4
+V03,ALL OTHER THERAPEUTIC PRODUCTS,ATC1-4,2
+V03A,ALL OTHER THERAPEUTIC PRODUCTS,ATC1-4,3
+V03AB,Antidotes,ATC1-4,4
+V03AC,Iron chelating agents,ATC1-4,4
+V03AE,Drugs for treatment of hyperkalemia and hyperphosphatemia,ATC1-4,4
+V03AF,Detoxifying agents for antineoplastic treatment,ATC1-4,4
+V03AG,Drugs for treatment of hypercalcemia,ATC1-4,4
+V03AH,Drugs for treatment of hypoglycemia,ATC1-4,4
+V03AK,Tissue adhesives,ATC1-4,4
+V03AM,Drugs for embolisation,ATC1-4,4
+V03AN,Medical gases,ATC1-4,4
+V03AX,Other therapeutic products,ATC1-4,4
+V03AZ,Nerve depressants,ATC1-4,4
+V04,DIAGNOSTIC AGENTS,ATC1-4,2
+V04B,URINE TESTS,ATC1-4,3
+V04C,OTHER DIAGNOSTIC AGENTS,ATC1-4,3
+V04CA,Tests for diabetes,ATC1-4,4
+V04CB,Tests for fat absorption,ATC1-4,4
+V04CC,Tests for bile duct patency,ATC1-4,4
+V04CD,Tests for pituitary function,ATC1-4,4
+V04CE,Tests for liver functional capacity,ATC1-4,4
+V04CF,Tuberculosis diagnostics,ATC1-4,4
+V04CG,Tests for gastric secretion,ATC1-4,4
+V04CH,Tests for renal function and ureteral injuries,ATC1-4,4
+V04CJ,Tests for thyreoidea function,ATC1-4,4
+V04CK,Tests for pancreatic function,ATC1-4,4
+V04CL,Tests for allergic diseases,ATC1-4,4
+V04CM,Tests for fertility disturbances,ATC1-4,4
+V04CX,Other diagnostic agents,ATC1-4,4
+V06,GENERAL NUTRIENTS,ATC1-4,2
+V06A,DIET FORMULATIONS FOR TREATMENT OF OBESITY,ATC1-4,3
+V06AA,Low-energy diets,ATC1-4,4
+V06B,PROTEIN SUPPLEMENTS,ATC1-4,3
+V06C,INFANT FORMULAS,ATC1-4,3
+V06CA,Nutrients without phenylalanine,ATC1-4,4
+V06D,OTHER NUTRIENTS,ATC1-4,3
+V06DA,"Carbohydrates/proteins/minerals/vitamins, combinations",ATC1-4,4
+V06DB,"Fat/carbohydrates/proteins/minerals/vitamins, combinations",ATC1-4,4
+V06DC,Carbohydrates,ATC1-4,4
+V06DD,"Amino acids, incl. combinations with polypeptides",ATC1-4,4
+V06DE,"Amino acids/carbohydrates/minerals/vitamins, combinations",ATC1-4,4
+V06DF,Milk substitutes,ATC1-4,4
+V06DX,Other combinations of nutrients,ATC1-4,4
+V07,ALL OTHER NON-THERAPEUTIC PRODUCTS,ATC1-4,2
+V07A,ALL OTHER NON-THERAPEUTIC PRODUCTS,ATC1-4,3
+V07AA,Plasters,ATC1-4,4
+V07AB,"Solvents and diluting agents, incl. irrigating solutions",ATC1-4,4
+V07AC,"Blood transfusion, auxiliary products",ATC1-4,4
+V07AD,"Blood tests, auxiliary products",ATC1-4,4
+V07AN,Incontinence equipment,ATC1-4,4
+V07AR,"Sensitivity tests, discs and tablets",ATC1-4,4
+V07AS,Stomi equipment,ATC1-4,4
+V07AT,Cosmetics,ATC1-4,4
+V07AV,Technical disinfectants,ATC1-4,4
+V07AX,Washing agents etc.,ATC1-4,4
+V07AY,Other non-therapeutic auxiliary products,ATC1-4,4
+V07AZ,Chemicals and reagents for analysis,ATC1-4,4
+V08,CONTRAST MEDIA,ATC1-4,2
+V08A,"X-RAY CONTRAST MEDIA, IODINATED",ATC1-4,3
+V08AA,"Watersoluble, nephrotropic, high osmolar X-ray contrast media",ATC1-4,4
+V08AB,"Watersoluble, nephrotropic, low osmolar X-ray contrast media",ATC1-4,4
+V08AC,"Watersoluble, hepatotropic X-ray contrast media",ATC1-4,4
+V08AD,Non-watersoluble X-ray contrast media,ATC1-4,4
+V08B,"X-RAY CONTRAST MEDIA, NON-IODINATED",ATC1-4,3
+V08BA,Barium sulfate containing X-ray contrast media,ATC1-4,4
+V08C,MAGNETIC RESONANCE IMAGING CONTRAST MEDIA,ATC1-4,3
+V08CA,Paramagnetic contrast media,ATC1-4,4
+V08CB,Superparamagnetic contrast media,ATC1-4,4
+V08CX,Other magnetic resonance imaging contrast media,ATC1-4,4
+V08D,ULTRASOUND CONTRAST MEDIA,ATC1-4,3
+V08DA,Ultrasound contrast media,ATC1-4,4
+V09,DIAGNOSTIC RADIOPHARMACEUTICALS,ATC1-4,2
+V09A,CENTRAL NERVOUS SYSTEM,ATC1-4,3
+V09AA,Technetium (99mTc) compounds,ATC1-4,4
+V09AB,Iodine (123I) compounds,ATC1-4,4
+V09AX,Other central nervous system diagnostic radiopharmaceuticals,ATC1-4,4
+V09B,SKELETON,ATC1-4,3
+V09BA,Technetium (99mTc) compounds,ATC1-4,4
+V09C,RENAL SYSTEM,ATC1-4,3
+V09CA,Technetium (99mTc) compounds,ATC1-4,4
+V09CX,Other renal system diagnostic radiopharmaceuticals,ATC1-4,4
+V09D,HEPATIC AND RETICULO ENDOTHELIAL SYSTEM,ATC1-4,3
+V09DA,Technetium (99mTc) compounds,ATC1-4,4
+V09DB,"Technetium (99mTc), particles and colloids",ATC1-4,4
+V09DX,Other hepatic and reticulo endothelial system diagnostic radiopharmaceuticals,ATC1-4,4
+V09E,RESPIRATORY SYSTEM,ATC1-4,3
+V09EA,"Technetium (99mTc), inhalants",ATC1-4,4
+V09EB,"Technetium (99mTc), particles for injection",ATC1-4,4
+V09EX,Other respiratory system diagnostic radiopharmaceuticals,ATC1-4,4
+V09F,THYROID,ATC1-4,3
+V09FX,Various thyroid diagnostic radiopharmaceuticals,ATC1-4,4
+V09G,CARDIOVASCULAR SYSTEM,ATC1-4,3
+V09GA,Technetium (99mTc) compounds,ATC1-4,4
+V09GB,Iodine (125I) compounds,ATC1-4,4
+V09GX,Other cardiovascular system diagnostic radiopharmaceuticals,ATC1-4,4
+V09H,INFLAMMATION AND INFECTION DETECTION,ATC1-4,3
+V09HA,Technetium (99mTc) compounds,ATC1-4,4
+V09HB,Indium (111In) compounds,ATC1-4,4
+V09HX,Other diagnostic radiopharmaceuticals for inflammation and infection detection,ATC1-4,4
+V09I,TUMOUR DETECTION,ATC1-4,3
+V09IA,Technetium (99mTc) compounds,ATC1-4,4
+V09IB,Indium (111In) compounds,ATC1-4,4
+V09IX,Other diagnostic radiopharmaceuticals for tumour detection,ATC1-4,4
+V09X,OTHER DIAGNOSTIC RADIOPHARMACEUTICALS,ATC1-4,3
+V09XA,Iodine (131I) compounds,ATC1-4,4
+V09XX,Various diagnostic radiopharmaceuticals,ATC1-4,4
+V10,THERAPEUTIC RADIOPHARMACEUTICALS,ATC1-4,2
+V10A,ANTIINFLAMMATORY AGENTS,ATC1-4,3
+V10AA,Yttrium (90Y) compounds,ATC1-4,4
+V10AX,Other antiinflammatory therapeutic radiopharmaceuticals,ATC1-4,4
+V10B,PAIN PALLIATION (BONE SEEKING AGENTS),ATC1-4,3
+V10BX,Various pain palliation radiopharmaceuticals,ATC1-4,4
+V10X,OTHER THERAPEUTIC RADIOPHARMACEUTICALS,ATC1-4,3
+V10XA,Iodine (131I) compounds,ATC1-4,4
+V10XX,Various therapeutic radiopharmaceuticals,ATC1-4,4
+V20,SURGICAL DRESSINGS,ATC1-4,2

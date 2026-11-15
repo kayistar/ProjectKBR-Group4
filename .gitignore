@@ -1,0 +1,76 @@
+# =============================================================================
+# Git Ignore - Project KBR Interaksi Obat & Panduan Gejala (Group 4)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. FILE BESAR / RAW ONTOLOGY (> 10 MB)
+# -----------------------------------------------------------------------------
+# ChEBI full (~866 MB) dan DrON full (~526 MB) dilarang masuk git/GitHub
+KB/chebi.owl
+KB/dron.owl
+**/chebi.owl
+**/dron.owl
+
+# File OWL besar lainnya jika ada download raw
+*.owl.gz
+*.owl.zip
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# File binary / JAR (robot.jar dsb)
+*.jar
+*.exe
+
+# -----------------------------------------------------------------------------
+# 2. PYTHON ENVIRONMENT & CACHE
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# -----------------------------------------------------------------------------
+# 3. IDE & EDITOR TEMPORARY FILES
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# -----------------------------------------------------------------------------
+# 4. CRASH DUMPS & LOGS
+# -----------------------------------------------------------------------------
+*.log
+*.tmp

@@ -1,0 +1,6 @@
+{
+  "source": "NLM RxClass API",
+  "url": "https://rxnav.nlm.nih.gov/REST/rxclass/allClasses.json?classTypes=ATC1-4",
+  "retrieved_at": "2026-11-15T05:15:49.483360+00:00",
+  "scope": "ATC levels 1-4"
+}
