@@ -1,0 +1,1085 @@
+{
+  "PR:P08684": {
+    "iri": "http://purl.obolibrary.org/obo/PR_P08684",
+    "lang": "en",
+    "description": [
+      "Category=organism-gene. Requested by=PubChem.",
+      "A cytochrome P450 3A4 that is encoded in the genome of human."
+    ],
+    "synonyms": [
+      "1,4-cineole 2-exo-monooxygenase (human)",
+      "1,8-cineole 2-exo-monooxygenase (human)",
+      "CYP3A3",
+      "CYP3A4",
+      "CYPIIIA3 (human)",
+      "CYPIIIA4 (human)",
+      "albendazole monooxygenase (sulfoxide-forming) (human)",
+      "albendazole sulfoxidase (human)",
+      "cholesterol 25-hydroxylase (human)",
+      "cytochrome P450 3A3 (human)",
+      "cytochrome P450 HLp (human)",
+      "cytochrome P450 NF-25 (human)",
+      "cytochrome P450-PCN1 (human)",
+      "hCYP3A4",
+      "nifedipine oxidase (human)",
+      "quinine 3-monooxygenase (human)"
+    ],
+    "annotation": {
+      "database_cross_reference": [
+        "UniProtKB:P08684"
+      ],
+      "has_obo_namespace": [
+        "protein"
+      ],
+      "id": [
+        "PR:P08684"
+      ]
+    },
+    "label": "cytochrome P450 3A4 (human)",
+    "ontology_name": "pr",
+    "ontology_prefix": "PR",
+    "ontology_iri": "http://purl.obolibrary.org/obo/pr.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "PR_P08684",
+    "obo_id": "PR:P08684",
+    "in_subset": null,
+    "obo_definition_citation": [
+      {
+        "definition": "A cytochrome P450 3A4 that is encoded in the genome of human.",
+        "oboXrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          },
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      }
+    ],
+    "obo_xref": [
+      {
+        "database": "UniProtKB",
+        "id": "P08684",
+        "description": null,
+        "url": "https://www.uniprot.org/uniprot/P08684"
+      }
+    ],
+    "obo_synonym": [
+      {
+        "name": "1,8-cineole 2-exo-monooxygenase (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "CYPIIIA3 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "CYPIIIA4 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "albendazole sulfoxidase (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450 3A3 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450 HLp (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450 NF-25 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450-PCN1 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "hCYP3A4",
+        "scope": "hasExactSynonym",
+        "type": "Unique short label for PRO terms for display purposes; based on orthology or--if such is not asserted--on the organism gene symbol.",
+        "xrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          }
+        ]
+      },
+      {
+        "name": "nifedipine oxidase (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "quinine 3-monooxygenase (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "1,4-cineole 2-exo-monooxygenase (human)",
+        "scope": "hasRelatedSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "CYP3A3",
+        "scope": "hasRelatedSynonym",
+        "type": "Synonyms based on current or previous gene name, ORF name, or ordered locus name.",
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "CYP3A4",
+        "scope": "hasRelatedSynonym",
+        "type": "Synonyms based on current or previous gene name, ORF name, or ordered locus name.",
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "albendazole monooxygenase (sulfoxide-forming) (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      },
+      {
+        "name": "cholesterol 25-hydroxylase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P08684",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P08684"
+          }
+        ]
+      }
+    ],
+    "is_preferred_root": false,
+    "_links": {
+      "self": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684?lang=en"
+      },
+      "parents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/parents"
+      },
+      "ancestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/ancestors"
+      },
+      "hierarchicalParents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/hierarchicalParents"
+      },
+      "hierarchicalAncestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/hierarchicalAncestors"
+      },
+      "jstree": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/jstree"
+      },
+      "children": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/children"
+      },
+      "descendants": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/descendants"
+      },
+      "hierarchicalChildren": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/hierarchicalChildren"
+      },
+      "hierarchicalDescendants": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/hierarchicalDescendants"
+      },
+      "graph": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/graph"
+      },
+      "in_taxon": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FRO_0002162"
+      },
+      "has_gene_template": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P08684/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252Fpr%2523has_gene_template"
+      }
+    }
+  },
+  "PR:P10635": {
+    "iri": "http://purl.obolibrary.org/obo/PR_P10635",
+    "lang": "en",
+    "description": [
+      "Category=organism-gene.",
+      "A cytochrome P450 2D6 that is encoded in the genome of human."
+    ],
+    "synonyms": [
+      "CYP2D6",
+      "CYP2DL1",
+      "CYPIID6 (human)",
+      "cholesterol 25-hydroxylase (human)",
+      "cytochrome P450-DB1 (human)",
+      "debrisoquine 4-hydroxylase (human)",
+      "hCYP2D6"
+    ],
+    "annotation": {
+      "database_cross_reference": [
+        "UniProtKB:P10635",
+        "Reactome:R-HSA-52679"
+      ],
+      "has_obo_namespace": [
+        "protein"
+      ],
+      "id": [
+        "PR:P10635"
+      ]
+    },
+    "label": "cytochrome P450 2D6 (human)",
+    "ontology_name": "pr",
+    "ontology_prefix": "PR",
+    "ontology_iri": "http://purl.obolibrary.org/obo/pr.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "PR_P10635",
+    "obo_id": "PR:P10635",
+    "in_subset": null,
+    "obo_definition_citation": [
+      {
+        "definition": "A cytochrome P450 2D6 that is encoded in the genome of human.",
+        "oboXrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          },
+          {
+            "database": "UniProtKB",
+            "id": "P10635",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P10635"
+          }
+        ]
+      }
+    ],
+    "obo_xref": [
+      {
+        "database": "UniProtKB",
+        "id": "P10635",
+        "description": null,
+        "url": "https://www.uniprot.org/uniprot/P10635"
+      },
+      {
+        "database": "Reactome",
+        "id": "R-HSA-52679",
+        "description": "PR:P10635 located_in GO:0005789",
+        "url": "https://www.reactome.org/content/detail/R-HSA-52679"
+      }
+    ],
+    "obo_synonym": [
+      {
+        "name": "CYPIID6 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P10635",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P10635"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450-DB1 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P10635",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P10635"
+          }
+        ]
+      },
+      {
+        "name": "debrisoquine 4-hydroxylase (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P10635",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P10635"
+          }
+        ]
+      },
+      {
+        "name": "hCYP2D6",
+        "scope": "hasExactSynonym",
+        "type": "Unique short label for PRO terms for display purposes; based on orthology or--if such is not asserted--on the organism gene symbol.",
+        "xrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          }
+        ]
+      },
+      {
+        "name": "CYP2D6",
+        "scope": "hasRelatedSynonym",
+        "type": "Synonyms based on current or previous gene name, ORF name, or ordered locus name.",
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P10635",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P10635"
+          }
+        ]
+      },
+      {
+        "name": "CYP2DL1",
+        "scope": "hasRelatedSynonym",
+        "type": "Synonyms based on current or previous gene name, ORF name, or ordered locus name.",
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P10635",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P10635"
+          }
+        ]
+      },
+      {
+        "name": "cholesterol 25-hydroxylase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P10635",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P10635"
+          }
+        ]
+      }
+    ],
+    "is_preferred_root": false,
+    "_links": {
+      "self": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635?lang=en"
+      },
+      "parents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/parents"
+      },
+      "ancestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/ancestors"
+      },
+      "hierarchicalParents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/hierarchicalParents"
+      },
+      "hierarchicalAncestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/hierarchicalAncestors"
+      },
+      "jstree": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/jstree"
+      },
+      "children": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/children"
+      },
+      "descendants": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/descendants"
+      },
+      "hierarchicalChildren": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/hierarchicalChildren"
+      },
+      "hierarchicalDescendants": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/hierarchicalDescendants"
+      },
+      "graph": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/graph"
+      },
+      "in_taxon": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FRO_0002162"
+      },
+      "has_gene_template": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P10635/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252Fpr%2523has_gene_template"
+      }
+    }
+  },
+  "PR:P33261": {
+    "iri": "http://purl.obolibrary.org/obo/PR_P33261",
+    "lang": "en",
+    "description": [
+      "Category=organism-gene.",
+      "A cytochrome P450 2C19 that is encoded in the genome of human."
+    ],
+    "synonyms": [
+      "(R)-limonene 6-monooxygenase (human)",
+      "(S)-limonene 6-monooxygenase (human)",
+      "(S)-limonene 7-monooxygenase (human)",
+      "CYP2C19",
+      "CYPIIC17 (human)",
+      "CYPIIC19 (human)",
+      "cytochrome P450-11A (human)",
+      "cytochrome P450-254C (human)",
+      "fenbendazole monooxygenase (4'-hydroxylating) (human)",
+      "hCYP2C19",
+      "mephenytoin 4-hydroxylase (human)"
+    ],
+    "annotation": {
+      "database_cross_reference": [
+        "UniProtKB:P33261",
+        "Reactome:R-HSA-211055"
+      ],
+      "has_obo_namespace": [
+        "protein"
+      ],
+      "id": [
+        "PR:P33261"
+      ]
+    },
+    "label": "cytochrome P450 2C19 (human)",
+    "ontology_name": "pr",
+    "ontology_prefix": "PR",
+    "ontology_iri": "http://purl.obolibrary.org/obo/pr.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": false,
+    "is_root": false,
+    "short_form": "PR_P33261",
+    "obo_id": "PR:P33261",
+    "in_subset": null,
+    "obo_definition_citation": [
+      {
+        "definition": "A cytochrome P450 2C19 that is encoded in the genome of human.",
+        "oboXrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          },
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      }
+    ],
+    "obo_xref": [
+      {
+        "database": "UniProtKB",
+        "id": "P33261",
+        "description": null,
+        "url": "https://www.uniprot.org/uniprot/P33261"
+      },
+      {
+        "database": "Reactome",
+        "id": "R-HSA-211055",
+        "description": "PR:P33261 located_in GO:0005789",
+        "url": "https://www.reactome.org/content/detail/R-HSA-211055"
+      }
+    ],
+    "obo_synonym": [
+      {
+        "name": "CYPIIC17 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "CYPIIC19 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450-11A (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450-254C (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "fenbendazole monooxygenase (4'-hydroxylating) (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "hCYP2C19",
+        "scope": "hasExactSynonym",
+        "type": "Unique short label for PRO terms for display purposes; based on orthology or--if such is not asserted--on the organism gene symbol.",
+        "xrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          }
+        ]
+      },
+      {
+        "name": "mephenytoin 4-hydroxylase (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "CYP2C19",
+        "scope": "hasRelatedSynonym",
+        "type": "Synonyms based on current or previous gene name, ORF name, or ordered locus name.",
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "(R)-limonene 6-monooxygenase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "(S)-limonene 6-monooxygenase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      },
+      {
+        "name": "(S)-limonene 7-monooxygenase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P33261",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P33261"
+          }
+        ]
+      }
+    ],
+    "is_preferred_root": false,
+    "_links": {
+      "self": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261?lang=en"
+      },
+      "parents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/parents"
+      },
+      "ancestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/ancestors"
+      },
+      "hierarchicalParents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/hierarchicalParents"
+      },
+      "hierarchicalAncestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/hierarchicalAncestors"
+      },
+      "jstree": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/jstree"
+      },
+      "graph": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/graph"
+      },
+      "in_taxon": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FRO_0002162"
+      },
+      "has_gene_template": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P33261/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252Fpr%2523has_gene_template"
+      }
+    }
+  },
+  "PR:P11712": {
+    "iri": "http://purl.obolibrary.org/obo/PR_P11712",
+    "lang": "en",
+    "description": [
+      "Category=organism-gene.",
+      "A cytochrome P450 2C9 that is encoded in the genome of human."
+    ],
+    "synonyms": [
+      "(R)-limonene 6-monooxygenase (human)",
+      "(S)-limonene 6-monooxygenase (human)",
+      "(S)-limonene 7-monooxygenase (human)",
+      "CYP2C10",
+      "CYP2C9",
+      "CYPIIC9 (human)",
+      "S-mephenytoin 4-hydroxylase (human)",
+      "cholesterol 25-hydroxylase (human)",
+      "cytochrome P-450MP (human)",
+      "cytochrome P450 MP-4 (human)",
+      "cytochrome P450 MP-8 (human)",
+      "cytochrome P450 PB-1 (human)",
+      "hCYP2C9"
+    ],
+    "annotation": {
+      "database_cross_reference": [
+        "UniProtKB:P11712",
+        "Reactome:R-HSA-211017"
+      ],
+      "has_obo_namespace": [
+        "protein"
+      ],
+      "id": [
+        "PR:P11712"
+      ]
+    },
+    "label": "cytochrome P450 2C9 (human)",
+    "ontology_name": "pr",
+    "ontology_prefix": "PR",
+    "ontology_iri": "http://purl.obolibrary.org/obo/pr.owl",
+    "is_obsolete": false,
+    "term_replaced_by": null,
+    "is_defining_ontology": true,
+    "has_children": true,
+    "is_root": false,
+    "short_form": "PR_P11712",
+    "obo_id": "PR:P11712",
+    "in_subset": null,
+    "obo_definition_citation": [
+      {
+        "definition": "A cytochrome P450 2C9 that is encoded in the genome of human.",
+        "oboXrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          },
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      }
+    ],
+    "obo_xref": [
+      {
+        "database": "UniProtKB",
+        "id": "P11712",
+        "description": null,
+        "url": "https://www.uniprot.org/uniprot/P11712"
+      },
+      {
+        "database": "Reactome",
+        "id": "R-HSA-211017",
+        "description": "PR:P11712 located_in GO:0005789",
+        "url": "https://www.reactome.org/content/detail/R-HSA-211017"
+      }
+    ],
+    "obo_synonym": [
+      {
+        "name": "CYPIIC9 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P-450MP (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450 MP-4 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450 MP-8 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "cytochrome P450 PB-1 (human)",
+        "scope": "hasExactSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "hCYP2C9",
+        "scope": "hasExactSynonym",
+        "type": "Unique short label for PRO terms for display purposes; based on orthology or--if such is not asserted--on the organism gene symbol.",
+        "xrefs": [
+          {
+            "database": "PRO",
+            "id": "DNx",
+            "description": null,
+            "url": null
+          }
+        ]
+      },
+      {
+        "name": "CYP2C10",
+        "scope": "hasRelatedSynonym",
+        "type": "Synonyms based on current or previous gene name, ORF name, or ordered locus name.",
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "CYP2C9",
+        "scope": "hasRelatedSynonym",
+        "type": "Synonyms based on current or previous gene name, ORF name, or ordered locus name.",
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "(R)-limonene 6-monooxygenase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "(S)-limonene 6-monooxygenase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "(S)-limonene 7-monooxygenase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "S-mephenytoin 4-hydroxylase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      },
+      {
+        "name": "cholesterol 25-hydroxylase (human)",
+        "scope": "hasBroadSynonym",
+        "type": null,
+        "xrefs": [
+          {
+            "database": "UniProtKB",
+            "id": "P11712",
+            "description": null,
+            "url": "https://www.uniprot.org/uniprot/P11712"
+          }
+        ]
+      }
+    ],
+    "is_preferred_root": false,
+    "_links": {
+      "self": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712?lang=en"
+      },
+      "parents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/parents"
+      },
+      "ancestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/ancestors"
+      },
+      "hierarchicalParents": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/hierarchicalParents"
+      },
+      "hierarchicalAncestors": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/hierarchicalAncestors"
+      },
+      "jstree": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/jstree"
+      },
+      "children": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/children"
+      },
+      "descendants": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/descendants"
+      },
+      "hierarchicalChildren": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/hierarchicalChildren"
+      },
+      "hierarchicalDescendants": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/hierarchicalDescendants"
+      },
+      "graph": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/graph"
+      },
+      "in_taxon": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FRO_0002162"
+      },
+      "has_gene_template": {
+        "href": "http://www.ebi.ac.uk/ols4/api/ontologies/pr/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FPR_P11712/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252Fpr%2523has_gene_template"
+      }
+    }
+  }
+}

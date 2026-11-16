@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+    xmlns:kbr="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#">
+
+  <!-- ======================================================= -->
+  <!-- Ontology: kb_v1.owl                                     -->
+  <!-- Group 4 KBR - Interaksi Obat Batuk-Pilek Indonesia      -->
+  <!-- Generated: 2026-11-16T14:22:34.628917+07:00                       -->
+  <!-- ======================================================= -->
+  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl">
+    <rdfs:label xml:lang="en">KB v1 Drug Interaction Knowledge Base (Cough &amp; Cold Products - Indonesia)</rdfs:label>
+    <rdfs:label xml:lang="id">KB v1 Basis Pengetahuan Interaksi Obat Batuk-Pilek (Produk Apotek Indonesia)</rdfs:label>
+    <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl/1.0"/>
+    <rdfs:comment xml:lang="id">Basis pengetahuan interaksi obat batuk-pilek generasi pertama. TBox mendefinisikan kelas produk, zat aktif, gejala, interaksi, tindak lanjut klinis, serta 8 aturan GCI inferensi. ABox mendaftarkan 12 individu produk apotek Indonesia pilihan dari data K24Klik.</rdfs:comment>
+    <oboInOwl:date>2026-11-16T14:22:34.628917+07:00</oboInOwl:date>
+    <oboInOwl:creator xml:lang="id">Group 4 KBR - Universitas Sebelas Maret, Semester 5, 2026/2027</oboInOwl:creator>
+  </owl:Ontology>
+
+  <!-- ======================================================= -->
+  <!-- A0. ANNOTATION PROPERTIES                               -->
+  <!-- ======================================================= -->
+
+  <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date">
+    <rdfs:label>date</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creator">
+    <rdfs:label>creator</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+    <rdfs:label>altLabel</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <!-- ======================================================= -->
+  <!-- A. OBJECT PROPERTIES                                    -->
+  <!-- ======================================================= -->
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan">
+    <rdfs:label xml:lang="id">memiliki kandungan zat aktif</rdfs:label>
+    <rdfs:label xml:lang="en">has active ingredient</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#mengindikasikanGejala">
+    <rdfs:label xml:lang="id">mengindikasikan / mengatasi gejala</rdfs:label>
+    <rdfs:label xml:lang="en">indicates symptom</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiEfekSamping">
+    <rdfs:label xml:lang="id">memiliki efek samping yang mungkin terjadi</rdfs:label>
+    <rdfs:label xml:lang="en">has side effect symptom</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiInteraksiDengan">
+    <rdfs:label xml:lang="id">memiliki interaksi farmakokinetik/farmakodinamik dengan</rdfs:label>
+    <rdfs:label xml:lang="en">has drug interaction with</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#menghasilkanInteraksi">
+    <rdfs:label xml:lang="id">menghasilkan / menyebabkan kejadian interaksi</rdfs:label>
+    <rdfs:label xml:lang="en">produces drug interaction event</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#membutuhkanTindakLanjut">
+    <rdfs:label xml:lang="id">membutuhkan tindak lanjut klinis tertentu</rdfs:label>
+    <rdfs:label xml:lang="en">requires clinical follow-up</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#dimetabolismeOleh">
+    <rdfs:label xml:lang="id">dimetabolisme / diubah oleh enzim CYP450</rdfs:label>
+    <rdfs:label xml:lang="en">is metabolized by enzyme</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#EnzimCYP450"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiGolongan">
+    <rdfs:label xml:lang="id">memiliki golongan regulasi BPOM</rdfs:label>
+    <rdfs:label xml:lang="en">has regulatory class</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GolonganObat"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiBentukSediaan">
+    <rdfs:label xml:lang="id">memiliki bentuk sediaan farmasi</rdfs:label>
+    <rdfs:label xml:lang="en">has dosage form</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#BentukSediaan"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#diproduksiOleh">
+    <rdfs:label xml:lang="id">diproduksi / dipasarkan oleh produsen farmasi</rdfs:label>
+    <rdfs:label xml:lang="en">is manufactured by</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#kontraindikasiBagi">
+    <rdfs:label xml:lang="id">bersifat kontraindikasi bagi kondisi pasien tertentu</rdfs:label>
+    <rdfs:label xml:lang="en">is contraindicated for patient condition</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KondisiPasien"/>
+  </owl:ObjectProperty>
+
+  <!-- ======================================================= -->
+  <!-- B. DATA PROPERTIES                                      -->
+  <!-- ======================================================= -->
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#namaDagang">
+    <rdfs:label xml:lang="id">nama dagang / merek produk (terdaftar BPOM)</rdfs:label>
+    <rdfs:label xml:lang="en">trade name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#namaProdusen">
+    <rdfs:label xml:lang="id">nama perusahaan farmasi produsen/pemegang izin</rdfs:label>
+    <rdfs:label xml:lang="en">manufacturer name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#nomorBPOM">
+    <rdfs:label xml:lang="id">nomor izin edar resmi BPOM (NIE)</rdfs:label>
+    <rdfs:label xml:lang="en">BPOM registration no</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#hargaRupiah">
+    <rdfs:label xml:lang="id">harga satuan terkecil kemasan (Rupiah)</rdfs:label>
+    <rdfs:label xml:lang="en">unit price IDR</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#kodeATC">
+    <rdfs:label xml:lang="id">kode ATC Level 5 WHO (Anatomical Therapeutic Chemical)</rdfs:label>
+    <rdfs:label xml:lang="en">ATC code</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#chebiID">
+    <rdfs:label xml:lang="id">identifier ChEBI zat kimia aktif</rdfs:label>
+    <rdfs:label xml:lang="en">ChEBI identifier</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#doseInfoPer5mL">
+    <rdfs:label xml:lang="id">informasi dosis zat aktif per unit sediaan</rdfs:label>
+    <rdfs:label xml:lang="en">dose info</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#nomorSlugK24">
+    <rdfs:label xml:lang="id">slug/ID unik produk pada katalog K24Klik</rdfs:label>
+    <rdfs:label xml:lang="en">K24Klik slug</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#urlK24">
+    <rdfs:label xml:lang="id">URL halaman detail produk pada K24Klik</rdfs:label>
+    <rdfs:label xml:lang="en">K24Klik product URL</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#tingkatBukti">
+    <rdfs:label xml:lang="id">tingkat bukti literatur interaksi (A/B/C)</rdfs:label>
+    <rdfs:label xml:lang="en">evidence level</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <!-- ======================================================= -->
+  <!-- C. TBOX – CLASS HIERARCHY                               -->
+  <!-- ======================================================= -->
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat">
+    <rdfs:label xml:lang="id">Produk Obat</rdfs:label>
+    <rdfs:label xml:lang="en">Pharmaceutical Product</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Kelas akar semua produk farmasi yang terdaftar di apotek Indonesia dan memiliki NIE BPOM.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek">
+    <rdfs:label xml:lang="id">Obat Batuk dan/atau Pilek</rdfs:label>
+    <rdfs:label xml:lang="en">Cough and/or Cold Medication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdfs:comment xml:lang="id">Produk farmasi yang diindikasikan untuk mengatasi gejala batuk, pilek, atau keduanya; berisi minimal satu zat aktif antitusif, ekspektoran, mukolitik, atau dekongestan.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukMurni">
+    <rdfs:label xml:lang="id">Obat Batuk (Murni)</rdfs:label>
+    <rdfs:label xml:lang="en">Cough-only Medication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <rdfs:comment xml:lang="id">Produk berindikasi khusus batuk: mengandung antitusif (Dextromethorphan, Diphenhydramine) dan/atau ekspektoran/mukolitik (Guaifenesin, Bromhexine, Ambroxol) tanpa dekongestan nasal.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPilekMurni">
+    <rdfs:label xml:lang="id">Obat Pilek / Flu (Murni)</rdfs:label>
+    <rdfs:label xml:lang="en">Cold/Flu-only Medication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <rdfs:comment xml:lang="id">Produk berindikasi khusus pilek/flu: mengandung dekongestan (Pseudoephedrine, Phenylephrine) dan/atau antihistamin H1 (CTM, Triprolidine) atau antipiretik, tanpa antitusif.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek">
+    <rdfs:label xml:lang="id">Obat Kombinasi Batuk dan Pilek</rdfs:label>
+    <rdfs:label xml:lang="en">Combination Cough-Cold Medication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <rdfs:comment xml:lang="id">Produk multi-komponen yang sekaligus mengandung antitusif/ekspektoran DAN dekongestan/antihistamin. Contoh: Siladex Cough N Cold, Actifed Merah, Komix, Procold.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif">
+    <rdfs:label xml:lang="id">Zat Aktif / Bahan Farmakologis</rdfs:label>
+    <rdfs:label xml:lang="en">Active Pharmaceutical Ingredient (API)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Senyawa kimia atau bahan biologis yang memberikan efek farmakologis dalam suatu produk obat. Setiap individu ZatAktif terkait dengan entri ChEBI, kode ATC, dan data enzim metabolisme.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#EnzimCYP450">
+    <rdfs:label xml:lang="id">Enzim CYP450 Metabolisme</rdfs:label>
+    <rdfs:label xml:lang="en">CYP450 Metabolic Enzyme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Enzim sitokrom P450 yang bertanggung jawab atas metabolisme hepatik obat. Terkait dengan entri PRO (Protein Ontology). Sub-kelas: CYP3A4, CYP2D6, CYP2C19, CYP2C9.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#CYP3A4">
+    <rdfs:label xml:lang="id">CYP3A4 (Enzim Metabolisme Utama)</rdfs:label>
+    <rdfs:label xml:lang="en">CYP3A4 Enzyme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#EnzimCYP450"/>
+    <rdfs:comment xml:lang="id">Isoform CYP450 paling dominan (>50% obat); major metaboliser statin, azol, amlodipine, dextromethorphan.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#CYP2D6">
+    <rdfs:label xml:lang="id">CYP2D6 (Enzim Metabolisme Utama)</rdfs:label>
+    <rdfs:label xml:lang="en">CYP2D6 Enzyme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#EnzimCYP450"/>
+    <rdfs:comment xml:lang="id">Isoform polimorfik; metaboliser utama dextromethorphan (O-demetilasi), codeine, dan antihistamin.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#CYP2C19">
+    <rdfs:label xml:lang="id">CYP2C19 (Enzim Metabolisme Utama)</rdfs:label>
+    <rdfs:label xml:lang="en">CYP2C19 Enzyme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#EnzimCYP450"/>
+    <rdfs:comment xml:lang="id">Isoform polimorfik; bioaktivasi clopidogrel, metabolisme omeprazole. Dihambat oleh omeprazole → interaksi kritis.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#CYP2C9">
+    <rdfs:label xml:lang="id">CYP2C9 (Enzim Metabolisme Utama)</rdfs:label>
+    <rdfs:label xml:lang="en">CYP2C9 Enzyme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#EnzimCYP450"/>
+    <rdfs:comment xml:lang="id">Metaboliser warfarin S-enantiomer, glimepiride, ibuprofen, fluconazole. Inhibitor kuat = azol.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala">
+    <rdfs:label xml:lang="id">Gejala Klinis</rdfs:label>
+    <rdfs:label xml:lang="en">Clinical Symptom</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Manifestasi klinis yang diamati pada pasien, baik sebagai tanda indikasi penyakit maupun efek samping atau efek berbahaya (red flag) akibat penggunaan obat.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi">
+    <rdfs:label xml:lang="id">Gejala Indikasi Penyakit</rdfs:label>
+    <rdfs:label xml:lang="en">Indication Symptom</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
+    <rdfs:comment xml:lang="id">Gejala yang menjadi target terapi produk obat batuk-pilek (mis. batuk, pilek, demam, hidung tersumbat).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping">
+    <rdfs:label xml:lang="id">Gejala Efek Samping Obat</rdfs:label>
+    <rdfs:label xml:lang="en">Side Effect Symptom</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
+    <rdfs:comment xml:lang="id">Efek yang tidak diinginkan akibat penggunaan obat, misalnya mengantuk, palpitasi, mulut kering.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag">
+    <rdfs:label xml:lang="id">Gejala Bahaya / Red Flag</rdfs:label>
+    <rdfs:label xml:lang="en">Red Flag Symptom</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
+    <rdfs:comment xml:lang="id">Gejala yang mengindikasikan kondisi serius: sesak napas, mengi, batuk berdarah, urin gelap. Memerlukan rujukan segera ke dokter.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat">
+    <rdfs:label xml:lang="id">Interaksi Obat</rdfs:label>
+    <rdfs:label xml:lang="en">Drug-Drug Interaction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Modifikasi efek farmakokinetik atau farmakodinamik suatu obat akibat kehadiran obat atau bahan lain, yang dapat meningkatkan toksisitas atau menurunkan efikasi terapi.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor">
+    <rdfs:label xml:lang="id">Interaksi Major (Kontraindikasi Klinis)</rdfs:label>
+    <rdfs:label xml:lang="en">Major Drug Interaction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:comment xml:lang="id">Interaksi dengan risiko tinggi menyebabkan bahaya serius atau kematian; umumnya harus dihindari atau memerlukan penggantian obat segera (mis. itraconazole + simvastatin, omeprazole + clopidogrel).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate">
+    <rdfs:label xml:lang="id">Interaksi Moderate (Perlu Pemantauan Klinis)</rdfs:label>
+    <rdfs:label xml:lang="en">Moderate Drug Interaction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:comment xml:lang="id">Interaksi dengan konsekuensi klinis bermakna yang masih dapat dikelola dengan pemantauan atau penyesuaian dosis; konsultasikan ke apoteker.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMinor">
+    <rdfs:label xml:lang="id">Interaksi Minor (Risiko Klinis Rendah)</rdfs:label>
+    <rdfs:label xml:lang="en">Minor Drug Interaction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:comment xml:lang="id">Interaksi dengan efek kecil dan jarang bermakna secara klinis; monitoring rutin cukup.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut">
+    <rdfs:label xml:lang="id">Tindak Lanjut Klinis</rdfs:label>
+    <rdfs:label xml:lang="en">Clinical Follow-up Action</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Rekomendasi aksi klinis yang dihasilkan sistem KB setelah mendeteksi interaksi atau gejala tertentu.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter">
+    <rdfs:label xml:lang="id">Segera ke Dokter / IGD</rdfs:label>
+    <rdfs:label xml:lang="en">Seek Immediate Medical Attention</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
+    <rdfs:comment xml:lang="id">Kondisi darurat atau kontraindikasi berat; pasien harus segera dirujuk ke fasilitas kesehatan.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker">
+    <rdfs:label xml:lang="id">Konsultasikan ke Apoteker</rdfs:label>
+    <rdfs:label xml:lang="en">Consult Pharmacist</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
+    <rdfs:comment xml:lang="id">Interaksi moderate atau efek samping bermakna; pasien disarankan mendiskusikan dengan apoteker sebelum melanjutkan penggunaan.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau">
+    <rdfs:label xml:lang="id">Pantau Mandiri</rdfs:label>
+    <rdfs:label xml:lang="en">Self-monitor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
+    <rdfs:comment xml:lang="id">Risiko rendah; pasien dapat melanjutkan pengobatan sambil memantau gejala secara mandiri sesuai petunjuk pada kemasan.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GolonganObat">
+    <rdfs:label xml:lang="id">Golongan Regulasi Obat (BPOM)</rdfs:label>
+    <rdfs:label xml:lang="en">Drug Regulatory Class (BPOM)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Klasifikasi produk farmasi berdasarkan ketentuan Permenkes Indonesia (BPOM).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebas">
+    <rdfs:label xml:lang="id">Obat Bebas (Lingkaran Hijau)</rdfs:label>
+    <rdfs:label xml:lang="en">Over-the-Counter Drug (Green Circle)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GolonganObat"/>
+    <rdfs:comment xml:lang="id">Dapat dibeli tanpa resep di apotek/toko obat; logo lingkaran hijau BPOM.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas">
+    <rdfs:label xml:lang="id">Obat Bebas Terbatas (Lingkaran Biru)</rdfs:label>
+    <rdfs:label xml:lang="en">Limited OTC Drug (Blue Circle)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GolonganObat"/>
+    <rdfs:comment xml:lang="id">Dapat dibeli tanpa resep namun dibatasi jumlah/kemasan; logo lingkaran biru BPOM.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatHerbalJamu">
+    <rdfs:label xml:lang="id">Obat Herbal / Jamu / Fitofarmaka</rdfs:label>
+    <rdfs:label xml:lang="en">Herbal/Jamu/Phytopharmacy Product</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GolonganObat"/>
+    <rdfs:comment xml:lang="id">Produk berbasis bahan alam (simplisia, ekstrak); mencakup jamu, obat herbal terstandar, dan fitofarmaka.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#BentukSediaan">
+    <rdfs:label xml:lang="id">Bentuk Sediaan Farmasi</rdfs:label>
+    <rdfs:label xml:lang="en">Pharmaceutical Dosage Form</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Bentuk fisik produk farmasi yang dikonsumsi oleh pasien.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup">
+    <rdfs:label xml:lang="id">Sediaan Sirup / Suspensi</rdfs:label>
+    <rdfs:label xml:lang="en">Syrup / Suspension</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#BentukSediaan"/>
+    <rdfs:comment xml:lang="id">Sediaan cair oral; umumnya lebih disukai untuk anak-anak.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Tablet">
+    <rdfs:label xml:lang="id">Sediaan Tablet / Kaplet</rdfs:label>
+    <rdfs:label xml:lang="en">Tablet / Caplet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#BentukSediaan"/>
+    <rdfs:comment xml:lang="id">Sediaan padat oral; termasuk tablet biasa, kaplet, dan tablet salut.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Kapsul">
+    <rdfs:label xml:lang="id">Sediaan Kapsul</rdfs:label>
+    <rdfs:label xml:lang="en">Capsule</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#BentukSediaan"/>
+    <rdfs:comment xml:lang="id">Sediaan padat dengan cangkang gelatin yang menutupi serbuk atau butiran.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sachet">
+    <rdfs:label xml:lang="id">Sediaan Sachet / Serbuk</rdfs:label>
+    <rdfs:label xml:lang="en">Sachet / Powder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#BentukSediaan"/>
+    <rdfs:comment xml:lang="id">Sediaan serbuk atau cairan dalam kemasan sekali pakai individual.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KondisiPasien">
+    <rdfs:label xml:lang="id">Kondisi Pasien yang Relevan</rdfs:label>
+    <rdfs:label xml:lang="en">Patient Condition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Kondisi medis pasien yang mempengaruhi pemilihan atau keamanan terapi obat.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#HipertensiTidakTerkontrol">
+    <rdfs:label xml:lang="id">Hipertensi Tidak Terkontrol</rdfs:label>
+    <rdfs:label xml:lang="en">Uncontrolled Hypertension</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KondisiPasien"/>
+    <rdfs:comment xml:lang="id">Tekanan darah sistolik ≥160 mmHg atau diastolik ≥100 mmHg; kontraindikasi dekongestan oral (PSE, PE).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GagalJantung">
+    <rdfs:label xml:lang="id">Gagal Jantung</rdfs:label>
+    <rdfs:label xml:lang="en">Heart Failure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KondisiPasien"/>
+    <rdfs:comment xml:lang="id">Disfungsi pompa jantung; kontraindikasi dekongestan adrenergik pada pengguna digoxin/antiaritmia.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProstatBPH">
+    <rdfs:label xml:lang="id">Pembesaran Prostat BPH</rdfs:label>
+    <rdfs:label xml:lang="en">Benign Prostatic Hyperplasia</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KondisiPasien"/>
+    <rdfs:comment xml:lang="id">Risiko retensi urin diperparah oleh efek antikolinergik antihistamin generasi 1.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#DuplikasiTerapetik">
+    <rdfs:label xml:lang="id">Duplikasi Terapetik (Kontra-indikasi Farmasi)</rdfs:label>
+    <rdfs:label xml:lang="en">Therapeutic Duplication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Kondisi di mana pasien mengonsumsi dua atau lebih obat dengan mekanisme aksi yang sama/tumpang tindih, meningkatkan risiko efek samping tanpa manfaat tambahan. Contoh: CTM + Diphenhydramine.</rdfs:comment>
+  </owl:Class>
+
+  <!-- ======================================================= -->
+  <!-- D. GCI RULES (General Concept Inclusions)  R-01..R-08  -->
+  <!-- ======================================================= -->
+
+  <!-- R-01: Setiap produk yang mengandung antitusif → subclass ObatBatukMurni -->
+  <!-- Encoded as: ObatBatukMurni ⊑ ProduktObat ⊓ (∃memilikiKandungan.(Antitusif ⊔ Ekspektoran ⊔ Mukolitik)) -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukMurni">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                  <!-- Antitusif: DXM (CHEBI:4480) -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+                  <!-- Ekspektoran: Guaifenesin (CHEBI:5536) -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_5536"/>
+                  <!-- Mukolitik: Bromhexine (CHEBI:3180) -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_3180"/>
+                  <!-- Mukolitik: Ambroxol (CHEBI:2688) -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_2688"/>
+                </owl:unionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:allValuesFrom>
+              <owl:Class>
+                <owl:complementOf>
+                  <owl:Class>
+                    <owl:unionOf rdf:parseType="Collection">
+                      <!-- Dekongestan: PSE (CHEBI:50346), PE (CHEBI:8093) -->
+                      <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+                      <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_8093"/>
+                    </owl:unionOf>
+                  </owl:Class>
+                </owl:complementOf>
+              </owl:Class>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!-- R-02: Setiap produk yang mengandung dekongestan (dan tidak antitusif) → ObatPilekMurni -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPilekMurni">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_8093"/>
+                </owl:unionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:allValuesFrom>
+              <owl:Class>
+                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+              </owl:Class>
+            </owl:allValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <!-- R-03: Produk dengan antihistamin-H1 gen 1 → wajib punya efek samping Mengantuk -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product">
+    <rdfs:label xml:lang="id">Produk mengandung antihistamin H1 generasi pertama</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                  <!-- CTM: Chlorpheniramine (CHEBI:3587) -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+                  <!-- Diphenhydramine (CHEBI:4634) -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_4634"/>
+                  <!-- Triprolidine – kelas lokal -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
+                  <!-- Doxylamine – kelas lokal -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine"/>
+                </owl:unionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiEfekSamping"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="en">Triprolidine</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Gen-1 sedatif; kombinasi dekongestan populer (mis. Actifed).</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="en">Doksylamine</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Gen-1 sedatif kuat; antitusif di Vicks F44 DWS, Siladex Cough N Cold.</rdfs:comment>
+  </owl:Class>
+
+  <!-- R-04: Produk dengan dekongestan oral → memilikiEfekSamping Palpitasi -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_DekongestanProduct">
+    <rdfs:label xml:lang="id">Produk mengandung dekongestan oral (PSE atau PE)</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_8093"/>
+                </owl:unionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiEfekSamping"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!-- R-05: Semua interaksi Major → wajib punya tindak lanjut SegeraKeDokter -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#membutuhkanTindakLanjut"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!-- R-06: Semua interaksi Moderate → wajib punya tindak lanjut TanyaApoteker ATAU Pantau -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#membutuhkanTindakLanjut"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+              <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!-- R-07: Produk dengan CTM DAN Diphenhydramine → terdeteksi DuplikasiTerapetik (menyebabkan sedasi berat) -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProdukKombinasiCTMDPH">
+    <rdfs:label xml:lang="id">Produk CTM + Diphenhydramine = Duplikasi Terapetik Antihistamin H1</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4634"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#DuplikasiTerapetik"/>
+  </owl:Class>
+
+  <!-- R-08: Produk dengan Pseudoephedrine → kontraindikasiBagi pasien HipertensiTidakTerkontrol -->
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProdukDenganPSE">
+    <rdfs:label xml:lang="id">Produk dengan Pseudoephedrine → kontraindikasi hipertensi</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiKandungan"/>
+            <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#kontraindikasiBagi"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#HipertensiTidakTerkontrol"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <!-- ======================================================= -->
+  <!-- E. ABOX – 12 INDIVIDU PRODUK APOTEK INDONESIA          -->
+  <!-- ======================================================= -->
+
+  <!-- Individual #1: Siladex Cough N Cold Syrup 100mL -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_SiladexCoughNColSyr100">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_DekongestanProduct"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+    <kbr:namaDagang>Siladex Cough N Cold Syrup 100mL</kbr:namaDagang>
+    <kbr:namaProdusen>PT Konimex</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL8713002537A1</kbr:nomorBPOM>
+    <kbr:hargaRupiah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25149</kbr:hargaRupiah>
+    <kbr:nomorSlugK24>SILADEX-COUGH-N-COLD-SYR-100ML-9753</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/SILADEX-COUGH-N-COLD-SYR-100ML-9753</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Dextromethorphan HBr 7,5 mg; Pseudoephedrine HCl 15 mg; Doxylamine Succinate 2 mg / 5 mL</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Siladex Cough N Cold Syrup 100mL</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #2: Actifed Plus Cough Suppress Syrup Merah 60mL -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_ActifedPlusSyrMerah60">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_DekongestanProduct"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000139"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
+    <kbr:namaDagang>Actifed Plus Cough Suppress Syrup Merah 60mL</kbr:namaDagang>
+    <kbr:namaProdusen>GlaxoSmithKline (GSK)</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL1624504137A1</kbr:nomorBPOM>
+    <kbr:nomorSlugK24>ACTIFED-PLUS-COUGH-SUPPRESS-SYR-MERAH-60ML-275</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/ACTIFED-PLUS-COUGH-SUPPRESS-SYR-MERAH-60ML-275</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Triprolidine HCl 1,25 mg; Pseudoephedrine HCl 30 mg; Dextromethorphan HBr 10 mg / 5 mL</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Actifed Plus Cough Suppress Syrup Merah 60mL</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #3: Komix Jeruk Nipis 7mL Sachet -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_KomixJerukNipis7mL">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sachet"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5536"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020027"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
+    <kbr:namaDagang>Komix Jeruk Nipis 7mL Sachet</kbr:namaDagang>
+    <kbr:namaProdusen>Kalbe Farma</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL9502807737A1</kbr:nomorBPOM>
+    <kbr:hargaRupiah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2360</kbr:hargaRupiah>
+    <kbr:nomorSlugK24>KOMIX-JERUK-NIPIS-7ML-SACH-30S-8909</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/KOMIX-JERUK-NIPIS-7ML-SACH-30S-8909</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Guaifenesin 100 mg; Dextromethorphan HBr 15 mg; Chlorpheniramine Maleate 2 mg</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Komix Jeruk Nipis 7mL Sachet</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #4: Vicks F44 Anak Syrup 54mL -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_VicksF44AnakSyr54">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukMurni"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5536"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020027"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
+    <kbr:namaDagang>Vicks F44 Anak Syrup 54mL</kbr:namaDagang>
+    <kbr:namaProdusen>Darya-Varia Laboratoria</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL0704519837A1</kbr:nomorBPOM>
+    <kbr:hargaRupiah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30331</kbr:hargaRupiah>
+    <kbr:nomorSlugK24>VICKS-F44-ANAK-SYR-54ML-8839</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/VICKS-F44-ANAK-SYR-54ML-8839</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Guaifenesin; Dextromethorphan HBr (kadar pediatrik sesuai kemasan)</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Vicks F44 Anak Syrup 54mL</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #5: Procold Flu dan Batuk Kaplet -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_ProcoldFluBatuKaplet">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_DekongestanProduct"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Tablet"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46195"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
+    <kbr:namaDagang>Procold Flu dan Batuk Kaplet</kbr:namaDagang>
+    <kbr:namaProdusen>Kalbe Farma</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL1111641504A1</kbr:nomorBPOM>
+    <kbr:nomorSlugK24>PROCOLD-FLU-BATUK-CAPL-6S-STRIP-24S-2072</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/PROCOLD-FLU&amp;BATUK-CAPL-6S-STRIP-24S-2072</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Paracetamol 500 mg; Dextromethorphan HBr 10 mg; Pseudoephedrine HCl 30 mg</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Procold Flu dan Batuk Kaplet</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #6: Paramex Flu dan Batuk Tablet -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_ParamexFluBatukTab">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_DekongestanProduct"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Tablet"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46195"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
+    <kbr:namaDagang>Paramex Flu dan Batuk Tablet</kbr:namaDagang>
+    <kbr:namaProdusen>Konimex</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL9813017510A1</kbr:nomorBPOM>
+    <kbr:hargaRupiah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3320</kbr:hargaRupiah>
+    <kbr:nomorSlugK24>PARAMEX-FLU-BATUK-TAB-4S-STRIP-25S-9318</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/PARAMEX-FLU&amp;BATUK-TAB-4S-STRIP-25S-9318</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Paracetamol 500 mg; Pseudoephedrine HCl 30 mg; Dextromethorphan HBr 15 mg</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Paramex Flu dan Batuk Tablet</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #7: Alpara Kaplet -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_AlparaKaplet">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Tablet"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46195"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000139"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
+    <kbr:namaDagang>Alpara Kaplet</kbr:namaDagang>
+    <kbr:namaProdusen>Molex Ayus</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL9230902604A1</kbr:nomorBPOM>
+    <kbr:nomorSlugK24>ALPARA-CAPL-10S-STRIP-15S-1603</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/ALPARA-CAPL-10S-STRIP-15S-1603</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Paracetamol 500 mg; Phenylpropanolamine HCl 12,5 mg; Chlorpheniramine Maleate 2 mg; Dextromethorphan HBr 15 mg</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Alpara Kaplet</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #8: OB Combi ATT Menthol Sirup 60mL -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_OBCombiATTMentholSyr60">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4634"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
+    <kbr:namaDagang>OB Combi ATT Menthol Sirup 60mL</kbr:namaDagang>
+    <kbr:namaProdusen>Combiphar</kbr:namaProdusen>
+    <kbr:hargaRupiah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21097</kbr:hargaRupiah>
+    <kbr:nomorSlugK24>OB-COMBI-ATT-MENTHOL-SYR-60ML-34066</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/OB-COMBI-ATT-MENTHOL-SYR-60ML-34066</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Dextromethorphan HBr 12,5 mg; Diphenhydramine HCl 7,5 mg / 5 mL</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">OB Combi ATT Menthol Sirup 60mL</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #9: Sanmol Forte 250mg/5mL Syrup 60mL -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_SanmolForte250Syr60">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPilekMurni"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46195"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000505"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
+    <kbr:namaDagang>Sanmol Forte 250mg/5mL Syrup 60mL</kbr:namaDagang>
+    <kbr:namaProdusen>Sanbe Farma</kbr:namaProdusen>
+    <kbr:nomorBPOM>DBL1322235037B1</kbr:nomorBPOM>
+    <kbr:nomorSlugK24>SANMOL-FORTE-250MG-5ML-SYR-60ML-8741</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/SANMOL-FORTE-250MG-5ML-SYR-60ML-8741</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Paracetamol 250 mg / 5 mL</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Sanmol Forte 250mg/5mL Syrup 60mL</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #10: Triaminic Batuk Pilek Syrup 60mL -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_TriaminicBatukPilekSyr60">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_DekongestanProduct"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000610"/>
+    <kbr:namaDagang>Triaminic Batuk Pilek Syrup 60mL</kbr:namaDagang>
+    <kbr:namaProdusen>Novartis Indonesia</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL1624503737A1</kbr:nomorBPOM>
+    <kbr:nomorSlugK24>TRIAMINIC-BATUK-PILEK-SYR-60ML-326</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/TRIAMINIC-BATUK-PILEK-SYR-60ML-326</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Pseudoephedrine HCl 15 mg; Dextromethorphan HBr 5 mg / 5 mL</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Triaminic Batuk Pilek Syrup 60mL</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #11: Promedex Tablet -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_PromedexTab">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Tablet"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5536"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020027"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
+    <kbr:namaDagang>Promedex Tablet</kbr:namaDagang>
+    <kbr:namaProdusen>Interbat</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL7617623910A1</kbr:nomorBPOM>
+    <kbr:hargaRupiah rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34574</kbr:hargaRupiah>
+    <kbr:nomorSlugK24>PROMEDEX-TAB-100S-16748</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/PROMEDEX-TAB-100S-16748</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Dextromethorphan HBr 15 mg; Guaifenesin 100 mg; Chlorpheniramine Maleate 1 mg</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Promedex Tablet</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- Individual #12: Lapifed DM Syrup 100mL -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_LapifedDMSyr100">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatKombinasiBatukPilek"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_AH1Product"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#_DekongestanProduct"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
+    <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000139"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+    <kbr:memilikiEfekSamping rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
+    <kbr:namaDagang>Lapifed DM Syrup 100mL</kbr:namaDagang>
+    <kbr:namaProdusen>Lapi Laboratories</kbr:namaProdusen>
+    <kbr:nomorBPOM>DTL9813308837A1</kbr:nomorBPOM>
+    <kbr:nomorSlugK24>LAPIFED-DM-SYR-100ML-295</kbr:nomorSlugK24>
+    <kbr:urlK24 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.k24klik.com/p/LAPIFED-DM-SYR-100ML-295</kbr:urlK24>
+    <kbr:doseInfoPer5mL>Triprolidine HCl 1,25 mg; Pseudoephedrine HCl 30 mg; Dextromethorphan HBr 10 mg / 5 mL</kbr:doseInfoPer5mL>
+    <rdfs:label xml:lang="id">Lapifed DM Syrup 100mL</rdfs:label>
+  </owl:NamedIndividual>
+
+  <!-- ======================================================= -->
+  <!-- F. ZAT AKTIF: CLASSES & INDIVIDUALS                     -->
+  <!-- ======================================================= -->
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46195">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Paracetamol</rdfs:label>
+    <rdfs:comment xml:lang="id">Analgesik-Antipiretik</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_46195">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46195"/>
+    <rdfs:label xml:lang="id">Paracetamol</rdfs:label>
+    <kbr:kodeATC>N02BE01</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:46195</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Analgesik-Antipiretik</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5855">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Ibuprofen</rdfs:label>
+    <rdfs:comment xml:lang="id">NSAID (Analgesik, Antipiretik, Antiinflamasi)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_5855">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5855"/>
+    <rdfs:label xml:lang="id">Ibuprofen</rdfs:label>
+    <kbr:kodeATC>M01AE01</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:5855</kbr:chebiID>
+    <rdfs:comment xml:lang="id">NSAID (Analgesik, Antipiretik, Antiinflamasi)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4480">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Dextromethorphan</rdfs:label>
+    <rdfs:comment xml:lang="id">Antitusif (Penekan Batuk Kering Sentral)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_4480">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <rdfs:label xml:lang="id">Dextromethorphan</rdfs:label>
+    <kbr:kodeATC>R05DA09</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:4480</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antitusif (Penekan Batuk Kering Sentral)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50346">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Pseudoephedrine</rdfs:label>
+    <rdfs:comment xml:lang="id">Dekongestan Nasal Simpatomimetik</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_50346">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <rdfs:label xml:lang="id">Pseudoephedrine</rdfs:label>
+    <kbr:kodeATC>R01BA02</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:50346</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Dekongestan Nasal Simpatomimetik</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8093">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Phenylephrine</rdfs:label>
+    <rdfs:comment xml:lang="id">Dekongestan Nasal Agonis Alfa-1</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_8093">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8093"/>
+    <rdfs:label xml:lang="id">Phenylephrine</rdfs:label>
+    <kbr:kodeATC>R01BA03</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:8093</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Dekongestan Nasal Agonis Alfa-1</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3587">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Chlorpheniramine (CTM)</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Generasi 1 (Sedatif)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_3587">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+    <rdfs:label xml:lang="id">Chlorpheniramine (CTM)</rdfs:label>
+    <kbr:kodeATC>R06AB04</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:3587</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Generasi 1 (Sedatif)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4634">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Diphenhydramine</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Gen 1 &amp; Antitusif Sedatif</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_4634">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4634"/>
+    <rdfs:label xml:lang="id">Diphenhydramine</rdfs:label>
+    <kbr:kodeATC>R06AA02</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:4634</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Gen 1 &amp; Antitusif Sedatif</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3561">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Cetirizine</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Generasi 2 (Non-sedatif)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_3561">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3561"/>
+    <rdfs:label xml:lang="id">Cetirizine</rdfs:label>
+    <kbr:kodeATC>R06AE07</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:3561</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antihistamin H1 Generasi 2 (Non-sedatif)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3180">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Bromhexine</rdfs:label>
+    <rdfs:comment xml:lang="id">Mukolitik (Pengencer Dahak)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_3180">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3180"/>
+    <rdfs:label xml:lang="id">Bromhexine</rdfs:label>
+    <kbr:kodeATC>R05CB02</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:3180</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Mukolitik (Pengencer Dahak)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2688">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Ambroxol</rdfs:label>
+    <rdfs:comment xml:lang="id">Mukolitik &amp; Stimulator Surfaktan Paru</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_2688">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2688"/>
+    <rdfs:label xml:lang="id">Ambroxol</rdfs:label>
+    <kbr:kodeATC>R05CB06</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:2688</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Mukolitik &amp; Stimulator Surfaktan Paru</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5536">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Guaifenesin (Glyceryl Guaiacolate)</rdfs:label>
+    <rdfs:comment xml:lang="id">Ekspektoran (Pelumas Saluran Napas)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_5536">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5536"/>
+    <rdfs:label xml:lang="id">Guaifenesin (Glyceryl Guaiacolate)</rdfs:label>
+    <kbr:kodeATC>R05CA03</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:5536</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Ekspektoran (Pelumas Saluran Napas)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9150">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Simvastatin</rdfs:label>
+    <rdfs:comment xml:lang="id">Hipolipidemik (Statin)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_9150">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9150"/>
+    <rdfs:label xml:lang="id">Simvastatin</rdfs:label>
+    <kbr:kodeATC>C10AA01</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:9150</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Hipolipidemik (Statin)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_39548">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Atorvastatin</rdfs:label>
+    <rdfs:comment xml:lang="id">Hipolipidemik (Statin Poten)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_39548">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+    <rdfs:label xml:lang="id">Atorvastatin</rdfs:label>
+    <kbr:kodeATC>C10AA05</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:39548</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Hipolipidemik (Statin Poten)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2668">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Amlodipine</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihipertensi (Calcium Channel Blocker)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_2668">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2668"/>
+    <rdfs:label xml:lang="id">Amlodipine</rdfs:label>
+    <kbr:kodeATC>C08CA01</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:2668</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antihipertensi (Calcium Channel Blocker)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3380">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Captopril</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihipertensi (ACE Inhibitor)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_3380">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3380"/>
+    <rdfs:label xml:lang="id">Captopril</rdfs:label>
+    <kbr:kodeATC>C09AA01</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:3380</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antihipertensi (ACE Inhibitor)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6801">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Metformin</rdfs:label>
+    <rdfs:comment xml:lang="id">Antidiabetes Oral (Sensitizer Insulin)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_6801">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
+    <rdfs:label xml:lang="id">Metformin</rdfs:label>
+    <kbr:kodeATC>A10BA02</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:6801</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antidiabetes Oral (Sensitizer Insulin)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5383">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Glimepiride</rdfs:label>
+    <rdfs:comment xml:lang="id">Antidiabetes Oral (Sekretagog Insulin)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_5383">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5383"/>
+    <rdfs:label xml:lang="id">Glimepiride</rdfs:label>
+    <kbr:kodeATC>A10BB12</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:5383</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antidiabetes Oral (Sekretagog Insulin)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10033">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Warfarin</rdfs:label>
+    <rdfs:comment xml:lang="id">Antikoagulan Oral</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_10033">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10033"/>
+    <rdfs:label xml:lang="id">Warfarin</rdfs:label>
+    <kbr:kodeATC>B01AA03</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:10033</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antikoagulan Oral</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37941">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Clopidogrel</rdfs:label>
+    <rdfs:comment xml:lang="id">Antiplatelet Inhibitor Reseptor ADP P2Y12</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_37941">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+    <rdfs:label xml:lang="id">Clopidogrel</rdfs:label>
+    <kbr:kodeATC>B01AC04</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:37941</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antiplatelet Inhibitor Reseptor ADP P2Y12</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4551">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Digoxin</rdfs:label>
+    <rdfs:comment xml:lang="id">Glikosida Jantung Inotropik Positif</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_4551">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4551"/>
+    <rdfs:label xml:lang="id">Digoxin</rdfs:label>
+    <kbr:kodeATC>C01AA05</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:4551</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Glikosida Jantung Inotropik Positif</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7772">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Omeprazole</rdfs:label>
+    <rdfs:comment xml:lang="id">Antiasam Lambung (PPI)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_7772">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7772"/>
+    <rdfs:label xml:lang="id">Omeprazole</rdfs:label>
+    <kbr:kodeATC>A02BC01</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:7772</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antiasam Lambung (PPI)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_100241">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Ciprofloxacin</rdfs:label>
+    <rdfs:comment xml:lang="id">Antibakteri Spektrum Luas (Inhibitor DNA Girase)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_100241">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_100241"/>
+    <rdfs:label xml:lang="id">Ciprofloxacin</rdfs:label>
+    <kbr:kodeATC>J01MA02</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:100241</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antibakteri Spektrum Luas (Inhibitor DNA Girase)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2676">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Amoxicillin</rdfs:label>
+    <rdfs:comment xml:lang="id">Antibakteri Beta-laktam</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_2676">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2676"/>
+    <rdfs:label xml:lang="id">Amoxicillin</rdfs:label>
+    <kbr:kodeATC>J01CA04</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:2676</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antibakteri Beta-laktam</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6076">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Itraconazole</rdfs:label>
+    <rdfs:comment xml:lang="id">Antijamur Triazol Sistemik</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_6076">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+    <rdfs:label xml:lang="id">Itraconazole</rdfs:label>
+    <kbr:kodeATC>J02AC02</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:6076</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antijamur Triazol Sistemik</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_47519">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Ketoconazole</rdfs:label>
+    <rdfs:comment xml:lang="id">Antijamur Imidazol</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_47519">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+    <rdfs:label xml:lang="id">Ketoconazole</rdfs:label>
+    <kbr:kodeATC>J02AB02</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:47519</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antijamur Imidazol</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46081">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Fluconazole</rdfs:label>
+    <rdfs:comment xml:lang="id">Antijamur Triazol</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_46081">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+    <rdfs:label xml:lang="id">Fluconazole</rdfs:label>
+    <kbr:kodeATC>J02AC01</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:46081</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antijamur Triazol</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_67547">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Alpha-Mangostin</rdfs:label>
+    <rdfs:comment xml:lang="id">Antioksidan, Antiinflamasi (Kulit Manggis)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_67547">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67547"/>
+    <rdfs:label xml:lang="id">Alpha-Mangostin</rdfs:label>
+    <kbr:kodeATC>A16AX</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:67547</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antioksidan, Antiinflamasi (Kulit Manggis)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3962">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Curcumin</rdfs:label>
+    <rdfs:comment xml:lang="id">Hepatoprotektor &amp; Antiinflamasi (Kunyit/Temulawak)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_3962">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3962"/>
+    <rdfs:label xml:lang="id">Curcumin</rdfs:label>
+    <kbr:kodeATC>A16AX</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:3962</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Hepatoprotektor &amp; Antiinflamasi (Kunyit/Temulawak)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10136">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="id">Gingerol</rdfs:label>
+    <rdfs:comment xml:lang="id">Karminatif &amp; Penghangat Pernapasan (Jahe Merah)</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_10136">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10136"/>
+    <rdfs:label xml:lang="id">Gingerol</rdfs:label>
+    <kbr:kodeATC>A16AX</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:10136</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Karminatif &amp; Penghangat Pernapasan (Jahe Merah)</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="en">Triprolidine HCl</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1; kombinasi dengan pseudoephedrine</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
+    <rdfs:label xml:lang="en">Triprolidine HCl</rdfs:label>
+    <kbr:kodeATC>R06AX</kbr:kodeATC>
+    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1; kombinasi dengan pseudoephedrine</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdfs:label xml:lang="en">Doxylamine Succinate</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1 sangat sedatif; antitusif di Vicks F44 DWS, Siladex Cough N Cold</rdfs:comment>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine"/>
+    <rdfs:label xml:lang="en">Doxylamine Succinate</rdfs:label>
+    <kbr:kodeATC>R06AA09</kbr:kodeATC>
+    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1 sangat sedatif; antitusif di Vicks F44 DWS, Siladex Cough N Cold</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <!-- ======================================================= -->
+  <!-- G. ABOX – INTERAKSI OBAT INDIVIDUALS (dari sheet2 kurasi) -->
+  <!-- ======================================================= -->
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ItraSimvastatin">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Major: Itraconazole inhibisi CYP3A4 → akumulasi Simvastatin → risiko rhabdomyolysis</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ItraSimvastatin"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_6076 ↔ CHEBI_9150 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6076">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9150"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ItraSimvastatin"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_KetAtorva">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Major: Ketoconazole inhibisi CYP3A4 → toksisitas Atorvastatin</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_KetAtorva"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_47519 ↔ CHEBI_39548 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_47519">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_KetAtorva"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_OmeClopidogrel">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Major: Omeprazole inhibisi CYP2C19 → penurunan efikasi Clopidogrel</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_OmeClopidogrel"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_7772 ↔ CHEBI_37941 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_7772">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_OmeClopidogrel"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_IbuprofenWarfarin">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Major: Ibuprofen inhibisi COX-1 + efek anti-agregasi → risiko perdarahan GI bersama Warfarin</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_IbuprofenWarfarin"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_5855 ↔ CHEBI_10033 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_5855">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10033"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_IbuprofenWarfarin"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDiphenhydramine">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Moderate: CTM + Diphenhydramine → duplikasi antihistamin H1 → sedasi berat</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDiphenhydramine"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_3587 ↔ CHEBI_4634 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_3587">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4634"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDiphenhydramine"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CetirizineCTM">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Moderate: Cetirizine + CTM → kehilangan keunggulan non-sedatif, penekanan SSP aditif</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CetirizineCTM"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_3561 ↔ CHEBI_3587 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_3561">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CetirizineCTM"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDextromethorphan">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Moderate: CTM + DXM (dalam obat flu kombinasi) → depresan SSP aditif, mengantuk</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDextromethorphan"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_3587 ↔ CHEBI_4480 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_3587">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDextromethorphan"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PseudoephedrineDigoxin">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Moderate: Pseudoephedrine stimulasi adrenergik + Digoxin → risiko aritmia</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PseudoephedrineDigoxin"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_50346 ↔ CHEBI_4551 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50346">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4551"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PseudoephedrineDigoxin"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PhenylDigoxin">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Moderate: Phenylephrine alfa-1 → aritmia pada jantung terdigitalisasi</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PhenylDigoxin"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_8093 ↔ CHEBI_4551 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_8093">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4551"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PhenylDigoxin"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_AlphaMangostinSimva">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Major: Alpha-Mangostin inhibisi CYP3A4 → akumulasi Simvastatin</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_AlphaMangostinSimva"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <kbr:tingkatBukti>B</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_67547 ↔ CHEBI_9150 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_67547">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9150"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_AlphaMangostinSimva"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ParacetamolWarfarin">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:label xml:lang="id">Interaksi Moderate: Paracetamol dosis tinggi → peningkatan INR ringan pada pasien Warfarin</rdfs:label>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ParacetamolWarfarin"/>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+  </owl:NamedIndividual>
+  <!-- memilikiInteraksiDengan: CHEBI_46195 ↔ CHEBI_10033 -->
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_46195">
+    <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10033"/>
+    <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ParacetamolWarfarin"/>
+  </rdf:Description>
+
+  <!-- ======================================================= -->
+  <!-- H. ABOX – GEJALA INDIVIDUALS (annotation SYMP terms)   -->
+  <!-- ======================================================= -->
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000614">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Batuk</rdfs:label>
+    <rdfs:label xml:lang="en">cough</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000614">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000614"/>
+    <rdfs:label xml:lang="id">Batuk</rdfs:label>
+    <rdfs:label xml:lang="en">cough</rdfs:label>
+    <skos:altLabel xml:lang="id">Batuk</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000025">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Batuk kering / tidak berdahak</rdfs:label>
+    <rdfs:label xml:lang="en">dry cough</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000025">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
+    <rdfs:label xml:lang="id">Batuk kering / tidak berdahak</rdfs:label>
+    <rdfs:label xml:lang="en">dry cough</rdfs:label>
+    <skos:altLabel xml:lang="id">Batuk kering / tidak berdahak</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0020027">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Batuk berdahak / produktif</rdfs:label>
+    <rdfs:label xml:lang="en">wet cough</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0020027">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020027"/>
+    <rdfs:label xml:lang="id">Batuk berdahak / produktif</rdfs:label>
+    <rdfs:label xml:lang="en">wet cough</rdfs:label>
+    <skos:altLabel xml:lang="id">Batuk berdahak / produktif</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000869">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Hidung tersumbat</rdfs:label>
+    <rdfs:label xml:lang="en">nasal congestion</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000869">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
+    <rdfs:label xml:lang="id">Hidung tersumbat</rdfs:label>
+    <rdfs:label xml:lang="en">nasal congestion</rdfs:label>
+    <skos:altLabel xml:lang="id">Hidung tersumbat</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000372">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Pilek / hidung berair</rdfs:label>
+    <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000372">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
+    <rdfs:label xml:lang="id">Pilek / hidung berair</rdfs:label>
+    <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
+    <skos:altLabel xml:lang="id">Pilek / hidung berair</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000139">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Bersin-bersin</rdfs:label>
+    <rdfs:label xml:lang="en">sneezing</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000139">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000139"/>
+    <rdfs:label xml:lang="id">Bersin-bersin</rdfs:label>
+    <rdfs:label xml:lang="en">sneezing</rdfs:label>
+    <skos:altLabel xml:lang="id">Bersin-bersin</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000505">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Sakit tenggorokan</rdfs:label>
+    <rdfs:label xml:lang="en">throat pain</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000505">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000505"/>
+    <rdfs:label xml:lang="id">Sakit tenggorokan</rdfs:label>
+    <rdfs:label xml:lang="en">throat pain</rdfs:label>
+    <skos:altLabel xml:lang="id">Sakit tenggorokan</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000613">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Demam</rdfs:label>
+    <rdfs:label xml:lang="en">fever</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000613">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613"/>
+    <rdfs:label xml:lang="id">Demam</rdfs:label>
+    <rdfs:label xml:lang="en">fever</rdfs:label>
+    <skos:altLabel xml:lang="id">Demam</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000504">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdfs:label xml:lang="id">Sakit kepala</rdfs:label>
+    <rdfs:label xml:lang="en">headache</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000504">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504"/>
+    <rdfs:label xml:lang="id">Sakit kepala</rdfs:label>
+    <rdfs:label xml:lang="en">headache</rdfs:label>
+    <skos:altLabel xml:lang="id">Sakit kepala</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000024">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Mengantuk berat</rdfs:label>
+    <rdfs:label xml:lang="en">drowsiness</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000024">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
+    <rdfs:label xml:lang="id">Mengantuk berat</rdfs:label>
+    <rdfs:label xml:lang="en">drowsiness</rdfs:label>
+    <skos:altLabel xml:lang="id">Mengantuk berat</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000610">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Pusing / melayang</rdfs:label>
+    <rdfs:label xml:lang="en">dizziness</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000610">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000610"/>
+    <rdfs:label xml:lang="id">Pusing / melayang</rdfs:label>
+    <rdfs:label xml:lang="en">dizziness</rdfs:label>
+    <skos:altLabel xml:lang="id">Pusing / melayang</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000260">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Mulut kering</rdfs:label>
+    <rdfs:label xml:lang="en">dry mouth</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000260">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
+    <rdfs:label xml:lang="id">Mulut kering</rdfs:label>
+    <rdfs:label xml:lang="en">dry mouth</rdfs:label>
+    <skos:altLabel xml:lang="id">Mulut kering</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000557">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Sulit buang air kecil</rdfs:label>
+    <rdfs:label xml:lang="en">urinary retention</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000557">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000557"/>
+    <rdfs:label xml:lang="id">Sulit buang air kecil</rdfs:label>
+    <rdfs:label xml:lang="en">urinary retention</rdfs:label>
+    <skos:altLabel xml:lang="id">Sulit buang air kecil</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000530">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Jantung berdebar-debar</rdfs:label>
+    <rdfs:label xml:lang="en">palpitation</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000530">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530"/>
+    <rdfs:label xml:lang="id">Jantung berdebar-debar</rdfs:label>
+    <rdfs:label xml:lang="en">palpitation</rdfs:label>
+    <skos:altLabel xml:lang="id">Jantung berdebar-debar</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000529">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Denyut jantung terlalu cepat</rdfs:label>
+    <rdfs:label xml:lang="en">tachycardia</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000529">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000529"/>
+    <rdfs:label xml:lang="id">Denyut jantung terlalu cepat</rdfs:label>
+    <rdfs:label xml:lang="en">tachycardia</rdfs:label>
+    <skos:altLabel xml:lang="id">Denyut jantung terlalu cepat</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000458">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Mual / eneg</rdfs:label>
+    <rdfs:label xml:lang="en">nausea</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000458">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
+    <rdfs:label xml:lang="id">Mual / eneg</rdfs:label>
+    <rdfs:label xml:lang="en">nausea</rdfs:label>
+    <skos:altLabel xml:lang="id">Mual / eneg</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0019145">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdfs:label xml:lang="id">Muntah</rdfs:label>
+    <rdfs:label xml:lang="en">vomiting</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0019145">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019145"/>
+    <rdfs:label xml:lang="id">Muntah</rdfs:label>
+    <rdfs:label xml:lang="en">vomiting</rdfs:label>
+    <skos:altLabel xml:lang="id">Muntah</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0019153">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdfs:label xml:lang="id">Sesak napas</rdfs:label>
+    <rdfs:label xml:lang="en">dyspnea</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0019153">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019153"/>
+    <rdfs:label xml:lang="id">Sesak napas</rdfs:label>
+    <rdfs:label xml:lang="en">dyspnea</rdfs:label>
+    <skos:altLabel xml:lang="id">Sesak napas</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000604">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdfs:label xml:lang="id">Napas berbunyi mengi</rdfs:label>
+    <rdfs:label xml:lang="en">wheezing</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000604">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000604"/>
+    <rdfs:label xml:lang="id">Napas berbunyi mengi</rdfs:label>
+    <rdfs:label xml:lang="en">wheezing</rdfs:label>
+    <skos:altLabel xml:lang="id">Napas berbunyi mengi</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000576">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdfs:label xml:lang="id">Nyeri dada</rdfs:label>
+    <rdfs:label xml:lang="en">chest pain</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000576">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000576"/>
+    <rdfs:label xml:lang="id">Nyeri dada</rdfs:label>
+    <rdfs:label xml:lang="en">chest pain</rdfs:label>
+    <skos:altLabel xml:lang="id">Nyeri dada</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000242">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdfs:label xml:lang="id">Batuk berdarah</rdfs:label>
+    <rdfs:label xml:lang="en">cough with bloody sputum</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000242">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000242"/>
+    <rdfs:label xml:lang="id">Batuk berdarah</rdfs:label>
+    <rdfs:label xml:lang="en">cough with bloody sputum</rdfs:label>
+    <skos:altLabel xml:lang="id">Batuk berdarah</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+  </owl:NamedIndividual>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0020043">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdfs:label xml:lang="id">Urin berwarna gelap</rdfs:label>
+    <rdfs:label xml:lang="en">dark urine</rdfs:label>
+  </owl:Class>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0020043">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020043"/>
+    <rdfs:label xml:lang="id">Urin berwarna gelap</rdfs:label>
+    <rdfs:label xml:lang="en">dark urine</rdfs:label>
+    <skos:altLabel xml:lang="id">Urin berwarna gelap</skos:altLabel>
+    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+  </owl:NamedIndividual>
+
+  <!-- ======================================================= -->
+  <!-- I. ABOX – TINDAK LANJUT INDIVIDUALS                    -->
+  <!-- ======================================================= -->
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
+    <rdfs:label xml:lang="id">Segera ke Dokter / IGD</rdfs:label>
+    <rdfs:label xml:lang="en">Seek Immediate Medical Attention</rdfs:label>
+    <rdfs:comment xml:lang="id">Kontraindikasi berat atau gejala darurat; harus dirujuk ke fasilitas kesehatan segera.</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
+    <rdfs:label xml:lang="id">Konsultasikan ke Apoteker</rdfs:label>
+    <rdfs:label xml:lang="en">Consult Pharmacist</rdfs:label>
+    <rdfs:comment xml:lang="id">Interaksi moderate atau efek samping bermakna; diskusikan dengan apoteker.</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
+    <rdfs:label xml:lang="id">Pantau Mandiri (Self-Monitor)</rdfs:label>
+    <rdfs:label xml:lang="en">Self-monitor</rdfs:label>
+    <rdfs:comment xml:lang="id">Risiko rendah; lanjutkan sambil memantau gejala secara mandiri.</rdfs:comment>
+  </owl:NamedIndividual>
+
+  <!-- ======================================================= -->
+  <!-- J. ABOX – GOLONGAN & SEDIAAN INDIVIDUALS               -->
+  <!-- ======================================================= -->
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebas">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebas"/>
+    <rdfs:label xml:lang="id">Obat Bebas (Logo Lingkaran Hijau)</rdfs:label>
+    <rdfs:label xml:lang="en">Over-the-Counter Drug (Green Circle)</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
+    <rdfs:label xml:lang="id">Obat Bebas Terbatas (Logo Lingkaran Biru)</rdfs:label>
+    <rdfs:label xml:lang="en">Limited OTC Drug (Blue Circle)</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatHerbalJamu">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatHerbalJamu"/>
+    <rdfs:label xml:lang="id">Obat Herbal / Jamu / Fitofarmaka</rdfs:label>
+    <rdfs:label xml:lang="en">Herbal/Jamu/Phytopharmacy Product</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
+    <rdfs:label xml:lang="id">Sediaan Sirup / Suspensi Oral</rdfs:label>
+    <rdfs:label xml:lang="en">Syrup / Oral Suspension</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Tablet">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Tablet"/>
+    <rdfs:label xml:lang="id">Sediaan Tablet / Kaplet</rdfs:label>
+    <rdfs:label xml:lang="en">Tablet / Caplet</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Kapsul">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Kapsul"/>
+    <rdfs:label xml:lang="id">Sediaan Kapsul</rdfs:label>
+    <rdfs:label xml:lang="en">Capsule</rdfs:label>
+  </owl:NamedIndividual>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sachet">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sachet"/>
+    <rdfs:label xml:lang="id">Sediaan Sachet / Serbuk</rdfs:label>
+    <rdfs:label xml:lang="en">Sachet / Powder</rdfs:label>
+  </owl:NamedIndividual>
+
+</rdf:RDF>

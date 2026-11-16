@@ -1,0 +1,30 @@
+id_zat,nama_zat,chebi_id,chebi_iri,kode_atc,nama_atc,level_atc,kategori,peran_farmakologis,enzim_terkait
+ZAT-001,Paracetamol,CHEBI:46195,http://purl.obolibrary.org/obo/CHEBI_46195,N02BE01,Anilides,ATC Level 5,Sintetis,Analgesik-Antipiretik,"CYP2E1, CYP1A2 (oksidasi minor ke NAPQI)"
+ZAT-002,Ibuprofen,CHEBI:5855,http://purl.obolibrary.org/obo/CHEBI_5855,M01AE01,Propionic acid derivatives,ATC Level 5,Sintetis,"NSAID (Analgesik, Antipiretik, Antiinflamasi)","CYP2C9, CYP2C19 (substrat metabolisme)"
+ZAT-003,Dextromethorphan,CHEBI:4480,http://purl.obolibrary.org/obo/CHEBI_4480,R05DA09,Opium alkaloids and derivatives,ATC Level 5,Sintetis,Antitusif (Penekan Batuk Kering Sentral),"CYP2D6 (O-demetilasi utama), CYP3A4"
+ZAT-004,Pseudoephedrine,CHEBI:50346,http://purl.obolibrary.org/obo/CHEBI_50346,R01BA02,Pseudoephedrine combinations,ATC Level 5,Sintetis,Dekongestan Nasal Simpatomimetik,Ekskresi renal aktif (minor N-demetilasi)
+ZAT-005,Phenylephrine,CHEBI:8093,http://purl.obolibrary.org/obo/CHEBI_8093,R01BA03,Phenylephrine,ATC Level 5,Sintetis,Dekongestan Nasal Agonis Alfa-1,Monoamine oxidase (MAO) metabolisme lintas pertama
+ZAT-006,Chlorpheniramine (CTM),CHEBI:3587,http://purl.obolibrary.org/obo/CHEBI_3587,R06AB04,Substituted alkylamines,ATC Level 5,Sintetis,Antihistamin H1 Generasi 1 (Sedatif),"CYP2D6, CYP3A4"
+ZAT-007,Diphenhydramine,CHEBI:4634,http://purl.obolibrary.org/obo/CHEBI_4634,R06AA02,Aminoalkyl ethers,ATC Level 5,Sintetis,Antihistamin H1 Gen 1 & Antitusif Sedatif,CYP2D6 (inhibitor moderat & substrat)
+ZAT-008,Cetirizine,CHEBI:3561,http://purl.obolibrary.org/obo/CHEBI_3561,R06AE07,Piperazine derivatives,ATC Level 5,Sintetis,Antihistamin H1 Generasi 2 (Non-sedatif),Ekskresi renal dominan (minimal hepatik)
+ZAT-009,Bromhexine,CHEBI:3180,http://purl.obolibrary.org/obo/CHEBI_3180,R05CB02,Mucolytics,ATC Level 5,Sintetis,Mukolitik (Pengencer Dahak),CYP3A4 (metabolisme menjadi metabolit aktif ambroxol)
+ZAT-010,Ambroxol,CHEBI:2688,http://purl.obolibrary.org/obo/CHEBI_2688,R05CB06,Mucolytics,ATC Level 5,Sintetis,Mukolitik & Stimulator Surfaktan Paru,CYP3A4 metabolisme hepatik
+ZAT-011,Guaifenesin (Glyceryl Guaiacolate),CHEBI:5536,http://purl.obolibrary.org/obo/CHEBI_5536,R05CA03,Expectorants,ATC Level 5,Sintetis,Ekspektoran (Pelumas Saluran Napas),Metabolisme oksidasi renal
+ZAT-012,Simvastatin,CHEBI:9150,http://purl.obolibrary.org/obo/CHEBI_9150,C10AA01,HMG CoA reductase inhibitors,ATC Level 5,Sintetis,Hipolipidemik (Statin),CYP3A4 (substrat utama)
+ZAT-013,Atorvastatin,CHEBI:39548,http://purl.obolibrary.org/obo/CHEBI_39548,C10AA05,HMG CoA reductase inhibitors,ATC Level 5,Sintetis,Hipolipidemik (Statin Poten),CYP3A4 (substrat utama)
+ZAT-014,Amlodipine,CHEBI:2668,http://purl.obolibrary.org/obo/CHEBI_2668,C08CA01,Dihydropyridine derivatives,ATC Level 5,Sintetis,Antihipertensi (Calcium Channel Blocker),CYP3A4 (substrat)
+ZAT-015,Captopril,CHEBI:3380,http://purl.obolibrary.org/obo/CHEBI_3380,C09AA01,"ACE inhibitors, plain",ATC Level 5,Sintetis,Antihipertensi (ACE Inhibitor),Eliminasi renal 95% (efek batuk kering bradikinin)
+ZAT-016,Metformin,CHEBI:6801,http://purl.obolibrary.org/obo/CHEBI_6801,A10BA02,Biguanides,ATC Level 5,Sintetis,Antidiabetes Oral (Sensitizer Insulin),"Transporter OCT1, OCT2 renal (tanpa metabolisme sitokrom)"
+ZAT-017,Glimepiride,CHEBI:5383,http://purl.obolibrary.org/obo/CHEBI_5383,A10BB12,Sulfonylureas,ATC Level 5,Sintetis,Antidiabetes Oral (Sekretagog Insulin),CYP2C9 (substrat utama)
+ZAT-018,Warfarin,CHEBI:10033,http://purl.obolibrary.org/obo/CHEBI_10033,B01AA03,Vitamin K antagonists,ATC Level 5,Sintetis,Antikoagulan Oral,"CYP2C9 (S-enantiomer poten), CYP1A2, CYP3A4"
+ZAT-019,Clopidogrel,CHEBI:37941,http://purl.obolibrary.org/obo/CHEBI_37941,B01AC04,Platelet aggregation inhibitors,ATC Level 5,Sintetis,Antiplatelet Inhibitor Reseptor ADP P2Y12,"CYP2C19 (bioaktivasi prodrug 2 langkah), CYP3A4"
+ZAT-020,Digoxin,CHEBI:4551,http://purl.obolibrary.org/obo/CHEBI_4551,C01AA05,Digitalis glycosides,ATC Level 5,Sintetis,Glikosida Jantung Inotropik Positif,"Substrat P-glikoprotein (P-gp), rentang terapeutik sempit"
+ZAT-021,Omeprazole,CHEBI:7772,http://purl.obolibrary.org/obo/CHEBI_7772,A02BC01,Proton pump inhibitors,ATC Level 5,Sintetis,Antiasam Lambung (PPI),"CYP2C19 (inhibitor kompetitif poten & substrat), CYP3A4"
+ZAT-022,Ciprofloxacin,CHEBI:100241,http://purl.obolibrary.org/obo/CHEBI_100241,J01MA02,Fluoroquinolones,ATC Level 5,Sintetis,Antibakteri Spektrum Luas (Inhibitor DNA Girase),"CYP1A2 (inhibitor kuat), transporter renal"
+ZAT-023,Amoxicillin,CHEBI:2676,http://purl.obolibrary.org/obo/CHEBI_2676,J01CA04,Penicillins with extended spectrum,ATC Level 5,Sintetis,Antibakteri Beta-laktam,Eliminasi ginjal utuh (tanpa inhibisi sitokrom)
+ZAT-024,Itraconazole,CHEBI:6076,http://purl.obolibrary.org/obo/CHEBI_6076,J02AC02,Triazole derivatives,ATC Level 5,Sintetis,Antijamur Triazol Sistemik,CYP3A4 (penghambat sangat kuat / strong inhibitor)
+ZAT-025,Ketoconazole,CHEBI:47519,http://purl.obolibrary.org/obo/CHEBI_47519,J02AB02,Imidazole derivatives,ATC Level 5,Sintetis,Antijamur Imidazol,"CYP3A4, CYP2C9 (penghambat kuat)"
+ZAT-026,Fluconazole,CHEBI:46081,http://purl.obolibrary.org/obo/CHEBI_46081,J02AC01,Triazole derivatives,ATC Level 5,Sintetis,Antijamur Triazol,"CYP2C9, CYP2C19 (penghambat kuat), CYP3A4 (moderat)"
+ZAT-027,Alpha-Mangostin,CHEBI:67547,http://purl.obolibrary.org/obo/CHEBI_67547,A16AX,Various alimentary tract and metabolism products (Herbal),ATC Level 4 (Proxy),Herbal,"Antioksidan, Antiinflamasi (Kulit Manggis)",CYP3A4 (penghambat kuat in vitro / in vivo)
+ZAT-028,Curcumin,CHEBI:3962,http://purl.obolibrary.org/obo/CHEBI_3962,A16AX,Various alimentary tract and metabolism products (Herbal),ATC Level 4 (Proxy),Herbal,Hepatoprotektor & Antiinflamasi (Kunyit/Temulawak),"CYP3A4, CYP2C9 inhibisi lemah, efek antiplatelet ringan"
+ZAT-029,Gingerol,CHEBI:10136,http://purl.obolibrary.org/obo/CHEBI_10136,A16AX,Various alimentary tract and metabolism products (Herbal),ATC Level 4 (Proxy),Herbal,Karminatif & Penghangat Pernapasan (Jahe Merah),"Inhibisi COX aditif, penghambatan agregasi tromboksan"

@@ -40,3 +40,59 @@ java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/
 # --- Langkah 7: Penggabungan Modul (Merge) & Evaluasi Ulang ---
 java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/chebi_modul_clean.owl" --input "out/dron_modul.owl" --output "out/referensi_modul.owl"
 java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/referensi_modul.owl"
+
+
+# --- Pembaruan 2026-11-15: Ekstraksi Ulang ChEBI (+ Itraconazole, Ketoconazole, Fluconazole, Clopidogrel, Atorvastatin) ---
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" extract --method BOT --input "KB/chebi.owl" --term-file "out/seed_chebi_work.txt" --copy-ontology-annotations true --annotate-with-source true --output "out/chebi_modul.owl"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" remove --input "out/chebi_modul.owl" --term "oboInOwl:hasExactSynonym" --term "oboInOwl:hasRelatedSynonym" --term "oboInOwl:hasBroadSynonym" --term "oboInOwl:hasNarrowSynonym" --axioms annotation --output "out/chebi_modul_clean.owl"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" remove --input "out/chebi_modul_clean.owl" --term "oboInOwl:hasExactSynonym" --term "oboInOwl:hasRelatedSynonym" --term "oboInOwl:hasBroadSynonym" --term "oboInOwl:hasNarrowSynonym" --output "out/chebi_modul_clean.owl"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/chebi_modul_clean.owl" --input "out/dron_modul.owl" --output "out/referensi_modul.owl"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/referensi_modul.owl"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" validate-profile --profile DL --input "out/referensi_modul.owl"
+
+
+# --- Pembaruan 2026-11-15: Pengambilan Enzim CYP450 (PRO) via API & Validasi out/enzim_modul.owl ---
+python scrape/collect_enzymes.py
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/enzim_modul.owl" validate-profile --profile DL
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/referensi_modul.owl" --input "out/enzim_modul.owl" reason --reasoner HermiT validate-profile --profile DL
+
+
+# --- Pembaruan 2026-11-15: Pengambilan & Ekstraksi Modul Mekanisme DINTO via Otomatisasi ---
+python scrape/collect_dinto.py
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/dinto_modul.owl" validate-profile --profile DL
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/referensi_modul.owl" --input "out/enzim_modul.owl" --input "out/dinto_modul.owl" reason --reasoner HermiT validate-profile --profile DL
+
+
+# --- Pembaruan 2026-11-15: Ekstraksi Modul Gejala (SYMP) & Validasi out/symptom_modul.owl ---
+python scrape/collect_symptoms.py
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/symptom_modul.owl" validate-profile --profile DL
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/referensi_modul.owl" --input "out/enzim_modul.owl" --input "out/dinto_modul.owl" --input "out/symptom_modul.owl" reason --reasoner HermiT validate-profile --profile DL
+
+
+# --- Pembaruan 2026-11-15: Kurasi Pasangan Interaksi Obat & Herbal (Modul 5) ---
+python scrape/build_modul5_interactions.py
+
+
+# --- Pembaruan 2026-11-15: Pemetaan ATC <-> ChEBI & Master Workbook Kurasi (Modul 6) ---
+python scrape/build_modul6_curation.py
+
+
+# --- Pembaruan 2026-11-15: Penggabungan Modul ke out/kb_referensi_lengkap.owl ---
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/referensi_modul.owl" --input "out/enzim_modul.owl" --input "out/dinto_modul.owl" --input "out/symptom_modul.owl" annotate --ontology-iri "http://purl.obolibrary.org/obo/kbr-group4/kb_referensi_lengkap.owl" --version-iri "http://purl.obolibrary.org/obo/kbr-group4/kb_referensi_lengkap.owl/1.0" --annotation rdfs:comment "Unified Knowledge Base Reference Module combining ChEBI, DrON, PRO, DINTO, and SYMP." --output "out/kb_referensi_lengkap.owl" reason --reasoner HermiT validate-profile --profile DL
+
+
+# --- Pembaruan 2026-11-16: Scraping menyeluruh katalog apotek (K24Klik) ---
+python scrape/scrape_apotek_full.py --stage listing
+python scrape/scrape_apotek_full.py --stage detail --workers 4
+
+# --- Pembaruan 2026-11-16: Pemisahan Produk Batuk & Pilek (/data/apotek) ---
+python scrape/split_batuk_pilek.py
+
+# --- Pembaruan 2026-11-16: Penyusunan kb_v1.owl (TBox, ABox, Rules R-01..R-08) & Validasi HermiT ---
+python scrape/build_kb_v1.py
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/kb_v1.owl" validate-profile --profile DL
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/kb_referensi_lengkap.owl" --input "out/kb_v1.owl" --output "out/kb_v1_lengkap.owl" reason --reasoner HermiT validate-profile --profile DL
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" measure --input "out/kb_v1.owl" --output "data/curation/measure_kb_v1.tsv"
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" measure --input "out/kb_v1_lengkap.owl" --output "data/curation/measure_kb_v1_lengkap.tsv"
+
+

@@ -1,0 +1,25 @@
+{
+  "title": "Master Knowledge Base Curation (Modul 6)",
+  "created_at": "2026-11-15T11:02:19.489798+00:00",
+  "summary": "4-sheet curation workbook combining ATC-ChEBI mappings, curated DDIs, symptoms triage, and evidence provenance.",
+  "sheets": {
+    "Sheet1_ZatAktif": {
+      "count": 29,
+      "csv": "data/curation/sheet1_zat_aktif.csv"
+    },
+    "Sheet2_Interaksi": {
+      "count": 20,
+      "csv": "data/curation/sheet2_interaksi.csv"
+    },
+    "Sheet3_Gejala": {
+      "count": 22,
+      "csv": "data/curation/sheet3_gejala.csv"
+    },
+    "Sheet4_Sumber": {
+      "count": 10,
+      "csv": "data/curation/sheet4_sumber.csv"
+    }
+  },
+  "mapping_file": "data/mappings/atc_chebi_mapping.csv",
+  "master_xlsx": "data/curation/Knowledge_Base_Curation_Master.xlsx"
+}

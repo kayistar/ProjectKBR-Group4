@@ -2085,6 +2085,27 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_140921 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_140921">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76932"/>
+        <obo:IAO_0000115>Any pathway inhibitor that inhibits the Hedgehog signalling pathway.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>wikipedia.en:Hedgehog_pathway_inhibitors</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:140921</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>Hedgehog signaling pathway inhibitor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_140921"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Hedgehog_pathway_inhibitors</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_142348 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_142348">
@@ -6870,6 +6891,34 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+        <obo:IAO_0000115>An azole that is either one of a pair of heterocyclic organic compounds comprising three carbon atoms and two nitrogen atoms arranged in a ring.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:23677</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>diazole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23697">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23132"/>
+        <obo:IAO_0000115>Any member of the class of chlorobenzenes carrying two chloro groups at unspecified positions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:23697</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>dichlorobenzene</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_23765 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23765">
@@ -7234,6 +7283,21 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33575"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33822"/>
+        <obo:IAO_0000115>Any carboxylic acid with at least one hydroxy group.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:24669</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>hydroxy carboxylic acid</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_24688 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24688">
@@ -7257,6 +7321,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>hydroxycinnamic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24780">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23677"/>
+        <obo:IAO_0000115>A five-membered organic heterocycle containing two nitrogen atoms at positions 1 and 3, or any of its derivatives; compounds containing an imidazole skeleton.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:24780</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>imidazoles</rdfs:label>
     </owl:Class>
     
 
@@ -8019,6 +8097,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>pyridines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26455 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+        <obo:IAO_0000115>An azole that includes only one N atom and no other heteroatom as a part of the aromatic skeleton.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:26455</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>pyrroles</rdfs:label>
     </owl:Class>
     
 
@@ -8840,6 +8932,25 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>sulfur molecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26878 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26878">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
+        <obo:IAO_0000115>A tertiary alcohol is a compound in which a hydroxy group, ‒OH, is attached to a saturated carbon atom which has three other carbon atoms attached to it.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:26878</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>tertiary alcohol</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C4H7OR3</chemrof:generalized_empirical_formula>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.098</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.04969</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>[1*]CC(O)(C[2*])C[3*]</chemrof:smiles_string>
     </owl:Class>
     
 
@@ -10434,6 +10545,75 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_58954"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59558"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76924"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A medium-chain fatty acid anion that is the conjugate base of heptanoic acid; shown in myocardial ischaemia/reperfusion studies to increase levels of C&lt;small&gt;&lt;sub&gt;4&lt;/sub&gt;&lt;/small&gt; Kreb&apos;s cycle intermediates.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>cas:7563-37-3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>gmelin:327115</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>metacyc.compound:CPD-7619</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:16141384</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>reaxys:3903940</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:32362</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>heptanoate</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C7H13O2</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>MNWFXJYAOYHMED-UHFFFAOYSA-M</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C7H14O2/c1-2-3-4-5-6-7(8)9/h2-6H2,1H3,(H,8,9)/p-1</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.179</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.0921</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CCCCCCC(=O)[O-]</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32362"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:7563-37-3</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32362"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:327115</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32362"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>metacyc.compound:CPD-7619</owl:annotatedTarget>
+        <oboInOwl:source>metacyc.compound</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32362"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:16141384</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32362"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reaxys:3903940</owl:annotatedTarget>
+        <oboInOwl:source>reaxys</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_32862 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32862">
@@ -10851,6 +11031,21 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37175"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+        <obo:IAO_0000115>An organic fundamental parent is a structure used as a basis for substitutive names in organic nomenclature, containing, in addition to one or more hydrogen atoms, a single atom of an element, a number of atoms (alike or different) linked together to form an unbranched chain, a monocyclic or polycyclic ring system, or a ring assembly or ring/chain system.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:33245</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>organic fundamental parent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_33246 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33246">
@@ -11055,12 +11250,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>pubmed:22958833</owl:annotatedTarget>
-        <oboInOwl:source>pubmed</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>pubmed:12964249</owl:annotatedTarget>
         <oboInOwl:source>pubmed</oboInOwl:source>
     </owl:Axiom>
@@ -11086,6 +11275,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>pubmed:22849276</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:22958833</owl:annotatedTarget>
         <oboInOwl:source>pubmed</oboInOwl:source>
     </owl:Axiom>
     
@@ -12272,6 +12467,21 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33833 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33833">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24532"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33659"/>
+        <obo:IAO_0000115>A heterocyclic compound formally derived from an arene by replacement of one or more methine (‒C=) and/or vinylene (‒CH=CH‒) groups by trivalent or divalent heteroatoms, respectively, in such a way as to maintain the continuous π-electron system characteristic of aromatic systems and a number of out-of-plane π-electrons corresponding to the Hückel rule (4&lt;em&gt;n&lt;/em&gt;+2).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:33833</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>heteroarene</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_33836 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33836">
@@ -13165,6 +13375,21 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22712"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37143"/>
+        <obo:IAO_0000115>Any fluoroarene that is a benzene or a substituted benzene carrying at least one fluoro group.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35496</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>fluorobenzenes</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_35526 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35526">
@@ -13193,6 +13418,72 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35561"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>beilstein:104767</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>cas:288-88-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>gmelin:122679</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35550</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>1H-1,2,4-triazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C2H3N3</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>NSPMIYGKQJPBQR-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C2H3N3/c1-3-2-5-4-1/h1-2H,(H,3,4,5)</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.067</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.0327</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>c1ncnn1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35550"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:104767</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35550"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:288-88-0</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35550"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:122679</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33245"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35552</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>heterocyclic organic fundamental parent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_35554 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35554">
@@ -13203,6 +13494,132 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>cardiovascular drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25693"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35571"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35555</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>mancude organic heteromonocyclic parent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38597"/>
+        <oboInOwl:hasDbXref>drugbank:DB03594</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35560</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>1,2,4-triazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C2H3N3</chemrof:generalized_empirical_formula>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.065</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.0327</chemrof:monoisotopic_mass>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35560"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB03594</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35550"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>beilstein:506536</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>gmelin:362238</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35561</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>3H-1,2,4-triazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C2H3N3</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>FFGRBWANQMLTQI-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C2H3N3/c1-3-2-5-4-1/h1H,2H2</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.067</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.0327</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>C1=NCN=N1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35561"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:506536</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35561"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:362238</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35568 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35568">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000115>Any molecular entity that consists of a ring having (formally) the maximum number of noncumulative double bonds.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35568</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>mancude ring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35552"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35573"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35571</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>mancude organic heterocyclic parent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33245"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35568"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35573</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>organic mancude parent</rdfs:label>
     </owl:Class>
     
 
@@ -13516,6 +13933,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35727 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35727">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+        <obo:IAO_0000115>An azole in which the five-membered heterocyclic aromatic skeleton contains three N atoms and two C atoms.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35727</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>triazoles</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_35748 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35748">
@@ -13695,6 +14126,27 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35868 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35868">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24669"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25384"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018034"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36059"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any monocarboxylic acid which also contains a separate (alcoholic or phenolic) hydroxy substituent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35868</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>hydroxy monocarboxylic acid</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_35881 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35881">
@@ -13720,6 +14172,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>neurotransmitter agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35972 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35972">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35868"/>
+        <obo:IAO_0000115>Any  hydroxy monocarboxylic acid carrying at least two hydroxy groups.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:35972</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>dihydroxy monocarboxylic acid</rdfs:label>
     </owl:Class>
     
 
@@ -13775,6 +14241,40 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>wikipedia.en:Antibacterial</owl:annotatedTarget>
         <oboInOwl:source>wikipedia.en</oboInOwl:source>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35757"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35868"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any monocarboxylic acid anion carrying at least one hydroxy substituent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:36059</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>hydroxy monocarboxylic acid anion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35820"/>
+        <obo:IAO_0000115>A drug used to treat or prevent infections caused by protozoal organisms belonging to the suborder Trypanosomatida.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:36335</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>trypanocidal drug</rdfs:label>
+    </owl:Class>
     
 
 
@@ -14302,6 +14802,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37175 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37175">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33692"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:37175</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>organic hydride</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_37176 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37176">
@@ -14596,6 +15109,266 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37941 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37941">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25248"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37942"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83403"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_145947"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_231911"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33281"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35469"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35526"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35554"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35674"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50249"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50427"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64946"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_66981"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68563"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018038"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A thienopyridine that is 4,5,6,7-tetrahydrothieno[3,2-&lt;em&gt;c&lt;/em&gt;]pyridine in which the hydrogen attached to the nitrogen is replaced by an &lt;em&gt;o&lt;/em&gt;-chlorobenzyl group, the methylene hydrogen of which is replaced by a  methoxycarbonyl group (the &lt;i&gt;S&lt;/i&gt; enantiomer). A P2Y&lt;small&gt;&lt;sub&gt;12&lt;/sub&gt;&lt;/small&gt; receptor antagonist, it is used to inhibit blood clots and prevent heart attacks.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>beilstein:8151914</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>cas:113665-84-2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB00758</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugcentral:708</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>lincs.smallmolecule:LSM-5415</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:EP281459</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:EP99802</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US4529596</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US4847265</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:10983738</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:11095576</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:11701941</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:16802846</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:18520712</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:18708826</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:19573725</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>wikipedia.en:Clopidogrel</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:37941</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>clopidogrel</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C16H16ClNO2S</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>GKTWGGQPFAXNFI-HNNXBMFYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C16H16ClNO2S/c1-20-16(19)15(12-4-2-3-5-13(12)17)18-8-6-14-11(10-18)7-9-21-14/h2-5,7,9,15H,6,8,10H2,1H3/t15-/m0/s1</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">321.829</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">321.05903</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>COC(=O)[C@H](c1ccccc1Cl)N1CCc2sccc2C1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:8151914</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:113665-84-2</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB00758</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugcentral:708</owl:annotatedTarget>
+        <oboInOwl:source>drugcentral</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>lincs.smallmolecule:LSM-5415</owl:annotatedTarget>
+        <oboInOwl:source>lincs.smallmolecule</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:EP281459</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:EP99802</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US4529596</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US4847265</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:10983738</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11095576</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11701941</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:16802846</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:18520712</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:18708826</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:19573725</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Clopidogrel</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37942 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37942">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27171"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38101"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38106"/>
+        <obo:IAO_0000115>Any organic heterobicyclic compound whose skeleton results from the formal &lt;em&gt;ortho&lt;/em&gt;-fusion of any bond of a pyridine with any bond of a thiophene.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:37942</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>thienopyridine</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_37956 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37956">
@@ -14837,6 +15610,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_38179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33833"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:38179</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>monocyclic heteroarene</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_38215 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38215">
@@ -14891,6 +15677,116 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>chromenone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_38582 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35496"/>
+        <obo:IAO_0000115>Any member of the class of fluorobenzenes containing a mono- or poly-substituted benzene ring carrying two fluorine atoms.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:38582</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>difluorobenzene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_38584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38582"/>
+        <obo:IAO_0000115>A difluorobenzene carrying fluoro groups at positions 1 and 3.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>cas:372-18-9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>gmelin:200891</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:CN101607874</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:CN1634895</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:CN1765887</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:15535712</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:22707282</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>reaxys:1904537</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:38584</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>1,3-difluorobenzene</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C6H4F2</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>UEMGWPRHOOEKTA-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C6H4F2/c7-5-2-1-3-6(8)4-5/h1-4H</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">114.094</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">114.02811</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>Fc1cccc(F)c1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:372-18-9</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:200891</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:CN101607874</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:CN1634895</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:CN1765887</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:15535712</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:22707282</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reaxys:1904537</owl:annotatedTarget>
+        <oboInOwl:source>reaxys</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_38597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35555"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35727"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38179"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:38597</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>triazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C2H3N3</chemrof:generalized_empirical_formula>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.065</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.0327</chemrof:monoisotopic_mass>
     </owl:Class>
     
 
@@ -15208,6 +16104,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_39430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_39430">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25693"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38104"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:39430</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>dioxolane</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_39456 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_39456">
@@ -15219,6 +16129,314 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>antiglaucoma drug</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_39548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_39548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26455"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35972"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_62733"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83575"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87635"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_145947"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_231911"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33231"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33282"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35469"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35526"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35554"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35623"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35674"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35705"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35821"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35842"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36335"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_62868"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64946"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_66981"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_74518"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75835"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_78298"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018034"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50690"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018038"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A dihydroxy monocarboxylic acid that is a member of the drug class known as statins, used primarily for lowering blood cholesterol and for preventing cardiovascular diseases.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:2910</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:39538</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:94450</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>beilstein:8373630</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>cas:134523-00-5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB01076</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugcentral:257</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>hmdb:HMDB0005006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.compound:C06834</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.drug:D07474</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>lincs.smallmolecule:LSM-5771</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:EP409281</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US5273995</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pdb-ccd:117</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:11693468</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:15012735</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:18720283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>reaxys:8373630</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>wikipedia.en:Atorvastatin</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:39548</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>atorvastatin</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C33H35FN2O5</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>XUKUURHRXDUEBC-KAYWLYCHSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C33H35FN2O5/c1-21(2)31-30(33(41)35-25-11-7-4-8-12-25)29(22-9-5-3-6-10-22)32(23-13-15-24(34)16-14-23)36(31)18-17-26(37)19-27(38)20-28(39)40/h3-16,21,26-27,37-38H,17-20H2,1-2H3,(H,35,41)(H,39,40)/t26-,27-/m1/s1</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">558.65</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">558.253</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)O</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:8373630</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:134523-00-5</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB01076</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugcentral:257</owl:annotatedTarget>
+        <oboInOwl:source>drugcentral</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>hmdb:HMDB0005006</owl:annotatedTarget>
+        <oboInOwl:source>hmdb</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.compound:C06834</owl:annotatedTarget>
+        <oboInOwl:source>kegg.compound</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.drug:D07474</owl:annotatedTarget>
+        <oboInOwl:source>kegg.drug</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>lincs.smallmolecule:LSM-5771</owl:annotatedTarget>
+        <oboInOwl:source>lincs.smallmolecule</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:EP409281</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US5273995</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pdb-ccd:117</owl:annotatedTarget>
+        <oboInOwl:source>pdb-ccd</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11693468</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:15012735</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:18720283</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reaxys:8373630</owl:annotatedTarget>
+        <oboInOwl:source>reaxys</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Atorvastatin</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -16488,6 +17706,410 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_45571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_45571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39418"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59554"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76924"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018034"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32362"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A C&lt;small&gt;&lt;sub&gt;7&lt;/sub&gt;&lt;/small&gt;, straight-chain fatty acid that contributes to the odour of some rancid oils. Used in the preparation of esters for the fragrance industry, and as an additive in cigarettes.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:24519</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:45568</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>beilstein:1744723</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>cas:111-14-8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB02938</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>gmelin:142428</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>hmdb:HMDB0000666</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.compound:C17714</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>lipidmaps:LMFA01010007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>metacyc.compound:CPD-7619</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pdb-ccd:SHV</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:23999410</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>reaxys:1744723</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>wikipedia.en:Heptanoic_acid</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:45571</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>heptanoic acid</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C7H14O2</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>MNWFXJYAOYHMED-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C7H14O2/c1-2-3-4-5-6-7(8)9/h2-6H2,1H3,(H,8,9)</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">130.187</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">130.09938</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CCCCCCC(=O)O</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:1744723</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:111-14-8</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB02938</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:142428</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>hmdb:HMDB0000666</owl:annotatedTarget>
+        <oboInOwl:source>hmdb</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.compound:C17714</owl:annotatedTarget>
+        <oboInOwl:source>kegg.compound</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>lipidmaps:LMFA01010007</owl:annotatedTarget>
+        <oboInOwl:source>lipidmaps</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>metacyc.compound:CPD-7619</owl:annotatedTarget>
+        <oboInOwl:source>metacyc.compound</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pdb-ccd:SHV</owl:annotatedTarget>
+        <oboInOwl:source>pdb-ccd</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:23999410</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reaxys:1744723</owl:annotatedTarget>
+        <oboInOwl:source>reaxys</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45571"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Heptanoic_acid</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35560"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35550"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018036"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35561"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasAlternativeId>CHEBI:35548</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:46076</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>beilstein:605619</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>cas:63598-71-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>gmelin:323206</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pdb-ccd:TRI</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:46077</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>4H-1,2,4-triazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C2H3N3</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>NSPMIYGKQJPBQR-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C2H3N3/c1-3-2-5-4-1/h1-2H,(H,3,4,5)</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.067</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">69.0327</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>c1ncnn1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:605619</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:63598-71-0</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:323206</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46077"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pdb-ccd:TRI</owl:annotatedTarget>
+        <oboInOwl:source>pdb-ccd</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26878"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38582"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87071"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87101"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33282"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35441"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35674"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35703"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35718"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50183"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64946"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_70868"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_78298"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018038"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38584"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018040"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35550"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A member of the class of  triazoles that is propan-2-ol substituted at position 1 and 3 by 1&lt;em&gt;H&lt;/em&gt;-1,2,4-triazol-1-yl groups and at position 2 by a 2,4-difluorophenyl group. It is an antifungal drug used for the treatment of mucosal candidiasis and for systemic infections including systemic candidiasis, coccidioidomycosis, and cryptococcosis.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:46079</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:5099</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>beilstein:4269710</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>cas:86386-73-4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB00196</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugcentral:1187</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>hmdb:HMDB0014342</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.drug:D00322</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>lincs.smallmolecule:LSM-2106</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:GB2099818</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US4404216</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pdb-ccd:TPF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:11366931</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:16822276</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:23171950</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:23793863</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>reaxys:7311650</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>wikipedia.en:Fluconazole</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:46081</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>fluconazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C13H12F2N6O</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>RFHAOTPXVQNOHP-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C13H12F2N6O/c14-10-1-2-11(12(15)3-10)13(22,4-20-8-16-6-18-20)5-21-9-17-7-19-21/h1-3,6-9,22H,4-5H2</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">306.276</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">306.10407</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>OC(Cn1cncn1)(Cn1cncn1)c1ccc(F)cc1F</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:4269710</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:86386-73-4</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB00196</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugcentral:1187</owl:annotatedTarget>
+        <oboInOwl:source>drugcentral</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>hmdb:HMDB0014342</owl:annotatedTarget>
+        <oboInOwl:source>hmdb</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.drug:D00322</owl:annotatedTarget>
+        <oboInOwl:source>kegg.drug</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>lincs.smallmolecule:LSM-2106</owl:annotatedTarget>
+        <oboInOwl:source>lincs.smallmolecule</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:GB2099818</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US4404216</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pdb-ccd:TPF</owl:annotatedTarget>
+        <oboInOwl:source>pdb-ccd</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11366931</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:16822276</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:23171950</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:23793863</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reaxys:7311650</owl:annotatedTarget>
+        <oboInOwl:source>reaxys</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Fluconazole</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_46195 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46195">
@@ -17022,6 +18644,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46844 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46844">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26144"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32988"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:46844</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>N-acylpiperazine</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_46848 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46848">
@@ -17060,6 +18696,232 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>pdb-ccd:FMT</owl:annotatedTarget>
         <oboInOwl:source>pdb-ccd</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_47518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_47518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86411"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35526"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48336"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A &lt;i&gt;cis&lt;/i&gt;-1-acetyl-4-(4-{[2-(2,4-dichlorophenyl)-2-(1&lt;em&gt;H&lt;/em&gt;-imidazol-1-ylmethyl)-1,3-dioxolan-4-yl]methoxy}phenyl)piperazine which dioxolane moiety has (2&lt;i&gt;S&lt;/i&gt;,4&lt;i&gt;R&lt;/i&gt;)-configuration.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>beilstein:5488107</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pdb-ccd:KLN</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:47518</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>(2S,4R)-ketoconazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C26H28Cl2N4O4</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>XMAYWYJOQHXEEK-ZEQKJWHPSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C26H28Cl2N4O4/c1-19(33)31-10-12-32(13-11-31)21-3-5-22(6-4-21)34-15-23-16-35-26(36-23,17-30-9-8-29-18-30)24-7-2-20(27)14-25(24)28/h2-9,14,18,23H,10-13,15-17H2,1H3/t23-,26-/m1/s1</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">531.44</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">530.14876</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CC(=O)N1CCN(c2ccc(OC[C@@H]3CO[C@@](Cn4ccnc4)(c4ccc(Cl)cc4Cl)O3)cc2)CC1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47518"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:5488107</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47518"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pdb-ccd:KLN</owl:annotatedTarget>
+        <oboInOwl:source>pdb-ccd</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_47519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_47519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60911"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87071"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47518"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48336"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33282"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35526"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35674"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35705"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35718"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50177"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50646"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50864"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50919"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_55324"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A racemate consisting of equimolar amounts of (2&lt;i&gt;R&lt;/i&gt;,4&lt;i&gt;S&lt;/i&gt;)- and (2&lt;i&gt;S&lt;/i&gt;,4&lt;i&gt;R&lt;/i&gt;)-ketoconazole.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:6126</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>beilstein:4303081</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>cas:65277-42-1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB01026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>gmelin:1713206</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>hmdb:HMDB0012242</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.drug:D00351</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:DE2804096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US4144346</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:47519</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>ketoconazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C26H28Cl2N4O4</chemrof:generalized_empirical_formula>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">531.44</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">530.14876</chemrof:monoisotopic_mass>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:4303081</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:65277-42-1</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB01026</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>gmelin:1713206</owl:annotatedTarget>
+        <oboInOwl:source>gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>hmdb:HMDB0012242</owl:annotatedTarget>
+        <oboInOwl:source>hmdb</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.drug:D00351</owl:annotatedTarget>
+        <oboInOwl:source>kegg.drug</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:DE2804096</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US4144346</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -17173,6 +19035,101 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>disinfectant</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_48336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86411"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47518"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A &lt;i&gt;cis&lt;/i&gt;-1-acetyl-4-(4-{[2-(2,4-dichlorophenyl)-2-(1&lt;em&gt;H&lt;/em&gt;-imidazol-1-ylmethyl)-1,3-dioxolan-4-yl]methoxy}phenyl)piperazine which dioxolane moiety has (2&lt;i&gt;R&lt;/i&gt;,4&lt;i&gt;S&lt;/i&gt;)-configuration.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>lincs.smallmolecule:LSM-5430</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pdb-ccd:KKK</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>reaxys:4241048</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:48336</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>(2R,4S)-ketoconazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C26H28Cl2N4O4</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>XMAYWYJOQHXEEK-OZXSUGGESA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C26H28Cl2N4O4/c1-19(33)31-10-12-32(13-11-31)21-3-5-22(6-4-21)34-15-23-16-35-26(36-23,17-30-9-8-29-18-30)24-7-2-20(27)14-25(24)28/h2-9,14,18,23H,10-13,15-17H2,1H3/t23-,26-/m0/s1</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">531.44</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">530.14876</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CC(=O)N1CCN(c2ccc(OC[C@H]3CO[C@](Cn4ccnc4)(c4ccc(Cl)cc4Cl)O3)cc2)CC1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48336"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>lincs.smallmolecule:LSM-5430</owl:annotatedTarget>
+        <oboInOwl:source>lincs.smallmolecule</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48336"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pdb-ccd:KKK</owl:annotatedTarget>
+        <oboInOwl:source>pdb-ccd</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48336"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reaxys:4241048</owl:annotatedTarget>
+        <oboInOwl:source>reaxys</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_48339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23697"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24780"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25698"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39430"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46844"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46848"/>
+        <obo:IAO_0000115>A dioxolane that is 1,3-dioxolane which is substituted at positions 2, 2, and 4 by imidazol-1-ylmethyl, 2,4-dichlorophenyl, and [&lt;em&gt;para&lt;/em&gt;-(4-acetylpiperazin-1-yl)phenoxy]methyl groups, respectively.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>beilstein:634785</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB01026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>lincs.smallmolecule:LSM-5148</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:48339</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>1-acetyl-4-(4-{[2-(2,4-dichlorophenyl)-2-(1H-imidazol-1-ylmethyl)-1,3-dioxolan-4-yl]methoxy}phenyl)piperazine</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C26H28Cl2N4O4</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>XMAYWYJOQHXEEK-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C26H28Cl2N4O4/c1-19(33)31-10-12-32(13-11-31)21-3-5-22(6-4-21)34-15-23-16-35-26(36-23,17-30-9-8-29-18-30)24-7-2-20(27)14-25(24)28/h2-9,14,18,23H,10-13,15-17H2,1H3</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">531.44</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">530.14876</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CC(=O)N1CCN(c2ccc(OCC3COC(Cn4ccnc4)(c4ccc(Cl)cc4Cl)O3)cc2)CC1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48339"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>beilstein:634785</owl:annotatedTarget>
+        <oboInOwl:source>beilstein</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48339"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB01026</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48339"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>lincs.smallmolecule:LSM-5148</owl:annotatedTarget>
+        <oboInOwl:source>lincs.smallmolecule</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -17364,6 +19321,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>radical scavenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_48676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_48676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <obo:IAO_0000115>A drug that affects the function of fibrin in blood coagulation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:48676</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>fibrin modulating drug</rdfs:label>
     </owl:Class>
     
 
@@ -18109,6 +20080,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50427">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50248"/>
+        <obo:IAO_0000115>A drug or agent which antagonizes or impairs any mechanism leading to blood platelet aggregation, whether during the phases of activation and shape change or following the dense-granule release reaction and stimulation of the prostaglandin-thromboxane system.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50427</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>platelet aggregation inhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_50514 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50514">
@@ -18205,6 +20190,28 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50646">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23888"/>
+        <obo:IAO_0000115>An agent that inhibits bone resorption and/or favor bone mineralization and bone regeneration. Used to heal bone fractures and to treat bone diseases such as osteopenia and osteoporosis.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:72497</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>wikipedia.en:Osteoporosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50646</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>bone density conservation agent</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50646"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Osteoporosis</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_50689 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50689">
@@ -18215,6 +20222,32 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>reproductive control drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50690</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>atorvastatin(1-)</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C33H34FN2O5</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>XUKUURHRXDUEBC-KAYWLYCHSA-M</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C33H35FN2O5/c1-21(2)31-30(33(41)35-25-11-7-4-8-12-25)29(22-9-5-3-6-10-22)32(23-13-15-24(34)16-14-23)36(31)18-17-26(37)19-27(38)20-28(39)40/h3-16,21,26-27,37-38H,17-20H2,1-2H3,(H,35,41)(H,39,40)/p-1/t26-,27-/m1/s1</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">557.642</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">557.24572</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CC[C@@H](O)C[C@@H](O)CC(=O)[O-]</chemrof:smiles_string>
     </owl:Class>
     
 
@@ -19922,6 +21955,56 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35366"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018034"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59558"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any fatty acid with a chain length of between C&lt;small&gt;&lt;sub&gt;6&lt;/sub&gt;&lt;/small&gt; and C&lt;small&gt;&lt;sub&gt;12&lt;/sub&gt;&lt;/small&gt;.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:59554</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>medium-chain fatty acid</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>CHO2R</chemrof:generalized_empirical_formula>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.017</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.99765</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>*C(=O)O</chemrof:smiles_string>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59558 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59558">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28868"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0018033"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59554"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A fatty acid anion resulting from the deprotonation of the carboxylic acid moiety of a medium-chain fatty acid.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:59558</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>medium-chain fatty acid anion</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1</chemrof:charge>
+        <chemrof:generalized_empirical_formula>CO2R</chemrof:generalized_empirical_formula>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.01</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.98983</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>*C(=O)[O-]</chemrof:smiles_string>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_59740 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59740">
@@ -19933,6 +22016,49 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>nucleophilic reagent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59769 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59769">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36963"/>
+        <obo:IAO_0000115>An organooxygen compound having the structure RR&apos;C(OR&apos;&apos;)(OR&apos;&apos;&apos;) (R&apos;&apos;, R&apos;&apos;&apos; ≠ H). Mixed acetals have R&apos;&apos; and R&apos;&apos;&apos; groups which differ.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:59769</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>acetal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59777 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59777">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59769"/>
+        <obo:IAO_0000115>An acetal of formula R&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;C(OR)&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt; (R ≠ H) derived from a ketone by replacement of the oxo group by two hydrocarbyloxy groups. The class name &apos;ketals&apos;, once abandoned by IUPAC, has been reinstated as a subclass of acetals.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:59777</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>ketal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59779 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59779">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59777"/>
+        <obo:IAO_0000115>A ketal in the molecule of which the ketal carbon and one or both oxygen atoms thereon are members of a ring.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:59779</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>cyclic ketal</rdfs:label>
     </owl:Class>
     
 
@@ -20138,6 +22264,234 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23697"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35618"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35727"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39430"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46848"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59779"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87071"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87101"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_140921"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22587"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_233423"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33282"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35441"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35480"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35554"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35620"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50183"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50249"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64951"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_74518"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_77748"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An &lt;em&gt;N&lt;/em&gt;-arylpiperazine that is &lt;i&gt;cis&lt;/i&gt;-ketoconazole in which the imidazol-1-yl group is replaced by a 1,2,4-triazol-1-yl group and in which the actyl group attached to the piperazine moiety is replaced by a &lt;em&gt;p&lt;/em&gt;-[(±)1-&lt;em&gt;sec&lt;/em&gt;-butyl-5-oxo-1,5-dihydro-4&lt;em&gt;H&lt;/em&gt;-1,2,4-triazol-4-yl]phenyl group. A potent P-glycoprotein and CYP3A4 inhibitor, it is used as an antifungal drug for the treatment of various fungal infections, including aspergillosis, blastomycosis, candidiasis, chromoblastomycosis, coccidioidomycosis, cryptococcosis, histoplasmosis, and sporotrichosis.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>cas:84625-61-6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB01167</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.drug:D00350</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:EP6711</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US4267179</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:11219548</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:11403818</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:11422002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:15521894</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:19025521</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:20400651</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:25326091</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>vsdb:1853</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>wikipedia.en:Itraconazole</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:6076</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>itraconazole</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C35H38Cl2N8O4</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>VHVPQPYKVGDNFY-ZPGVKDDISA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C35H38Cl2N8O4/c1-3-25(2)45-34(46)44(24-40-45)29-7-5-27(6-8-29)41-14-16-42(17-15-41)28-9-11-30(12-10-28)47-19-31-20-48-35(49-31,21-43-23-38-22-39-43)32-13-4-26(36)18-33(32)37/h4-13,18,22-25,31H,3,14-17,19-21H2,1-2H3/t25?,31-,35-/m0/s1</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">705.647</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">704.23931</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>CCC(C)n1ncn(-c2ccc(N3CCN(c4ccc(OC[C@H]5CO[C@](Cn6cncn6)(c6ccc(Cl)cc6Cl)O5)cc4)CC3)cc2)c1=O</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:84625-61-6</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB01167</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.drug:D00350</owl:annotatedTarget>
+        <oboInOwl:source>kegg.drug</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:EP6711</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US4267179</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11219548</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11403818</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11422002</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:15521894</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:19025521</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:20400651</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:25326091</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>vsdb:1853</owl:annotatedTarget>
+        <oboInOwl:source>vsdb</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Itraconazole</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_60798 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60798">
@@ -20320,6 +22674,21 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>pubmed:19933331</owl:annotatedTarget>
         <oboInOwl:source>pubmed</oboInOwl:source>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_62733 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_62733">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_32988"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33659"/>
+        <obo:IAO_0000115>An amide in which the amide linkage is bonded directly to an aromatic system.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:62733</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>aromatic amide</rdfs:label>
+    </owl:Class>
     
 
 
@@ -21518,6 +23887,28 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_68452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_68452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38101"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38179"/>
+        <obo:IAO_0000115>Any monocyclic heteroarene consisting of a five-membered ring containing nitrogen. Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>wikipedia.en:Azole</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:68452</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>azole</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Azole</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_68494 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_68494">
@@ -21544,6 +23935,27 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>apoptosis inducer</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_68563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_68563">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_91079"/>
+        <obo:IAO_0000115>An antagonist at the P2Y&lt;small&gt;&lt;sub&gt;12&lt;/sub&gt;&lt;/small&gt; receptor</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>wikipedia.en:P2Y12</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:68563</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>P2Y12 receptor antagonist</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68563"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:P2Y12</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -21600,6 +24012,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>wikipedia.en:Peroxisome_proliferator-activated_receptor</owl:annotatedTarget>
         <oboInOwl:source>wikipedia.en</oboInOwl:source>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_70868 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_70868">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35820"/>
+        <obo:IAO_0000115>An antiprotozoal drug used to treat or prevent infections caused by protozoan parasites that belong to the genus &lt;em&gt;Leishmania&lt;/em&gt;.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:70868</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>antileishmanial agent</rdfs:label>
+    </owl:Class>
     
 
 
@@ -21815,6 +24241,34 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>additive</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_75282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_75282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83317"/>
+        <obo:IAO_0000115>Any compound that inhibits one or more steps in the pathway leading to the synthesis of ergosterol.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>pubmed:12604527</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:19835945</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:75282</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>ergosterol biosynthesis inhibitor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75282"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:12604527</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75282"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:19835945</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
     
 
 
@@ -23438,6 +25892,27 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_77748 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_77748">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76895"/>
+        <obo:IAO_0000115>An EC 3.6.3.* (acid anhydride hydrolase catalysing transmembrane movement of substances) inhibitor that interferes with the action of xenobiotic-transporting ATPase (EC 3.6.3.44).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>wikipedia.en:Xenobiotic-transporting_ATPase</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:77748</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>EC 3.6.3.44 (xenobiotic-transporting ATPase) inhibitor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_77748"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Xenobiotic-transporting_ATPase</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_77941 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_77941">
@@ -23727,6 +26202,21 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_83317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35222"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <obo:IAO_0000115>Any compound that inhibits the biosynthesis of any sterol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:83317</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>sterol biosynthesis inhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_83403 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83403">
@@ -23737,6 +26227,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
         <rdfs:label>monochlorobenzenes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_83575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_83575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35496"/>
+        <obo:IAO_0000115>Any member of the class of fluorobenzenes containing a mono- or poly-substituted benzene ring carrying a single fluorine substitutent.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:83575</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>monofluorobenzenes</rdfs:label>
     </owl:Class>
     
 
@@ -23943,6 +26447,33 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_86323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_86323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35718"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75282"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A compound that has a structure that is related to miconazole, contains an azole (imidazole or triazole) moiety, and has significant systemic antifungal properties.  They inhibit cytochrome P450-dependent enzymes (particularly C14-demethylase) involved in the biosynthesis of ergosterol, which is required for fungal cell membrane structure and function.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:60593</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:86323</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>conazole antifungal agent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_86324 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_86324">
@@ -23983,6 +26514,121 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>wikipedia.en:Antifungal</owl:annotatedTarget>
         <oboInOwl:source>wikipedia.en</oboInOwl:source>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_86411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_86411">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48339"/>
+        <obo:IAO_0000115>Either of the two diastereoisomers of 1-acetyl-4-(4-{[2-(2,4-dichlorophenyl)-2-(1&lt;em&gt;H&lt;/em&gt;-imidazol-1-ylmethyl)-1,3-dioxolan-4-yl]methoxy}phenyl)piperazine in which the imidazol-1-ylmethyl group and the aryloxymethyl group are in a &lt;i&gt;cis&lt;/i&gt; relationship to each other - i.e. they are both on the same side of the plane of the dioxolane ring. The antifungal drug ketoconazole is a racemic mixture of the two &lt;i&gt;cis&lt;/i&gt; diastereoisomers.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:86411</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>cis-1-acetyl-4-(4-{[2-(2,4-dichlorophenyl)-2-(1H-imidazol-1-ylmethyl)-1,3-dioxolan-4-yl]methoxy}phenyl)piperazine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_86420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_86420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24780"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35718"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A compound that has significant antifungal properties whose structure contains an imidazole moiety.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:86420</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>imidazole antifungal agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_86426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_86426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35727"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35718"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A member of the class of triazole that has significant antifungal properties.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:86426</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>triazole antifungal agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_87069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_87069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86420"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86327"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any imidazole antifungal agent that has been used for the treatment of fungal infections in humans or animals.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:87069</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>imidazole antifungal drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_87071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_87071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68452"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86323"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86327"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any conazole antifungal agent that has been used for the treatment of fungal infections in animals or humans.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:87071</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>conazole antifungal drug</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_87101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_87101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86426"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_86327"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any triazole antifungal agent that has been used for the treatment of fungal infections in humans or animals.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:87101</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>triazole antifungal drug</rdfs:label>
+    </owl:Class>
     
 
 
@@ -24201,6 +26847,48 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87633"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:20467214</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_87635 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_87635">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87631"/>
+        <obo:IAO_0000115>A statin which does not occur naturally and which is not obtained by chemical transformation of a naturally occurring statin.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>pubmed:11464449</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:1464741</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:16059807</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:20467214</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:87635</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>statin (synthetic)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87635"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:11464449</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87635"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:1464741</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87635"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:16059807</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_87635"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>pubmed:20467214</owl:annotatedTarget>
         <oboInOwl:source>pubmed</oboInOwl:source>
@@ -24795,6 +27483,27 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_91079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_91079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48706"/>
+        <obo:IAO_0000115>An antagonist at purinergic P2 receptors</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>wikipedia.en:Purinergic_receptor</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:91079</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>purinergic receptor P2 antagonist</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_91079"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Purinergic_receptor</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_9150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9150">
@@ -25142,6 +27851,142 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9150"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>wikipedia.en:Simvastatin</owl:annotatedTarget>
+        <oboInOwl:source>wikipedia.en</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9588 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9588">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37942"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83403"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48676"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50248"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50249"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50427"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68563"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A thienopyridine that is 4,5,6,7-tetrahydrothieno[3,2-&lt;em&gt;c&lt;/em&gt;]pyridine in which the hydrogen attached to the nitrogen is replaced by an &lt;em&gt;o&lt;/em&gt;-chlorobenzyl group.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>cas:55142-85-3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugbank:DB00208</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>drugcentral:2657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.compound:C07140</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>kegg.drug:D08594</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>lincs.smallmolecule:LSM-1986</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:DE2404308</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US4051141</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>patent:US4127580</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>pubmed:19180126</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>reaxys:1216802</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>wikipedia.en:Ticlopidine</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:9588</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi/3_STAR"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label>ticlopidine</rdfs:label>
+        <chemrof:charge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</chemrof:charge>
+        <chemrof:generalized_empirical_formula>C14H14ClNS</chemrof:generalized_empirical_formula>
+        <chemrof:inchi_key_string>PHWBOXQYWZNQIN-UHFFFAOYSA-N</chemrof:inchi_key_string>
+        <chemrof:inchi_string>InChI=1S/C14H14ClNS/c15-13-4-2-1-3-11(13)9-16-7-5-14-12(10-16)6-8-17-14/h1-4,6,8H,5,7,9-10H2</chemrof:inchi_string>
+        <chemrof:mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">263.793</chemrof:mass>
+        <chemrof:monoisotopic_mass rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">263.05355</chemrof:monoisotopic_mass>
+        <chemrof:smiles_string>Clc1ccccc1CN1CCc2sccc2C1</chemrof:smiles_string>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>cas:55142-85-3</owl:annotatedTarget>
+        <oboInOwl:source>cas</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugbank:DB00208</owl:annotatedTarget>
+        <oboInOwl:source>drugbank</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>drugcentral:2657</owl:annotatedTarget>
+        <oboInOwl:source>drugcentral</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.compound:C07140</owl:annotatedTarget>
+        <oboInOwl:source>kegg.compound</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>kegg.drug:D08594</owl:annotatedTarget>
+        <oboInOwl:source>kegg.drug</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>lincs.smallmolecule:LSM-1986</owl:annotatedTarget>
+        <oboInOwl:source>lincs.smallmolecule</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:DE2404308</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US4051141</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>patent:US4127580</owl:annotatedTarget>
+        <oboInOwl:source>patent</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>pubmed:19180126</owl:annotatedTarget>
+        <oboInOwl:source>pubmed</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>reaxys:1216802</owl:annotatedTarget>
+        <oboInOwl:source>reaxys</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9588"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>wikipedia.en:Ticlopidine</owl:annotatedTarget>
         <oboInOwl:source>wikipedia.en</oboInOwl:source>
     </owl:Axiom>
     

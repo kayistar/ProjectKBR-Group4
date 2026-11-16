@@ -1,0 +1,17 @@
+{
+  "source": "Protein Ontology (PRO) via EMBL-EBI OLS4 API & Ontobee RDF",
+  "urls": [
+    "https://ontobee.org/ontology/rdf/PR?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P08684",
+    "https://ontobee.org/ontology/rdf/PR?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P10635",
+    "https://ontobee.org/ontology/rdf/PR?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P11712",
+    "https://ontobee.org/ontology/rdf/PR?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P33261",
+    "https://www.ebi.ac.uk/ols4/api/ontologies/pr/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P08684",
+    "https://www.ebi.ac.uk/ols4/api/ontologies/pr/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P10635",
+    "https://www.ebi.ac.uk/ols4/api/ontologies/pr/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P11712",
+    "https://www.ebi.ac.uk/ols4/api/ontologies/pr/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPR_P33261"
+  ],
+  "retrieved_at": "2026-11-15T09:28:28.699757+00:00",
+  "scope": "4 human CYP450 drug-metabolizing enzymes (CYP3A4, CYP2D6, CYP2C19, CYP2C9)",
+  "count": 4,
+  "owl_output": "out/enzim_modul.owl"
+}

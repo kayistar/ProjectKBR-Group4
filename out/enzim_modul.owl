@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/kbr-group4/enzim_modul.owl#"
+     xml:base="http://purl.obolibrary.org/obo/kbr-group4/enzim_modul.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/kbr-group4/enzim_modul.owl">
+        <rdfs:comment xml:lang="en">MIREOT extract of human CYP450 drug-metabolizing enzymes from Protein Ontology (PRO) via EMBL-EBI OLS4 API / Ontobee.</rdfs:comment>
+    </owl:Ontology>
+
+    <!-- Annotation Properties -->
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
+
+    <!-- Parent Classes -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000006118">
+        <rdfs:label xml:lang="en">cytochrome P450 2C19</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000006118</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=gene.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000006120">
+        <rdfs:label xml:lang="en">cytochrome P450 2C9</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000006120</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=gene.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000006121">
+        <rdfs:label xml:lang="en">cytochrome P450 2D6</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000006121</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=gene.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000006130">
+        <rdfs:label xml:lang="en">cytochrome P450 3A4</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000006130</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=gene.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000029067">
+        <rdfs:label xml:lang="en">Homo sapiens protein</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000029067</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">A protein that is encoded in the genome of Homo sapiens.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+
+    <!-- Target Human CYP450 Enzyme Classes -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P08684">
+        <rdfs:label xml:lang="en">cytochrome P450 3A4 (human)</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:P08684</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=organism-gene. Requested by=PubChem.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000006130"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000029067"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P10635">
+        <rdfs:label xml:lang="en">cytochrome P450 2D6 (human)</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:P10635</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=organism-gene.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000006121"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000029067"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P33261">
+        <rdfs:label xml:lang="en">cytochrome P450 2C19 (human)</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:P33261</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=organism-gene.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000006118"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000029067"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P11712">
+        <rdfs:label xml:lang="en">cytochrome P450 2C9 (human)</rdfs:label>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:P11712</oboInOwl:id>
+        <obo:IAO_0000115 xml:lang="en">Category=organism-gene.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000006120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000029067"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+    </owl:Class>
+</rdf:RDF>

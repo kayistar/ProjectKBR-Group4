@@ -1,0 +1,5 @@
+obo_id,iri,gene_symbol,uniprot,label,parent_iris,parent_labels,definition
+PR:P08684,http://purl.obolibrary.org/obo/PR_P08684,CYP3A4,P08684,cytochrome P450 3A4 (human),http://purl.obolibrary.org/obo/PR_000006130|http://purl.obolibrary.org/obo/PR_000029067,cytochrome P450 3A4|Homo sapiens protein,Category=organism-gene. Requested by=PubChem.
+PR:P10635,http://purl.obolibrary.org/obo/PR_P10635,CYP2D6,P10635,cytochrome P450 2D6 (human),http://purl.obolibrary.org/obo/PR_000006121|http://purl.obolibrary.org/obo/PR_000029067,cytochrome P450 2D6|Homo sapiens protein,Category=organism-gene.
+PR:P33261,http://purl.obolibrary.org/obo/PR_P33261,CYP2C19,P33261,cytochrome P450 2C19 (human),http://purl.obolibrary.org/obo/PR_000006118|http://purl.obolibrary.org/obo/PR_000029067,cytochrome P450 2C19|Homo sapiens protein,Category=organism-gene.
+PR:P11712,http://purl.obolibrary.org/obo/PR_P11712,CYP2C9,P11712,cytochrome P450 2C9 (human),http://purl.obolibrary.org/obo/PR_000006120|http://purl.obolibrary.org/obo/PR_000029067,cytochrome P450 2C9|Homo sapiens protein,Category=organism-gene.

@@ -1,0 +1,820 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns:ns1="http://www.w3.org/2002/07/owl#" xmlns:ns2="http://www.w3.org/2000/01/rdf-schema#" xmlns:obo="http://purl.obolibrary.org/obo/" xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:base="http://purl.obolibrary.org/obo/symp.owl">
+    <ns1:Ontology rdf:about="http://purl.obolibrary.org/obo/kbr-group4/symptom_modul.owl">
+        <ns1:versionIRI rdf:resource="http://purl.obolibrary.org/obo/symp/releases/2026-07-30/symp.owl" />
+    <ns2:comment xml:lang="en">MIREOT extract of symptoms for cough &amp; cold clinical decision support from Symptom Ontology (SYMP).</ns2:comment></ns1:Ontology>
+    
+
+
+    
+
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <ns2:label>definition</ns2:label>
+    </ns1:AnnotationProperty>
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by" />
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date" />
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <ns2:label>has_alternative_id</ns2:label>
+    </ns1:AnnotationProperty>
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref" />
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <ns2:label>has_exact_synonym</ns2:label>
+    </ns1:AnnotationProperty>
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <ns2:label>has_obo_namespace</ns2:label>
+    </ns1:AnnotationProperty>
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <ns2:label>has_related_synonym</ns2:label>
+    </ns1:AnnotationProperty>
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id" />
+    
+
+
+    
+
+    <ns1:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label" />
+    
+
+
+    
+
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000024">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000410" />
+        <obo:IAO_0000115>A neurological and physiological symptom that is characterized by a feeling of being more sleepy than normal during the day. People who are drowsy may fall asleep in when they do not want to or at times which can lead to safety concerns.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>drowsy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>somnolence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000024</oboInOwl:id>
+        <ns2:label>drowsiness</ns2:label>
+    <skos:altLabel xml:lang="id">Mengantuk / rasa kantuk berat</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Efek penekanan SSP dari antihistamin generasi pertama (CTM, Diphenhydramine); jangan menyetir.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A neurological and physiological symptom that is characterized by a feeling of being more sleepy than normal during the day. People who are drowsy may fall asleep in when they do not want to or at times which can lead to safety concerns.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://medlineplus.gov/ency/article/003208.htm</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000025">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000614" />
+        <obo:IAO_0000115>A cough that is characterized by a lack of accompanied phlegm production.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>nonproductive cough</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000025</oboInOwl:id>
+        <ns2:label>dry cough</ns2:label>
+    <skos:altLabel xml:lang="id">Batuk kering / tidak berdahak</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Batuk tanpa produksi dahak/mukus, sering teriritasi di tenggorokan (indikasi antitusif).</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025" />
+        <ns1:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" />
+        <ns1:annotatedTarget>nonproductive cough</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.healthline.com/health/dry-cough</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000099">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000892" />
+        <obo:IAO_0000115>A sensation perception that is characterized by an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000099</oboInOwl:id>
+        <ns2:label>pain</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000099" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A sensation perception that is characterized by an unpleasant sensation that usually indicates the body is threatened or damaged. The sensation may be sharp or dull, short-lived or chronic, intermittent or continual, confined to one area or spread over the entire body.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.nationalpainfoundation.org/MyTreatment/articles/Cancer_PainDefinitions.asp</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000139">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000514" />
+        <obo:IAO_0000115>A respiratory system and chest symptom that is characterized by a sudden violent spasmodic audible expiration of breath through the nose and mouth especially as a reflex act following irritation of the nasal mucous membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000139</oboInOwl:id>
+        <ns2:label>sneezing</ns2:label>
+    <skos:altLabel xml:lang="id">Bersin-bersin</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Refleks pengeluaran udara tiba-tiba akibat stimulasi saraf sensorik mukosa hidung.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000139" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A respiratory system and chest symptom that is characterized by a sudden violent spasmodic audible expiration of breath through the nose and mouth especially as a reflex act following irritation of the nasal mucous membrane.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=sneezing</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000237">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000514" />
+        <obo:IAO_0000115>A respiratory system and chest symptom that is characterized by an excessive accumulation especially of blood or mucus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>blocked nose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nasal blockage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>nasal obstruction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stuffed up nose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stuffy nose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000237</oboInOwl:id>
+        <ns2:label>congestion</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000237" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A respiratory system and chest symptom that is characterized by an excessive accumulation especially of blood or mucus.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=congestion</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000242">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000614" />
+        <obo:IAO_0000115>A cough that is characterized by production and expectoration (bringing up) of sputum that is bright red or pink and frothy.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000242</oboInOwl:id>
+        <ns2:label>cough with bloody sputum</ns2:label>
+    <skos:altLabel xml:lang="id">Batuk berdarah / dahak bercampur darah</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Hemoptisis; indikasi infeksi parenkim paru serius (mis. TBC, pneumonia berat) bukan batuk biasa.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000242" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A cough that is characterized by production and expectoration (bringing up) of sputum that is bright red or pink and frothy.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.webmd.com/lung/coughing-up-blood</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000260">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000386" />
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000260</oboInOwl:id>
+        <ns2:label>dry mouth</ns2:label>
+    <skos:altLabel xml:lang="id">Mulut kering / haus</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: Pantau. Penurunan sekresi saliva akibat blokade reseptor muskarinik perifer oleh antihistamin.</ns2:comment></ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000287">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000528" />
+        <obo:IAO_0000115>Arrhythmia is a cardiovascular system symptom consisting of an alteration in rhythm of the heartbeat either in time or force.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>SYMP:0000288</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>SYMP:0000667</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>SYMP:0000668</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>abnormal heart beat</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>abnormal heart rhythm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>dysrhythmia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heart rhythm symptom</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>irregular heartbeat</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>fluctuation of heart rate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>SYMP:0000287</oboInOwl:id>
+        <ns2:label>arrhythmia</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000287" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>Arrhythmia is a cardiovascular system symptom consisting of an alteration in rhythm of the heartbeat either in time or force.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=arrhythmia</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000372">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000388" />
+        <obo:IAO_0000115>A nose symptom that is characterized by an excessive secretion of mucous through the nose.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>runny nose</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000372</oboInOwl:id>
+        <ns2:label>rhinorrhea</ns2:label>
+    <skos:altLabel xml:lang="id">Pilek / hidung berair</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Keluarnya cairan lendir encer dari rongga hidung (indikasi antihistamin).</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A nose symptom that is characterized by an excessive secretion of mucous through the nose.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=Rhinorrhea</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000386">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000387" />
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000386</oboInOwl:id>
+        <ns2:label>mouth symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000387">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000597" />
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000387</oboInOwl:id>
+        <ns2:label>head symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000388">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000387" />
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000388</oboInOwl:id>
+        <ns2:label>nose symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000410">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000410</oboInOwl:id>
+        <ns2:label>neurological and physiological symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000458">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000459" />
+        <obo:IAO_0000115>Nausea is a digestive system symptom characterized by an uneasy or unsettled feeling in the stomach together with an urge to vomit.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:787.02</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0375548</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0750850</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000458</oboInOwl:id>
+        <ns2:label>nausea</ns2:label>
+    <skos:altLabel xml:lang="id">Mual / eneg di ulu hati</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: Pantau. Iritasi mukosa lambung akibat obat ekspektoran (Guaifenesin) atau analgesik (Ibuprofen).</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>Nausea is a digestive system symptom characterized by an uneasy or unsettled feeling in the stomach together with an urge to vomit.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.nlm.nih.gov/medlineplus/nauseaandvomiting.html</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000459">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <oboInOwl:hasDbXref>ICD9CM_2005:787</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0159058</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284224</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000459</oboInOwl:id>
+        <ns2:label>digestive system symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000462">
+        <obo:IAO_0000115>A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000462</oboInOwl:id>
+        <ns2:label>symptom</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://link.springer.com/chapter/10.1007/978-1-4615-4789-1_5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.merriam-webster.com/dictionary/symptom</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:https://www.nature.com/subjects/signs-and-symptoms</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000480">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <oboInOwl:hasDbXref>ICD9CM_2005:781</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0159033</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284131</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000480</oboInOwl:id>
+        <ns2:label>nervous system symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000486">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <oboInOwl:hasDbXref>ICD9CM_2005:788</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0476293</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284245</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000486</oboInOwl:id>
+        <ns2:label>urinary system symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000504">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000099" />
+        <obo:IAO_0000115>A pain that is characterized by a pain in the head.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:784.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0018681</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0065994</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cephalalgia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000504</oboInOwl:id>
+        <ns2:label>headache</ns2:label>
+    <skos:altLabel xml:lang="id">Sakit kepala / pening</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Nyeri tumpul atau berdenyut pada area kepala yang menyertai sindrom influenza/ISPA.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A pain that is characterized by a pain in the head.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=headache</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000505">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000099" />
+        <obo:IAO_0000115>A pain that is characterized by a painful throat due to inflammation of the fauces and pharynx.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:784.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0242429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284175</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>sore throat</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000505</oboInOwl:id>
+        <ns2:label>throat pain</ns2:label>
+    <skos:altLabel xml:lang="id">Sakit tenggorokan / nyeri menelan</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Rasa nyeri atau iritasi pada faring/laring yang sering menyertai infeksi flu saluran napas atas.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000505" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A pain that is characterized by a painful throat due to inflammation of the fauces and pharynx.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=sore%20throat</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000514">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <oboInOwl:hasDbXref>ICD9CM_2005:786</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0476271</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284200</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000514</oboInOwl:id>
+        <ns2:label>respiratory system and chest symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000528">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <oboInOwl:hasDbXref>ICD9CM_2005:785</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0159049</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284192</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000528</oboInOwl:id>
+        <ns2:label>cardiovascular system symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000529">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000287" />
+        <obo:IAO_0000115>Tachycardia is a cardiovascular system symptom consisting of a relatively rapid heart action whether physiological (as after exercise) or pathological.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:785.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0039231</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0804597</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000529</oboInOwl:id>
+        <ns2:label>tachycardia</ns2:label>
+    <skos:altLabel xml:lang="id">Denyut jantung terlalu cepat</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Frekuensi nadi istirahat &gt;100 bpm; risiko meningkat bila dekongestan dikombinasikan dengan kafein.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000529" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>Tachycardia is a cardiovascular system symptom consisting of a relatively rapid heart action whether physiological (as after exercise) or pathological.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=tachycardia</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000530">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000528" />
+        <obo:IAO_0000115>Palpitation is a cardiovascykar system symptom characterized by an abnormal awareness of the beating of the heart,whether it is too slow, too fast, irregular, or at its normal frequency when excited by violent exertion, strong emotion, or disease.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:785.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0030252</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0004066</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>abnormal heart beats</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000530</oboInOwl:id>
+        <ns2:label>palpitation</ns2:label>
+    <skos:altLabel xml:lang="id">Jantung berdebar-debar</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Sensasi denyut jantung cepat/kuat akibat stimulasi adrenergik alfa/beta dari dekongestan.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>Palpitation is a cardiovascykar system symptom characterized by an abnormal awareness of the beating of the heart,whether it is too slow, too fast, irregular, or at its normal frequency when excited by violent exertion, strong emotion, or disease.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Palpitation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=palpitation</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000557">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000486" />
+        <obo:IAO_0000115>A urinary system symptom that is characterized by an inability to empty the bladder completely during the process of voiding (urination).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:788.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM_2005:788.20</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0080274</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0784422</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>inability to urinate</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ischuria</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>retention of urine</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000557</oboInOwl:id>
+        <ns2:label>urinary retention</ns2:label>
+    <skos:altLabel xml:lang="id">Sulit buang air kecil / retensi urin</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Hambatan pengosongan kandung kemih karena efek antikolinergik (waspada pasien BPH/prostat).</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000557" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A urinary system symptom that is characterized by an inability to empty the bladder completely during the process of voiding (urination).</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://en.wikipedia.org/wiki/Urinary_retention</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000576">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000099" />
+        <oboInOwl:hasDbXref>ICD9CM_2005:786.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICD9CM_2005:786.50</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0008031</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0243830</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0400627</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000576</oboInOwl:id>
+        <ns2:label>chest pain</ns2:label>
+    <skos:altLabel xml:lang="id">Nyeri dada / dada terasa tertekan</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Nyeri atau rasa sesak berat di dada; perlu disingkirkan komplikasi kardiovaskular/pleuritis.</ns2:comment></ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000587">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000514" />
+        <obo:IAO_0000115>A respiratory system and chest symptom that is characterized by a sound of breathing that is not similar to that of the sound of moving air and may include: rhonchi (a low-pitched breath sound), crackles (a high-pitched breath sound), wheezing (a high-pitched whistling sound caused by narrowing of the bronchial tubes), and stridor (a harsh, vibratory sound caused by narrowing of the upper airway).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:786.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0159056</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284219</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000587</oboInOwl:id>
+        <ns2:label>abnormal chest sound</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000587" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A respiratory system and chest symptom that is characterized by a sound of breathing that is not similar to that of the sound of moving air and may include: rhonchi (a low-pitched breath sound), crackles (a high-pitched breath sound), wheezing (a high-pitched whistling sound caused by narrowing of the bronchial tubes), and stridor (a harsh, vibratory sound caused by narrowing of the upper airway).</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.healthline.com/health/breath-sounds#types</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000597">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000462" />
+        <oboInOwl:hasDbXref>ICD9CM_2005:784</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0476247</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284173</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000597</oboInOwl:id>
+        <ns2:label>head and neck symptom</ns2:label>
+    </ns1:Class>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000598">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000514" />
+        <obo:IAO_0000115>A respiratory system and chest symptom that is characterized by a respiration that is not normal and may include, but is not limited to: apnea, eupnea, orthopnea, dyspnea hyperpnea, hyperventilation, hypoventilation, tachypnea, Kussmaul respiration, Cheyne-Stokes respiration, sighing respiration, Biot respiration, apneustic breathing, central neurogenic hyperventilation, and central neurogenic hypoventilation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:786.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0159053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0284202</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000598</oboInOwl:id>
+        <ns2:label>respiratory abnormality</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000598" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A respiratory system and chest symptom that is characterized by a respiration that is not normal and may include, but is not limited to: apnea, eupnea, orthopnea, dyspnea hyperpnea, hyperventilation, hypoventilation, tachypnea, Kussmaul respiration, Cheyne-Stokes respiration, sighing respiration, Biot respiration, apneustic breathing, central neurogenic hyperventilation, and central neurogenic hypoventilation.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.ncbi.nlm.nih.gov/books/NBK470309/</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000604">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000587" />
+        <obo:IAO_0000115>An abnormal chest sound that is characterized by breathing with difficulty usually with a whistling sound.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:786.07</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0043144</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0133941</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000604</oboInOwl:id>
+        <ns2:label>wheezing</ns2:label>
+    <skos:altLabel xml:lang="id">Napas berbunyi mengi / ngik-ngik</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Suara napas berfrekuensi tinggi akibat penyempitan lumen bronkus; butuh evaluasi medis.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000604" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>An abnormal chest sound that is characterized by breathing with difficulty usually with a whistling sound.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=wheezing</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000610">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020045" />
+        <obo:IAO_0000115>A  balance symptom that is characterized by a sensation of unsteadiness accompanied by a feeling of movement within the head.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:780.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0476206</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0243727</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>dizzy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000610</oboInOwl:id>
+        <ns2:label>dizziness</ns2:label>
+    <skos:altLabel xml:lang="id">Pusing / melayang</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Sensasi ketidakseimbangan atau kepala ringan akibat efek vaskular atau sedasi obat flu.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000610" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A  balance symptom that is characterized by a sensation of unsteadiness accompanied by a feeling of movement within the head.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=dizziness</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000613">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000410" />
+        <obo:IAO_0000115>A neurological and physiological symptom that is characterized by a rise of body temperature above the normal, whether as a natural response (as to infection) or artificially induced for therapeutic reasons.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:780.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0015967</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0058972</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>pyrexia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000613</oboInOwl:id>
+        <ns2:label>fever</ns2:label>
+    <skos:altLabel xml:lang="id">Demam / suhu tubuh meningkat</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Peningkatan suhu tubuh di atas normal akibat respon sitokin pirogen (indikasi antipiretik).</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A neurological and physiological symptom that is characterized by a rise of body temperature above the normal, whether as a natural response (as to infection) or artificially induced for therapeutic reasons.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=fever</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000614">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000514" />
+        <obo:IAO_0000115>A respiratory system and chest symptom that is characterized by an explosive expulsion of air from the lungs acting as a protective mechanism to clear the air passages or as a symptom of pulmonary disturbance.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>ICD9CM_2005:786.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_CUI:C0010200</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS_ICD9CM_2005_AUI:A0043303</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000614</oboInOwl:id>
+        <ns2:label>cough</ns2:label>
+    <skos:altLabel xml:lang="id">Batuk</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Refleks pertahanan saluran napas untuk membersihkan sekret atau iritan.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000614" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A respiratory system and chest symptom that is characterized by an explosive expulsion of air from the lungs acting as a protective mechanism to clear the air passages or as a symptom of pulmonary disturbance.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=cough</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000869">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000237" />
+        <obo:IAO_0000115>A congestion that is characterized by a blockage of the nasal passages, usually due to the membranes lining the nose becoming swollen from inflamed blood vessels.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000869</oboInOwl:id>
+        <ns2:label>nasal congestion</ns2:label>
+    <skos:altLabel xml:lang="id">Hidung tersumbat</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Penyumbatan rongga hidung akibat pembengkakan mukosa vaskular (indikasi dekongestan).</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A congestion that is characterized by a blockage of the nasal passages, usually due to the membranes lining the nose becoming swollen from inflamed blood vessels.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://en.wikipedia.org/wiki/Nasal_congestion</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000892">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000480" />
+        <obo:IAO_0000115>A nervous system symptom that is characterized by interpretation of the information perceived by sensory receptors.</obo:IAO_0000115>
+        <oboInOwl:created_by>lschriml</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-10-15T11:54:30Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0000892</oboInOwl:id>
+        <ns2:label>sensation perception</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000892" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A nervous system symptom that is characterized by interpretation of the information perceived by sensory receptors.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.audiblox2000.com/sensation-perception.htm</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0019145">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000459" />
+        <obo:IAO_0000115>Vomiting is a digestive system symptom characterized by throwing up the stomach contents.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>emesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0019145</oboInOwl:id>
+        <ns2:label>vomiting</ns2:label>
+    <skos:altLabel xml:lang="id">Muntah</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Pengeluaran isi lambung paksa; bila berulang hentikan konsumsi obat dan konsultasi apoteker.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019145" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>Vomiting is a digestive system symptom characterized by throwing up the stomach contents.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www.merriam-webster.com/dictionary/vomiting</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0019153">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000598" />
+        <obo:IAO_0000115>A respiratory abnormality that is characterized by difficult or labored respiration.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>breathing difficulty</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>breathlessness</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>difficulty breathing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>labored respiration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>shortness of breath</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0019153</oboInOwl:id>
+        <ns2:label>dyspnea</ns2:label>
+    <skos:altLabel xml:lang="id">Sesak napas / kesulitan bernapas</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Tanda bahaya gawat darurat infeksi saluran napas bawah (pneumonia/asma berat); rujuk segera.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019153" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A respiratory abnormality that is characterized by difficult or labored respiration.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=dyspnea</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0020027">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000614" />
+        <obo:IAO_0000115>A cough that is characterized by a production and expectoration (bringing up) of mucus (phlegm) or sputum.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>productive cough</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0020027</oboInOwl:id>
+        <ns2:label>wet cough</ns2:label>
+    <skos:altLabel xml:lang="id">Batuk berdahak / produktif</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Batuk disertai dahak kental pada saluran napas (indikasi ekspektoran/mukolitik).</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020027" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A cough that is characterized by a production and expectoration (bringing up) of mucus (phlegm) or sputum.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.webmd.com/lung/productive-cough-causes</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0020043">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000486" />
+        <obo:IAO_0000115>A urinary system symptom that is characterized by an elevation in the concentration of the the pigments from foods, dyes, and medications in urine. The dilution of these pigment is dependent on the amount of water intake and severe dehydration can lead to a dark color.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0020043</oboInOwl:id>
+        <ns2:label>dark urine</ns2:label>
+    <skos:altLabel xml:lang="id">Urin berwarna gelap pekat seperti teh</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Tanda toksisitas mioglobinuria/rhabdomyolysis atau hepatotoksisitas berat akibat interaksi obat.</ns2:comment></ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020043" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A urinary system symptom that is characterized by an elevation in the concentration of the the pigments from foods, dyes, and medications in urine. The dilution of these pigment is dependent on the amount of water intake and severe dehydration can lead to a dark color.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.mayoclinic.org/diseases-conditions/urine-color/symptoms-causes/syc-20367333</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+    
+
+
+    
+
+    <ns1:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0020045">
+        <ns2:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000410" />
+        <obo:IAO_0000115>A neurological and physiological symptom that is characterized by any of the following: dizziness or vertigo (a spinning sensation); falling or feeling as if you are going to fall; staggering when walking; lightheadedness, faintness, or a floating sensation; and confusion or disorientation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SYMP:0020045</oboInOwl:id>
+        <ns2:label>balance symptom</ns2:label>
+    </ns1:Class>
+    <ns1:Axiom>
+        <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020045" />
+        <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
+        <ns1:annotatedTarget>A neurological and physiological symptom that is characterized by any of the following: dizziness or vertigo (a spinning sensation); falling or feeling as if you are going to fall; staggering when walking; lightheadedness, faintness, or a floating sensation; and confusion or disorientation.</ns1:annotatedTarget>
+        <oboInOwl:hasDbXref>url:https://www.nidcd.nih.gov/health/balance-disorders</oboInOwl:hasDbXref>
+    </ns1:Axiom>
+<ns1:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel" /></rdf:RDF>

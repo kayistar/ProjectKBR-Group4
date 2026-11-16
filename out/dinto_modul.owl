@@ -1,0 +1,1115 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/kbr-group4/dinto_modul.owl#"
+     xml:base="http://purl.obolibrary.org/obo/kbr-group4/dinto_modul.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obo1="http://purl.obolibrary.org/obo#"
+     xmlns:purl="http://purl.obolibrary.org#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/kbr-group4/dinto_modul.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/dinto_modul.owl/1.2"/>
+        <rdfs:comment>MIREOT extract of drug interaction mechanisms and formal DDI relations from DINTO (Drug-Drug Interactions Ontology).</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org#Definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org#Definition">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">Definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#Synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo#Synonym">
+        <rdfs:label xml:lang="en">Synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo#mapsTo -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo#mapsTo">
+        <rdfs:label xml:lang="en">maps to</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label>has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition editor</rdfs:label>
+        <rdfs:label>term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000136">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a DDI and the two drugs - one object and one precipitant - participating in it.</purl:Definition>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000137 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000137">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000136"/>
+        <purl:Definition xml:lang="en">A functional relationship between a DDI and a precipitant. </purl:Definition>
+        <rdfs:label xml:lang="en">has precipitant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000138 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000138">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000136"/>
+        <purl:Definition xml:lang="en">A functional relationship between a DDI and an object.</purl:Definition>
+        <rdfs:label xml:lang="en">has object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000139 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000139">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a drug, precipitant or object, and the DDI in which it is one of the two participating drugs.</purl:Definition>
+        <rdfs:label xml:lang="en">is participant in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000140 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000140">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000139"/>
+        <purl:Definition xml:lang="en">A relationship between a drug and the DDI in which it is the precipitant participating drug.</purl:Definition>
+        <rdfs:label xml:lang="en">is precipitant in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000141 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000141">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000139"/>
+        <purl:Definition xml:lang="en">A relationship between a drug and the DDI in which it is the object participating drug.</purl:Definition>
+        <rdfs:label xml:lang="en">is object in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000142 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000142">
+        <purl:Definition xml:lang="en">A transitive, temporal relation in which one process precedes (has occurred earlier than) another process</purl:Definition>
+        <obo:IAO_0000119 xml:lang="en">Semanticscience Integrated Ontology http://semanticscience.org/resource/SIO_000248</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">precedes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000143 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000143">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A transitive, temporal relation in which one process is preceded (has occurred later than) another process. </purl:Definition>
+        <rdfs:label xml:lang="en">is preceded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000144 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000144">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a pharmacological entity and a DDI mechanism that leads to a DDI where the entity is the precipitant or perpetrator of the interaction.</purl:Definition>
+        <rdfs:label xml:lang="en">is agent in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000145 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000145">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a DDI mechanism and the precipitant entity that triggers the process.</purl:Definition>
+        <rdfs:label xml:lang="en">has agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000146 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000146">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between an entity x (process or continuant) and a process y, which bears a quality that is altered by x, leading to a change compare to normal or previous value.</purl:Definition>
+        <rdfs:label xml:lang="en">alters</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000147 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000147">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a process y that bears a quality that is altered by an entity x (process or continuant), leading to a change with compare to normal or previous value.</purl:Definition>
+        <rdfs:label xml:lang="en">is altered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000148 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000148">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a chemical entity and the pharmacokinetic process that the chemical entity undergoes in the body.</purl:Definition>
+        <rdfs:label xml:lang="en">undergoes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000159 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000159">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a pharmacological entity and its physiological effect.</purl:Definition>
+        <rdfs:label xml:lang="en">has effect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000160 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000160">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a physiological effect and the chemical entity that produces the effect.</purl:Definition>
+        <rdfs:label xml:lang="en">is effect of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000165 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000165">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between a DDI and the altered physiological effect that occurs as a consequence of the DDI.</purl:Definition>
+        <rdfs:label xml:lang="en">has DDI effect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000166 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/DINTO_000166">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <purl:Definition xml:lang="en">A relationship between an altered physiological effect and the DDI responsible of the alteration. </purl:Definition>
+        <rdfs:label xml:lang="en">is DDI effect of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <purl:Definition xml:lang="en">A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</purl:Definition>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <rdfs:label xml:lang="en">chemical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <purl:Definition xml:lang="en">A role is a particular behaviour which a material entity may exhibit.</purl:Definition>
+        <rdfs:label xml:lang="en">role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000002"/>
+        <purl:Definition xml:lang="en">Alteration of the disposition and/or effect of a drug A, owing to the presence of another drug B.</purl:Definition>
+        <obo1:Synonym xml:lang="en">Drug drug interaction</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">Drug-drug interaction</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">ddi</obo1:Synonym>
+        <rdfs:label xml:lang="en">DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000002">
+        <purl:Definition xml:lang="en">Alteration of the disposition and/or effect of a drug, owing to the presence of another factor such as a second drug, or food.</purl:Definition>
+        <obo:IAO_0000119 xml:lang="en">National Cancer Institute Thesaurus
+http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C54708</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000003">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <purl:Definition xml:lang="en">The process or processes by which one drug B alters the disposition and/or effect of another drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">DDI mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000003"/>
+        <purl:Definition xml:lang="en">A pharmacokinetic mechanism is a DDI mechanism by which one drug B alters the pharmacokinetic process of another drug A, leading to an alteration, which can be an increase or decrease, in the disposition of this drug.</purl:Definition>
+        <obo1:Synonym xml:lang="en">pharmacokinetic (pk) mechanism
+</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">pk mechanism</obo1:Synonym>
+        <rdfs:label xml:lang="en">pharmacokinetic DDI mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000003"/>
+        <purl:Definition xml:lang="en">A pharmacodynamic mechanism is a DDI mechanism by which a drug B produces an alteration, which can be an increase or decrease, of the effects of another drug A, without leading to an alteration in the disposition of drug A.</purl:Definition>
+        <obo1:Synonym xml:lang="en">pharmacodynamic (pd) mechanism
+pd mechanism</obo1:Synonym>
+        <rdfs:label xml:lang="en">pharmacodynamic DDI mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000026"/>
+        <purl:Definition xml:lang="en">A non-clinically relevant DDI effect is a DDI effect that has no clinical relevance for the patient clinical status or therapeutic outcome.</purl:Definition>
+        <obo1:Synonym xml:lang="en">non clinically relevant DDI effect</obo1:Synonym>
+        <rdfs:label xml:lang="en">non-clinically relevant DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000006"/>
+        <purl:Definition xml:lang="en">An unobservable DDI effect is a non-clinically relevant DDI effect that may be bothersome or unnoticeable but should not significantly affect the therapeutic outcome.</purl:Definition>
+        <rdfs:label xml:lang="en">unobservable DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000026"/>
+        <purl:Definition xml:lang="en">An uncertain DDI effect is a DDI effect that is unpredictable and cannot be characterised in basis of its potential clinical relevance.</purl:Definition>
+        <rdfs:label xml:lang="en">uncertain DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000001"/>
+        <purl:Definition xml:lang="en">A clinically relevant DDI is a DDI that has a clinically relevant effect.</purl:Definition>
+        <rdfs:label xml:lang="en">clinically relevant DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000009"/>
+        <purl:Definition xml:lang="en">A potentially beneficial DDI is a clinically relevant DDI that can have a beneficial DDI effect.</purl:Definition>
+        <rdfs:label xml:lang="en">potentially beneficial DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000009"/>
+        <purl:Definition xml:lang="en">A potentially harmful DDI is a clinically relevant DDI that can have a harmful DDI effect.</purl:Definition>
+        <rdfs:label xml:lang="en">potentially harmful DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000001"/>
+        <purl:Definition xml:lang="en">A non-clinically relevant DDI is a DDI that has a non-clinically relevant effect.</purl:Definition>
+        <rdfs:label xml:lang="en">non-clinically relevant DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000001"/>
+        <purl:Definition xml:lang="en">An uncertain DDI is a DDI that has an uncertain DDI effect.</purl:Definition>
+        <rdfs:label xml:lang="en">uncertain DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000022"/>
+        <purl:Definition xml:lang="en">An agonistic mechanism is a pharmacodynamic mechanism by which the effects of one or both drugs are increased, without leading to an increase in the disposition of the drugs.</purl:Definition>
+        <obo1:Synonym xml:lang="en">agonistic mechanism
+agonism</obo1:Synonym>
+        <rdfs:label xml:lang="en">agonistic DDI mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000022"/>
+        <purl:Definition xml:lang="en">An antagonistic mechanism is a pharmacodynamic mechanism by which the effects of one drug will be decreased, without leading to a decrease in the disposition of the drug.</purl:Definition>
+        <obo1:Synonym xml:lang="en">antagonistic mechanism
+antagonism</obo1:Synonym>
+        <rdfs:label xml:lang="en">antagonistic DDI mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000001"/>
+        <purl:Definition xml:lang="en">A pharmacokinetic DDI is a DDI that is caused by a pharmacokinetic mechanism in which one drug B alters the pharmacokinetic process of another drug A, leading to an alteration, which can be an increased or decreased, in the disposition of drug A.</purl:Definition>
+        <obo1:Synonym xml:lang="en">PkDDI</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">pharmacokinetic (pk) DDI
+</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">pk DDI</obo1:Synonym>
+        <obo1:mapsTo xml:lang="en">http://purl.bioontology.org/ontology/MDR/10065994</obo1:mapsTo>
+        <rdfs:label xml:lang="en">pharmacokinetic DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000001"/>
+        <purl:Definition xml:lang="en">A pharmacodynamic DDI is a DDI that is caused by a pharmacodynamic mechanism by which a drug B produces an alteration, which can be an increase or decrease, of the effects of another drug A, without leading to an alteration in the disposition of drug A.</purl:Definition>
+        <obo1:Synonym xml:lang="en">PdDDI</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">pd DDI</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">pharmacodynamic (pd) DDI</obo1:Synonym>
+        <rdfs:comment xml:lang="en">maps to http://purl.bioontology.org/ontology/MDR/10065993</rdfs:comment>
+        <rdfs:label xml:lang="en">pharmacodynamic DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000005"/>
+        <purl:Definition xml:lang="en">A target activity alteration is a pharmacodynamic mechanism by which a drug B produces an alteration, which can be an increase or decrease, of the effects of another drug A by interferring with the activity of a protein that is a target of drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">target activity alteration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <purl:Definition xml:lang="en">A participant is a drug B that alters the disposition and/or ef-fects of another drug A by triggering a DDI mechanism, or a drug A for which the disposition and/or effects are altered by another drug B as a consequence of a DDI mechanism.</purl:Definition>
+        <rdfs:label xml:lang="en">participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000023"/>
+        <purl:Definition xml:lang="en">A precipitant is a participant that alters the disposition and/or effects of another drug by triggering a DDI mechanism.</purl:Definition>
+        <obo1:Synonym xml:lang="en">perpetrator</obo1:Synonym>
+        <rdfs:label xml:lang="en">precipitant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000023"/>
+        <purl:Definition xml:lang="en">An object is a participant for which the disposition and/or effects are altered by another drug as a consequence of a DDI mechanism.</purl:Definition>
+        <obo1:Synonym xml:lang="en">victim</obo1:Synonym>
+        <rdfs:label xml:lang="en">object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000043"/>
+        <purl:Definition xml:lang="en">A DDI effect is a drug effect that has been altered as a consequence of the occurrence of a DDI.</purl:Definition>
+        <rdfs:label xml:lang="en">DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000026"/>
+        <purl:Definition xml:lang="en">A clinically relevant DDI effect is a DDI Effect that has clinical relevance for the patient clinical status or therapeutic outcome.</purl:Definition>
+        <obo1:Synonym xml:lang="en">significant DDI effect</obo1:Synonym>
+        <rdfs:label xml:lang="en">clinically relevant DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000046"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000049"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000051"/>
+        <purl:Definition xml:lang="en">A beneficial DDI effect is a clinically relevant DDI effect that has a positive or desirable effect on the patient status or therapeutic outcome.</purl:Definition>
+        <rdfs:label xml:lang="en">beneficial DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000052"/>
+        <purl:Definition xml:lang="en">A harmful DDI effect is a clinically relevant DDI effect that has a negative or undesirable effect on the patient clinical status or therapeutic outcome.</purl:Definition>
+        <obo1:Synonym xml:lang="en">dangerous DDI effect</obo1:Synonym>
+        <rdfs:label xml:lang="en">harmful DDI effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000030">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <purl:Definition xml:lang="en">A pharmacokinetic process is the process that a chemical undergoes in the body and that determines its disposition.</purl:Definition>
+        <obo1:Synonym xml:lang="en">pk process</obo1:Synonym>
+        <obo1:mapsTo xml:lang="en">http://dbmi-icode-01.dbmi.pitt.edu/dikb-evidence/DIKB_evidence_ontology_v1.3.owl#Pharmacokinetic_Process</obo1:mapsTo>
+        <rdfs:label xml:lang="en">pharmacokinetic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000030"/>
+        <purl:Definition xml:lang="en">The process of penetration of a substance into a living organism. This process could involve specialized and/or non-specialized mechanisms, active transport or passive movement, and carrier system(s). The common routes of absorption in mammals include the organs of the respiratory and gastrointestinal systems, and the skin.</purl:Definition>
+        <rdfs:label xml:lang="en">absorption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000030"/>
+        <purl:Definition xml:lang="en">Distribution is a pharmacokinetic process by which a drug is transported through the bloodstream – frequently binding plasmatic proteins that act as transporters – and by which reachs the different tissues.</purl:Definition>
+        <rdfs:label xml:lang="en">distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000030"/>
+        <purl:Definition xml:lang="en">A series of chemical modifications of a drug compound by enzymatic activity that make the substrate (drug) more water soluble to allow its clearance from the body. Drug metabolism occurs in two phases: Phase I (biotransformation) involves oxidation, hydroxylation reduction, and hydrolysis. Phase II (conjugation) involves synthesis and conjugation.</purl:Definition>
+        <obo1:mapsTo xml:lang="en">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C26633</obo1:mapsTo>
+        <obo:IAO_0000119 xml:lang="en">The National Cancer Institute Thesaurus</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">drug metabolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000030"/>
+        <purl:Definition xml:lang="en">Excretion is the pharmacokinetic process by which a drug is definitely eliminated from the body.</purl:Definition>
+        <rdfs:label xml:lang="en">excretion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000035">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <purl:Definition xml:lang="en">A physiological effect is the effect that a drug, metabolite or chemical has in a living organism through its interaction with a functionally important molecule, whether that molecule exists as a free entity or as part of an organized structure. This interaction triggers events that lead to the physiological response.</purl:Definition>
+        <obo:IAO_0000119 xml:lang="en">C. T. Walsh and R. D. Schwartz-Bloom, Levine´s Pharmacology: Drug actions and reactions, Seventh. CRC Press, 2004.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">physiological effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000035"/>
+        <purl:Definition xml:lang="en">A drug therapeutic effect is a drug effect that leads to a physio-logical response that is beneficial or intended for the treatment, diagnosis or prevention of disease or another abnormal condition.</purl:Definition>
+        <rdfs:label xml:lang="en">therapeutic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000035"/>
+        <purl:Definition xml:lang="en">A drug toxic effect is a drug effect that occurs as an exaggera-tion of the desired therapeutic effect, but which is not common at normal doses.</purl:Definition>
+        <obo:IAO_0000119 xml:lang="en">I. Edwards and J. Aronson, “Adverse drug reactions: definitions, diagnosis, and management,” The Lancet, vol. 356, pp. 1255–1259, 2000</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">toxic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000035"/>
+        <rdfs:label xml:lang="en">altered physiological effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000043"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+        <rdfs:label xml:lang="en">altered adverse effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000044"/>
+        <rdfs:label xml:lang="en">increased adverse effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000044"/>
+        <rdfs:label xml:lang="en">decreased adverse effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000037"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000043"/>
+        <rdfs:label xml:lang="en">altered toxic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000047"/>
+        <rdfs:label xml:lang="en">increased toxic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000047"/>
+        <rdfs:label xml:lang="en">decreased toxic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000036"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000043"/>
+        <rdfs:label xml:lang="en">altered therapeutic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000050"/>
+        <rdfs:label xml:lang="en">increased therapeutic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000050"/>
+        <rdfs:label xml:lang="en">decreased therapeutic effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <purl:Definition xml:lang="en">A pharmacological entity is a chemical entity which posseses some pharmacological activity. Therefore, it has the capacity to interact within a biological system and to produce a physiological effect</purl:Definition>
+        <rdfs:comment xml:lang="en">This class imports chemical entities from the ChEBI ontology that have a relationship &apos;has role&apos; with the class &apos;drug&apos; in this ontology and other chemical entities included in the pharmacological database DrugBank (but not in ChEBI).
+Therefore all subclasses of the class &apos;pharmacological entity&apos; share they capacity to produce some pharmacological activity within a biological system.</rdfs:comment>
+        <rdfs:label xml:lang="en">pharmacological entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000072"/>
+        <rdfs:comment xml:lang="en">A physiological effect potentiation is a pharmacodynamic mechanism by which the effects of one drug B are increased due to the similar activity of another drug A.</rdfs:comment>
+        <rdfs:label xml:lang="en">physiological effect potentiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000005"/>
+        <rdfs:comment xml:lang="en">A physiological effect alteration is a pharmacodynamic mechanism by which a drug B produces an alteration, which can be an increase or decrease, of the effects of another drug A without interferring with the activity of a protein that is a target of drug A.</rdfs:comment>
+        <rdfs:label xml:lang="en">physiological effect alteration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000072"/>
+        <rdfs:comment xml:lang="en">A physiological effect antagonism is a pharmacodynamic mechanism by which the effects of one drug B are decreased due to the opposed activity of another drug A.</rdfs:comment>
+        <rdfs:label xml:lang="en">physiolical effect antagonism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_0001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_0001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000020"/>
+        <obo1:Synonym xml:lang="en">An enzyme related DDI is a pharmacokinetic DDI that is caused by the alteration of the activity of an ezyme, in which one drug B alters a pharmacokinetic process (generally the metabolism) of another drug A, leading to an alteration, which can be an increased or decreased, in the disposition of drug A.</obo1:Synonym>
+        <rdfs:label xml:lang="en">enzyme related DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000004"/>
+        <purl:Definition xml:lang="en">An enzyme activity alteration is a pharmacokinetic DDI mechanism by which one drug B alters the metabolism of another drug A through the alteration in the activity of an enzyme involve in the metabolism of drug A, leading to an alteration, which can be an increase or decrease, in the disposition of this drug.</purl:Definition>
+        <obo1:Synonym xml:lang="en">enzymatic alteration</obo1:Synonym>
+        <obo1:Synonym xml:lang="en">enzymatic metabolism alteration</obo1:Synonym>
+        <rdfs:label xml:lang="en">enzyme activity alteration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000129"/>
+        <rdfs:label xml:lang="en">target</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <purl:Definition xml:lang="en">Protein is a macromolecule which consists of amino acids linked by peptide bonds, coiled and folded into complex globular or fibrous structures.</purl:Definition>
+        <obo1:mapsTo xml:lang="en">http://purl.obolibrary.org/obo/CHEBI_36080</obo1:mapsTo>
+        <obo:IAO_0000119 xml:lang="en">The Foundational Model of Anatomy (FMA) Ontology. http://sig.uw.edu/fma#Protein</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">protein entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000129"/>
+        <rdfs:label xml:lang="en">enzyme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000129"/>
+        <rdfs:label xml:lang="en">transporter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000004"/>
+        <purl:Definition xml:lang="en">A transporter activity alteration is a pharmacokinetic DDI mechanism by which one drug B alters the transport of another drug A through the alteration in the activity of a transporter involve in the distribution of drug A and leading to an alteration which can be an increase or decrease, in the disposition of this drug.</purl:Definition>
+        <rdfs:label xml:lang="en">transporter activity alteration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000155"/>
+        <purl:Definition xml:lang="en">A transporter activity induction is a pharmacokinetic DDI mechanism by which one drug B alters the tranport of another drug A through the induction of the activity of transporter involve in the distribution of drug A, leading to an alteration, which can be an increase or decrease, in the disposition of this drug. </purl:Definition>
+        <rdfs:label xml:lang="en">transporter activity induction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000155"/>
+        <purl:Definition xml:lang="en">A transporter activity inhibition is a pharmacokinetic DDI mechanism by which one drug B alters the tranport of another drug A through the inhibition of the activity of transporter involve in the distribution of drug A, leading to an alteration, which can be an increase or decrease, in the disposition of this drug. </purl:Definition>
+        <rdfs:label xml:lang="en">transporter activity inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_0001"/>
+        <purl:Definition xml:lang="en">An enzyme induction DDI is an enzyme related DDI that is caused by the induction of the activity of an ezyme, in which one drug B alters a pharmacokinetic process (generally the metabolism) of another drug A, leading to an alteration in the disposition of drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">enzyme induction DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_0001"/>
+        <purl:Definition xml:lang="en">An enzyme inhibition DDI is an enzyme related DDI that is caused by the inhibition of the activity of an ezyme, in which one drug B alters a pharmacokinetic process (generally the metabolism) of another drug A, leading to an alteration in the disposition of drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">enzyme inhibition DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_4331"/>
+        <purl:Definition xml:lang="en">A transporter induction DDI is an transporter related DDI that is caused by the induction of the activity of a transporter, in which one drug B alters a pharmacokinetic process of drug A lleading to an alteration in the disposition of drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">transporter induction DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_000172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_4331"/>
+        <purl:Definition xml:lang="en">A transporter inhibition DDI is a transporter related DDI that is caused by the inhibition of the activity of a transporter, in which one drug B alters a pharmacokinetic process of another drug A, leading to an alteration in the disposition of drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">transporter inhibition DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4325">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000004"/>
+        <purl:Definition xml:lang="en">A carrier activity alteration is a pharmacokinetic DDI mechanism by which one drug B alters the tranport of another drug A through the alteration in the activity of carrier involve in the distribution of drug A, leading to an alteration, which can be an increase or decrease, in the disposition of this drug. </purl:Definition>
+        <obo1:Synonym xml:lang="en">carrier alteration</obo1:Synonym>
+        <rdfs:label xml:lang="en">carrier activity alteration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_4332"/>
+        <purl:Definition xml:lang="en">An agonistic DDI is a target related DDI caused when a drug B produces an increase of the effects of another drug A by interferring with the activity of a drug A related target.</purl:Definition>
+        <rdfs:label xml:lang="en">agonistic DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4327">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_4325"/>
+        <purl:Definition xml:lang="en">A carrier activity induction is a pharmacokinetic DDI mechanism by which one drug B alters the tranport of another drug A through the induction of the activity of carrier involve in the distribution of drug A, leading to an alteration, which can be an increase or decrease, in the disposition of this drug. </purl:Definition>
+        <obo1:Synonym xml:lang="en">carrier induction</obo1:Synonym>
+        <rdfs:label xml:lang="en">carrier activity induction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4328 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_4325"/>
+        <purl:Definition xml:lang="en">A carrier activity inhibition is a pharmacokinetic DDI mechanism by which one drug B alters the tranport of another drug A through the inhibition of the activity of carrier involve in the distribution of drug A, leading to an alteration, which can be an increase or decrease, in the disposition of this drug. </purl:Definition>
+        <obo1:Synonym xml:lang="en">carrier inhibition</obo1:Synonym>
+        <rdfs:label xml:lang="en">carrier activity inhibition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4329">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000020"/>
+        <purl:Definition xml:lang="en">A carrier related DDI is a pharmacokinetic DDI that is caused by the alteration of the activity of a carrier, in which one drug B alters a pharmacokinetic process of another drug A leading to an alteration, which can be an increase or decrease, in the disposition of drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">carrier related DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4330 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4330">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_4332"/>
+        <purl:Definition xml:lang="en">An agonistic DDI is a target related DDI caused when a drug B produces a decrease of the effects of another drug A by interferring with the activity of a drug A related target.</purl:Definition>
+        <rdfs:label xml:lang="en">antagonistic DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000020"/>
+        <purl:Definition xml:lang="en">A transporter related DDI is a pharmacokinetic DDI that is caused by the alteration of the activity of a transporter, in which one drug B alters a pharmacokinetic process of another drug A, leading to an alteration, which can be an increase or decrease, in the disposition of drug A.</purl:Definition>
+        <rdfs:label xml:lang="en">transporter related DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000021"/>
+        <purl:Definition xml:lang="en">A target related DDI is a pharmacodynamic DDI caused when a drug B produces an alteration, which can be an increase or decrease, of the effects of another drug A, without leading to an alteration in the disposition of drug A, by interferring with the activity of a drug A related target.</purl:Definition>
+        <rdfs:label xml:lang="en">target related DDI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DINTO_4336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DINTO_4336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000129"/>
+        <rdfs:label xml:lang="en">receptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DINTO_000035"/>
+        <purl:Definition xml:lang="en">A drug adverse effect is a response to a drug that is noxious and unintended and occurs at doses normally used in man for the prophylaxis, diagnosis or therapy of disease, or for modifi-cation of physiological function.</purl:Definition>
+        <purl:Definition>a pathological bodily process that occurs after a medical intervention. An adverse event is likely caused by the medical intervention; however, such a causal association is not required to be an adverse event.</purl:Definition>
+        <obo1:mapsTo xml:lang="en">http://purl.obofoundry.org/obo/DINTO_000038</obo1:mapsTo>
+        <obo:IAO_0000116>Melanie Courtot and YH: More work is needed on how to restrict the scope of a term to be an &apos;adverse event&apos;, notably regarding temporal association. When is an appropirate time interval between a medical intervention and an adverse event observed? One week, one month, one year, or a lifetime? For some well-studied medical interventions (e.g., administration of many vaccines or drugs), we probably have a general idea. For many new interventions, we don&apos;t know much. In OAE, this issue is associated with defining the &apos;adverse event incubation time&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: An adverse event is a process that has specified output of some adverse medical outcome (e.g., symptom, sign or accident) after a medical intervention (or process) (e.g., administration of drug or vaccine). The medical intervention can be an administration of a drug, a vaccine (i.e., vaccination), or a special nutritional product (for example, dietary supplement, infant formula, medical food), surgery, or usage of a medical device.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: An adverse event is possibly induced by the medical intervention. It can be caused by the medical intervention, or may not be caused by the medical intervention. One ultimate goal (or the goal in clinics) of study adverse events is to assess if the adverse event outcome is due to the medical intervention.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: In development of OAE, we initially use vaccine adverse event as our use case. A vaccine adverse event is associated with a vaccination (i.e. a medical intervention), regardless of whether it is considered vaccine-related, and includes any side effect, injury, toxicity, or sensitivity reaction or significant failure of immunization (i.e., a pharmacologic action).
+Ref: Baylor NW and Midthum K. Regulation and testing of vaccines. In: Vaccines (Editors: Plotkin S, Orenstein W, and Offit P). 2008.  p1623.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: The current term &apos;adverse event&apos; is different from the term definition shown in our paper: He Y, Xiang Z, Sarntivijai S, Toldo L, Ceusters W. OAE: a realism-based biomedical ontology for the representation of adverse events. Adverse Event Representation Workshop, International Conference on Biomedical Ontologies (ICBO), University at Buffalo, NY, July 26-30, 2011. Full lenghth conference proceeding paper.  
+
+We  made the name changing in order to make OAE cover the broader sense of the &apos;adverse event&apos; which does not assume definite causal effect between an adverse event and a medical intervention. In current definition, the adverse event emphasizes the time association and assumes a likelihood of such a causal association. This term &apos;adverse event&apos; is stil under the OGMS:pathological bodily process.
+
+The &apos;adverse event&apos; defined in the above paper has now been changed to a new term: &apos;causal adverse event&apos;. See more information in the new publication: Yongqun He Y, Sirarat Sarntivijai, Yu Lin, Zuoshuang Xiang, Abra Guo, Shelley Zhang, Desikan Jagannathan, Luca Toldo, Cui Tao and Barry Smith. OAE: The Ontology of Adverse Events. Journal of Biomedical Semantics. 2014, 5:29  doi:10.1186/2041-1480-5-29. PMID: 25093068.PMCID: PMC4120740.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: The main scope of OAE includes: (1) represent terms and relations in the area of adverse events, (2) assess possible associations between an adverse event and a medical intervention, particularly, identify any causal effect of a medical intervention to an adverse event; and (2) understand the mechanism (including molecular mechanisms) of causal adverse events.</obo:IAO_0000116>
+        <obo:IAO_0000116>YH: There has been discussion regarding whether the term &apos;side effect&apos; is an alternative term for &apos;adverse event&apos;. In AERO, the term &apos;AERO:adverse event&apos; represents a subset of those adverse events for which causality has been established. In OAE, an adverse event for which causality has been established is called &apos;causal adverse event&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000118>AE</obo:IAO_0000118>
+        <obo:IAO_0000118>adverse reaction</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Adverse_event</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: http://www.fda.gov/Safety/MedWatch/HowToReport/ucm053087.htm</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/25093068</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WHO. (1972). International drug monitoring: the role of national centres. Thechnical Report Services WHO, no 498</obo:IAO_0000119>
+        <rdfs:comment>The OAE official website is: http://www.oae-ontology.org/.</rdfs:comment>
+        <rdfs:label xml:lang="en">adverse effect</rdfs:label>
+        <rdfs:label>adverse event</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

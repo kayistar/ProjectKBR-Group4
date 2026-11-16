@@ -1,0 +1,12 @@
+{
+  "source_file": "produk_detail.csv",
+  "created_at": "2026-11-16T06:59:20.722824+00:00",
+  "total_produk_input": 933,
+  "total_produk_batuk": 323,
+  "total_produk_pilek": 292,
+  "total_produk_kombinasi_flu_batuk": 148,
+  "files_generated": [
+    "produk_batuk.csv",
+    "produk_pilek.csv"
+  ]
+}

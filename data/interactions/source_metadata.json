@@ -1,0 +1,18 @@
+{
+  "dataset_name": "Curated Drug-Drug & Herb-Drug Interactions (Modul 5)",
+  "created_at": "2026-11-15T10:56:55.729896+00:00",
+  "total_pairs": 20,
+  "severity_distribution": {
+    "Major": 7,
+    "Moderate": 11,
+    "Minor": 2
+  },
+  "herb_interactions_count": 4,
+  "sources": [
+    "DDInter 2.0 Database (files: code_A, code_B, code_D, code_R)",
+    "PIONAS BPOM RI (Pusat Informasi Obat Nasional)",
+    "FDA Drug Safety Communications & Boxed Warnings",
+    "Peer-reviewed Pharmacology Journals (Phytomedicine, Drug Metabolism and Disposition)"
+  ],
+  "output_file": "data/interactions/curated_drug_interactions.csv"
+}
