@@ -63,7 +63,7 @@ ABox Individu (12 produk apotek):
   12. Lapifed DM Syrup 100mL              (Triprolidine + PSE + DXM)
 """
 
-import textwrap, os, datetime, hashlib
+import csv, textwrap, os, datetime, hashlib
 
 OUT_PATH = r"d:\UNS\SMT_5\KBR\PROJECT\ProjectKBR-Group4\out\kb_v1.owl"
 os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
@@ -139,6 +139,7 @@ ann_props = [
     ("http://www.geneontology.org/formats/oboInOwl#date", "date"),
     ("http://www.geneontology.org/formats/oboInOwl#creator", "creator"),
     ("http://www.w3.org/2004/02/skos/core#altLabel", "altLabel"),
+    ("http://www.w3.org/2004/02/skos/core#note", "note"),
 ]
 for ap_iri, ap_lbl in ann_props:
     w(f'  <owl:AnnotationProperty rdf:about="{ap_iri}">')
@@ -161,6 +162,8 @@ object_properties = [
      "ProduktObat", "Gejala", "", ""),
     ("memilikiEfekSamping", "memiliki efek samping yang mungkin terjadi", "has side effect symptom",
      "ProduktObat", "Gejala", "", ""),
+    ("gejalaMemerlukanTindakLanjut", "gejala memerlukan tindak lanjut klinis", "symptom requires clinical follow-up",
+     "Gejala", "TindakLanjut", "", ""),
     ("memilikiInteraksiDengan", "memiliki interaksi farmakokinetik/farmakodinamik dengan", "has drug interaction with",
      "ZatAktif", "ZatAktif", "owl:SymmetricProperty", ""),
     ("menghasilkanInteraksi", "menghasilkan / menyebabkan kejadian interaksi", "produces drug interaction event",
@@ -214,6 +217,7 @@ data_props = [
     ("hargaRupiah",   "harga satuan terkecil kemasan (Rupiah)",          "unit price IDR",       "xsd:integer"),
     ("kodeATC",       "kode ATC Level 5 WHO (Anatomical Therapeutic Chemical)", "ATC code",      "xsd:string"),
     ("chebiID",       "identifier ChEBI zat kimia aktif",                "ChEBI identifier",     "xsd:string"),
+    ("cakupanV1",     "cakupan gejala pada pilot versi 1",               "symptom v1 scope",     "xsd:string"),
     ("doseInfoPer5mL","informasi dosis zat aktif per unit sediaan",      "dose info",            "xsd:string"),
     ("nomorSlugK24",  "slug/ID unik produk pada katalog K24Klik",        "K24Klik slug",         "xsd:string"),
     ("urlK24",        "URL halaman detail produk pada K24Klik",          "K24Klik product URL",  "xsd:anyURI"),
@@ -464,10 +468,10 @@ w(f'                  <!-- CTM: Chlorpheniramine (CHEBI:3587) -->')
 w(f'                  <rdf:Description rdf:about="{chebi("3587")}"/>')
 w(f'                  <!-- Diphenhydramine (CHEBI:4634) -->')
 w(f'                  <rdf:Description rdf:about="{chebi("4634")}"/>')
-w(f'                  <!-- Triprolidine – kelas lokal -->')
-w(f'                  <rdf:Description rdf:about="{iri("Triprolidine")}"/>')
-w(f'                  <!-- Doxylamine – kelas lokal -->')
-w(f'                  <rdf:Description rdf:about="{iri("Doxylamine")}"/>')
+w(f'                  <!-- Triprolidine: CHEBI:84116 -->')
+w(f'                  <rdf:Description rdf:about="{chebi("84116")}"/>')
+w(f'                  <!-- Doxylamine: CHEBI:51380 -->')
+w(f'                  <rdf:Description rdf:about="{chebi("51380")}"/>')
 w(f'                </owl:unionOf>')
 w(f'              </owl:Class>')
 w(f'            </owl:someValuesFrom>')
@@ -483,17 +487,6 @@ w(f'      </owl:Restriction>')
 w(f'    </rdfs:subClassOf>')
 w(f'  </owl:Class>')
 w('')
-
-# Deklarasikan kelas bantu lokal untuk zat yang belum di-import ChEBI
-for local_zat in [("Triprolidine","Triprolidine","Antihistamin H1 Gen-1 sedatif; kombinasi dekongestan populer (mis. Actifed)."),
-                   ("Doxylamine","Doksylamine","Antihistamin H1 Gen-1 sedatif kuat; antitusif di Vicks F44 DWS, Siladex Cough N Cold.")]:
-    ln, lbl_en, cmt = local_zat
-    w(f'  <owl:Class rdf:about="{iri(ln)}">')
-    w(f'    <rdfs:subClassOf rdf:resource="{iri("ZatAktif")}"/>')
-    w(f'    <rdfs:label xml:lang="en">{lbl_en}</rdfs:label>')
-    w(f'    <rdfs:comment xml:lang="id">{cmt}</rdfs:comment>')
-    w(f'  </owl:Class>')
-    w('')
 
 # R-04: Produk dengan Dekongestan oral → dapat menyebabkan Palpitasi
 w(f'  <!-- R-04: Produk dengan dekongestan oral → memilikiEfekSamping Palpitasi -->')
@@ -646,8 +639,8 @@ CHEBI_CE  = chebi("3561")   # Cetirizine
 CHEBI_GG  = chebi("5536")   # Guaifenesin
 CHEBI_BMX = chebi("3180")   # Bromhexine
 CHEBI_AMB = chebi("2688")   # Ambroxol
-TRIPO     = iri("Triprolidine")
-DOXA      = iri("Doxylamine")
+TRIPO     = chebi("84116")
+DOXA      = chebi("51380")
 
 individuals = [
     # 1 - Siladex Cough N Cold Syrup 100mL - Kombinasi DXM+PSE+Doxylamine
@@ -863,7 +856,7 @@ for idx, ind in enumerate(individuals, 1):
     w('')
 
 # ============================================================
-#  SECTION F – TBox & ABox: ZatAktif Classes & Individuals (29 zat)
+#  SECTION F – TBox & ABox: ZatAktif Classes & Individuals
 # ============================================================
 w(f'  <!-- ======================================================= -->')
 w(f'  <!-- F. ZAT AKTIF: CLASSES & INDIVIDUALS                     -->')
@@ -902,25 +895,6 @@ for r in zat_rows:
     w(f'    <kbr:kodeATC>{xml_safe(z_atc)}</kbr:kodeATC>')
     w(f'    <kbr:chebiID>{xml_safe(z_chebi)}</kbr:chebiID>')
     w(f'    <rdfs:comment xml:lang="id">{xml_safe(z_desc)}</rdfs:comment>')
-    w(f'  </owl:NamedIndividual>')
-    w('')
-
-# Local ZatAktif not in ChEBI (Triprolidine, Doxylamine)
-for lname, lbl_en, kode_atc, keterangan in [
-    ("Triprolidine", "Triprolidine HCl", "R06AX", "Antihistamin H1 gen-1; kombinasi dengan pseudoephedrine"),
-    ("Doxylamine", "Doxylamine Succinate", "R06AA09", "Antihistamin H1 gen-1 sangat sedatif; antitusif di Vicks F44 DWS, Siladex Cough N Cold"),
-]:
-    w(f'  <owl:Class rdf:about="{iri(lname)}">')
-    w(f'    <rdfs:subClassOf rdf:resource="{iri("ZatAktif")}"/>')
-    w(f'    <rdfs:label xml:lang="en">{lbl_en}</rdfs:label>')
-    w(f'    <rdfs:comment xml:lang="id">{xml_safe(keterangan)}</rdfs:comment>')
-    w(f'  </owl:Class>')
-    w(f'  <owl:NamedIndividual rdf:about="{iri(lname)}">')
-    w(f'    <rdf:type rdf:resource="{iri("ZatAktif")}"/>')
-    w(f'    <rdf:type rdf:resource="{iri(lname)}"/>')
-    w(f'    <rdfs:label xml:lang="en">{lbl_en}</rdfs:label>')
-    w(f'    <kbr:kodeATC>{kode_atc}</kbr:kodeATC>')
-    w(f'    <rdfs:comment xml:lang="id">{xml_safe(keterangan)}</rdfs:comment>')
     w(f'  </owl:NamedIndividual>')
     w('')
 
@@ -994,32 +968,17 @@ w(f'  <!-- H. ABOX – GEJALA INDIVIDUALS (annotation SYMP terms)   -->')
 w(f'  <!-- ======================================================= -->')
 w('')
 
-gejala_list = [
-    (symp("0000614"),  "Batuk",                        "cough",                   "GejalaIndikasi",    "Pantau"),
-    (symp("0000025"),  "Batuk kering / tidak berdahak","dry cough",               "GejalaIndikasi",    "Pantau"),
-    (symp("0020027"),  "Batuk berdahak / produktif",   "wet cough",               "GejalaIndikasi",    "Pantau"),
-    (symp("0000869"),  "Hidung tersumbat",              "nasal congestion",        "GejalaIndikasi",    "Pantau"),
-    (symp("0000372"),  "Pilek / hidung berair",         "rhinorrhea",              "GejalaIndikasi",    "Pantau"),
-    (symp("0000139"),  "Bersin-bersin",                 "sneezing",                "GejalaIndikasi",    "Pantau"),
-    (symp("0000505"),  "Sakit tenggorokan",             "throat pain",             "GejalaIndikasi",    "Pantau"),
-    (symp("0000613"),  "Demam",                         "fever",                   "GejalaIndikasi",    "Pantau"),
-    (symp("0000504"),  "Sakit kepala",                  "headache",                "GejalaIndikasi",    "Pantau"),
-    (symp("0000024"),  "Mengantuk berat",               "drowsiness",              "GejalaEfekSamping", "TanyaApoteker"),
-    (symp("0000610"),  "Pusing / melayang",             "dizziness",               "GejalaEfekSamping", "TanyaApoteker"),
-    (symp("0000260"),  "Mulut kering",                  "dry mouth",               "GejalaEfekSamping", "Pantau"),
-    (symp("0000557"),  "Sulit buang air kecil",         "urinary retention",       "GejalaEfekSamping", "TanyaApoteker"),
-    (symp("0000530"),  "Jantung berdebar-debar",        "palpitation",             "GejalaEfekSamping", "TanyaApoteker"),
-    (symp("0000529"),  "Denyut jantung terlalu cepat",  "tachycardia",             "GejalaEfekSamping", "TanyaApoteker"),
-    (symp("0000458"),  "Mual / eneg",                   "nausea",                  "GejalaEfekSamping", "Pantau"),
-    (symp("0019145"),  "Muntah",                        "vomiting",                "GejalaEfekSamping", "TanyaApoteker"),
-    (symp("0019153"),  "Sesak napas",                   "dyspnea",                 "GejalaRedFlag",     "SegeraKeDokter"),
-    (symp("0000604"),  "Napas berbunyi mengi",           "wheezing",                "GejalaRedFlag",     "SegeraKeDokter"),
-    (symp("0000576"),  "Nyeri dada",                    "chest pain",              "GejalaRedFlag",     "SegeraKeDokter"),
-    (symp("0000242"),  "Batuk berdarah",                "cough with bloody sputum","GejalaRedFlag",     "SegeraKeDokter"),
-    (symp("0020043"),  "Urin berwarna gelap",           "dark urine",              "GejalaRedFlag",     "SegeraKeDokter"),
-]
+symptom_csv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "symptoms", "symptoms_selected.csv")
+with open(symptom_csv_path, "r", encoding="utf-8-sig", newline="") as symptom_file:
+    gejala_list = list(csv.DictReader(symptom_file))
 
-for siri, lbl_id, lbl_en, gejala_cls, tl in gejala_list:
+for symptom in gejala_list:
+    siri = symptom["iri"]
+    lbl_id = symptom["label_id"]
+    lbl_en = symptom["label_en"]
+    gejala_cls = symptom["kategori"]
+    tl = symptom["tindak_lanjut"]
+    synonyms = [item.strip() for item in symptom["sinonim_awam"].split("|") if item.strip()]
     # Declare Class
     w(f'  <owl:Class rdf:about="{siri}">')
     w(f'    <rdfs:subClassOf rdf:resource="{iri(gejala_cls)}"/>')
@@ -1034,8 +993,12 @@ for siri, lbl_id, lbl_en, gejala_cls, tl in gejala_list:
     w(f'    <rdfs:label xml:lang="id">{xml_safe(lbl_id)}</rdfs:label>')
     w(f'    <rdfs:label xml:lang="en">{xml_safe(lbl_en)}</rdfs:label>')
     w(f'    <skos:altLabel xml:lang="id">{xml_safe(lbl_id)}</skos:altLabel>')
+    for synonym in synonyms:
+        w(f'    <skos:altLabel xml:lang="id">{xml_safe(synonym)}</skos:altLabel>')
+    w(f'    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>')
+    w(f'    <kbr:cakupanV1>{xml_safe(symptom["cakupan_v1"])}</kbr:cakupanV1>')
     tl_iri = iri(tl)
-    w(f'    <kbr:membutuhkanTindakLanjut rdf:resource="{tl_iri}"/>')
+    w(f'    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="{tl_iri}"/>')
     w(f'  </owl:NamedIndividual>')
     w('')
 
@@ -1101,7 +1064,7 @@ print(f"[OK] kb_v1.owl ditulis ke: {OUT_PATH}")
 print(f"     Ukuran file   : {size:,} bytes")
 print(f"     SHA-256       : {sha256}")
 print(f"     Jumlah baris  : {content.count(chr(10)):,}")
-print(f"     Individu      : {len(individuals)} produk apotek + {len(zat_rows)+2} zat aktif")
+print(f"     Individu      : {len(individuals)} produk apotek + {len(zat_rows)} zat aktif")
 print(f"     Interaksi ABox: {len(interactions_abox)} pasangan")
 print(f"     Gejala ABox   : {len(gejala_list)} gejala")
 print(f"     Kelas TBox    : {len(cls_hier)} kelas")

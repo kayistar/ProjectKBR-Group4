@@ -1,11 +1,12 @@
 """
 Build Modul 6:
 1. Pemetaan ATC <-> ChEBI (data/mappings/atc_chebi_mapping.csv)
-2. Master Excel Kurasi 4 Sheet (data/curation/Knowledge_Base_Curation_Master.xlsx and CSVs)
+2. Master Excel Kurasi 5 Sheet (data/curation/Knowledge_Base_Curation_Master.xlsx and CSVs)
    - Sheet 1: ZatAktif (Mapping ChEBI, ATC, Enzim, Brand Apotek)
    - Sheet 2: Interaksi (20 Pasangan Terkurasi + Mekanisme DINTO)
    - Sheet 3: Gejala (22 Gejala SYMP + Istilah Awam + Triase)
    - Sheet 4: Sumber (Daftar Pustaka, PIONAS, DDInter, PRO, DINTO)
+   - Sheet 5: ProdukHerbal (produk herbal with product-level composition and provenance)
 """
 
 from __future__ import annotations
@@ -398,6 +399,84 @@ ZAT_AKTIF_DATA = [
         "enzim_terkait": "Inhibisi COX aditif, penghambatan agregasi tromboksan",
         "brand_apotek": "Tolak Angin, Antangin JRG, Komix Herbal Jahe Merah",
     },
+    {
+        "id_zat": "ZAT-030",
+        "nama_zat": "Triprolidine",
+        "chebi_id": "CHEBI:84116",
+        "chebi_iri": "http://purl.obolibrary.org/obo/CHEBI_84116",
+        "kode_atc": "R06AX",
+        "nama_atc": "Other antihistamines for systemic use",
+        "level_atc": "ATC Level 1-4",
+        "kategori": "Sintetis",
+        "peran_farmakologis": "Antihistamin H1 generasi 1 (sedatif)",
+        "enzim_terkait": "",
+        "brand_apotek": "Actifed Plus Cough Suppress, Lapifed DM",
+    },
+    {
+        "id_zat": "ZAT-031",
+        "nama_zat": "Doxylamine",
+        "chebi_id": "CHEBI:51380",
+        "chebi_iri": "http://purl.obolibrary.org/obo/CHEBI_51380",
+        "kode_atc": "R06AA",
+        "nama_atc": "Aminoalkyl ethers",
+        "level_atc": "ATC Level 1-4",
+        "kategori": "Sintetis",
+        "peran_farmakologis": "Antihistamin H1 generasi 1 dengan efek sedatif",
+        "enzim_terkait": "",
+        "brand_apotek": "Siladex Cough N Cold, Siladex Antitussive",
+    },
+]
+
+PILOT_V1_ACTIVE_INGREDIENTS = {
+    "Paracetamol",
+    "Dextromethorphan",
+    "Pseudoephedrine",
+    "Chlorpheniramine (CTM)",
+    "Diphenhydramine",
+    "Guaifenesin (Glyceryl Guaiacolate)",
+    "Triprolidine",
+    "Doxylamine",
+    "Ibuprofen",
+    "Warfarin",
+    "Digoxin",
+    "Simvastatin",
+    "Amlodipine",
+    "Omeprazole",
+    "Clopidogrel",
+}
+
+for zat in ZAT_AKTIF_DATA:
+    if zat["nama_zat"] in PILOT_V1_ACTIVE_INGREDIENTS:
+        zat["cakupan_v1"] = "zat_aktif_v1"
+    elif zat["kategori"] == "Herbal":
+        zat["cakupan_v1"] = "senyawa_herbal_kandidat_v1"
+    else:
+        zat["cakupan_v1"] = "di_luar_pilot_v1"
+
+# Product-level herbal data is kept separate from isolated plant compounds.
+HERBAL_PRODUCT_DATA = [
+    {
+        "id_produk_herbal": "HERB-001",
+        "nama_produk": "Garcia Ekstrak Kulit Manggis Kapsul",
+        "nama_bahan": "Kulit buah manggis",
+        "nama_botani": "Garcinia mangostana L. (belum dicantumkan pada informasi produk yang diperiksa)",
+        "bagian_tanaman": "Kulit buah / perikarp",
+        "bentuk_bahan": "Ekstrak kulit buah",
+        "komposisi_per_kapsul": "Ekstrak kulit buah manggis 420 mg; gula sukrosa 450 mg",
+        "bentuk_sediaan": "Kapsul",
+        "kemasan": "Botol isi 60 kapsul",
+        "dosis_tercantum": "1 kapsul, 3 kali sehari",
+        "cara_penyajian": "Sesudah makan",
+        "nomor_izin_edar": "TR113328811",
+        "pendaftar_bpom": "PT Zena Nirmala Sentosa",
+        "status_verifikasi_bpom": "Entri NIE ditemukan di Cek BPOM; status aktif/berlaku belum dikonfirmasi terpisah",
+        "kadar_alpha_mangostin": "Tidak dicantumkan / tidak diketahui",
+        "hubungan_dengan_alpha_mangostin": "Senyawa bioaktif dapat menjadi kandidat untuk ditelusuri; tidak ada klaim kadar atau standardisasi produk pada sumber yang diperiksa",
+        "sumber_data_produk": "REF-11",
+        "sumber_verifikasi_registrasi": "REF-12",
+        "tanggal_akses": "2026-11-16",
+        "catatan_kurasi": "Data komposisi dan dosis berasal dari halaman apotek K24Klik, bukan transkripsi label kemasan. Gunakan sebagai data produk awal dan verifikasi label bila tersedia.",
+    },
 ]
 
 # -----------------------------------------------------------------------------
@@ -429,7 +508,7 @@ SUMBER_DATA = [
         "cakupan": "Identifier resmi zat aktif (CHEBI_xxxxx), struktur molekul, dan hierarki klasifikasi kimia.",
         "url_purl": "http://purl.obolibrary.org/obo/chebi.owl",
         "tingkat_bukti": "A (Ontologi Baku OBO Foundry)",
-        "tanggal_akses": "2026-11-15",
+        "tanggal_akses": "2026-11-16",
     },
     {
         "id_sumber": "REF-04",
@@ -474,7 +553,7 @@ SUMBER_DATA = [
         "cakupan": "Klasifikasi ATC Level 1-4 untuk sistem pernapasan (R), kardiovaskular (C), dan pencernaan (A).",
         "url_purl": "https://rxnav.nlm.nih.gov/REST/rxclass",
         "tingkat_bukti": "A (WHO Collaborating Centre / NLM)",
-        "tanggal_akses": "2026-11-08",
+        "tanggal_akses": "2026-11-16",
     },
     {
         "id_sumber": "REF-09",
@@ -493,6 +572,24 @@ SUMBER_DATA = [
         "url_purl": "https://www.fda.gov/drugs/drug-safety-and-availability",
         "tingkat_bukti": "A (Regulator Klinis)",
         "tanggal_akses": "2026-11-15",
+    },
+    {
+        "id_sumber": "REF-11",
+        "nama": "K24Klik - Garcia Ekstrak Kulit Manggis",
+        "tipe": "Katalog apotek daring; informasi produk ditinjau apoteker K24Klik",
+        "cakupan": "Komposisi, bentuk sediaan, kemasan, dosis tercantum, NIE, dan pendaftar produk Garcia.",
+        "url_purl": "https://www.k24klik.com/p/GARCIA-EKSTRAK-KULIT-MANGGIS-CAP-60S-BTL-1180",
+        "tingkat_bukti": "Sumber sekunder produk; bukan label kemasan",
+        "tanggal_akses": "2026-11-16",
+    },
+    {
+        "id_sumber": "REF-12",
+        "nama": "BPOM - Cek Produk",
+        "tipe": "Basis data registrasi produk resmi BPOM",
+        "cakupan": "Entri registrasi TR113328811 untuk GARCIA, termasuk pendaftar dan kemasan terdaftar.",
+        "url_purl": "https://cekbpom.pom.go.id/all-produk?query=TR113328811",
+        "tingkat_bukti": "A (Regulator resmi; identitas/registrasi produk)",
+        "tanggal_akses": "2026-11-16",
     },
 ]
 
@@ -624,6 +721,7 @@ def main() -> None:
     write_csv_file(curation_dir / "sheet2_interaksi.csv", inter_rows, list(inter_rows[0].keys()))
     write_csv_file(curation_dir / "sheet3_gejala.csv", symp_rows, list(symp_rows[0].keys()))
     write_csv_file(curation_dir / "sheet4_sumber.csv", SUMBER_DATA, list(SUMBER_DATA[0].keys()))
+    write_csv_file(curation_dir / "sheet5_produk_herbal.csv", HERBAL_PRODUCT_DATA, list(HERBAL_PRODUCT_DATA[0].keys()))
 
     # 5. Build Master Multi-Sheet XLSX
     sheets = {
@@ -631,6 +729,7 @@ def main() -> None:
         "Interaksi": inter_rows,
         "Gejala": symp_rows,
         "Sumber": SUMBER_DATA,
+        "ProdukHerbal": HERBAL_PRODUCT_DATA,
     }
     master_xlsx = curation_dir / "Knowledge_Base_Curation_Master.xlsx"
     build_minimal_xlsx(master_xlsx, sheets)
@@ -639,12 +738,13 @@ def main() -> None:
     metadata = {
         "title": "Master Knowledge Base Curation (Modul 6)",
         "created_at": datetime.now(timezone.utc).isoformat(),
-        "summary": "4-sheet curation workbook combining ATC-ChEBI mappings, curated DDIs, symptoms triage, and evidence provenance.",
+        "summary": "5-sheet curation workbook combining ATC-ChEBI mappings, curated DDIs, symptoms triage, evidence provenance, and herbal products.",
         "sheets": {
             "Sheet1_ZatAktif": {"count": len(ZAT_AKTIF_DATA), "csv": "data/curation/sheet1_zat_aktif.csv"},
             "Sheet2_Interaksi": {"count": len(inter_rows), "csv": "data/curation/sheet2_interaksi.csv"},
             "Sheet3_Gejala": {"count": len(symp_rows), "csv": "data/curation/sheet3_gejala.csv"},
             "Sheet4_Sumber": {"count": len(SUMBER_DATA), "csv": "data/curation/sheet4_sumber.csv"},
+            "Sheet5_ProdukHerbal": {"count": len(HERBAL_PRODUCT_DATA), "csv": "data/curation/sheet5_produk_herbal.csv"},
         },
         "mapping_file": "data/mappings/atc_chebi_mapping.csv",
         "master_xlsx": "data/curation/Knowledge_Base_Curation_Master.xlsx",

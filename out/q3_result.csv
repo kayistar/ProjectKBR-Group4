@@ -1,0 +1,18 @@
+zatA,zatB,keparahan,tindakLanjut,penjelasan
+Alpha-Mangostin,Simvastatin,Interaksi Major (Kontraindikasi Klinis),Segera ke Dokter / IGD,Interaksi Major: Alpha-Mangostin inhibisi CYP3A4 → akumulasi Simvastatin
+Ibuprofen,Warfarin,Interaksi Major (Kontraindikasi Klinis),Segera ke Dokter / IGD,Interaksi Major: Ibuprofen inhibisi COX-1 + efek anti-agregasi → risiko perdarahan GI bersama Warfarin
+Itraconazole,Simvastatin,Interaksi Major (Kontraindikasi Klinis),Segera ke Dokter / IGD,Interaksi Major: Itraconazole inhibisi CYP3A4 → akumulasi Simvastatin → risiko rhabdomyolysis
+Ketoconazole,Atorvastatin,Interaksi Major (Kontraindikasi Klinis),Segera ke Dokter / IGD,Interaksi Major: Ketoconazole inhibisi CYP3A4 → toksisitas Atorvastatin
+Omeprazole,Clopidogrel,Interaksi Major (Kontraindikasi Klinis),Segera ke Dokter / IGD,Interaksi Major: Omeprazole inhibisi CYP2C19 → penurunan efikasi Clopidogrel
+Cetirizine,Chlorpheniramine (CTM),Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri,"Interaksi Moderate: Cetirizine + CTM → kehilangan keunggulan non-sedatif, penekanan SSP aditif"
+Cetirizine,Chlorpheniramine (CTM),Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri (Self-Monitor),"Interaksi Moderate: Cetirizine + CTM → kehilangan keunggulan non-sedatif, penekanan SSP aditif"
+Chlorpheniramine (CTM),Dextromethorphan,Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri,"Interaksi Moderate: CTM + DXM (dalam obat flu kombinasi) → depresan SSP aditif, mengantuk"
+Chlorpheniramine (CTM),Diphenhydramine,Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri,"Interaksi Moderate: CTM + DXM (dalam obat flu kombinasi) → depresan SSP aditif, mengantuk"
+Chlorpheniramine (CTM),Dextromethorphan,Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri (Self-Monitor),"Interaksi Moderate: CTM + DXM (dalam obat flu kombinasi) → depresan SSP aditif, mengantuk"
+Chlorpheniramine (CTM),Diphenhydramine,Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri (Self-Monitor),"Interaksi Moderate: CTM + DXM (dalam obat flu kombinasi) → depresan SSP aditif, mengantuk"
+Chlorpheniramine (CTM),Dextromethorphan,Interaksi Moderate (Perlu Pemantauan Klinis),Konsultasikan ke Apoteker,Interaksi Moderate: CTM + Diphenhydramine → duplikasi antihistamin H1 → sedasi berat
+Chlorpheniramine (CTM),Diphenhydramine,Interaksi Moderate (Perlu Pemantauan Klinis),Konsultasikan ke Apoteker,Interaksi Moderate: CTM + Diphenhydramine → duplikasi antihistamin H1 → sedasi berat
+Paracetamol,Warfarin,Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri,Interaksi Moderate: Paracetamol dosis tinggi → peningkatan INR ringan pada pasien Warfarin
+Paracetamol,Warfarin,Interaksi Moderate (Perlu Pemantauan Klinis),Pantau Mandiri (Self-Monitor),Interaksi Moderate: Paracetamol dosis tinggi → peningkatan INR ringan pada pasien Warfarin
+Phenylephrine,Digoxin,Interaksi Moderate (Perlu Pemantauan Klinis),Konsultasikan ke Apoteker,Interaksi Moderate: Phenylephrine alfa-1 → aritmia pada jantung terdigitalisasi
+Pseudoephedrine,Digoxin,Interaksi Moderate (Perlu Pemantauan Klinis),Konsultasikan ke Apoteker,Interaksi Moderate: Pseudoephedrine stimulasi adrenergik + Digoxin → risiko aritmia

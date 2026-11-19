@@ -23,6 +23,38 @@ from xml.sax.saxutils import escape
 ROBOT_JAR = Path(r"D:\UNS\ROBOT\robot.jar")
 ONTOLOGY_IRI = "http://purl.obolibrary.org/obo/kbr-group4/symptom_modul.owl"
 
+PILOT_SYMPTOM_IDS = {
+    "SYMP:0000025", "SYMP:0020027", "SYMP:0000869", "SYMP:0000372",
+    "SYMP:0000139", "SYMP:0000505", "SYMP:0000613", "SYMP:0000024",
+    "SYMP:0000610", "SYMP:0000530", "SYMP:0019153", "SYMP:0000604",
+    "SYMP:0000576", "SYMP:0000242", "SYMP:0020043",
+}
+
+LAY_SYMPTOM_SYNONYMS = {
+    "SYMP:0000614": ["batuk-batuk"],
+    "SYMP:0000025": ["batuk kering", "batuk tidak berdahak"],
+    "SYMP:0020027": ["batuk berdahak", "batuk berlendir"],
+    "SYMP:0000869": ["hidung mampet", "hidung buntu"],
+    "SYMP:0000372": ["hidung meler", "ingusan"],
+    "SYMP:0000139": ["bersin"],
+    "SYMP:0000505": ["tenggorokan sakit", "sakit saat menelan"],
+    "SYMP:0000613": ["panas", "badan panas"],
+    "SYMP:0000504": ["kepala sakit"],
+    "SYMP:0000024": ["ngantuk", "mengantuk"],
+    "SYMP:0000610": ["pusing", "kepala terasa ringan"],
+    "SYMP:0000260": ["mulut terasa kering", "haus"],
+    "SYMP:0000557": ["susah kencing", "sulit kencing"],
+    "SYMP:0000530": ["deg-degan", "jantung terasa berdebar"],
+    "SYMP:0000529": ["denyut jantung cepat", "jantung berdetak cepat"],
+    "SYMP:0000458": ["mual", "eneg"],
+    "SYMP:0019145": ["muntah-muntah"],
+    "SYMP:0019153": ["sulit bernapas", "napas sesak"],
+    "SYMP:0000604": ["mengi", "napas ngik-ngik"],
+    "SYMP:0000576": ["dada sakit", "dada terasa tertekan"],
+    "SYMP:0000242": ["batuk darah", "dahak berdarah"],
+    "SYMP:0020043": ["air kencing gelap", "kencing seperti teh"],
+}
+
 CURATED_SYMPTOMS = [
     # --- INDIKASI BATUK & PILEK ---
     {
@@ -279,9 +311,10 @@ def enrich_and_format_owl(raw_owl: Path, final_owl: Path) -> None:
         comment.text = "MIREOT extract of symptoms for cough & cold clinical decision support from Symptom Ontology (SYMP)."
 
     # Annotation properties declarations
-    skos_alt = ET.Element(f"{{{ns['owl']}}}AnnotationProperty")
-    skos_alt.attrib[f"{{{ns['rdf']}}}about"] = "http://www.w3.org/2004/02/skos/core#altLabel"
-    root.append(skos_alt)
+    for property_name in ("altLabel", "note"):
+        annotation_property = ET.Element(f"{{{ns['owl']}}}AnnotationProperty")
+        annotation_property.attrib[f"{{{ns['rdf']}}}about"] = f"http://www.w3.org/2004/02/skos/core#{property_name}"
+        root.append(annotation_property)
 
     symptom_map = {item["iri"]: item for item in CURATED_SYMPTOMS}
 
@@ -289,15 +322,18 @@ def enrich_and_format_owl(raw_owl: Path, final_owl: Path) -> None:
         about = cls.attrib.get(f"{{{ns['rdf']}}}about", "")
         if about in symptom_map:
             info = symptom_map[about]
-            # Add Indonesian layperson altLabel
-            alt_lbl = ET.SubElement(cls, f"{{{ns['skos']}}}altLabel")
-            alt_lbl.attrib["{http://www.w3.org/XML/1998/namespace}lang"] = "id"
-            alt_lbl.text = info["label_id"]
+            for label in [info["label_id"], *LAY_SYMPTOM_SYNONYMS[info["obo_id"]]]:
+                alt_lbl = ET.SubElement(cls, f"{{{ns['skos']}}}altLabel")
+                alt_lbl.attrib["{http://www.w3.org/XML/1998/namespace}lang"] = "id"
+                alt_lbl.text = label
 
             # Add comment with category, triage, and description
             desc_comment = ET.SubElement(cls, f"{{{ns['rdfs']}}}comment")
             desc_comment.attrib["{http://www.w3.org/XML/1998/namespace}lang"] = "id"
             desc_comment.text = f"[{info['kategori']}] Rekomendasi: {info['tindak_lanjut']}. {info['deskripsi']}"
+            note = ET.SubElement(cls, f"{{{ns['skos']}}}note")
+            note.attrib["{http://www.w3.org/XML/1998/namespace}lang"] = "id"
+            note.text = "Sinonim awam adalah draf dan perlu validasi apoteker."
 
     tree.write(final_owl, encoding="utf-8", xml_declaration=True)
     print(f"Final annotated OWL written to {final_owl} ({final_owl.stat().st_size:,} bytes)")
@@ -323,11 +359,18 @@ def export_csv(csv_path: Path) -> None:
     with csv_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["obo_id", "iri", "label_en", "label_id", "kategori", "tindak_lanjut", "deskripsi"]
+            fieldnames=[
+                "obo_id", "iri", "label_en", "label_id", "kategori", "tindak_lanjut",
+                "deskripsi", "cakupan_v1", "sinonim_awam", "status_sinonim",
+            ]
         )
         writer.writeheader()
         for item in CURATED_SYMPTOMS:
-            writer.writerow(item)
+            row = dict(item)
+            row["cakupan_v1"] = "pilot" if item["obo_id"] in PILOT_SYMPTOM_IDS else "tambahan"
+            row["sinonim_awam"] = "|".join(LAY_SYMPTOM_SYNONYMS[item["obo_id"]])
+            row["status_sinonim"] = "draf_perlu_validasi_apoteker"
+            writer.writerow(row)
     print(f"Exported CSV summary to {csv_path}")
 
 
@@ -336,12 +379,13 @@ def export_metadata(meta_path: Path, final_owl: Path) -> None:
         "source": "Symptom Ontology (SYMP) - releases/2026-07-30",
         "input_file": "KB/symp.owl",
         "retrieved_at": datetime.now(timezone.utc).isoformat(),
-        "scope": "22 curated symptoms: Indications, Adverse Effects, and Red Flags for Cough & Cold domain",
+        "scope": "22 curated symptoms; 15 selected for pilot v1. Lay synonyms are drafts pending pharmacist validation.",
         "categories": {
             "GejalaIndikasi": 9,
             "GejalaEfekSamping": 8,
             "GejalaRedFlag": 5,
         },
+        "pilot_v1_count": len(PILOT_SYMPTOM_IDS),
         "triage_actions": {
             "Pantau": 11,
             "TanyaApoteker": 6,

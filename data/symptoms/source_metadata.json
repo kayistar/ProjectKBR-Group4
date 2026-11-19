@@ -1,13 +1,14 @@
 {
   "source": "Symptom Ontology (SYMP) - releases/2026-07-30",
   "input_file": "KB/symp.owl",
-  "retrieved_at": "2026-11-15T10:54:19.265710+00:00",
-  "scope": "22 curated symptoms: Indications, Adverse Effects, and Red Flags for Cough & Cold domain",
+  "retrieved_at": "2026-11-17T12:58:49.428390+00:00",
+  "scope": "22 curated symptoms; 15 selected for pilot v1. Lay synonyms are drafts pending pharmacist validation.",
   "categories": {
     "GejalaIndikasi": 9,
     "GejalaEfekSamping": 8,
     "GejalaRedFlag": 5
   },
+  "pilot_v1_count": 15,
   "triage_actions": {
     "Pantau": 11,
     "TanyaApoteker": 6,
@@ -15,5 +16,5 @@
   },
   "ontology_iri": "http://purl.obolibrary.org/obo/kbr-group4/symptom_modul.owl",
   "owl_output": "out/symptom_modul.owl",
-  "owl_size_bytes": 51416
+  "owl_size_bytes": 55782
 }

@@ -96,7 +96,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000024</oboInOwl:id>
         <ns2:label>drowsiness</ns2:label>
-    <skos:altLabel xml:lang="id">Mengantuk / rasa kantuk berat</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Efek penekanan SSP dari antihistamin generasi pertama (CTM, Diphenhydramine); jangan menyetir.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Mengantuk / rasa kantuk berat</skos:altLabel><skos:altLabel xml:lang="id">ngantuk</skos:altLabel><skos:altLabel xml:lang="id">mengantuk</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Efek penekanan SSP dari antihistamin generasi pertama (CTM, Diphenhydramine); jangan menyetir.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -115,7 +115,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000025</oboInOwl:id>
         <ns2:label>dry cough</ns2:label>
-    <skos:altLabel xml:lang="id">Batuk kering / tidak berdahak</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Batuk tanpa produksi dahak/mukus, sering teriritasi di tenggorokan (indikasi antitusif).</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Batuk kering / tidak berdahak</skos:altLabel><skos:altLabel xml:lang="id">batuk kering</skos:altLabel><skos:altLabel xml:lang="id">batuk tidak berdahak</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Batuk tanpa produksi dahak/mukus, sering teriritasi di tenggorokan (indikasi antitusif).</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025" />
         <ns1:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym" />
@@ -151,7 +151,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000139</oboInOwl:id>
         <ns2:label>sneezing</ns2:label>
-    <skos:altLabel xml:lang="id">Bersin-bersin</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Refleks pengeluaran udara tiba-tiba akibat stimulasi saraf sensorik mukosa hidung.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Bersin-bersin</skos:altLabel><skos:altLabel xml:lang="id">bersin</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Refleks pengeluaran udara tiba-tiba akibat stimulasi saraf sensorik mukosa hidung.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000139" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -192,7 +192,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000242</oboInOwl:id>
         <ns2:label>cough with bloody sputum</ns2:label>
-    <skos:altLabel xml:lang="id">Batuk berdarah / dahak bercampur darah</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Hemoptisis; indikasi infeksi parenkim paru serius (mis. TBC, pneumonia berat) bukan batuk biasa.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Batuk berdarah / dahak bercampur darah</skos:altLabel><skos:altLabel xml:lang="id">batuk darah</skos:altLabel><skos:altLabel xml:lang="id">dahak berdarah</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Hemoptisis; indikasi infeksi parenkim paru serius (mis. TBC, pneumonia berat) bukan batuk biasa.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000242" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -209,7 +209,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000260</oboInOwl:id>
         <ns2:label>dry mouth</ns2:label>
-    <skos:altLabel xml:lang="id">Mulut kering / haus</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: Pantau. Penurunan sekresi saliva akibat blokade reseptor muskarinik perifer oleh antihistamin.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Mulut kering / haus</skos:altLabel><skos:altLabel xml:lang="id">mulut terasa kering</skos:altLabel><skos:altLabel xml:lang="id">haus</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: Pantau. Penurunan sekresi saliva akibat blokade reseptor muskarinik perifer oleh antihistamin.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     
 
 
@@ -249,7 +249,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000372</oboInOwl:id>
         <ns2:label>rhinorrhea</ns2:label>
-    <skos:altLabel xml:lang="id">Pilek / hidung berair</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Keluarnya cairan lendir encer dari rongga hidung (indikasi antihistamin).</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Pilek / hidung berair</skos:altLabel><skos:altLabel xml:lang="id">hidung meler</skos:altLabel><skos:altLabel xml:lang="id">ingusan</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Keluarnya cairan lendir encer dari rongga hidung (indikasi antihistamin).</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -314,7 +314,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000458</oboInOwl:id>
         <ns2:label>nausea</ns2:label>
-    <skos:altLabel xml:lang="id">Mual / eneg di ulu hati</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: Pantau. Iritasi mukosa lambung akibat obat ekspektoran (Guaifenesin) atau analgesik (Ibuprofen).</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Mual / eneg di ulu hati</skos:altLabel><skos:altLabel xml:lang="id">mual</skos:altLabel><skos:altLabel xml:lang="id">eneg</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: Pantau. Iritasi mukosa lambung akibat obat ekspektoran (Guaifenesin) atau analgesik (Ibuprofen).</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -397,7 +397,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000504</oboInOwl:id>
         <ns2:label>headache</ns2:label>
-    <skos:altLabel xml:lang="id">Sakit kepala / pening</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Nyeri tumpul atau berdenyut pada area kepala yang menyertai sindrom influenza/ISPA.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Sakit kepala / pening</skos:altLabel><skos:altLabel xml:lang="id">kepala sakit</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Nyeri tumpul atau berdenyut pada area kepala yang menyertai sindrom influenza/ISPA.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -419,7 +419,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000505</oboInOwl:id>
         <ns2:label>throat pain</ns2:label>
-    <skos:altLabel xml:lang="id">Sakit tenggorokan / nyeri menelan</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Rasa nyeri atau iritasi pada faring/laring yang sering menyertai infeksi flu saluran napas atas.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Sakit tenggorokan / nyeri menelan</skos:altLabel><skos:altLabel xml:lang="id">tenggorokan sakit</skos:altLabel><skos:altLabel xml:lang="id">sakit saat menelan</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Rasa nyeri atau iritasi pada faring/laring yang sering menyertai infeksi flu saluran napas atas.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000505" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -468,7 +468,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000529</oboInOwl:id>
         <ns2:label>tachycardia</ns2:label>
-    <skos:altLabel xml:lang="id">Denyut jantung terlalu cepat</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Frekuensi nadi istirahat &gt;100 bpm; risiko meningkat bila dekongestan dikombinasikan dengan kafein.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Denyut jantung terlalu cepat</skos:altLabel><skos:altLabel xml:lang="id">denyut jantung cepat</skos:altLabel><skos:altLabel xml:lang="id">jantung berdetak cepat</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Frekuensi nadi istirahat &gt;100 bpm; risiko meningkat bila dekongestan dikombinasikan dengan kafein.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000529" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -490,7 +490,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000530</oboInOwl:id>
         <ns2:label>palpitation</ns2:label>
-    <skos:altLabel xml:lang="id">Jantung berdebar-debar</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Sensasi denyut jantung cepat/kuat akibat stimulasi adrenergik alfa/beta dari dekongestan.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Jantung berdebar-debar</skos:altLabel><skos:altLabel xml:lang="id">deg-degan</skos:altLabel><skos:altLabel xml:lang="id">jantung terasa berdebar</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Sensasi denyut jantung cepat/kuat akibat stimulasi adrenergik alfa/beta dari dekongestan.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000530" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -517,7 +517,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000557</oboInOwl:id>
         <ns2:label>urinary retention</ns2:label>
-    <skos:altLabel xml:lang="id">Sulit buang air kecil / retensi urin</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Hambatan pengosongan kandung kemih karena efek antikolinergik (waspada pasien BPH/prostat).</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Sulit buang air kecil / retensi urin</skos:altLabel><skos:altLabel xml:lang="id">susah kencing</skos:altLabel><skos:altLabel xml:lang="id">sulit kencing</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Hambatan pengosongan kandung kemih karena efek antikolinergik (waspada pasien BPH/prostat).</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000557" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -539,7 +539,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000576</oboInOwl:id>
         <ns2:label>chest pain</ns2:label>
-    <skos:altLabel xml:lang="id">Nyeri dada / dada terasa tertekan</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Nyeri atau rasa sesak berat di dada; perlu disingkirkan komplikasi kardiovaskular/pleuritis.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Nyeri dada / dada terasa tertekan</skos:altLabel><skos:altLabel xml:lang="id">dada sakit</skos:altLabel><skos:altLabel xml:lang="id">dada terasa tertekan</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Nyeri atau rasa sesak berat di dada; perlu disingkirkan komplikasi kardiovaskular/pleuritis.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     
 
 
@@ -610,7 +610,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000604</oboInOwl:id>
         <ns2:label>wheezing</ns2:label>
-    <skos:altLabel xml:lang="id">Napas berbunyi mengi / ngik-ngik</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Suara napas berfrekuensi tinggi akibat penyempitan lumen bronkus; butuh evaluasi medis.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Napas berbunyi mengi / ngik-ngik</skos:altLabel><skos:altLabel xml:lang="id">mengi</skos:altLabel><skos:altLabel xml:lang="id">napas ngik-ngik</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Suara napas berfrekuensi tinggi akibat penyempitan lumen bronkus; butuh evaluasi medis.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000604" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -632,7 +632,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000610</oboInOwl:id>
         <ns2:label>dizziness</ns2:label>
-    <skos:altLabel xml:lang="id">Pusing / melayang</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Sensasi ketidakseimbangan atau kepala ringan akibat efek vaskular atau sedasi obat flu.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Pusing / melayang</skos:altLabel><skos:altLabel xml:lang="id">pusing</skos:altLabel><skos:altLabel xml:lang="id">kepala terasa ringan</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Sensasi ketidakseimbangan atau kepala ringan akibat efek vaskular atau sedasi obat flu.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000610" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -654,7 +654,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000613</oboInOwl:id>
         <ns2:label>fever</ns2:label>
-    <skos:altLabel xml:lang="id">Demam / suhu tubuh meningkat</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Peningkatan suhu tubuh di atas normal akibat respon sitokin pirogen (indikasi antipiretik).</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Demam / suhu tubuh meningkat</skos:altLabel><skos:altLabel xml:lang="id">panas</skos:altLabel><skos:altLabel xml:lang="id">badan panas</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Peningkatan suhu tubuh di atas normal akibat respon sitokin pirogen (indikasi antipiretik).</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -675,7 +675,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000614</oboInOwl:id>
         <ns2:label>cough</ns2:label>
-    <skos:altLabel xml:lang="id">Batuk</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Refleks pertahanan saluran napas untuk membersihkan sekret atau iritan.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Batuk</skos:altLabel><skos:altLabel xml:lang="id">batuk-batuk</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Refleks pertahanan saluran napas untuk membersihkan sekret atau iritan.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000614" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -693,7 +693,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0000869</oboInOwl:id>
         <ns2:label>nasal congestion</ns2:label>
-    <skos:altLabel xml:lang="id">Hidung tersumbat</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Penyumbatan rongga hidung akibat pembengkakan mukosa vaskular (indikasi dekongestan).</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Hidung tersumbat</skos:altLabel><skos:altLabel xml:lang="id">hidung mampet</skos:altLabel><skos:altLabel xml:lang="id">hidung buntu</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Penyumbatan rongga hidung akibat pembengkakan mukosa vaskular (indikasi dekongestan).</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -732,7 +732,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0019145</oboInOwl:id>
         <ns2:label>vomiting</ns2:label>
-    <skos:altLabel xml:lang="id">Muntah</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Pengeluaran isi lambung paksa; bila berulang hentikan konsumsi obat dan konsultasi apoteker.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Muntah</skos:altLabel><skos:altLabel xml:lang="id">muntah-muntah</skos:altLabel><ns2:comment xml:lang="id">[GejalaEfekSamping] Rekomendasi: TanyaApoteker. Pengeluaran isi lambung paksa; bila berulang hentikan konsumsi obat dan konsultasi apoteker.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019145" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -755,7 +755,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0019153</oboInOwl:id>
         <ns2:label>dyspnea</ns2:label>
-    <skos:altLabel xml:lang="id">Sesak napas / kesulitan bernapas</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Tanda bahaya gawat darurat infeksi saluran napas bawah (pneumonia/asma berat); rujuk segera.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Sesak napas / kesulitan bernapas</skos:altLabel><skos:altLabel xml:lang="id">sulit bernapas</skos:altLabel><skos:altLabel xml:lang="id">napas sesak</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Tanda bahaya gawat darurat infeksi saluran napas bawah (pneumonia/asma berat); rujuk segera.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019153" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -774,7 +774,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0020027</oboInOwl:id>
         <ns2:label>wet cough</ns2:label>
-    <skos:altLabel xml:lang="id">Batuk berdahak / produktif</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Batuk disertai dahak kental pada saluran napas (indikasi ekspektoran/mukolitik).</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Batuk berdahak / produktif</skos:altLabel><skos:altLabel xml:lang="id">batuk berdahak</skos:altLabel><skos:altLabel xml:lang="id">batuk berlendir</skos:altLabel><ns2:comment xml:lang="id">[GejalaIndikasi] Rekomendasi: Pantau. Batuk disertai dahak kental pada saluran napas (indikasi ekspektoran/mukolitik).</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020027" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -792,7 +792,7 @@
         <oboInOwl:hasOBONamespace>symptoms</oboInOwl:hasOBONamespace>
         <oboInOwl:id>SYMP:0020043</oboInOwl:id>
         <ns2:label>dark urine</ns2:label>
-    <skos:altLabel xml:lang="id">Urin berwarna gelap pekat seperti teh</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Tanda toksisitas mioglobinuria/rhabdomyolysis atau hepatotoksisitas berat akibat interaksi obat.</ns2:comment></ns1:Class>
+    <skos:altLabel xml:lang="id">Urin berwarna gelap pekat seperti teh</skos:altLabel><skos:altLabel xml:lang="id">air kencing gelap</skos:altLabel><skos:altLabel xml:lang="id">kencing seperti teh</skos:altLabel><ns2:comment xml:lang="id">[GejalaRedFlag] Rekomendasi: SegeraKeDokter. Tanda toksisitas mioglobinuria/rhabdomyolysis atau hepatotoksisitas berat akibat interaksi obat.</ns2:comment><skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note></ns1:Class>
     <ns1:Axiom>
         <ns1:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020043" />
         <ns1:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115" />
@@ -817,4 +817,4 @@
         <ns1:annotatedTarget>A neurological and physiological symptom that is characterized by any of the following: dizziness or vertigo (a spinning sensation); falling or feeling as if you are going to fall; staggering when walking; lightheadedness, faintness, or a floating sensation; and confusion or disorientation.</ns1:annotatedTarget>
         <oboInOwl:hasDbXref>url:https://www.nidcd.nih.gov/health/balance-disorders</oboInOwl:hasDbXref>
     </ns1:Axiom>
-<ns1:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel" /></rdf:RDF>
+<ns1:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel" /><ns1:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note" /></rdf:RDF>

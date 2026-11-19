@@ -11,14 +11,14 @@
   <!-- ======================================================= -->
   <!-- Ontology: kb_v1.owl                                     -->
   <!-- Group 4 KBR - Interaksi Obat Batuk-Pilek Indonesia      -->
-  <!-- Generated: 2026-11-16T14:22:34.628917+07:00                       -->
+  <!-- Generated: 2026-11-17T20:06:33.493655+07:00                       -->
   <!-- ======================================================= -->
   <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl">
     <rdfs:label xml:lang="en">KB v1 Drug Interaction Knowledge Base (Cough &amp; Cold Products - Indonesia)</rdfs:label>
     <rdfs:label xml:lang="id">KB v1 Basis Pengetahuan Interaksi Obat Batuk-Pilek (Produk Apotek Indonesia)</rdfs:label>
     <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl/1.0"/>
     <rdfs:comment xml:lang="id">Basis pengetahuan interaksi obat batuk-pilek generasi pertama. TBox mendefinisikan kelas produk, zat aktif, gejala, interaksi, tindak lanjut klinis, serta 8 aturan GCI inferensi. ABox mendaftarkan 12 individu produk apotek Indonesia pilihan dari data K24Klik.</rdfs:comment>
-    <oboInOwl:date>2026-11-16T14:22:34.628917+07:00</oboInOwl:date>
+    <oboInOwl:date>2026-11-17T20:06:33.493655+07:00</oboInOwl:date>
     <oboInOwl:creator xml:lang="id">Group 4 KBR - Universitas Sebelas Maret, Semester 5, 2026/2027</oboInOwl:creator>
   </owl:Ontology>
 
@@ -36,6 +36,10 @@
 
   <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
     <rdfs:label>altLabel</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note">
+    <rdfs:label>note</rdfs:label>
   </owl:AnnotationProperty>
 
   <!-- ======================================================= -->
@@ -61,6 +65,13 @@
     <rdfs:label xml:lang="en">has side effect symptom</rdfs:label>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#gejalaMemerlukanTindakLanjut">
+    <rdfs:label xml:lang="id">gejala memerlukan tindak lanjut klinis</rdfs:label>
+    <rdfs:label xml:lang="en">symptom requires clinical follow-up</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiInteraksiDengan">
@@ -158,6 +169,12 @@
   <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#chebiID">
     <rdfs:label xml:lang="id">identifier ChEBI zat kimia aktif</rdfs:label>
     <rdfs:label xml:lang="en">ChEBI identifier</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#cakupanV1">
+    <rdfs:label xml:lang="id">cakupan gejala pada pilot versi 1</rdfs:label>
+    <rdfs:label xml:lang="en">symptom v1 scope</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
 
@@ -543,10 +560,10 @@
                   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_3587"/>
                   <!-- Diphenhydramine (CHEBI:4634) -->
                   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_4634"/>
-                  <!-- Triprolidine – kelas lokal -->
-                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
-                  <!-- Doxylamine – kelas lokal -->
-                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine"/>
+                  <!-- Triprolidine: CHEBI:84116 -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_84116"/>
+                  <!-- Doxylamine: CHEBI:51380 -->
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_51380"/>
                 </owl:unionOf>
               </owl:Class>
             </owl:someValuesFrom>
@@ -560,18 +577,6 @@
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine">
-    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
-    <rdfs:label xml:lang="en">Triprolidine</rdfs:label>
-    <rdfs:comment xml:lang="id">Antihistamin H1 Gen-1 sedatif; kombinasi dekongestan populer (mis. Actifed).</rdfs:comment>
-  </owl:Class>
-
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine">
-    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
-    <rdfs:label xml:lang="en">Doksylamine</rdfs:label>
-    <rdfs:comment xml:lang="id">Antihistamin H1 Gen-1 sedatif kuat; antitusif di Vicks F44 DWS, Siladex Cough N Cold.</rdfs:comment>
   </owl:Class>
 
   <!-- R-04: Produk dengan dekongestan oral → memilikiEfekSamping Palpitasi -->
@@ -688,7 +693,7 @@
     <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
     <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
     <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
-    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51380"/>
     <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
     <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000869"/>
     <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000372"/>
@@ -713,7 +718,7 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
     <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
     <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
-    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_84116"/>
     <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
     <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
     <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
@@ -966,7 +971,7 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek"/>
     <kbr:memilikiGolongan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBebasTerbatas"/>
     <kbr:memilikiBentukSediaan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Sirup"/>
-    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
+    <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_84116"/>
     <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
     <kbr:memilikiKandungan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
     <kbr:mengindikasikanGejala rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000025"/>
@@ -1395,30 +1400,32 @@
     <rdfs:comment xml:lang="id">Karminatif &amp; Penghangat Pernapasan (Jahe Merah)</rdfs:comment>
   </owl:NamedIndividual>
 
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine">
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_84116">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
-    <rdfs:label xml:lang="en">Triprolidine HCl</rdfs:label>
-    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1; kombinasi dengan pseudoephedrine</rdfs:comment>
+    <rdfs:label xml:lang="id">Triprolidine</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 generasi 1 (sedatif)</rdfs:comment>
   </owl:Class>
-  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine">
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_84116">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
-    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Triprolidine"/>
-    <rdfs:label xml:lang="en">Triprolidine HCl</rdfs:label>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_84116"/>
+    <rdfs:label xml:lang="id">Triprolidine</rdfs:label>
     <kbr:kodeATC>R06AX</kbr:kodeATC>
-    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1; kombinasi dengan pseudoephedrine</rdfs:comment>
+    <kbr:chebiID>CHEBI:84116</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antihistamin H1 generasi 1 (sedatif)</rdfs:comment>
   </owl:NamedIndividual>
 
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine">
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51380">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
-    <rdfs:label xml:lang="en">Doxylamine Succinate</rdfs:label>
-    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1 sangat sedatif; antitusif di Vicks F44 DWS, Siladex Cough N Cold</rdfs:comment>
+    <rdfs:label xml:lang="id">Doxylamine</rdfs:label>
+    <rdfs:comment xml:lang="id">Antihistamin H1 generasi 1 dengan efek sedatif</rdfs:comment>
   </owl:Class>
-  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine">
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CHEBI_51380">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
-    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Doxylamine"/>
-    <rdfs:label xml:lang="en">Doxylamine Succinate</rdfs:label>
-    <kbr:kodeATC>R06AA09</kbr:kodeATC>
-    <rdfs:comment xml:lang="id">Antihistamin H1 gen-1 sangat sedatif; antitusif di Vicks F44 DWS, Siladex Cough N Cold</rdfs:comment>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51380"/>
+    <rdfs:label xml:lang="id">Doxylamine</rdfs:label>
+    <kbr:kodeATC>R06AA</kbr:kodeATC>
+    <kbr:chebiID>CHEBI:51380</kbr:chebiID>
+    <rdfs:comment xml:lang="id">Antihistamin H1 generasi 1 dengan efek sedatif</rdfs:comment>
   </owl:NamedIndividual>
 
   <!-- ======================================================= -->
@@ -1594,7 +1601,10 @@
     <rdfs:label xml:lang="id">Batuk</rdfs:label>
     <rdfs:label xml:lang="en">cough</rdfs:label>
     <skos:altLabel xml:lang="id">Batuk</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">batuk-batuk</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>tambahan</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000025">
@@ -1608,7 +1618,11 @@
     <rdfs:label xml:lang="id">Batuk kering / tidak berdahak</rdfs:label>
     <rdfs:label xml:lang="en">dry cough</rdfs:label>
     <skos:altLabel xml:lang="id">Batuk kering / tidak berdahak</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">batuk kering</skos:altLabel>
+    <skos:altLabel xml:lang="id">batuk tidak berdahak</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0020027">
@@ -1622,7 +1636,11 @@
     <rdfs:label xml:lang="id">Batuk berdahak / produktif</rdfs:label>
     <rdfs:label xml:lang="en">wet cough</rdfs:label>
     <skos:altLabel xml:lang="id">Batuk berdahak / produktif</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">batuk berdahak</skos:altLabel>
+    <skos:altLabel xml:lang="id">batuk berlendir</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000869">
@@ -1636,7 +1654,11 @@
     <rdfs:label xml:lang="id">Hidung tersumbat</rdfs:label>
     <rdfs:label xml:lang="en">nasal congestion</rdfs:label>
     <skos:altLabel xml:lang="id">Hidung tersumbat</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">hidung mampet</skos:altLabel>
+    <skos:altLabel xml:lang="id">hidung buntu</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000372">
@@ -1650,7 +1672,11 @@
     <rdfs:label xml:lang="id">Pilek / hidung berair</rdfs:label>
     <rdfs:label xml:lang="en">rhinorrhea</rdfs:label>
     <skos:altLabel xml:lang="id">Pilek / hidung berair</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">hidung meler</skos:altLabel>
+    <skos:altLabel xml:lang="id">ingusan</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000139">
@@ -1664,63 +1690,81 @@
     <rdfs:label xml:lang="id">Bersin-bersin</rdfs:label>
     <rdfs:label xml:lang="en">sneezing</rdfs:label>
     <skos:altLabel xml:lang="id">Bersin-bersin</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">bersin</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000505">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
-    <rdfs:label xml:lang="id">Sakit tenggorokan</rdfs:label>
+    <rdfs:label xml:lang="id">Sakit tenggorokan / nyeri menelan</rdfs:label>
     <rdfs:label xml:lang="en">throat pain</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000505">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000505"/>
-    <rdfs:label xml:lang="id">Sakit tenggorokan</rdfs:label>
+    <rdfs:label xml:lang="id">Sakit tenggorokan / nyeri menelan</rdfs:label>
     <rdfs:label xml:lang="en">throat pain</rdfs:label>
-    <skos:altLabel xml:lang="id">Sakit tenggorokan</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">Sakit tenggorokan / nyeri menelan</skos:altLabel>
+    <skos:altLabel xml:lang="id">tenggorokan sakit</skos:altLabel>
+    <skos:altLabel xml:lang="id">sakit saat menelan</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000613">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
-    <rdfs:label xml:lang="id">Demam</rdfs:label>
+    <rdfs:label xml:lang="id">Demam / suhu tubuh meningkat</rdfs:label>
     <rdfs:label xml:lang="en">fever</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000613">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000613"/>
-    <rdfs:label xml:lang="id">Demam</rdfs:label>
+    <rdfs:label xml:lang="id">Demam / suhu tubuh meningkat</rdfs:label>
     <rdfs:label xml:lang="en">fever</rdfs:label>
-    <skos:altLabel xml:lang="id">Demam</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">Demam / suhu tubuh meningkat</skos:altLabel>
+    <skos:altLabel xml:lang="id">panas</skos:altLabel>
+    <skos:altLabel xml:lang="id">badan panas</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000504">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
-    <rdfs:label xml:lang="id">Sakit kepala</rdfs:label>
+    <rdfs:label xml:lang="id">Sakit kepala / pening</rdfs:label>
     <rdfs:label xml:lang="en">headache</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000504">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaIndikasi"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000504"/>
-    <rdfs:label xml:lang="id">Sakit kepala</rdfs:label>
+    <rdfs:label xml:lang="id">Sakit kepala / pening</rdfs:label>
     <rdfs:label xml:lang="en">headache</rdfs:label>
-    <skos:altLabel xml:lang="id">Sakit kepala</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">Sakit kepala / pening</skos:altLabel>
+    <skos:altLabel xml:lang="id">kepala sakit</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>tambahan</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000024">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
-    <rdfs:label xml:lang="id">Mengantuk berat</rdfs:label>
+    <rdfs:label xml:lang="id">Mengantuk / rasa kantuk berat</rdfs:label>
     <rdfs:label xml:lang="en">drowsiness</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000024">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000024"/>
-    <rdfs:label xml:lang="id">Mengantuk berat</rdfs:label>
+    <rdfs:label xml:lang="id">Mengantuk / rasa kantuk berat</rdfs:label>
     <rdfs:label xml:lang="en">drowsiness</rdfs:label>
-    <skos:altLabel xml:lang="id">Mengantuk berat</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <skos:altLabel xml:lang="id">Mengantuk / rasa kantuk berat</skos:altLabel>
+    <skos:altLabel xml:lang="id">ngantuk</skos:altLabel>
+    <skos:altLabel xml:lang="id">mengantuk</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000610">
@@ -1734,35 +1778,47 @@
     <rdfs:label xml:lang="id">Pusing / melayang</rdfs:label>
     <rdfs:label xml:lang="en">dizziness</rdfs:label>
     <skos:altLabel xml:lang="id">Pusing / melayang</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <skos:altLabel xml:lang="id">pusing</skos:altLabel>
+    <skos:altLabel xml:lang="id">kepala terasa ringan</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000260">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
-    <rdfs:label xml:lang="id">Mulut kering</rdfs:label>
+    <rdfs:label xml:lang="id">Mulut kering / haus</rdfs:label>
     <rdfs:label xml:lang="en">dry mouth</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000260">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000260"/>
-    <rdfs:label xml:lang="id">Mulut kering</rdfs:label>
+    <rdfs:label xml:lang="id">Mulut kering / haus</rdfs:label>
     <rdfs:label xml:lang="en">dry mouth</rdfs:label>
-    <skos:altLabel xml:lang="id">Mulut kering</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">Mulut kering / haus</skos:altLabel>
+    <skos:altLabel xml:lang="id">mulut terasa kering</skos:altLabel>
+    <skos:altLabel xml:lang="id">haus</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>tambahan</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000557">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
-    <rdfs:label xml:lang="id">Sulit buang air kecil</rdfs:label>
+    <rdfs:label xml:lang="id">Sulit buang air kecil / retensi urin</rdfs:label>
     <rdfs:label xml:lang="en">urinary retention</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000557">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000557"/>
-    <rdfs:label xml:lang="id">Sulit buang air kecil</rdfs:label>
+    <rdfs:label xml:lang="id">Sulit buang air kecil / retensi urin</rdfs:label>
     <rdfs:label xml:lang="en">urinary retention</rdfs:label>
-    <skos:altLabel xml:lang="id">Sulit buang air kecil</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <skos:altLabel xml:lang="id">Sulit buang air kecil / retensi urin</skos:altLabel>
+    <skos:altLabel xml:lang="id">susah kencing</skos:altLabel>
+    <skos:altLabel xml:lang="id">sulit kencing</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>tambahan</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000530">
@@ -1776,7 +1832,11 @@
     <rdfs:label xml:lang="id">Jantung berdebar-debar</rdfs:label>
     <rdfs:label xml:lang="en">palpitation</rdfs:label>
     <skos:altLabel xml:lang="id">Jantung berdebar-debar</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <skos:altLabel xml:lang="id">deg-degan</skos:altLabel>
+    <skos:altLabel xml:lang="id">jantung terasa berdebar</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000529">
@@ -1790,21 +1850,29 @@
     <rdfs:label xml:lang="id">Denyut jantung terlalu cepat</rdfs:label>
     <rdfs:label xml:lang="en">tachycardia</rdfs:label>
     <skos:altLabel xml:lang="id">Denyut jantung terlalu cepat</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <skos:altLabel xml:lang="id">denyut jantung cepat</skos:altLabel>
+    <skos:altLabel xml:lang="id">jantung berdetak cepat</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>tambahan</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000458">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
-    <rdfs:label xml:lang="id">Mual / eneg</rdfs:label>
+    <rdfs:label xml:lang="id">Mual / eneg di ulu hati</rdfs:label>
     <rdfs:label xml:lang="en">nausea</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000458">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaEfekSamping"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000458"/>
-    <rdfs:label xml:lang="id">Mual / eneg</rdfs:label>
+    <rdfs:label xml:lang="id">Mual / eneg di ulu hati</rdfs:label>
     <rdfs:label xml:lang="en">nausea</rdfs:label>
-    <skos:altLabel xml:lang="id">Mual / eneg</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
+    <skos:altLabel xml:lang="id">Mual / eneg di ulu hati</skos:altLabel>
+    <skos:altLabel xml:lang="id">mual</skos:altLabel>
+    <skos:altLabel xml:lang="id">eneg</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>tambahan</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0019145">
@@ -1818,77 +1886,100 @@
     <rdfs:label xml:lang="id">Muntah</rdfs:label>
     <rdfs:label xml:lang="en">vomiting</rdfs:label>
     <skos:altLabel xml:lang="id">Muntah</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
+    <skos:altLabel xml:lang="id">muntah-muntah</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>tambahan</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0019153">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
-    <rdfs:label xml:lang="id">Sesak napas</rdfs:label>
+    <rdfs:label xml:lang="id">Sesak napas / kesulitan bernapas</rdfs:label>
     <rdfs:label xml:lang="en">dyspnea</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0019153">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0019153"/>
-    <rdfs:label xml:lang="id">Sesak napas</rdfs:label>
+    <rdfs:label xml:lang="id">Sesak napas / kesulitan bernapas</rdfs:label>
     <rdfs:label xml:lang="en">dyspnea</rdfs:label>
-    <skos:altLabel xml:lang="id">Sesak napas</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <skos:altLabel xml:lang="id">Sesak napas / kesulitan bernapas</skos:altLabel>
+    <skos:altLabel xml:lang="id">sulit bernapas</skos:altLabel>
+    <skos:altLabel xml:lang="id">napas sesak</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000604">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
-    <rdfs:label xml:lang="id">Napas berbunyi mengi</rdfs:label>
+    <rdfs:label xml:lang="id">Napas berbunyi mengi / ngik-ngik</rdfs:label>
     <rdfs:label xml:lang="en">wheezing</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000604">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000604"/>
-    <rdfs:label xml:lang="id">Napas berbunyi mengi</rdfs:label>
+    <rdfs:label xml:lang="id">Napas berbunyi mengi / ngik-ngik</rdfs:label>
     <rdfs:label xml:lang="en">wheezing</rdfs:label>
-    <skos:altLabel xml:lang="id">Napas berbunyi mengi</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <skos:altLabel xml:lang="id">Napas berbunyi mengi / ngik-ngik</skos:altLabel>
+    <skos:altLabel xml:lang="id">mengi</skos:altLabel>
+    <skos:altLabel xml:lang="id">napas ngik-ngik</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000576">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
-    <rdfs:label xml:lang="id">Nyeri dada</rdfs:label>
+    <rdfs:label xml:lang="id">Nyeri dada / dada terasa tertekan</rdfs:label>
     <rdfs:label xml:lang="en">chest pain</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000576">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000576"/>
-    <rdfs:label xml:lang="id">Nyeri dada</rdfs:label>
+    <rdfs:label xml:lang="id">Nyeri dada / dada terasa tertekan</rdfs:label>
     <rdfs:label xml:lang="en">chest pain</rdfs:label>
-    <skos:altLabel xml:lang="id">Nyeri dada</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <skos:altLabel xml:lang="id">Nyeri dada / dada terasa tertekan</skos:altLabel>
+    <skos:altLabel xml:lang="id">dada sakit</skos:altLabel>
+    <skos:altLabel xml:lang="id">dada terasa tertekan</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000242">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
-    <rdfs:label xml:lang="id">Batuk berdarah</rdfs:label>
+    <rdfs:label xml:lang="id">Batuk berdarah / dahak bercampur darah</rdfs:label>
     <rdfs:label xml:lang="en">cough with bloody sputum</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0000242">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000242"/>
-    <rdfs:label xml:lang="id">Batuk berdarah</rdfs:label>
+    <rdfs:label xml:lang="id">Batuk berdarah / dahak bercampur darah</rdfs:label>
     <rdfs:label xml:lang="en">cough with bloody sputum</rdfs:label>
-    <skos:altLabel xml:lang="id">Batuk berdarah</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <skos:altLabel xml:lang="id">Batuk berdarah / dahak bercampur darah</skos:altLabel>
+    <skos:altLabel xml:lang="id">batuk darah</skos:altLabel>
+    <skos:altLabel xml:lang="id">dahak berdarah</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
   </owl:NamedIndividual>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0020043">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
-    <rdfs:label xml:lang="id">Urin berwarna gelap</rdfs:label>
+    <rdfs:label xml:lang="id">Urin berwarna gelap pekat seperti teh</rdfs:label>
     <rdfs:label xml:lang="en">dark urine</rdfs:label>
   </owl:Class>
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/SYMP_0020043">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#GejalaRedFlag"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SYMP_0020043"/>
-    <rdfs:label xml:lang="id">Urin berwarna gelap</rdfs:label>
+    <rdfs:label xml:lang="id">Urin berwarna gelap pekat seperti teh</rdfs:label>
     <rdfs:label xml:lang="en">dark urine</rdfs:label>
-    <skos:altLabel xml:lang="id">Urin berwarna gelap</skos:altLabel>
-    <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
+    <skos:altLabel xml:lang="id">Urin berwarna gelap pekat seperti teh</skos:altLabel>
+    <skos:altLabel xml:lang="id">air kencing gelap</skos:altLabel>
+    <skos:altLabel xml:lang="id">kencing seperti teh</skos:altLabel>
+    <skos:note xml:lang="id">Sinonim awam adalah draf dan perlu validasi apoteker.</skos:note>
+    <kbr:cakupanV1>pilot</kbr:cakupanV1>
+    <kbr:gejalaMemerlukanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
   </owl:NamedIndividual>
 
   <!-- ======================================================= -->

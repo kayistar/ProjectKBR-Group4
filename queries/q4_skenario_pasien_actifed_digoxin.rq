@@ -1,0 +1,62 @@
+PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Kasus uji sintetis (bukan data pasien nyata):
+# pasien menggunakan Actifed dan rutin menggunakan Digoxin.
+# VALUES menjadi input obat pasien untuk kasus uji ini.
+SELECT DISTINCT
+  ?kasus
+  ?namaProduk
+  ?obatRutin
+  ?zatProduk
+  ?statusData
+  ?tingkatBahaya
+  ?tindakLanjut
+  ?penjelasan
+  ?tingkatBukti
+WHERE {
+  VALUES (?kasus ?produk ?obatRutin ?zatRutin) {
+    (
+      "KasusUji-01: Actifed + Digoxin"
+      kbr:prod_ActifedPlusSyrMerah60
+      "Digoxin"
+      <http://purl.obolibrary.org/obo/CHEBI_4551>
+    )
+  }
+
+  ?produk a kbr:ProduktObat ;
+          kbr:namaDagang ?namaProduk .
+
+  OPTIONAL {
+    ?produk kbr:memilikiKandungan ?zatAktifProduk .
+    ?zatAktifProduk rdfs:label ?zatProduk ;
+                    kbr:memilikiInteraksiDengan ?zatRutin ;
+                    kbr:menghasilkanInteraksi ?interaksi .
+
+    ?interaksi a ?kelasInteraksi ;
+               kbr:membutuhkanTindakLanjut ?aksi ;
+               rdfs:label ?penjelasan .
+
+    ?kelasInteraksi rdfs:label ?tingkatBahaya .
+    ?aksi rdfs:label ?tindakLanjut .
+
+    FILTER (
+      ?kelasInteraksi IN (
+        kbr:InteraksiMajor,
+        kbr:InteraksiModerate,
+        kbr:InteraksiMinor
+      ) &&
+      lang(?zatProduk) = "id" &&
+      lang(?penjelasan) = "id" &&
+      lang(?tingkatBahaya) = "id" &&
+      lang(?tindakLanjut) = "id"
+    )
+
+    OPTIONAL { ?interaksi kbr:tingkatBukti ?tingkatBukti }
+  }
+
+  BIND(
+    IF(BOUND(?interaksi), "interaksi_terdeteksi", "tidak_diketahui")
+    AS ?statusData
+  )
+}

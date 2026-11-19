@@ -1,0 +1,14 @@
+PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?namaProduk ?efekSamping ?namaZat
+WHERE {
+  ?prod a kbr:ProduktObat ;
+        kbr:namaDagang ?namaProduk ;
+        kbr:memilikiEfekSamping ?efek ;
+        kbr:memilikiKandungan ?zat .
+  ?efek rdfs:label ?efekSamping .
+  ?zat rdfs:label ?namaZat .
+  FILTER (lang(?efekSamping) = "id" && lang(?namaZat) = "id")
+}
+ORDER BY ?namaProduk ?efekSamping
