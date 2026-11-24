@@ -3,16 +3,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?zatA ?zatB ?keparahan ?tindakLanjut ?penjelasan
 WHERE {
-  ?zat1 kbr:memilikiInteraksiDengan ?zat2 ;
-        kbr:menghasilkanInteraksi ?interaksi .
   ?zat1 rdfs:label ?zatA .
   ?zat2 rdfs:label ?zatB .
   ?interaksi a ?tipeInteraksi ;
+             kbr:melibatkanZatAktif ?zat1, ?zat2 ;
              kbr:membutuhkanTindakLanjut ?tl ;
              rdfs:label ?penjelasan .
   ?tipeInteraksi rdfs:label ?keparahan .
   ?tl rdfs:label ?tindakLanjut .
 
+  FILTER (STR(?zat1) < STR(?zat2))
   FILTER (?tipeInteraksi IN (kbr:InteraksiMajor, kbr:InteraksiModerate, kbr:InteraksiMinor))
   FILTER (lang(?keparahan) = "id" && lang(?tindakLanjut) = "id" && lang(?zatA) = "id" && lang(?zatB) = "id")
 }

@@ -24,6 +24,7 @@ TBox Object Properties:
   memilikiEfekSamping         (ProduktObat → Gejala)
   memilikiInteraksiDengan     (ZatAktif → ZatAktif / symetric)
   menghasilkanInteraksi       (pasangan ZatAktif → InteraksiObat)
+  melibatkanZatAktif          (InteraksiObat → ZatAktif)
   membutuhkanTindakLanjut     (InteraksiObat → TindakLanjut)
   dimetabolismeOleh           (ZatAktif → Enzim CYP450 via PRO)
   memilikiGolongan            (ProduktObat → GolonganObat)
@@ -162,12 +163,22 @@ object_properties = [
      "ProduktObat", "Gejala", "", ""),
     ("memilikiEfekSamping", "memiliki efek samping yang mungkin terjadi", "has side effect symptom",
      "ProduktObat", "Gejala", "", ""),
+    ("didukungOleh", "didukung oleh sumber bukti", "is supported by evidence source",
+     "InteraksiObat", "SumberBukti", "", ""),
+    ("memilikiObatPasien", "mencatat obat yang digunakan dalam kasus pasien", "has medication use in patient case",
+     "KasusPasien", "ObatPasien", "", ""),
+    ("menggunakanProdukObat", "catatan penggunaan merujuk ke produk obat", "medication use refers to drug product",
+     "ObatPasien", "ProduktObat", "", ""),
+    ("menggunakanZatAktif", "catatan penggunaan merujuk ke zat aktif", "medication use refers to active ingredient",
+     "ObatPasien", "ZatAktif", "", ""),
     ("gejalaMemerlukanTindakLanjut", "gejala memerlukan tindak lanjut klinis", "symptom requires clinical follow-up",
      "Gejala", "TindakLanjut", "", ""),
     ("memilikiInteraksiDengan", "memiliki interaksi farmakokinetik/farmakodinamik dengan", "has drug interaction with",
      "ZatAktif", "ZatAktif", "owl:SymmetricProperty", ""),
     ("menghasilkanInteraksi", "menghasilkan / menyebabkan kejadian interaksi", "produces drug interaction event",
      "ZatAktif", "InteraksiObat", "", ""),
+    ("melibatkanZatAktif", "melibatkan zat aktif pada peristiwa interaksi", "involves active ingredient",
+     "InteraksiObat", "ZatAktif", "", ""),
     ("membutuhkanTindakLanjut", "membutuhkan tindak lanjut klinis tertentu", "requires clinical follow-up",
      "InteraksiObat", "TindakLanjut", "", ""),
     ("dimetabolismeOleh", "dimetabolisme / diubah oleh enzim CYP450", "is metabolized by enzyme",
@@ -222,6 +233,16 @@ data_props = [
     ("nomorSlugK24",  "slug/ID unik produk pada katalog K24Klik",        "K24Klik slug",         "xsd:string"),
     ("urlK24",        "URL halaman detail produk pada K24Klik",          "K24Klik product URL",  "xsd:anyURI"),
     ("tingkatBukti",  "tingkat bukti literatur interaksi (A/B/C)",       "evidence level",       "xsd:string"),
+    ("idSumber",      "identifier sumber bukti",                          "evidence source ID",   "xsd:string"),
+    ("namaSumber",    "nama sumber bukti",                                "evidence source name", "xsd:string"),
+    ("urlSumber",     "URL rekaman sumber bukti",                         "evidence source URL",  "xsd:anyURI"),
+    ("versiSumber",   "versi atau tanggal sumber",                        "evidence source version", "xsd:string"),
+    ("tanggalAkses",  "tanggal akses sumber bukti (format YYYY-MM-DD)",   "evidence access date", "xsd:string"),
+    ("bagianSumber",  "bagian atau lokasi kutipan dalam sumber",          "evidence source section", "xsd:string"),
+    ("kutipanSumber", "kutipan sumber yang mendukung klaim",              "evidence source excerpt", "xsd:string"),
+    ("klaimDidukung", "klaim yang didukung oleh sumber",                  "supported claim",      "xsd:string"),
+    ("batasBukti",    "batas interpretasi sumber bukti",                  "evidence limitation",  "xsd:string"),
+    ("jenisSumber",   "jenis sumber bukti",                               "evidence source type", "xsd:string"),
 ]
 
 for lname, label_id, label_en, xsd_type in data_props:
@@ -249,6 +270,16 @@ cls_hier = [
      "Pharmaceutical Product",
      None,
      "Kelas akar semua produk farmasi yang terdaftar di apotek Indonesia dan memiliki NIE BPOM."),
+    ("KasusPasien",
+     "Kasus Uji Pasien Sintetis",
+     "Synthetic Patient Case",
+     None,
+     "Kasus uji non-identifiable untuk mengevaluasi kecocokan obat yang digunakan dengan interaksi yang telah dikurasi; bukan rekam pasien nyata."),
+    ("ObatPasien",
+     "Catatan Obat yang Digunakan",
+     "Patient Medication Use",
+     None,
+     "Satu catatan item obat pada kasus pasien; item dapat merujuk ke produk obat atau zat aktif."),
     ("ObatBatukPilek",
      "Obat Batuk dan/atau Pilek",
      "Cough and/or Cold Medication",
@@ -299,6 +330,11 @@ cls_hier = [
      "Drug-Drug Interaction",
      None,
      "Modifikasi efek farmakokinetik atau farmakodinamik suatu obat akibat kehadiran obat atau bahan lain, yang dapat meningkatkan toksisitas atau menurunkan efikasi terapi."),
+    ("SumberBukti",
+     "Sumber Bukti",
+     "Evidence Source",
+     None,
+     "Rekaman sumber spesifik yang mendukung klaim dalam basis pengetahuan, termasuk kutipan, lokasi, versi, tanggal akses, dan batas bukti."),
     ("InteraksiMajor",   "Interaksi Major (Kontraindikasi Klinis)",       "Major Drug Interaction",    "InteraksiObat",
      "Interaksi dengan risiko tinggi menyebabkan bahaya serius atau kematian; umumnya harus dihindari atau memerlukan penggantian obat segera (mis. itraconazole + simvastatin, omeprazole + clopidogrel)."),
     ("InteraksiModerate","Interaksi Moderate (Perlu Pemantauan Klinis)",  "Moderate Drug Interaction", "InteraksiObat",
@@ -930,8 +966,9 @@ interactions_abox = [
      chebi("3587"), chebi("4480"), iri("Pantau"), "A",
      "Interaksi Moderate: CTM + DXM (dalam obat flu kombinasi) → depresan SSP aditif, mengantuk"),
     ("int_PseudoephedrineDigoxin", "InteraksiModerate",
-     chebi("50346"), chebi("4551"), iri("TanyaApoteker"), "A",
-     "Interaksi Moderate: Pseudoephedrine stimulasi adrenergik + Digoxin → risiko aritmia"),
+     chebi("50346"), chebi("4551"), iri("TanyaApoteker"),
+     "DDInter 2.0: Moderate; peringatan label regulator; bukan bukti uji klinis langsung",
+     "Interaksi Moderate: Pseudoephedrine + Digoxin → risiko aritmia; mekanisme belum diketahui"),
     ("int_PhenylDigoxin", "InteraksiModerate",
      chebi("8093"), chebi("4551"), iri("TanyaApoteker"), "A",
      "Interaksi Moderate: Phenylephrine alfa-1 → aritmia pada jantung terdigitalisasi"),
@@ -949,6 +986,8 @@ for lid, cls, zat_a, zat_b, tl_iri, bukti, label in interactions_abox:
     w(f'    <rdf:type rdf:resource="{iri("InteraksiObat")}"/>')
     w(f'    <rdfs:label xml:lang="id">{xml_safe(label)}</rdfs:label>')
     w(f'    <kbr:menghasilkanInteraksi rdf:resource="{iri(lid)}"/>')
+    w(f'    <kbr:melibatkanZatAktif rdf:resource="{zat_a}"/>')
+    w(f'    <kbr:melibatkanZatAktif rdf:resource="{zat_b}"/>')
     w(f'    <kbr:membutuhkanTindakLanjut rdf:resource="{tl_iri}"/>')
     w(f'    <kbr:tingkatBukti>{bukti}</kbr:tingkatBukti>')
     w(f'  </owl:NamedIndividual>')
@@ -959,6 +998,60 @@ for lid, cls, zat_a, zat_b, tl_iri, bukti, label in interactions_abox:
     w(f'    <kbr:menghasilkanInteraksi rdf:resource="{iri(lid)}"/>')
     w(f'  </rdf:Description>')
     w('')
+
+evidence_csv_path = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)),
+    "data", "interactions", "interaction_evidence.csv",
+)
+with open(evidence_csv_path, "r", encoding="utf-8-sig", newline="") as evidence_file:
+    interaction_evidence = list(csv.DictReader(evidence_file))
+
+for evidence in interaction_evidence:
+    source_iri = iri(f'source_{evidence["id_bukti"]}')
+    interaction_iri = iri({
+        "INT-009": "int_PseudoephedrineDigoxin",
+    }[evidence["id_interaksi"]])
+    w(f'  <owl:NamedIndividual rdf:about="{source_iri}">')
+    w(f'    <rdf:type rdf:resource="{iri("SumberBukti")}"/>')
+    w(f'    <rdfs:label xml:lang="en">{xml_safe(evidence["nama_sumber"])}</rdfs:label>')
+    for property_name, field_name in [
+        ("idSumber", "id_sumber"),
+        ("namaSumber", "nama_sumber"),
+        ("urlSumber", "url_sumber"),
+        ("versiSumber", "versi_sumber"),
+        ("tanggalAkses", "tanggal_akses"),
+        ("bagianSumber", "bagian"),
+        ("kutipanSumber", "kutipan"),
+        ("klaimDidukung", "klaim_didukung"),
+        ("batasBukti", "batas_bukti"),
+        ("jenisSumber", "jenis_sumber"),
+    ]:
+        datatype = f' rdf:datatype="{XSD}anyURI"' if property_name == "urlSumber" else ""
+        w(f'    <kbr:{property_name}{datatype}>{xml_safe(evidence[field_name])}</kbr:{property_name}>')
+    w('  </owl:NamedIndividual>')
+    w(f'  <rdf:Description rdf:about="{interaction_iri}">')
+    w(f'    <kbr:didukungOleh rdf:resource="{source_iri}"/>')
+    w('  </rdf:Description>')
+    w('')
+
+w('  <!-- Synthetic test case; contains no real patient data. -->')
+w(f'  <owl:NamedIndividual rdf:about="{iri("case_Synthetic_Actifed_Digoxin_01")}">')
+w(f'    <rdf:type rdf:resource="{iri("KasusPasien")}"/>')
+w('    <rdfs:label xml:lang="id">Kasus Uji Sintetis 01: Actifed dan Digoxin</rdfs:label>')
+w(f'    <kbr:memilikiObatPasien rdf:resource="{iri("medUse_Synthetic_01_Actifed")}"/>')
+w(f'    <kbr:memilikiObatPasien rdf:resource="{iri("medUse_Synthetic_01_Digoxin")}"/>')
+w('  </owl:NamedIndividual>')
+w(f'  <owl:NamedIndividual rdf:about="{iri("medUse_Synthetic_01_Actifed")}">')
+w(f'    <rdf:type rdf:resource="{iri("ObatPasien")}"/>')
+w('    <rdfs:label xml:lang="id">Penggunaan Actifed pada kasus sintetis 01</rdfs:label>')
+w(f'    <kbr:menggunakanProdukObat rdf:resource="{iri("prod_ActifedPlusSyrMerah60")}"/>')
+w('  </owl:NamedIndividual>')
+w(f'  <owl:NamedIndividual rdf:about="{iri("medUse_Synthetic_01_Digoxin")}">')
+w(f'    <rdf:type rdf:resource="{iri("ObatPasien")}"/>')
+w('    <rdfs:label xml:lang="id">Penggunaan Digoxin rutin pada kasus sintetis 01</rdfs:label>')
+w(f'    <kbr:menggunakanZatAktif rdf:resource="{chebi("4551")}"/>')
+w('  </owl:NamedIndividual>')
+w('')
 
 # ============================================================
 #  SECTION H – ABox: Gejala Individual Annotations (bridged SYMP)
@@ -1013,7 +1106,7 @@ w('')
 tl_list = [
     ("SegeraKeDokter","Segera ke Dokter / IGD",        "Seek Immediate Medical Attention","Kontraindikasi berat atau gejala darurat; harus dirujuk ke fasilitas kesehatan segera."),
     ("TanyaApoteker", "Konsultasikan ke Apoteker",     "Consult Pharmacist",              "Interaksi moderate atau efek samping bermakna; diskusikan dengan apoteker."),
-    ("Pantau",        "Pantau Mandiri (Self-Monitor)", "Self-monitor",                    "Risiko rendah; lanjutkan sambil memantau gejala secara mandiri."),
+    ("Pantau",        "Pantau Mandiri",                "Self-monitor",                    "Risiko rendah; lanjutkan sambil memantau gejala secara mandiri."),
 ]
 for lname, lid_lbl, len_lbl, cmt in tl_list:
     w(f'  <owl:NamedIndividual rdf:about="{iri(lname)}">')

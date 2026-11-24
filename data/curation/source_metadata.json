@@ -1,7 +1,35 @@
 {
   "title": "Master Knowledge Base Curation (Modul 6)",
-  "created_at": "2026-11-17T13:00:17.136316+00:00",
-  "summary": "5-sheet curation workbook combining ATC-ChEBI mappings, curated DDIs, symptoms triage, evidence provenance, and herbal products.",
+  "created_at": "2026-11-19T10:25:45.759198+00:00",
+  "summary": "6-sheet curation workbook combining ATC-ChEBI mappings, curated DDIs, interaction evidence provenance, symptoms triage, sources, and herbal products.",
+  "pilot_scope": {
+    "active_ingredients_selected": 15,
+    "active_ingredient_ids": [
+      "ZAT-001",
+      "ZAT-002",
+      "ZAT-003",
+      "ZAT-004",
+      "ZAT-006",
+      "ZAT-007",
+      "ZAT-011",
+      "ZAT-012",
+      "ZAT-014",
+      "ZAT-018",
+      "ZAT-019",
+      "ZAT-020",
+      "ZAT-021",
+      "ZAT-030",
+      "ZAT-031"
+    ],
+    "herbal_constituent_candidates": [
+      "Alpha-Mangostin",
+      "Curcumin",
+      "Gingerol"
+    ],
+    "herbal_product_records": 1,
+    "pilot_symptoms": 15,
+    "total_symptoms_curated": 22
+  },
   "sheets": {
     "Sheet1_ZatAktif": {
       "count": 31,
@@ -11,12 +39,16 @@
       "count": 20,
       "csv": "data/curation/sheet2_interaksi.csv"
     },
+    "Evidence_Interaksi": {
+      "count": 2,
+      "csv": "data/curation/evidence_interaksi.csv"
+    },
     "Sheet3_Gejala": {
       "count": 22,
       "csv": "data/curation/sheet3_gejala.csv"
     },
     "Sheet4_Sumber": {
-      "count": 12,
+      "count": 14,
       "csv": "data/curation/sheet4_sumber.csv"
     },
     "Sheet5_ProdukHerbal": {

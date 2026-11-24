@@ -1,11 +1,10 @@
 PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-# Kasus uji sintetis (bukan data pasien nyata):
-# pasien menggunakan Actifed dan rutin menggunakan Digoxin.
-# VALUES menjadi input obat pasien untuk kasus uji ini.
+# Kasus uji sintetis tersimpan sebagai individu di dalam OWL.
 SELECT DISTINCT
   ?kasus
+  ?namaKasus
   ?namaProduk
   ?obatRutin
   ?zatProduk
@@ -15,25 +14,23 @@ SELECT DISTINCT
   ?penjelasan
   ?tingkatBukti
 WHERE {
-  VALUES (?kasus ?produk ?obatRutin ?zatRutin) {
-    (
-      "KasusUji-01: Actifed + Digoxin"
-      kbr:prod_ActifedPlusSyrMerah60
-      "Digoxin"
-      <http://purl.obolibrary.org/obo/CHEBI_4551>
-    )
-  }
+  ?kasus a kbr:KasusPasien ;
+         rdfs:label ?namaKasus ;
+         kbr:memilikiObatPasien ?penggunaanProduk, ?penggunaanZatAktif .
+
+  ?penggunaanProduk kbr:menggunakanProdukObat ?produk .
+  ?penggunaanZatAktif kbr:menggunakanZatAktif ?zatRutin .
 
   ?produk a kbr:ProduktObat ;
-          kbr:namaDagang ?namaProduk .
+          rdfs:label ?namaProduk .
+  ?zatRutin rdfs:label ?obatRutin .
 
   OPTIONAL {
     ?produk kbr:memilikiKandungan ?zatAktifProduk .
-    ?zatAktifProduk rdfs:label ?zatProduk ;
-                    kbr:memilikiInteraksiDengan ?zatRutin ;
-                    kbr:menghasilkanInteraksi ?interaksi .
+    ?zatAktifProduk rdfs:label ?zatProduk .
 
     ?interaksi a ?kelasInteraksi ;
+               kbr:melibatkanZatAktif ?zatAktifProduk, ?zatRutin ;
                kbr:membutuhkanTindakLanjut ?aksi ;
                rdfs:label ?penjelasan .
 
@@ -55,6 +52,7 @@ WHERE {
     OPTIONAL { ?interaksi kbr:tingkatBukti ?tingkatBukti }
   }
 
+  FILTER (lang(?namaKasus) = "id" && lang(?namaProduk) = "id" && lang(?obatRutin) = "id")
   BIND(
     IF(BOUND(?interaksi), "interaksi_terdeteksi", "tidak_diketahui")
     AS ?statusData

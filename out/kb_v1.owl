@@ -11,14 +11,14 @@
   <!-- ======================================================= -->
   <!-- Ontology: kb_v1.owl                                     -->
   <!-- Group 4 KBR - Interaksi Obat Batuk-Pilek Indonesia      -->
-  <!-- Generated: 2026-11-17T20:06:33.493655+07:00                       -->
+  <!-- Generated: 2026-11-19T21:53:17.615610+07:00                       -->
   <!-- ======================================================= -->
   <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl">
     <rdfs:label xml:lang="en">KB v1 Drug Interaction Knowledge Base (Cough &amp; Cold Products - Indonesia)</rdfs:label>
     <rdfs:label xml:lang="id">KB v1 Basis Pengetahuan Interaksi Obat Batuk-Pilek (Produk Apotek Indonesia)</rdfs:label>
     <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl/1.0"/>
     <rdfs:comment xml:lang="id">Basis pengetahuan interaksi obat batuk-pilek generasi pertama. TBox mendefinisikan kelas produk, zat aktif, gejala, interaksi, tindak lanjut klinis, serta 8 aturan GCI inferensi. ABox mendaftarkan 12 individu produk apotek Indonesia pilihan dari data K24Klik.</rdfs:comment>
-    <oboInOwl:date>2026-11-17T20:06:33.493655+07:00</oboInOwl:date>
+    <oboInOwl:date>2026-11-19T21:53:17.615610+07:00</oboInOwl:date>
     <oboInOwl:creator xml:lang="id">Group 4 KBR - Universitas Sebelas Maret, Semester 5, 2026/2027</oboInOwl:creator>
   </owl:Ontology>
 
@@ -67,6 +67,34 @@
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Gejala"/>
   </owl:ObjectProperty>
 
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#didukungOleh">
+    <rdfs:label xml:lang="id">didukung oleh sumber bukti</rdfs:label>
+    <rdfs:label xml:lang="en">is supported by evidence source</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SumberBukti"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#memilikiObatPasien">
+    <rdfs:label xml:lang="id">mencatat obat yang digunakan dalam kasus pasien</rdfs:label>
+    <rdfs:label xml:lang="en">has medication use in patient case</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KasusPasien"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPasien"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#menggunakanProdukObat">
+    <rdfs:label xml:lang="id">catatan penggunaan merujuk ke produk obat</rdfs:label>
+    <rdfs:label xml:lang="en">medication use refers to drug product</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPasien"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ProduktObat"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#menggunakanZatAktif">
+    <rdfs:label xml:lang="id">catatan penggunaan merujuk ke zat aktif</rdfs:label>
+    <rdfs:label xml:lang="en">medication use refers to active ingredient</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPasien"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#gejalaMemerlukanTindakLanjut">
     <rdfs:label xml:lang="id">gejala memerlukan tindak lanjut klinis</rdfs:label>
     <rdfs:label xml:lang="en">symptom requires clinical follow-up</rdfs:label>
@@ -87,6 +115,13 @@
     <rdfs:label xml:lang="en">produces drug interaction event</rdfs:label>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#melibatkanZatAktif">
+    <rdfs:label xml:lang="id">melibatkan zat aktif pada peristiwa interaksi</rdfs:label>
+    <rdfs:label xml:lang="en">involves active ingredient</rdfs:label>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ZatAktif"/>
   </owl:ObjectProperty>
 
   <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#membutuhkanTindakLanjut">
@@ -202,6 +237,66 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
 
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#idSumber">
+    <rdfs:label xml:lang="id">identifier sumber bukti</rdfs:label>
+    <rdfs:label xml:lang="en">evidence source ID</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#namaSumber">
+    <rdfs:label xml:lang="id">nama sumber bukti</rdfs:label>
+    <rdfs:label xml:lang="en">evidence source name</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#urlSumber">
+    <rdfs:label xml:lang="id">URL rekaman sumber bukti</rdfs:label>
+    <rdfs:label xml:lang="en">evidence source URL</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#versiSumber">
+    <rdfs:label xml:lang="id">versi atau tanggal sumber</rdfs:label>
+    <rdfs:label xml:lang="en">evidence source version</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#tanggalAkses">
+    <rdfs:label xml:lang="id">tanggal akses sumber bukti (format YYYY-MM-DD)</rdfs:label>
+    <rdfs:label xml:lang="en">evidence access date</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#bagianSumber">
+    <rdfs:label xml:lang="id">bagian atau lokasi kutipan dalam sumber</rdfs:label>
+    <rdfs:label xml:lang="en">evidence source section</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#kutipanSumber">
+    <rdfs:label xml:lang="id">kutipan sumber yang mendukung klaim</rdfs:label>
+    <rdfs:label xml:lang="en">evidence source excerpt</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#klaimDidukung">
+    <rdfs:label xml:lang="id">klaim yang didukung oleh sumber</rdfs:label>
+    <rdfs:label xml:lang="en">supported claim</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#batasBukti">
+    <rdfs:label xml:lang="id">batas interpretasi sumber bukti</rdfs:label>
+    <rdfs:label xml:lang="en">evidence limitation</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#jenisSumber">
+    <rdfs:label xml:lang="id">jenis sumber bukti</rdfs:label>
+    <rdfs:label xml:lang="en">evidence source type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
   <!-- ======================================================= -->
   <!-- C. TBOX – CLASS HIERARCHY                               -->
   <!-- ======================================================= -->
@@ -211,6 +306,20 @@
     <rdfs:label xml:lang="en">Pharmaceutical Product</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:comment xml:lang="id">Kelas akar semua produk farmasi yang terdaftar di apotek Indonesia dan memiliki NIE BPOM.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KasusPasien">
+    <rdfs:label xml:lang="id">Kasus Uji Pasien Sintetis</rdfs:label>
+    <rdfs:label xml:lang="en">Synthetic Patient Case</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Kasus uji non-identifiable untuk mengevaluasi kecocokan obat yang digunakan dengan interaksi yang telah dikurasi; bukan rekam pasien nyata.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPasien">
+    <rdfs:label xml:lang="id">Catatan Obat yang Digunakan</rdfs:label>
+    <rdfs:label xml:lang="en">Patient Medication Use</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Satu catatan item obat pada kasus pasien; item dapat merujuk ke produk obat atau zat aktif.</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatBatukPilek">
@@ -316,6 +425,13 @@
     <rdfs:label xml:lang="en">Drug-Drug Interaction</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:comment xml:lang="id">Modifikasi efek farmakokinetik atau farmakodinamik suatu obat akibat kehadiran obat atau bahan lain, yang dapat meningkatkan toksisitas atau menurunkan efikasi terapi.</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SumberBukti">
+    <rdfs:label xml:lang="id">Sumber Bukti</rdfs:label>
+    <rdfs:label xml:lang="en">Evidence Source</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment xml:lang="id">Rekaman sumber spesifik yang mendukung klaim dalam basis pengetahuan, termasuk kutipan, lokasi, versi, tanggal akses, dan batas bukti.</rdfs:comment>
   </owl:Class>
 
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiMajor">
@@ -1437,6 +1553,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Major: Itraconazole inhibisi CYP3A4 → akumulasi Simvastatin → risiko rhabdomyolysis</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ItraSimvastatin"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6076"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9150"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1451,6 +1569,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Major: Ketoconazole inhibisi CYP3A4 → toksisitas Atorvastatin</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_KetAtorva"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47519"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39548"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1465,6 +1585,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Major: Omeprazole inhibisi CYP2C19 → penurunan efikasi Clopidogrel</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_OmeClopidogrel"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7772"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37941"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1479,6 +1601,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Major: Ibuprofen inhibisi COX-1 + efek anti-agregasi → risiko perdarahan GI bersama Warfarin</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_IbuprofenWarfarin"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_5855"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10033"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1493,6 +1617,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Moderate: CTM + Diphenhydramine → duplikasi antihistamin H1 → sedasi berat</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDiphenhydramine"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4634"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1507,6 +1633,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Moderate: Cetirizine + CTM → kehilangan keunggulan non-sedatif, penekanan SSP aditif</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CetirizineCTM"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3561"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1521,6 +1649,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Moderate: CTM + DXM (dalam obat flu kombinasi) → depresan SSP aditif, mengantuk</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_CTMDextromethorphan"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3587"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4480"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1533,10 +1663,12 @@
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PseudoephedrineDigoxin">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiModerate"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
-    <rdfs:label xml:lang="id">Interaksi Moderate: Pseudoephedrine stimulasi adrenergik + Digoxin → risiko aritmia</rdfs:label>
+    <rdfs:label xml:lang="id">Interaksi Moderate: Pseudoephedrine + Digoxin → risiko aritmia; mekanisme belum diketahui</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PseudoephedrineDigoxin"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50346"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4551"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
-    <kbr:tingkatBukti>A</kbr:tingkatBukti>
+    <kbr:tingkatBukti>DDInter 2.0: Moderate; peringatan label regulator; bukan bukti uji klinis langsung</kbr:tingkatBukti>
   </owl:NamedIndividual>
   <!-- memilikiInteraksiDengan: CHEBI_50346 ↔ CHEBI_4551 -->
   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_50346">
@@ -1549,6 +1681,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Moderate: Phenylephrine alfa-1 → aritmia pada jantung terdigitalisasi</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PhenylDigoxin"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8093"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4551"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TanyaApoteker"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1563,6 +1697,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Major: Alpha-Mangostin inhibisi CYP3A4 → akumulasi Simvastatin</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_AlphaMangostinSimva"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_67547"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_9150"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SegeraKeDokter"/>
     <kbr:tingkatBukti>B</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1577,6 +1713,8 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#InteraksiObat"/>
     <rdfs:label xml:lang="id">Interaksi Moderate: Paracetamol dosis tinggi → peningkatan INR ringan pada pasien Warfarin</rdfs:label>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ParacetamolWarfarin"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46195"/>
+    <kbr:melibatkanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10033"/>
     <kbr:membutuhkanTindakLanjut rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
     <kbr:tingkatBukti>A</kbr:tingkatBukti>
   </owl:NamedIndividual>
@@ -1585,6 +1723,60 @@
     <kbr:memilikiInteraksiDengan rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10033"/>
     <kbr:menghasilkanInteraksi rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_ParacetamolWarfarin"/>
   </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#source_EV-INT009-01">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SumberBukti"/>
+    <rdfs:label xml:lang="en">DDInter 2.0 - detail interaksi Digoxin dan Pseudoephedrine</rdfs:label>
+    <kbr:idSumber>REF-13</kbr:idSumber>
+    <kbr:namaSumber>DDInter 2.0 - detail interaksi Digoxin dan Pseudoephedrine</kbr:namaSumber>
+    <kbr:urlSumber rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ddinter2.scbdd.com/server/interact/7594/</kbr:urlSumber>
+    <kbr:versiSumber>DDInter 2.0; halaman menyatakan pembaruan terakhir 2024-05-14</kbr:versiSumber>
+    <kbr:tanggalAkses>2026-11-19</kbr:tanggalAkses>
+    <kbr:bagianSumber>Interaction; Management; References</kbr:bagianSumber>
+    <kbr:kutipanSumber>Increased ectopic pacemaker activity has been reported to occur in patients taking digoxin in combination with pseudoephedrine.</kbr:kutipanSumber>
+    <kbr:klaimDidukung>DDInter mengklasifikasikan pasangan sebagai Moderate; menyebut risiko aritmia dan menyarankan kehati-hatian serta pemantauan ECG. Mekanisme dicatat belum diketahui.</kbr:klaimDidukung>
+    <kbr:batasBukti>Basis data kurasi sekunder; rekaman tidak memberikan insidensi atau bukti uji klinis primer.</kbr:batasBukti>
+    <kbr:jenisSumber>database interaksi terkurasi</kbr:jenisSumber>
+  </owl:NamedIndividual>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PseudoephedrineDigoxin">
+    <kbr:didukungOleh rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#source_EV-INT009-01"/>
+  </rdf:Description>
+
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#source_EV-INT009-02">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#SumberBukti"/>
+    <rdfs:label xml:lang="en">DailyMed - Allegra-D (fexofenadine/pseudoephedrine) label</rdfs:label>
+    <kbr:idSumber>REF-14</kbr:idSumber>
+    <kbr:namaSumber>DailyMed - Allegra-D (fexofenadine/pseudoephedrine) label</kbr:namaSumber>
+    <kbr:urlSumber rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=121362c5-3a59-42f8-b721-fa0342d99c4b</kbr:urlSumber>
+    <kbr:versiSumber>SPL effectiveTime 2009-11-10 (label arsip)</kbr:versiSumber>
+    <kbr:tanggalAkses>2026-11-19</kbr:tanggalAkses>
+    <kbr:bagianSumber>Drug Interactions</kbr:bagianSumber>
+    <kbr:kutipanSumber>Increased ectopic pacemaker activity can occur when pseudoephedrine is used concomitantly with digitalis.</kbr:kutipanSumber>
+    <kbr:klaimDidukung>Label regulator mendukung adanya peringatan aktivitas pacemaker ektopik pada pseudoephedrine bersama digitalis.</kbr:klaimDidukung>
+    <kbr:batasBukti>Label menyebut digitalis sebagai kelompok, bukan Digoxin secara spesifik; label ini tidak menetapkan kelas keparahan dan merupakan versi arsip.</kbr:batasBukti>
+    <kbr:jenisSumber>label obat di DailyMed</kbr:jenisSumber>
+  </owl:NamedIndividual>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#int_PseudoephedrineDigoxin">
+    <kbr:didukungOleh rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#source_EV-INT009-02"/>
+  </rdf:Description>
+
+  <!-- Synthetic test case; contains no real patient data. -->
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#case_Synthetic_Actifed_Digoxin_01">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#KasusPasien"/>
+    <rdfs:label xml:lang="id">Kasus Uji Sintetis 01: Actifed dan Digoxin</rdfs:label>
+    <kbr:memilikiObatPasien rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#medUse_Synthetic_01_Actifed"/>
+    <kbr:memilikiObatPasien rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#medUse_Synthetic_01_Digoxin"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#medUse_Synthetic_01_Actifed">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPasien"/>
+    <rdfs:label xml:lang="id">Penggunaan Actifed pada kasus sintetis 01</rdfs:label>
+    <kbr:menggunakanProdukObat rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#prod_ActifedPlusSyrMerah60"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#medUse_Synthetic_01_Digoxin">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#ObatPasien"/>
+    <rdfs:label xml:lang="id">Penggunaan Digoxin rutin pada kasus sintetis 01</rdfs:label>
+    <kbr:menggunakanZatAktif rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4551"/>
+  </owl:NamedIndividual>
 
   <!-- ======================================================= -->
   <!-- H. ABOX – GEJALA INDIVIDUALS (annotation SYMP terms)   -->
@@ -2005,7 +2197,7 @@
   <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau">
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#Pantau"/>
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#TindakLanjut"/>
-    <rdfs:label xml:lang="id">Pantau Mandiri (Self-Monitor)</rdfs:label>
+    <rdfs:label xml:lang="id">Pantau Mandiri</rdfs:label>
     <rdfs:label xml:lang="en">Self-monitor</rdfs:label>
     <rdfs:comment xml:lang="id">Risiko rendah; lanjutkan sambil memantau gejala secara mandiri.</rdfs:comment>
   </owl:NamedIndividual>

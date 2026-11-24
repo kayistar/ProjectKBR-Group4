@@ -591,6 +591,24 @@ SUMBER_DATA = [
         "tingkat_bukti": "A (Regulator resmi; identitas/registrasi produk)",
         "tanggal_akses": "2026-11-16",
     },
+    {
+        "id_sumber": "REF-13",
+        "nama": "DDInter 2.0 - Digoxin and Pseudoephedrine interaction record 7594",
+        "tipe": "Basis data interaksi obat terkurasi",
+        "cakupan": "Klasifikasi Moderate, uraian risiko aritmia, saran kehati-hatian dan pemantauan ECG untuk Digoxin + Pseudoephedrine.",
+        "url_purl": "https://ddinter2.scbdd.com/server/interact/7594/",
+        "tingkat_bukti": "Sumber sekunder terkurasi; bukan uji klinis primer",
+        "tanggal_akses": "2026-11-19",
+    },
+    {
+        "id_sumber": "REF-14",
+        "nama": "DailyMed - Allegra-D (fexofenadine/pseudoephedrine) label",
+        "tipe": "Label obat di basis data National Library of Medicine",
+        "cakupan": "Peringatan aktivitas pacemaker ektopik saat pseudoephedrine digunakan bersama digitalis.",
+        "url_purl": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=121362c5-3a59-42f8-b721-fa0342d99c4b",
+        "tingkat_bukti": "Label regulator; versi arsip, tidak memberi kelas keparahan",
+        "tanggal_akses": "2026-11-19",
+    },
 ]
 
 
@@ -705,11 +723,36 @@ def main() -> None:
     inter_csv = project_root / "data" / "interactions" / "curated_drug_interactions.csv"
     with inter_csv.open("r", encoding="utf-8") as f:
         inter_rows = list(csv.DictReader(f))
+    evidence_csv = project_root / "data" / "interactions" / "interaction_evidence.csv"
+    with evidence_csv.open("r", encoding="utf-8-sig") as f:
+        evidence_rows = list(csv.DictReader(f))
+    known_source_ids = {row["id_sumber"] for row in SUMBER_DATA}
+    known_interaction_ids = {row["id"] for row in inter_rows}
+    for row in evidence_rows:
+        if row["id_sumber"] not in known_source_ids:
+            raise ValueError(f'Unknown evidence source ID: {row["id_sumber"]}')
+        if row["id_interaksi"] not in known_interaction_ids:
+            raise ValueError(f'Unknown interaction ID: {row["id_interaksi"]}')
 
     # 2. Read curated symptoms from Modul 4
     symp_csv = project_root / "data" / "symptoms" / "symptoms_selected.csv"
     with symp_csv.open("r", encoding="utf-8") as f:
         symp_rows = list(csv.DictReader(f))
+
+    pilot_active = [row for row in ZAT_AKTIF_DATA if row["cakupan_v1"] == "zat_aktif_v1"]
+    herbal_constituents = [
+        row for row in ZAT_AKTIF_DATA
+        if row["cakupan_v1"] == "senyawa_herbal_kandidat_v1"
+    ]
+    pilot_symptoms = [row for row in symp_rows if row["cakupan_v1"] == "pilot"]
+    if len(pilot_active) != 15:
+        raise ValueError(f"Pilot scope requires 15 active ingredients; found {len(pilot_active)}")
+    if not 2 <= len(herbal_constituents) <= 3:
+        raise ValueError(
+            f"Pilot scope requires 2-3 herbal constituent candidates; found {len(herbal_constituents)}"
+        )
+    if not 10 <= len(pilot_symptoms) <= 15:
+        raise ValueError(f"Pilot scope requires 10-15 symptoms; found {len(pilot_symptoms)}")
 
     # 3. Export standalone mapping ATC <-> ChEBI
     atc_mapping_fields = ["id_zat", "nama_zat", "chebi_id", "chebi_iri", "kode_atc", "nama_atc", "level_atc", "kategori", "peran_farmakologis", "enzim_terkait"]
@@ -719,6 +762,7 @@ def main() -> None:
     # 4. Export CSV per Sheet
     write_csv_file(curation_dir / "sheet1_zat_aktif.csv", ZAT_AKTIF_DATA, list(ZAT_AKTIF_DATA[0].keys()))
     write_csv_file(curation_dir / "sheet2_interaksi.csv", inter_rows, list(inter_rows[0].keys()))
+    write_csv_file(curation_dir / "evidence_interaksi.csv", evidence_rows, list(evidence_rows[0].keys()))
     write_csv_file(curation_dir / "sheet3_gejala.csv", symp_rows, list(symp_rows[0].keys()))
     write_csv_file(curation_dir / "sheet4_sumber.csv", SUMBER_DATA, list(SUMBER_DATA[0].keys()))
     write_csv_file(curation_dir / "sheet5_produk_herbal.csv", HERBAL_PRODUCT_DATA, list(HERBAL_PRODUCT_DATA[0].keys()))
@@ -727,6 +771,7 @@ def main() -> None:
     sheets = {
         "ZatAktif": ZAT_AKTIF_DATA,
         "Interaksi": inter_rows,
+        "BuktiInteraksi": evidence_rows,
         "Gejala": symp_rows,
         "Sumber": SUMBER_DATA,
         "ProdukHerbal": HERBAL_PRODUCT_DATA,
@@ -738,10 +783,21 @@ def main() -> None:
     metadata = {
         "title": "Master Knowledge Base Curation (Modul 6)",
         "created_at": datetime.now(timezone.utc).isoformat(),
-        "summary": "5-sheet curation workbook combining ATC-ChEBI mappings, curated DDIs, symptoms triage, evidence provenance, and herbal products.",
+        "summary": "6-sheet curation workbook combining ATC-ChEBI mappings, curated DDIs, interaction evidence provenance, symptoms triage, sources, and herbal products.",
+        "pilot_scope": {
+            "active_ingredients_selected": len(pilot_active),
+            "active_ingredient_ids": [row["id_zat"] for row in pilot_active],
+            "herbal_constituent_candidates": [
+                row["nama_zat"] for row in herbal_constituents
+            ],
+            "herbal_product_records": len(HERBAL_PRODUCT_DATA),
+            "pilot_symptoms": len(pilot_symptoms),
+            "total_symptoms_curated": len(symp_rows),
+        },
         "sheets": {
             "Sheet1_ZatAktif": {"count": len(ZAT_AKTIF_DATA), "csv": "data/curation/sheet1_zat_aktif.csv"},
             "Sheet2_Interaksi": {"count": len(inter_rows), "csv": "data/curation/sheet2_interaksi.csv"},
+            "Evidence_Interaksi": {"count": len(evidence_rows), "csv": "data/curation/evidence_interaksi.csv"},
             "Sheet3_Gejala": {"count": len(symp_rows), "csv": "data/curation/sheet3_gejala.csv"},
             "Sheet4_Sumber": {"count": len(SUMBER_DATA), "csv": "data/curation/sheet4_sumber.csv"},
             "Sheet5_ProdukHerbal": {"count": len(HERBAL_PRODUCT_DATA), "csv": "data/curation/sheet5_produk_herbal.csv"},
