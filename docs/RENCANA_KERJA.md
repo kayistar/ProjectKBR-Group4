@@ -1,145 +1,244 @@
-# Rencana Kerja — KB Interaksi Obat Batuk-Pilek (Group 4)
+# Rencana Kerja v2 — KB Interaksi Obat Batuk-Pilek (Group 4)
 
-Disusun: 2026-11-24
-Basis: audit isi `out/kb_v1.owl` (bukan klaim `logs/LOG.md`), `data/apotek/*`, `KB/ddinter_*.csv`, `data/atc/*`.
+Disusun: 2026-11-24 (revisi dari v1)
+Basis: audit `out/kb_v1.owl`, `data/apotek/*`, `KB/ddinter_*.csv`, `data/atc/*`, `data/curation/*`.
+Dokumen ini yang dalam diskusi disebut "todo.md".
 
 ---
 
-## 1. State saat ini
+## 0. Lima task final
 
-### 1.1 Angka yang terverifikasi di file
+| # | Task | Nilai bagi apoteker | Data baru | Kesiapan data |
+| :--- | :--- | :--- | :--- | :--- |
+| **T1** | Rekomendasi terapi personal: produk + cara pakai + peringatan kombinasi, dari kondisi pasien | inti swamedikasi | tabel aturan pakai 31 zat + tabel kontraindikasi 31 zat | sedang (aturan pakai belum ada) |
+| **T2** | Alternatif lebih murah: kandungan sama / kandungan minimal | hemat biaya, hindari obat kombinasi tak perlu | turunan harga per unit | **siap** (828/933 sudah ada harga) |
+| **T3** | Skrining keranjang & obat rutin: duplikasi + interaksi multi-produk | cegah dobel dosis & interaksi | 0 | **siap** (model KasusPasien + DDInter sudah ada) |
+| **T4** | Substitusi aman: ganti produk karena kandungannya bermasalah untuk kondisi pasien | lindungi pasien hipertensi/BPH/glaukoma, dll | tabel kontraindikasi (sama dengan T1) | sedang |
+| **T5** | Kartu edukasi & explainability: "kenapa" + sumber + bahasa awam | konseling pasien | 0 | **siap** (SumberBukti + skos:altLabel sudah ada) |
 
-| Artefak | Isi nyata sekarang | Catatan |
+Cadangan bila butuh lebih dari 5: audit katalog (laporan kualitas data) dan evaluasi kandidat interaksi vs DDInter. Keduanya murah dan tidak butuh individu baru.
+
+---
+
+## 1. State saat ini (terverifikasi di file, bukan dari LOG)
+
+| Artefak | Isi nyata | Catatan |
 | :--- | :--- | :--- |
-| `out/kb_v1.owl` | 115 deklarasi kelas, 17 object property, 21 data property, 91 individu | `measure_kb_v1.tsv` masih menulis 95/11/10/86 → **basi** |
-| ABox produk | 12 produk | komposisi, indikasi, efek samping, golongan, NIE, harga |
-| ABox zat aktif | 31 zat (29 kurasi + triprolidine + doxylamine) | ATC/ChEBI sebagai literal, bukan hierarki |
-| ABox gejala | 22 gejala × 3 kategori × 3 aksi triase | sinonim awam ditandai "draf" |
-| ABox interaksi | 11 pasangan (5 Major, 6 Moderate, 0 Minor) | CSV kurasi berisi 20 |
-| ABox bukti | 2 record untuk INT-009 + tingkatBukti di 11 interaksi | satu-satunya rantai bukti lengkap |
-| ABox kasus pasien | 1 kasus sintetis (Actifed + Digoxin) | `q4` belum pernah dieksekusi, hasil tidak ada |
-| Modul referensi | `referensi_modul.owl` (765 kelas), `enzim_modul.owl` (9), `dinto_modul.owl` (72+18), `symptom_modul.owl` (22) | semua lolos OWL 2 DL + HermiT |
-| `kb_v1_lengkap.owl` | 937 kelas, 12.264 aksioma | gabungan modul + kb_v1 |
-| Katalog apotek | 1.716 baris listing → 933 produk detail; 467 produk batuk/pilek unik | `perlu_dilengkapi.csv` 399 baris |
-| DDInter (7 CSV) | 210.359 pasangan, 3.484 obat; 164 pasangan di antara 31 zat kita, 55 di antaranya domain batuk-pilek × kronis | baru 20 dipakai |
-| ATC | 1.320 baris level 1–4; 17 kode level-4 bisa diturunkan dari 31 zat | belum dipakai untuk aturan |
+| `out/kb_v1.owl` | 115 deklarasi kelas, 17 object prop, 21 data prop, 91 individu | `measure_kb_v1.tsv` masih 95/11/10/86 → basi |
+| ABox produk | 12 produk (komposisi, indikasi, efek samping, golongan, NIE, harga) | di-hardcode di `build_kb_v1.py` |
+| ABox zat aktif | 31 zat; ATC/ChEBI literal | 0 relasi ke enzim |
+| ABox gejala | 22 gejala × 3 kategori × 3 aksi | sinonim awam masih draf |
+| ABox interaksi | 11 (5 Major, 6 Moderate); CSV kurasi 20 | R-05/R-06 sudah di-assert manual |
+| ABox bukti | 2 record (INT-009) + tingkatBukti A/B | satu-satunya rantai bukti lengkap |
+| Kasus pasien | 1 (Actifed + Digoxin) | `q4` belum pernah dieksekusi |
+| Modul referensi | ChEBI/DrON (765 kelas), PRO (9), DINTO (72+18), SYMP (22) | semuanya OWL 2 DL + HermiT LULUS |
+| Katalog | 933 detail; 467 batuk/pilek unik; **828 punya harga**, 853 punya komposisi | tanpa kolom dosis/aturan pakai |
+| DDInter | 210.359 pasangan; 164 antar 31 zat kita; 55 domain batuk-pilek × kronis | baru 20 dipakai |
+| ATC | 1.320 baris level 1–4; 17 kode level-4 dari 31 zat | belum dipakai aturan |
 
-### 1.2 Kelemahan struktural (bukan sekadar kosmetik)
-
-1. **ABox di-hardcode.** `scrape/build_kb_v1.py` menulis 12 produk sebagai literal Python, termasuk `classes=[...]`, `kandungan=[...]`, `efeksamping=[...]`; `sheet2_interaksi.csv` (20 baris) tidak dibaca, hanya 11 interaksi literal.
-2. **Kesimpulan aturan sudah di-assert manual.** `_AH1Product` ↔ Mengantuk cocok 7/7, `_DekongestanProduct` ↔ Palpitasi 6/6 → HermiT hanya mengecek konsistensi, tidak menambah inferensi. `robot reason` dipanggil tanpa `--output` sehingga inferensi tidak pernah materialisasi.
-3. **Farmakokinetik tidak terhubung.** `dimetabolismeOleh` cuma deklarasi properti (baris 134); nol triple zat→enzim. `diproduksiOleh` juga properti mati.
-4. **Regulasi tanpa konsekuensi.** `memilikiGolongan` + `nomorBPOM` terisi, tapi tidak ada satu pun aturan yang memakainya.
-5. **Aturan tidak saling eksklusif.** R-01 dan R-02 tidak `disjointWith`, sehingga satu produk bisa masuk dua kelas; tabel manual pun tidak sepakat dengan aturan (Sanmol = paracetamol tapi diberi `ObatPilekMurni`; Komix/Alpara/OB Combi/Promedex berisi antitusif tanpa dekongestan tapi tidak diberi `ObatBatukMurni`).
-6. **Output query basi/duplikat.** `q1_result.csv` 36 baris untuk 12 produk, dengan 6 varian label golongan (label `id` + `en` tanpa `FILTER lang`), dan nilainya dari versi ontology lama.
-7. **Tidak reproducible.** Path absolut Windows di 4 skrip (`d:\UNS\...`), tidak ada `requirements.txt`, README 1 baris, dan `KB/chebi.owl`/`KB/dron.owl` di-gitignore (tidak bisa build dari nol).
-8. **Batas domain.** 0 dari 467 produk katalog adalah obat keras → mesin interaksi tidak punya bahan di sisi pasar; herbal 1 produk; kondisi pasien hanya 1 yang aktif (hipertensi).
+Kelemahan struktural yang relevan untuk 5 task: ABox di-hardcode, kesimpulan aturan sudah di-assert manual (HermiT tak menambah apa pun), `dimetabolismeOleh` 0 triple, R-01/R-02 tanpa `disjointWith` (Sanmol/Komix salah kelas), `q1_result.csv` basi + duplikat label, tidak ada `requirements.txt`, dan path absolut Windows di 4 skrip.
 
 ---
 
-## 2. Keputusan: dipertahankan / dibuang / diimprove
+## 2. Batas data: yang mungkin vs yang tidak
 
-### 2.1 Dipertahankan (sudah benar, jangan diutak-atik)
+### 2.1 Mungkin dengan data yang sudah ada
 
-- 5 modul referensi + checksum-nya (`out/*_modul.owl`), termasuk `dinto_modul.owl` dengan 18 object property.
-- 22 gejala SYMP + kategori + aksi triase + sinonim awam (`data/symptoms/symptoms_selected.csv`, `scrape/collect_symptoms.py`).
-- 31 zat aktif + ATC/ChEBI/peran farmakologis (`data/curation/sheet1_zat_aktif.csv`).
-- 20 pasangan interaksi terkurasi beserta mekanisme, efek klinis, rekomendasi, tingkat bukti (`data/interactions/curated_drug_interactions.csv`).
-- Disiplin bukti: `evidence_interaksi.csv` (kutipan + klaim + batas bukti) dan `SumberBukti`.
-- Pipeline validasi: `robot reason --reasoner HermiT` + `validate-profile --profile DL`, dan format `logs/LOG.md` (checksum, ukuran, hasil uji).
-- Katalog 933 produk + pemisahan batuk/pilek (`produk_detail.csv`, `produk_batuk.csv`, `produk_pilek.csv`).
-- 12 produk ABox — tetap dipakai, tapi sebagai **fixture uji**, bukan sebagai isi KB final.
+| Kebutuhan | Bahan yang ada | Catatan |
+| :--- | :--- | :--- |
+| Pilih produk berdasarkan keluhan | 467 produk + komposisi + 22 gejala + sinonim awam | kandidat bersih 377 (punya harga **dan** komposisi) |
+| Peringatan "jangan bersama obat X" | DDInter 55 pasangan + 20 kurasi | hanya untuk 31 zat yang kita punya |
+| Deteksi dobel kandungan antar produk | `memilikiKandungan` + model `KasusPasien`/`ObatPasien` | 124 produk mengandung paracetamol → risiko dobel dosis nyata |
+| Deteksi dobel kelas terapi | ATC level-4 (17 kode) | "dua antihistamin / dua NSAID / dua dekongestan" |
+| Kondisi pasien sebagai penentu | kelas `KondisiPasien` + pola R-08 | tinggal isi tabel kontraindikasi |
+| Rekomendasi lebih murah | harga 828 produk + kemasan 933 | butuh normalisasi harga per unit |
+| Penjelasan + sumber | `SumberBukti` + `tingkatBukti` + `skos:altLabel` | sudah jalan untuk 1 interaksi |
+| Triase/red flag | 22 gejala × 3 aksi | biner (ya/tidak), bukan skor |
 
-### 2.2 Dibuang
+### 2.2 Tidak mungkin dengan data sekarang (jangan dijanjikan)
 
-| Yang dibuang | Alasan |
+| Yang diminta | Kenapa tidak |
 | :--- | :--- |
-| Literal `classes=[...]`, `efeksamping=[...]`, `indikasi=[...]` per produk di `build_kb_v1.py` | diganti inferensi + turunan dari CSV |
-| Properti `diproduksiOleh` | 0 assertion, digantikan literal `namaProdusen` |
-| `out/test_term.owl` (737 KB) | sisa uji ekstraksi satu term |
-| `scrape/generate_dataset_apotek.py`, `generate_katalog_apotek_lengkap.py`, `generate_master_apotek.py`, `scrape_obat_apotek.py` + `data/dataset_obat_apotek*.csv`, `data/dataset_master_obat_apotek_indonesia.csv` | data dummy/legacy, sudah digantikan hasil scrape asli |
-| `data/dataset_obat_apotek_indonesia - Copy.csv` | duplikat identik |
-| Angka 95/11/10/86 di log dan `measure_kb_v1.tsv` | tidak cocok dengan file sekarang; dihitung ulang, bukan dihapus |
+| Dosis per sekali pakai **per produk** ("1 sendok takar 3x sehari") | `produk_detail.csv` tidak punya kolom dosis/aturan pakai; komposisi hanya kadar per 5 mL. Yang bisa: aturan **per zat** (31 baris kurasi) |
+| Dosis berbasis **berat badan** (mg/kg) | tidak ada dosis pediatrik per produk di katalog. BB hanya bisa jadi catatan, tidak mengubah angka. Jangan dipakai sebagai fitur |
+| **Skor keparahan** berjenjang | tidak ada data severity; yang ada hanya red flag biner |
+| Interaksi dengan obat di luar 31 zat | butuh mapping 3.484 nama DDInter; bisa, tapi bukan "manfaatkan yang ada" |
+| Aturan pakai spesifik per merek (sebelum/sesudah makan) | tidak ada di sumber; hanya bisa per kelas sediaan atau per zat dari PIONAS |
+| Standarisasi herbal (kadar alpha-mangostin) | tidak dicantumkan di sumber mana pun yang kita punya |
+| Harga per unit untuk semua produk | `kemasan` bebas teks (`1 Dos isi 25 Strip x 4 Tablet`); 68 produk tanpa harga, 22 tanpa komposisi |
 
-### 2.3 Diimprove
-
-- `q1_daftar_produk.rq` — tambah `FILTER (lang(?golongan)="id")`, jalankan ulang, ganti `q1_result.csv`.
-- `build_kb_v1.py` — path relatif (`Path(__file__)`), baca produk dari CSV, hapus assertion turunan.
-- Inferensi — `robot reason --output` ke `out/kb_v1_materialized.owl` agar hasil penalaran bisa di-query.
-- `q4` — eksekusi dan simpan `out/q4_result.csv`; tambah kasus kedua (keranjang duplikasi).
-- `logs/LOG.md` — tambah bagian "state terverifikasi" yang sinkron dengan file; angka dihitung oleh skrip, bukan diketik.
-- README — cara jalan (unduh `chebi.owl`/`dron.owl`, ROBOT, urutan perintah) + `requirements.txt`.
-- `data/atc/atc_all.csv` — dipakai untuk hierarki kelas terapi, bukan cuma arsip.
+**Koreksi penting:** harga **bukan** data yang perlu ditambah — 828/933 sudah punya harga. Yang benar-benar kosong adalah **aturan pakai (dosis/frekuensi/waktu/maks hari)** dan **kontraindikasi kondisi**. Itu dua tabel kecil (31 baris masing-masing), bukan scrape baru.
 
 ---
 
-## 3. Todo
+## 3. Keputusan: dipertahankan / dibuang / diimprove
 
-Kolom **Individu** = kelas/individu/properti yang sudah ada di `out/kb_v1.owl` (atau modul) dan akan dipakai. Kolom **Sumber aturan** = dari mana pengetahuannya diambil (file di repo + referensi eksternal).
+**Dipertahankan:** 5 modul referensi + checksum; 22 gejala + triase + sinonim; 31 zat + ATC/ChEBI/peran; 20 interaksi kurasi + disiplin bukti (`SumberBukti`); pipeline HermiT + `validate-profile`; katalog 933 + pemisahan batuk/pilek; 12 produk ABox (turun peran jadi fixture uji).
 
-### Fase 0 — Reproducibility & kebenaran artefak (prasyarat)
+**Dibuang:** literal `classes`/`efeksamping`/`indikasi` per produk; properti mati `diproduksiOleh`; `out/test_term.owl`; 4 skrip generator legacy (`generate_dataset_apotek.py`, `generate_katalog_apotek_lengkap.py`, `generate_master_apotek.py`, `scrape_obat_apotek.py`) + CSV dummy-nya; `dataset_obat_apotek_indonesia - Copy.csv`; angka 95/11/10/86 di log (dihitung ulang).
 
-| ID | Todo | Individu | Sumber aturan | Output | Usaha |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| T0.1 | Path relatif + `requirements.txt` + README jalan | — | `scrape/*.py` | `requirements.txt`, `README.md`, skrip jalan dari Linux | S |
-| T0.2 | Perbaiki `q1` + jalankan ulang semua query | `ProduktObat`, `memilikiGolongan`, `GolonganObat` | `queries/q1..q4.rq` | `q1..q4_result.csv` dengan 12/24 baris benar, tanpa duplikat label | S |
-| T0.3 | Hitung ulang metrik dari file nyata | — | `out/kb_v1.owl` | `measure_kb_v1.tsv` sinkron; `logs/LOG.md` bagian baru | S |
-| T0.4 | Arsipkan skrip & data legacy | — | — | folder `arsip/`, repo bersih | S |
-
-**Kriteria selesai Fase 0:** satu perintah `python scrape/build_kb_v1.py && robot ...` bisa dijalankan ulang di mesin bersih dan menghasilkan `kb_v1.owl` yang identik (tanpa assertion manual).
-
-### Fase 1 — Penalaran yang benar-benar bekerja (tanpa data baru)
-
-| ID | Todo | Individu | Sumber aturan | Output | Usaha |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| T1.1 | Hapus kesimpulan manual; bangun ABox dari `produk_batuk.csv` (12 produk) + jalankan reasoner dengan `--output` | 12 produk, `_AH1Product`, `_DekongestanProduct`, `ProdukDenganPSE`, `ProdukKombinasiCTMDPH` | R-01…R-04, R-07, R-08 (TBox) | `out/kb_v1.owl` tanpa tipe turunan + `out/kb_v1_materialized.owl`; tabel konflik manual-vs-aturan (Sanmol, Komix) | M |
-| T1.2 | `disjointWith` + perbaikan R-01/R-02 agar tidak tumpang tindih | `ObatBatukMurni`, `ObatPilekMurni`, `ObatKombinasiBatukPilek` | definisi kelas + observasi Sanmol/Komix | 12 produk terklasifikasi konsisten; 0 produk di 2 kelas saudara | S |
-| T1.3 | Assert zat → enzim | 31 zat, `dimetabolismeOleh`, `CYP3A4/2D6/2C19/2C9`, `enzim_modul.owl` | `sheet1_zat_aktif.csv` kolom `enzim_terkait` + PRO | ±35 triple; query "zat yang dimetabolisme CYP3A4" mengembalikan daftar benar | S |
-| T1.4 | Aktifkan R-08 di produk baru | `ProdukDenganPSE`, `kontraindikasiBagi`, `HipertensiTidakTerkontrol` | R-08 | 6 produk ber-PSE otomatis ber-kontraindikasi hipertensi setelah reasoning | S |
-
-**Kriteria selesai Fase 1:** hasil inferensi berbeda dari tabel manual (bukti penalaran bekerja), dan 0 inconsistency di HermiT.
-
-### Fase 2 — Pengetahuan apoteker yang belum ada (data sudah tersedia)
-
-| ID | Todo | Individu | Sumber aturan | Output | Usaha |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| T2.1 | Aturan duplikasi antar produk (keranjang obat) | `KasusPasien`, `ObatPasien`, `menggunakanProdukObat`, `memilikiKandungan`, `DuplikasiTerapetik` | generalisasi R-07 + 124 produk ber-paracetamol di katalog | kelas `DuplikasiKandungan` + query keranjang; kasus uji 2 merek paracetamol | M |
-| T2.2 | Aturan kelas terapi ATC-4 | `kodeATC` di 31 zat, `atc_all.csv` | 17 kode level-4 (M01A, R06A, R05C, R05D, R01B, N02B, …) | 17 kelas ATC4 + aturan "dua zat sekelas → peringatan" + query | S |
-| T2.3 | Import pasangan DDInter domain proyek | `InteraksiObat`, `InteraksiMajor/Moderate/Minor`, `melibatkanZatAktif` | `KB/ddinter_code_*.csv`; 55 pasangan (1 Major, 19 Moderate, 35 Unknown), 6 sudah ada | +14 Moderate baru di ABox; 35 Unknown ditandai `Unknown` (tidak diarang); tabel per pasangan | M |
-| T2.4 | Kontraindikasi kondisi per zat | `KondisiPasien` (+ subkelas baru: PJK, hipertiroid, DM, glaukoma, tukak, hamil, anak<2), `kontraindikasiBagi` | PIONAS/label (pola R-08) | ±120 triple; query "produk aman untuk hipertensi" atas 467 produk (125 berdekongestan) | M |
-| T2.5 | Mekanisme DINTO sebagai relasi | `dinto_modul.owl` (`has precipitant`, `has object`, `alters`), 20 pasangan kurasi | `curated_drug_interactions.csv` kolom `dinto_mechanism` | 20 pasangan punya precipitant/object; query "semua inhibitor CYP3A4 yang jadi precipitant" | M |
-| T2.6 | Batas dosis & durasi swamedikasi | data property baru `dosisMaksHari`, `durasiMaksHari`; `Gejala` | PIONAS/label (paracetamol ≤2 g/hari sudah ada di CSV interaksi) | aturan ">3 hari demam / >5 hari batuk → SegeraKeDokter"; 31 zat terdokumentasi | M |
-
-**Kriteria selesai Fase 2:** pertanyaan "pasien hipertensi rutin digoxin mau beli obat batuk, mana yang aman?" terjawab dari 467 produk katalog, bukan 12 contoh.
-
-### Fase 3 — Skala & evaluasi
-
-| ID | Todo | Individu | Sumber aturan | Output | Usaha |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| T3.1 | Masukkan katalog ke ABox | `ProduktObat`, `memilikiKandungan`, `memilikiGolongan`, `memilikiBentukSediaan` | `produk_batuk.csv` + `produk_pilek.csv`; 336/467 bisa dipetakan (75%, estimasi substring) | `out/kb_produk_katalog.owl` + laporan coverage per zat | M-L |
-| T3.2 | Normalisasi nama zat | 31 zat + sinonim | 109 produk yang tak terpetakan + `perlu_dilengkapi.csv` | tabel sinonim (`ctm`, `gg`, `ppa`, `pe`) → coverage naik | M |
-| T3.3 | Evaluasi kandidat interaksi vs DDInter | `InteraksiObat`, `dimetabolismeOleh` | 164 pasangan DDInter in-domain sebagai ground truth | precision/recall kandidat hasil penalaran enzim; tabel false positive | M |
-| T3.4 | Efek samping per zat (warisan) | `GejalaEfekSamping`, kelas zat | DrON (unduh ulang `dron.owl`, modul sekarang 8 term) | kelas "zat dengan efek X" → produk mewarisi tanpa diketik | L |
-| T3.5 | Kasus uji pasien tambahan | `KasusPasien`, `ObatPasien`, `KondisiPasien` | sintetis, mengikuti pola `q4` | 3 kasus: hipertensi+digoxin, hamil, anak <2; `q5_result.csv` | S-M |
-
-**Kriteria selesai Fase 3:** ≥300 produk di ABox, 0 inconsistency, laporan evaluasi interaksi punya angka, dan 4 query demo (produk, gejala, interaksi, keranjang) berjalan.
+**Diimprove:** `q1` (tambah `FILTER lang`); path relatif + `requirements.txt` + README; `robot reason --output` agar inferensi termaterialisasi; `q4` dieksekusi; `atc_all.csv` dipakai untuk kelas terapi; `measure`/`LOG` dihasilkan skrip.
 
 ---
 
-## 4. Yang sengaja TIDAK dikerjakan
+## 4. Data baru yang perlu dibuat (semuanya kecil, tanpa scrape ulang)
 
-- Standarisasi kadar herbal: 47 produk jamu/herbal, kadar alpha-mangostin tidak dicantumkan di sumber (`sheet5_produk_herbal.csv` sudah mencatat ini).
-- Dosis pediatrik per BB, penyesuaian renal/hepatik, farmakogenomik CYP2D6, kategori kehamilan FDA: tidak ada di PIONAS/label yang kita pakai, butuh kurasi besar.
-- Ekstraksi halaman detail 210 ribu pasangan DDInter: hanya kolom `Level` yang tersedia bulk.
-- Menambah obat keras ke katalog: K24Klik menyembunyikannya (batas regulasi, bukan batas teknis).
+| File | Isi | Sumber | Usaha |
+| :--- | :--- | :--- | :--- |
+| `data/curation/substansi_aturan_pakai.csv` | 31 baris: dosis dewasa, dosis anak, frekuensi, waktu minum (pagi/malam/sesudah makan), maks hari swamedikasi, maks dosis harian, peringatan | PIONAS BPOM + label (pola yang sudah dipakai di `sheet4`) | M |
+| `data/curation/substansi_kontraindikasi.csv` | 31 zat × kondisi (hipertensi, PJK, hipertiroid, DM, glaukoma, BPH, gagal jantung, tukak, hamil, menyusui, anak <2) | PIONAS + label | M |
+| `data/curation/aturan_durasi.csv` | 22 gejala → batas hari sebelum rujuk (demam >3 hari, batuk >5 hari, dll) | PIONAS/label | S |
+| `data/curation/sinonim_zat.csv` | normalisasi `ctm`, `gg`, `ppa`, `pe`, `dmp`, dll → 31 zat | `sheet1` + 109 produk tak terpetakan | S |
+| `data/apotek/harga_per_unit.csv` | harga, isi kemasan, satuan (tablet/mL/sachet), harga per unit | turunan `produk_detail.csv` | M |
+| `data/apotek/dikecualikan.csv` | produk dengan komposisi tidak valid/kosong (mis. BODREX FLU tanpa komposisi) agar tidak masuk rekomendasi | hasil validasi | S |
 
 ---
 
-## 5. Urutan eksekusi & risiko
+## 5. Detail task
 
-1. Fase 0 (1–2 hari) → wajib dulu, kalau tidak semua angka di laporan tidak bisa dipertanggungjawabkan.
-2. Fase 1 (2–3 hari) → inti "expert system"; risiko utama: R-01/R-02 perlu dirapikan dulu (T1.2) atau klasifikasi produk kombinasi jadi ambigu.
-3. Fase 2 (3–5 hari) → nilai tambah paling besar; risiko: kualitas terjemahan label PIONAS ke kelas kondisi, perlu sampel uji manual per zat.
-4. Fase 3 (3–5 hari) → skala + evaluasi; risiko: pencocokan nama zat (T3.2) menentukan semua angka coverage, jangan diklaim sebelum divalidasi sampel.
+### T1 — Rekomendasi terapi personal (task utama)
 
-Verifikasi akhir tiap fase: `robot reason --reasoner HermiT --input ... validate-profile --profile DL` LULUS, dan semua angka di laporan dihasilkan skrip (`measure`), bukan diketik manual.
+**Tujuan:** dari keluhan + kondisi pasien → produk yang tepat, cara pakai, dan peringatan.
+
+**Input:** gejala (pilih dari 22 + sinonim), durasi gejala, umur, jenis kelamin, hamil/menyusui, penyakit penyerta, obat rutin.
+**Output:** 1–3 produk + aturan pakai (frekuensi, waktu, maks hari) + peringatan (interaksi, kontraindikasi, efek samping) + aksi triase (Pantau / TanyaApoteker / SegeraKeDokter).
+
+| Unsur | Individu/kelas yang dipakai | Sumber aturan |
+| :--- | :--- | :--- |
+| Kandidat produk | 377 produk batuk/pilek, `memilikiKandungan`, `mengindikasikanGejala` | `produk_batuk.csv`, `produk_pilek.csv` |
+| Aturan pakai | 31 zat + data property baru `dosisDewasa`, `frekuensi`, `waktuMinum`, `maksHari`, `maksDosisHarian` | PIONAS/label |
+| Kondisi pasien | `KondisiPasien` (+ subkelas baru), `kontraindikasiBagi` | PIONAS/label |
+| Peringatan kombinasi | `InteraksiObat` + kelas keparahan, `DuplikasiTerapetik` | DDInter + 20 kurasi |
+| Efek samping | `GejalaEfekSamping`, `_AH1Product`, `_DekongestanProduct` | R-03, R-04 |
+| Triase | `GejalaIndikasi/RedFlag`, `TindakLanjut` | 22 gejala + `aturan_durasi.csv` |
+| Klasifikasi produk | R-01, R-02 (setelah diperbaiki + `disjointWith`) | TBox |
+
+**Sub-todo:**
+1.1 Perbaiki R-01/R-02 + `disjointWith`; hapus assertion manual; materialisasi inferensi.
+1.2 Buat `substansi_aturan_pakai.csv` (31 baris) + data property di OWL.
+1.3 Buat `substansi_kontraindikasi.csv` (31 × kondisi) + aktifkan R-08 untuk kondisi lain.
+1.4 Buat `aturan_durasi.csv` (22 baris) + aturan "> X hari → SegeraKeDokter".
+1.5 Endpoint/skrip rekomendasi (`scrape/rekomendasi.py`) + `queries/q5_rekomendasi.rq`.
+1.6 5 skenario uji: batuk kering dewasa; batuk berdahak anak 4 th; hipertensi + PSE; hamil; demam 5 hari.
+
+**Kriteria selesai:** 5 skenario menghasilkan produk + cara pakai + minimal 1 peringatan, dan kondisi yang tidak tercakup jatuh ke "TanyaApoteker" (bukan menebak).
+
+**Risiko:** kualitas tabel aturan pakai (manual). Batasi ke 31 zat, jangan klaim per produk.
+
+---
+
+### T2 — Alternatif lebih murah / kandungan minimal
+
+**Tujuan:** dari 1 produk → produk lain dengan kandungan identik tapi lebih murah, atau produk mono-kandungan yang lebih murah.
+
+**Input:** produk A. **Output:** (a) ekuivalen lebih murah, (b) mono-kandungan yang menutupi keluhan, (c) selisih harga + catatan kemasan.
+
+| Unsur | Individu | Sumber |
+| :--- | :--- | :--- |
+| Kandungan | `memilikiKandungan` (31 zat) | komposisi hasil scrape |
+| Harga | `hargaRupiah` | `produk_detail.csv` (828 terisi) |
+| Kesetaraan | `BentukSediaan` + set kandungan identik | ATC + komposisi |
+| Golongan | `GolonganObat` | BPOM |
+
+**Sub-todo:** 2.1 `sinonim_zat.csv` + parser komposisi (bukan substring); 2.2 `harga_per_unit.csv` (parse "isi N tablet/mL"); 2.3 `dikecualikan.csv`; 2.4 query/endpoint `q6_alternatif_murah.rq`; 2.5 demo 10 kelompok (paracetamol tunggal, CTM, cetirizine, guaifenesin, bromhexine, dll).
+
+**Kriteria selesai:** 10 kelompok menampilkan alternatif lebih murah dengan kandungan identik dan satuan harga yang sebanding; produk dengan komposisi tidak valid tidak muncul.
+
+**Risiko (terbukti dari uji cepat):** pencocokan substring membuat BODREX FLU masuk grup "paracetamol tunggal" dan WICOLD muncul Rp180.375 — hasilnya ngawur kalau komposisi tidak dibersihkan. Wajib kerjakan 2.1–2.3 sebelum query.
+
+---
+
+### T3 — Skrining keranjang & obat rutin
+
+**Tujuan:** pasien membawa 2–5 produk (beli + obat rutin) → daftar masalah: dobel zat, dobel kelas terapi, interaksi, kontraindikasi, aksi triase.
+
+**Input:** daftar produk/zat. **Output:** laporan masalah + aksi per masalah.
+
+| Unsur | Individu | Sumber |
+| :--- | :--- | :--- |
+| Keranjang | `KasusPasien`, `ObatPasien`, `menggunakanProdukObat`, `menggunakanZatAktif` | model yang sudah ada |
+| Dobel zat | `memilikiKandungan` + kelas `DuplikasiKandungan` (baru) | generalisasi R-07 |
+| Dobel kelas | ATC level-4 (17 kode) | `atc_all.csv` + `kodeATC` |
+| Interaksi | `InteraksiObat` + 55 pasangan DDInter domain | `KB/ddinter_*.csv` |
+| Kontraindikasi | `kontraindikasiBagi` | tabel T1.3 |
+| Output tindakan | `TindakLanjut` | R-05, R-06 |
+
+**Sub-todo:** 3.1 kelas `DuplikasiKandungan` + `DuplikasiKelasATC`; 3.2 import 55 pasangan DDInter (1 Major, 19 Moderate siap; 35 Unknown ditandai `Unknown`, jangan dikarang); 3.3 `q7_keranjang.rq`; 3.4 3 keranjang uji (2 merek paracetamol; Komix + Actifed; Actifed + digoxin).
+
+**Kriteria selesai:** keranjang 2 merek ber-paracetamol → "dobel paracetamol, risiko overdosis"; keranjang dengan PSE + hipertensi → "kontraindikasi"; 0 interaksi yang tidak ada di sumber.
+
+---
+
+### T4 — Substitusi aman
+
+**Tujuan:** produk yang dipilih mengandung zat bermasalah untuk kondisi pasien → cari produk lain yang menutupi gejala sama tanpa zat itu.
+
+**Input:** produk + kondisi pasien. **Output:** alternatif + alasan penolakan produk awal.
+
+| Unsur | Individu | Sumber |
+| :--- | :--- | :--- |
+| Zat bermasalah | `kontraindikasiBagi` (perlu domain `ZatAktif`, bukan hanya produk) | R-08 + tabel T1.3 |
+| Gejala yang harus tetap ditutup | `mengindikasikanGejala`, `GejalaIndikasi` | komposisi + gejala |
+| Kandidat pengganti | 377 produk, `memilikiKandungan` | katalog |
+| Prioritas | aman > murah (T2) > mono-kandungan | kombinasi T2+T4 |
+
+**Sub-todo:** 4.1 pindahkan/duplikasi `kontraindikasiBagi` ke level zat; 4.2 `q8_substitusi_aman.rq`; 4.3 3 skenario (hipertensi + produk PSE; BPH + CTM; tukak + ibuprofen).
+
+**Kriteria selesai:** setiap skenario menghasilkan minimal 1 alternatif yang tidak melanggar kontraindikasi dan tetap menutupi keluhan.
+
+**Risiko:** tanpa tabel kontraindikasi lengkap, T4 tidak bisa jalan — T4 bergantung pada T1.3.
+
+---
+
+### T5 — Kartu edukasi & explainability
+
+**Tujuan:** setiap rekomendasi/peringatan bisa dijelaskan ke pasien dalam bahasa awam, dengan sumber yang bisa diaudit.
+
+**Input:** hasil T1/T3/T4. **Output:** kartu per produk: nama, isi, untuk apa, cara pakai, kapan berhenti/rujuk, "kenapa" (rantai produk→zat→interaksi→sumber + batas bukti).
+
+| Unsur | Individu | Sumber |
+| :--- | :--- | :--- |
+| Rantai bukti | `SumberBukti`, `didukungOleh`, `tingkatBukti` | `evidence_interaksi.csv` |
+| Bahasa awam | `skos:altLabel` di 22 gejala | `symptoms_selected.csv` |
+| Aksi | `TindakLanjut` + `membutuhkanTindakLanjut` | R-05, R-06 |
+| Aturan pakai | data property dari T1.2 | PIONAS/label |
+
+**Sub-todo:** 5.1 template kartu (markdown); 5.2 query pengambil rantai penjelasan; 5.3 5 kartu contoh (Actifed, Komix, Sanmol, OB Combi, Siladex); 5.4 penanda "kesimpulan dari aturan" vs "data kurasi" agar tidak menyesatkan.
+
+**Kriteria selesai:** 5 kartu memuat cara pakai + minimal 1 peringatan + sumber, dan setiap klaim punya rujukan atau label "belum ada sumber".
+
+---
+
+## 6. Urutan kerja & dependensi
+
+1. **Fase 0 (wajib, 1–2 hari):** path relatif + `requirements.txt` + README; perbaiki `q1`; hitung ulang `measure`; arsipkan legacy; perbaiki R-01/R-02 + `disjointWith`; materialisasi inferensi.
+2. **Fase 1 (T2, 1–2 hari):** paling siap — harga & komposisi sudah ada. Butuh `sinonim_zat` + parser + `harga_per_unit` + `dikecualikan`. Hasilnya bisa didemokan tanpa aturan klinis baru.
+3. **Fase 2 (T3, 2 hari):** model keranjang + ATC-4 + import DDInter. Tidak butuh kurasi manual.
+4. **Fase 3 (T1, 3–5 hari):** dua tabel kurasi (aturan pakai + kontraindikasi) + aturan durasi + endpoint. Ini task terberat.
+5. **Fase 4 (T4, 1–2 hari):** setelah T1.3 selesai, mayoritas kerja tinggal query.
+6. **Fase 5 (T5, 1 hari):** template + 5 kartu; hanya merangkai yang sudah ada.
+
+**Dependensi:** T4 ← T1.3. T3 ← T1.3 (untuk bagian kontraindikasi; duplikasi & interaksi bisa jalan lebih dulu). T1 ← Fase 0. T2 dan T5 tidak bergantung pada task lain.
+
+---
+
+## 7. Non-goals
+
+- Dosis berbasis berat badan / mg per kg (data tidak ada di katalog).
+- Skor keparahan berjenjang selain red flag.
+- Interaksi di luar 31 zat (butuh mapping 3.484 obat DDInter).
+- Standarisasi kadar herbal (47 produk jamu, kadar tidak dicantumkan).
+- Penyesuaian renal/hepatik, farmakogenomik, kategori kehamilan FDA.
+- Menambah obat keras ke katalog (disembunyikan K24Klik sesuai regulasi).
+- Ekstraksi 210 ribu halaman detail DDInter (hanya kolom `Level` yang tersedia bulk).
+
+**Batas etis:** sistem ini alat bantu keputusan, bukan resep. Red flag selalu berakhir `SegeraKeDokter`; kasus di luar cakupan selalu `TanyaApoteker`.
+
+---
+
+## 8. Verifikasi
+
+- Tiap fase: `robot reason --reasoner HermiT --input ... validate-profile --profile DL` LULUS.
+- Semua angka di laporan dihasilkan `robot measure`/skrip, bukan diketik.
+- Setiap rekomendasi menyertakan sumber atau penanda "belum ada sumber".
+- Uji regresi: 5 skenario T1 + 3 keranjang T3 + 3 substitusi T4 + 10 kelompok T2, dijalankan ulang tiap build.
