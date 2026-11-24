@@ -1,0 +1,268 @@
+[
+  {
+    "id_zat": "ZAT-001",
+    "nama_zat": "Paracetamol",
+    "fda_query": "acetaminophen",
+    "spl_set_id": "0005aafa-08f8-4990-a54d-cc097195708f",
+    "effective_time": "20260102",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0005aafa-08f8-4990-a54d-cc097195708f",
+    "snippet": "Do not use if you are allergic to acetaminophen or any of the inactive ingredients in this product with any other drug containing acetaminophen (prescription or nonprescription). Severe liver damage may occur if you take more than 4,000 mg of acetaminophen in 24 hours with other drugs containing acetaminophen 3 or more alcoholic drinks every day while using this product Allergy alert: Acetaminophen may cause severe s"
+  },
+  {
+    "id_zat": "ZAT-002",
+    "nama_zat": "Ibuprofen",
+    "fda_query": "ibuprofen",
+    "spl_set_id": "00872852-680a-41b3-901b-b991b12a176d",
+    "effective_time": "20250214",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00872852-680a-41b3-901b-b991b12a176d",
+    "snippet": "CONTRAINDICATIONS Ibuprofen tablets are contraindicated in patients with known hypersensitivity to Ibuprofen. Ibuprofen tablets should not be given to patients who have experienced asthma, urticaria, or allergic-type reactions after taking aspirin or other NSAIDs."
+  },
+  {
+    "id_zat": "ZAT-003",
+    "nama_zat": "Dextromethorphan",
+    "fda_query": "dextromethorphan",
+    "spl_set_id": "01ea6357-24dc-4056-9fd2-9e643650b91f",
+    "effective_time": "20250904",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01ea6357-24dc-4056-9fd2-9e643650b91f",
+    "snippet": "CONTRAINDICATIONS Hypersensitivity to any of the ingredients."
+  },
+  {
+    "id_zat": "ZAT-004",
+    "nama_zat": "Pseudoephedrine",
+    "fda_query": "pseudoephedrine",
+    "spl_set_id": "00a8327b-41f0-4498-ad13-331256b539f9",
+    "effective_time": "20261008",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00a8327b-41f0-4498-ad13-331256b539f9",
+    "snippet": "Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson's disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product."
+  },
+  {
+    "id_zat": "ZAT-005",
+    "nama_zat": "Phenylephrine",
+    "fda_query": "phenylephrine",
+    "spl_set_id": "0153294d-7f52-4d92-8db8-daeca3e29a3b",
+    "effective_time": "20260306",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0153294d-7f52-4d92-8db8-daeca3e29a3b",
+    "snippet": "Do not use if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs for depression, psychiatric or emotional conditions, or Parkinson’s disease), or for 2 weeks after stopping the MAOI drug. If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product."
+  },
+  {
+    "id_zat": "ZAT-006",
+    "nama_zat": "Chlorpheniramine (CTM)",
+    "fda_query": "chlorpheniramine",
+    "spl_set_id": "01a1a91e-04ba-4526-8946-10483932b30c",
+    "effective_time": "20260917",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01a1a91e-04ba-4526-8946-10483932b30c",
+    "snippet": "Warnings Ask a doctor before use if you have a breathing problem such as emphysema or chronic bronchitis glaucoma difficulty in urination due to enlargement of the prostate gland"
+  },
+  {
+    "id_zat": "ZAT-007",
+    "nama_zat": "Diphenhydramine",
+    "fda_query": "diphenhydramine",
+    "spl_set_id": "00f862aa-6917-45c7-b6aa-1bebb0a45e14",
+    "effective_time": "20250516",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00f862aa-6917-45c7-b6aa-1bebb0a45e14",
+    "snippet": "Antihistamines are also Contraindicated in the Following Conditions Hypersensitivity to diphenhydramine hydrochloride and other antihistamines of similar chemical structure."
+  },
+  {
+    "id_zat": "ZAT-008",
+    "nama_zat": "Cetirizine",
+    "fda_query": "cetirizine",
+    "spl_set_id": "05324e41-ee3f-0e4b-e063-6294a90a102c",
+    "effective_time": "20251016",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05324e41-ee3f-0e4b-e063-6294a90a102c",
+    "snippet": "CONTRAINDICATIONS Cetirizine hydrochloride oral solution, USP is contraindicated in those patients with a known hypersensitivity to it or any of its ingredients or hydroxyzine."
+  },
+  {
+    "id_zat": "ZAT-009",
+    "nama_zat": "Bromhexine",
+    "fda_query": "bromhexine",
+    "status": "not_in_openfda",
+    "fallback": "https://pionas.pom.go.id"
+  },
+  {
+    "id_zat": "ZAT-010",
+    "nama_zat": "Ambroxol",
+    "fda_query": "ambroxol",
+    "status": "not_in_openfda",
+    "fallback": "https://pionas.pom.go.id"
+  },
+  {
+    "id_zat": "ZAT-011",
+    "nama_zat": "Guaifenesin (Glyceryl Guaiacolate)",
+    "fda_query": "guaifenesin",
+    "spl_set_id": "00c40e3b-6962-dfb4-e063-6294a90afec6",
+    "effective_time": "20251219",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00c40e3b-6962-dfb4-e063-6294a90afec6",
+    "snippet": "Warnings Do not use ■ for children under 12 years of age"
+  },
+  {
+    "id_zat": "ZAT-012",
+    "nama_zat": "Simvastatin",
+    "fda_query": "simvastatin",
+    "spl_set_id": "00896fff-081d-4553-be8c-1999a8a73dda",
+    "effective_time": "20260226",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00896fff-081d-4553-be8c-1999a8a73dda",
+    "snippet": "Acute liver failure or decompensated cirrhosis [see WARNINGS AND PRECAUTIONS ( 5.3 )] Hypersensitivity to simvastatin or any excipients in simvastatin tablets USP. Hypersensitivity reactions, including anaphylaxis, angioedema and Stevens-Johnson syndrome, have been reported [see ADVERSE REACTIONS ( 6.2 )] Concomitant use of strong CYP3A4 inhibitors (select azole anti-fungals, macrolide antibiotics, anti-viral medicat"
+  },
+  {
+    "id_zat": "ZAT-013",
+    "nama_zat": "Atorvastatin",
+    "fda_query": "atorvastatin",
+    "spl_set_id": "00afce9b-48c9-487a-a738-e359c005c707",
+    "effective_time": "20250828",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00afce9b-48c9-487a-a738-e359c005c707",
+    "snippet": "4 CONTRAINDICATIONS Acute liver failure or decompensated cirrhosis [see Warnings and Precautions (5.3) ] Hypersensitivity to atorvastatin or any excipients in atorvastatin calcium. Hypersensitivity reactions, including anaphylaxis, angioneurotic edema, erythema multiforme, Stevens-Johnson syndrome, and toxic epidermal necrolysis, have been reported [see Adverse Reactions (6.2) ]."
+  },
+  {
+    "id_zat": "ZAT-014",
+    "nama_zat": "Amlodipine",
+    "fda_query": "amlodipine",
+    "spl_set_id": "003dd1ec-16f8-4f96-b6a8-c4689d35892a",
+    "effective_time": "20260420",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=003dd1ec-16f8-4f96-b6a8-c4689d35892a",
+    "snippet": "4 CONTRAINDICATIONS Known sensitivity to amlodipine ( 4 ) Amlodipine besylate tablets are contraindicated in patients with known sensitivity to amlodipine."
+  },
+  {
+    "id_zat": "ZAT-015",
+    "nama_zat": "Captopril",
+    "fda_query": "captopril",
+    "spl_set_id": "1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+    "effective_time": "20260914",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1395ba5b-2fc9-41ff-9c43-e0740d781dee",
+    "snippet": "CONTRAINDICATIONS Captopril tablets are contraindicated in patients who are hypersensitive to this product or any other angiotensin- converting enzyme inhibitor (e.g., a patient who has experienced angioedema during therapy with any other ACE inhibitor). WARNINGS Anaphylactoid and Possibly Related Reactions Presumably because angiotensin-converting enzyme inhibitors affect the metabolism of eicosanoids and polypeptid"
+  },
+  {
+    "id_zat": "ZAT-016",
+    "nama_zat": "Metformin",
+    "fda_query": "metformin",
+    "spl_set_id": "011de1a5-1ac0-4831-9e8d-26ec79ba2205",
+    "effective_time": "20240821",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=011de1a5-1ac0-4831-9e8d-26ec79ba2205",
+    "snippet": "Hypersensitivity to metformin. Severe renal impairment (eGFR below 30 mL/min/1.73 m 2 ) ( 4 , 5.1 ) Hypersensitivity to metformin ( 4 ) Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma."
+  },
+  {
+    "id_zat": "ZAT-017",
+    "nama_zat": "Glimepiride",
+    "fda_query": "glimepiride",
+    "spl_set_id": "0003458f-352a-46fa-9d99-230daa76ae29",
+    "effective_time": "20241113",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0003458f-352a-46fa-9d99-230daa76ae29",
+    "snippet": "4 CONTRAINDICATIONS Glimepiride tablets are contraindicated in patients with a history of a hypersensitivity reaction to: Glimepiride or any of the product’s ingredients [see Warnings and Precautions (5.2) ]. Sulfonamide derivatives: Patients who have developed an allergic reaction to sulfonamide derivatives may develop an allergic reaction to glimepiride."
+  },
+  {
+    "id_zat": "ZAT-018",
+    "nama_zat": "Warfarin",
+    "fda_query": "warfarin",
+    "spl_set_id": "0cbce382-9c88-4f58-ae0f-532a841e8f95",
+    "effective_time": "20250617",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cbce382-9c88-4f58-ae0f-532a841e8f95",
+    "snippet": "Warfarin sodium is contraindicated in patients with: Hemorrhagic tendencies or blood dyscrasias Recent or contemplated surgery of the central nervous system or eye, or traumatic surgery resulting in large open surfaces [see Warnings and Precautions ( 5.8 )] Bleeding tendencies associated with: − Active ulceration or overt bleeding of the gastrointestinal, genitourinary, or respiratory tract − Central nervous system h"
+  },
+  {
+    "id_zat": "ZAT-019",
+    "nama_zat": "Clopidogrel",
+    "fda_query": "clopidogrel",
+    "spl_set_id": "0078fb3d-3595-4ae1-a059-1d5e81c879cf",
+    "effective_time": "20240517",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0078fb3d-3595-4ae1-a059-1d5e81c879cf",
+    "snippet": "4 CONTRAINDICATIONS Active pathological bleeding, such as peptic ulcer or intracranial hemorrhage (4.1) Hypersensitivity to clopidogrel or any component of the product (4.2) 4.1 Active Bleeding Clopidogrel tablets are contraindicated in patients with active pathological bleeding such as peptic ulcer or intracranial hemorrhage. 4.2 Hypersensitivity Clopidogrel tablets are contraindicated in patients with hypersensitiv"
+  },
+  {
+    "id_zat": "ZAT-020",
+    "nama_zat": "Digoxin",
+    "fda_query": "digoxin",
+    "spl_set_id": "03612934-62f4-4002-85af-6c66cd172acb",
+    "effective_time": "20240904",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=03612934-62f4-4002-85af-6c66cd172acb",
+    "snippet": "4 CONTRAINDICATIONS Digoxin is contraindicated in patients with: Ventricular fibrillation [see Warnings and Precautions (5.1)] Known hypersensitivity to digoxin (reactions seen include unexplained rash, swelling of the mouth, lips or throat or a difficulty in breathing). A hypersensitivity reaction to other digitalis preparations usually constitutes a contraindication to digoxin."
+  },
+  {
+    "id_zat": "ZAT-021",
+    "nama_zat": "Omeprazole",
+    "fda_query": "omeprazole",
+    "spl_set_id": "0344268f-d8e6-48d5-b1e1-f750ed1d8a52",
+    "effective_time": "20260717",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0344268f-d8e6-48d5-b1e1-f750ed1d8a52",
+    "snippet": "4 CONTRAINDICATIONS • Omeprazole delayed-release capsules are contraindicated in patients with known hypersensitivity reactions including anaphylaxis to the formulation or any substituted benzimidazole. Hypersensitivity reactions may include anaphylaxis, anaphylactic shock, angioedema, bronchospasm, acute tubulointerstitial nephritis, and urticaria [see Warnings and Precautions ( 5.2 ), Adverse Reactions (6) ]."
+  },
+  {
+    "id_zat": "ZAT-022",
+    "nama_zat": "Ciprofloxacin",
+    "fda_query": "ciprofloxacin",
+    "spl_set_id": "05b2836d-cd3d-4d7f-970c-66ec2d788667",
+    "effective_time": "20220502",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=05b2836d-cd3d-4d7f-970c-66ec2d788667",
+    "snippet": "CONTRAINDICATIONS A history of hypersensitivity to ciprofloxacin or any other component of the medication is a contraindication to its use. A history of hypersensitivity to other quinolones may also contraindicate the use of ciprofloxacin."
+  },
+  {
+    "id_zat": "ZAT-023",
+    "nama_zat": "Amoxicillin",
+    "fda_query": "amoxicillin",
+    "spl_set_id": "00fbd46e-05fd-4f8a-9f59-a7a4d01c8e54",
+    "effective_time": "20231218",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00fbd46e-05fd-4f8a-9f59-a7a4d01c8e54",
+    "snippet": "4 CONTRAINDICATIONS Amoxicillin tablets are contraindicated in patients who have experienced a serious hypersensitivity reaction (e.g., anaphylaxis or Stevens-Johnson syndrome) to amoxicillin tablets or to other β-lactam antibacterial drugs (e.g., penicillins and cephalosporins). History of a serious hypersensitivity reaction (e.g., anaphylaxis or Stevens-Johnson syndrome) to amoxicillin tablets or to other beta-lact"
+  },
+  {
+    "id_zat": "ZAT-024",
+    "nama_zat": "Itraconazole",
+    "fda_query": "itraconazole",
+    "spl_set_id": "23126370-8d6a-4027-bd8f-860e2776ba3a",
+    "effective_time": "20260917",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=23126370-8d6a-4027-bd8f-860e2776ba3a",
+    "snippet": "Itraconazole capsules are contraindicated for patients who have shown hypersensitivity to itraconazole. There is limited information regarding cross-hypersensitivity between itraconazole and other azole antifungal agents."
+  },
+  {
+    "id_zat": "ZAT-025",
+    "nama_zat": "Ketoconazole",
+    "fda_query": "ketoconazole",
+    "spl_set_id": "00c1cac8-a865-4583-aaba-3a0f21fb31e6",
+    "effective_time": "20260129",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=00c1cac8-a865-4583-aaba-3a0f21fb31e6",
+    "snippet": "CONTRAINDICATIONS Ketoconazole shampoo, 2% is contraindicated in persons who have known hypersensitivity to the active ingredient or excipients of this formulation."
+  },
+  {
+    "id_zat": "ZAT-026",
+    "nama_zat": "Fluconazole",
+    "fda_query": "fluconazole",
+    "spl_set_id": "01df20c4-7b94-044e-e063-6394a90a406a",
+    "effective_time": "20251117",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=01df20c4-7b94-044e-e063-6394a90a406a",
+    "snippet": "CONTRAINDICATIONS Fluconazole tablets are contraindicated in patients who have shown hypersensitivity to fluconazole or to any of its excipients. There is no information regarding cross-hypersensitivity between fluconazole and other azole antifungal agents."
+  },
+  {
+    "id_zat": "ZAT-027",
+    "nama_zat": "Alpha-Mangostin",
+    "status": "herbal_non_fda",
+    "url": "https://pionas.pom.go.id / DOI: 10.1016/j.phymed.2011.01.010"
+  },
+  {
+    "id_zat": "ZAT-028",
+    "nama_zat": "Curcumin",
+    "status": "herbal_non_fda",
+    "url": "https://pionas.pom.go.id / DOI: 10.1016/j.phymed.2011.01.010"
+  },
+  {
+    "id_zat": "ZAT-029",
+    "nama_zat": "Gingerol",
+    "status": "herbal_non_fda",
+    "url": "https://pionas.pom.go.id / DOI: 10.1016/j.phymed.2011.01.010"
+  },
+  {
+    "id_zat": "ZAT-030",
+    "nama_zat": "Triprolidine",
+    "fda_query": "triprolidine",
+    "spl_set_id": "0c693f15-5d76-3dbf-e063-6294a90af9ac",
+    "effective_time": "20261026",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0c693f15-5d76-3dbf-e063-6294a90af9ac",
+    "snippet": "Do not exceed recommended dosage."
+  },
+  {
+    "id_zat": "ZAT-031",
+    "nama_zat": "Doxylamine",
+    "fda_query": "doxylamine",
+    "spl_set_id": "005b5ad8-d762-46b5-a7a5-e0ff11ba936a",
+    "effective_time": "20260406",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=005b5ad8-d762-46b5-a7a5-e0ff11ba936a",
+    "snippet": "Do not use in children under 12 years of age with any other product containing doxylamine unless you have time for a full night’s sleep"
+  }
+]

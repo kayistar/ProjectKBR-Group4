@@ -1,0 +1,177 @@
+slug,nama,kategori_batuk_pilek,alasan_pengecualian,komposisi_mentah,harga_rp
+PARACETAMOL-ADITAMA-500MG-CAPL-100S-29203,PARACETAMOL ADITAMA 500MG KAPLET,tidak,komposisi_kosong,,4987
+PARACETAMOL-UNIVERSAL-500MG-TAB-100S-29359,PARACETAMOL UNIVERSAL 500MG TABLET,tidak,komposisi_kosong,,624
+PARACETAMOL-MEPRO-120MG-5ML-SYR-60ML-35493,PARACETAMOL MEPRO 120MG/5ML SIRUP 60ML,tidak,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",5778
+PARACETAMOL-RAMA-100MG-ML-DROP-15ML-35476,PARACETAMOL RAMA 100MG/ML DROP 15ML,tidak,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",11618
+PARACETAMOL-LUCAS-120MG-5ML-SYR-60ML-35479,PARACETAMOL LUCAS 120MG/5ML SIRUP 60ML,tidak,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",6439
+PARACETAMOL-HOLI-500MG-CAPL-100S-29268,PARACETAMOL HOLI 500MG KAPLET,tidak,komposisi_kosong,,3128
+PARACETAMOL-MERSI-120MG-5ML-SYR-60ML-29195,PARACETAMOL MERSI 120MG/5ML SIRUP 60ML,tidak,komposisi_kosong,,7279
+PARACETAMOL-ERRITA-120MG-5ML-SYR-60ML-29400,PARACETAMOL ERRITA 120MG/5ML SIRUP 60ML,tidak,komposisi_kosong,,8872
+PARACETAMOL-PIM-120MG-5ML-SYR-60ML-29174,PARACETAMOL PIM 120MG/5ML SIRUP 60ML,tidak,komposisi_kosong,,7905
+PARACETAMOL-IMFARMIND-120MG-5ML-SYR-60ML-29237,PARACETAMOL IMFARMIND 120MG/5ML SIRUP 60ML,tidak,komposisi_kosong,,6730
+PARACETAMOL-CNJ-500MG-TAB-100S-29413,PARACETAMOL CNJ 500MG TABLET 1 STRIP ISI 10 TABLET,tidak,komposisi_kosong,,618
+PARACETAMOL-MEGA-ESA-120MG-5ML-SYR-60ML-23756,PARACETAMOL MEGA ESA 120MG/5ML SYRUP 60ML 1 BOTOL,tidak,komposisi_kosong,,18547
+PARACETAMOL-AFI-500MG-TAB-100S-29314,PARACETAMOL AFI 500MG TABLET 1 STRIP ISI 10 TABLET,tidak,komposisi_kosong,,4860
+PARACETAMOL-TROPICA-500MG-CAPL-100S-29281,PARACETAMOL TROPICA 500MG KAPLET 1 STRIP ISI 10 TABLET,tidak,komposisi_kosong,,3853
+PARACETAMOL-SELES-500MG-TAB-100S-29367,PARACETAMOL SELES 500MG TABLET 1 STRIP ISI 10 TABLET,tidak,komposisi_kosong,,2390
+PARACETAMOL-MEGA-ESA-500MG-CAPL-100S-29381,PARACETAMOL MEGA ESA 500MG KAPLET 1 STRIP ISI 10 TABLET,tidak,komposisi_kosong,,6454
+IBUPROFEN-HOLI-100MG-5ML-SUSP-60ML-35474,IBUPROFEN HOLI 100MG/5MG SUSPENSI 60ML,tidak,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",7918
+IBUPROFEN-FM-200MG-TAB-100S-33215,IBUPROFEN FM 200MG TABLET 1 STRIP ISI 10 TABLET,tidak,komposisi_kosong,,4883
+IBUPROFEN-NOVAPHARIN-200MG-TAB-100S-29375,IBUPROFEN NOVAPHARIN 200MG TABLET 1 STRIP ISI 10 TABLET,tidak,komposisi_kosong,,3440
+NODROF-PE-ANTITUSSIVE-CAPL-100S-35402,NODROF PE ANTITUSSIVE 1 strip isi 10 kaplet,ya,komposisi_html_korup,"<ul style=""box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-varia",10020
+NODROF-FLU-PE-EXPECTORANT-CAPL-100S-35400,NODROF FLU PE EXPECTORANT 1 strip isi 10 kaplet,ya,komposisi_html_korup,"<ul style=""box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-varia",9939
+MEFFU-DMP-CAPL-100S-35389,MEFFU DMP 1 strip isi 10 kaplet,ya,komposisi_html_korup,"<ul style=""box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-varia",9880
+CETIRIZINE-HOLI-5MG-5ML-SYR-60ML-31790,CETIRIZINE HOLI 5MG/5ML SYR 60ML,ya,komposisi_kosong,,8495
+LERZIN-10MG-CAP-100S-36053,LERZIN 10MG 1Dos isi 10 Strip @10 Tab,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",6365
+CETIRIZINE-TRIFA-10MG-CAPL-100S-35524,CETIRIZINE TRIFA 10MG 1 strip isi 10 kaplet,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",3903
+BETARHIN-10MG-TAB-10S-AMPLOP-5S-35346,BETARHIN 10MG 1 strip isi 10 tablet,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",24138
+INCIDAL-OD-10MG-CAP-10S-36248,INCIDAL OD 10MG 1 strip isi 10 kapsul,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",52351
+ALERHIS-10MG-CAPL-4S-STRIP-10S-32219,ALERHIS 10MG KAPSUL,ya,zat_di_luar_31_kurasi,loratadine 10mg,14199
+GUAIFENESIN-INTIJAYA-100MG-TAB-100S-35393,GUAIFENESIN INTIJAYA 100MG 1 strip isi 10 tablet,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",1685
+GUAIFENESIN-KF-100MG-TAB-100S-18920,GUAIFENESIN KF 100MG TABLET 1 STRIP ISI 10 TABLET,ya,zat_di_luar_31_kurasi,Glyceril Guaiacolas,3474
+ORATIFED-PLUS-EXPECT-SYR-60ML-35325,ORATIFED PLUS EXPECTORANT SIRUP 60ML,ya,komposisi_html_korup,"<ul style=""box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-varia",14737
+FLUZA-CAPL-100S-35311,FLUZA 1 strip isi 10 kaplet,ya,komposisi_html_korup,"<ul style=""box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-varia",14910
+FLUIMUCIL-200MG-GRANUL-SACH-30S-1362,FLUIMUCIL 200MG GRANUL SACHET 1 PCS,ya,zat_di_luar_31_kurasi,acetylcysteine,10945
+ACETYLCYSTEINE-PROMED-200MG-CAP-100S-36455,ACETYLCYSTEINE PROMED 200MG 1 strip isi 10 kapsul,ya,zat_di_luar_31_kurasi,Acetylcysteine 200 mg,15619
+ACETYLCYSTEINE-MAHAKAM-200MG-CAP-100S-36173,ACETYLCYSTEINE MAHAKAM 200MG 1 strip isi 10 kapsul,ya,zat_di_luar_31_kurasi,Acetylcysteine 200 mg,14315
+ACETYLCYSTEINE-KF-200MG-CAP-100S-35396,ACETYLCYSTEINE KIMIA FARMA 200MG 1 strip isi 10 kapsul,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",17269
+N-ACE-200MG-CAP-30S-18361,N ACE 200MG KAPSUL 1 STRIP ISI 10 TABLET,ya,zat_di_luar_31_kurasi,Acetylcysteine,52190
+NYTEX-200MG-CAP-10S-36450,NYTEX 200MG 1 dos isi 10 kapsul,ya,zat_di_luar_31_kurasi,Acetylcysteine 200 mg,55448
+VENTOLIN-ROTAHALER-3706,VENTOLIN ROTAHALER 1 PCS,tidak,komposisi_kosong,,
+OBH-COMBI-BATUK-BERDAHAK-MENTHOL-SYR-100ML-(GEPENG)-309,OBH COMBI BATUK BERDAHAK MENTHOL SYRUP 100ML GEPENG 1 BOTOL,ya,zat_di_luar_31_kurasi,"Succus Liquiritiae Extract 167 mg, Ammonium Chloride 50 mg, Anise Oil 0,99 mg, Ammonium Liquid 7 mcL, Menthol Crystal 4,44 mg, Peppermint Oil 3,16 mg,",
+OBH-COMBI-BATUK-BERDAHAK-JAHE-SYR-100ML(GEPENG)-5847,OBH COMBI BATUK BERDAHAK JAHE SYRUP 100MLGEPENG 1 BOTOL,ya,zat_di_luar_31_kurasi,"Succus Liquiritiae, amonium klorida, anise oil, solutio ammonia, sprituosa anisata, kristal menthol, pepermint oil",22313
+OBH-MOLEX-SYR-60ML-35314,OBH MOLEX SIRUP 60ML,ya,zat_di_luar_31_kurasi,Succus Liquiritiae,10101
+OBH-AFI-SYR-100ML-34349,OBH AFI SIRUP 100ML,ya,zat_di_luar_31_kurasi,"tiap 5 ml mengandung glycyrrhizae succus 166, 67mg, ammonium chloride 100mg",14702
+OBH-COMBI-BATUK-BERDAHAK-MENTHOL-SYR-7.5ML-SACH-6S-47178,OBH COMBI BATUK BERDAHAK MENTHOL SYR 7.5ML 1 dos isi 6 sachet,ya,zat_di_luar_31_kurasi,"Tiap sachet (7,5 mL) mengandung: Succus Liquiritiae 250,5 mg, Ammonium Chloride 75 mg, Anise Oil 1,485 mg, Menthol Crystal 6,66 mg, Peppermint Oil 4,7",1271
+OBH-COMBI-HERBAL-SYR-60ML-35397,OBH COMBI HERBAL SIRUP 60ML,ya,zat_di_luar_31_kurasi,"Hadera helix leaf extract, Madu, Succus liquiritiae.",21283
+OBH-COMBI-HERBAL-SYR-100ML-36163,OBH COMBI HERBAL SIRUP 100ML,ya,zat_di_luar_31_kurasi,Tiap 5 mL sirup mengandung:,28791
+OBH-NELLCO-SPECIAL-HERBAL-SYR-55ML-35596,OBH NELLCO SPECIAL HERBAL SIRUP 55ML,ya,komposisi_kosong,,21299
+OBH-NELLCO-SPECIAL-HERBAL-SYR-100ML-35595,OBH NELLCO SPECIAL HERBAL SIRUP 100ML,ya,komposisi_kosong,,31238
+OBH-NELLCO-SPECIAL-JAHE-SYR-100ML-34431,OBH NELLCO SPECIAL JAHE SIRUP 100ML,ya,komposisi_kosong,,36485
+OBH-NELLCO-SPECIAL-JAHE-SYR-55ML-34430,OBH NELLCO SPECIAL JAHE SIRUP 55ML,ya,komposisi_kosong,,26805
+OBH-BERLICO-JERUK-NIPIS-SYR-100ML-33689,OBH BERLICO JERUK NIPIS SIRUP 100ML,ya,zat_di_luar_31_kurasi,"tiap 15 ml: succus liquiritiae 500mg, ammonium cl 300mg, anise oil 0.015 ml, peppermint oil 0.01 ml, lemon oil (perasa lemon) 0.135 ml, etanol 96%",12153
+OBH-IKA-SYR-200ML-2170,OBH IKA SYRUP 200ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Per 15 mL: Succus liquiritiae 500 mg, ammon Cl 300 mg, SASA 300 mg",
+OBH-IKA-SYR-100ML-2169,OBH IKA SYRUP 100ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Per 15 mL: Succus liquiritiae 500 mg, ammon Cl 300 mg, SASA 300 mg",
+OBH-NELLCO-BATUK-BERDAHAK-SYR-55ML-34433,OBH NELLCO BATUK BERDAHAK SIRUP 55ML,ya,zat_di_luar_31_kurasi,"tiap 5 ml mengandung: glycherrizae succus 167mg, amonium klorida 100mg",14545
+OBH-NELLCO-BATUK-BERDAHAK-SYR-100ML-34434,OBH NELLCO BATUK BERDAHAK SIRUP 100ML,ya,zat_di_luar_31_kurasi,"tiap 5 ml mengandung: glycherrizae succus 167mg, amonium klorida 100mg",19142
+OBH-TROPICA-PLUS-ANAK-STRAW-SYR-60ML-35441,OBH TROPICA PLUS ANAK STRAWBERRY SIRUP 60ML,ya,komposisi_html_korup,"<ul style=""box-sizing: border-box; padding: 0px; margin: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-varia",29453
+OBH-NELLCO-SPECIAL-HERBAL-SYR-15ML-SACH-10S-35597,OBH NELLCO SPECIAL HERBAL SIRUP 15ML SACHET,ya,komposisi_kosong,,3550
+OBH-NBF-MENTHOL-SYR-100ML-22106,OBH NBF MENTHOL SYRUP 100ML 1 BOTOL,ya,komposisi_kosong,,10271
+OBH-SURYA-ITRASAL-SYR-100ML-4023,OBH SURYA ITRASAL SYRUP 100ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Tiap 5 ml: Glycyrrhizae Succus 160 mg, Chloretum Ammonicum 100 mg, Solutio ammonia, Sprituosa anisata 100 mg",
+TOLAK-ANGIN-CAIR-MADU-15ML-SACH-12S-1122,TOLAK ANGIN CAIR+MADU 15ML SACHET 1 DOS ISI 12 PCS,ya,zat_di_luar_31_kurasi,"amoni Fructus, foeniculli fructus, isorae fructus, myristicae semen, burmanni cortex, centellae herba, caryophylli folium, parkiae semen, oryza sativa",57184
+WYBERT-BATUK-SACH-10258,WYBERT BATUK SACHET 1 PCS,ya,zat_di_luar_31_kurasi,"tiap 15ml sirup: 200mg akar kayu manis (licorice root), 500mg thymi (thymi herbal), 150mg kencur (kaempferiae rhizoma), 150mg daun sirih (piper bettle",11429
+WYBERT-HERBAL-BATUK-PLUS-SYR-100ML-35323,WYBERT HERBAL BATUK PLUS SIRUP 100ML,ya,zat_di_luar_31_kurasi,Blumea Balsamifera Folium,22880
+PIMTRAKOL-KIDS-DEMAM&BATUK-STRAW-SYR-60ML-24488,PIMTRAKOL KIDS DEMAM &amp; BATUK STRAW SIRUP 60ML,ya,komposisi_html_korup,"<p _ngcontent-halodoc-c3385945889="""" style=""--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate:",20519
+OBAT-BATUK-YANG-SENG-PEI-PA-GIN-150ML-33691,OBAT BATUK YANG SENG PEI PA GIN 150ML,ya,zat_di_luar_31_kurasi,"mengandung almond flavour, citri nobilis cortex, eriobotrya japonica folium, fritillaria verticillata bulbus, glycyrrhiza glabra radix, lodoicea maldi",36036
+IBU-DAN-ANAK-OBAT-BATUK-300ML-1130,IBU DAN ANAK OBAT BATUK 300ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"bulbus fritillariae cirrhosae 852 mg, folium eriobotryae 195 mg, radix adenophorae 27 mg, poria 27 mg, exocarpium citri grandis 120 mg, radix platycod",105510
+IBU-DAN-ANAK-OBAT-BATUK-150ML-1129,IBU DAN ANAK OBAT BATUK 150ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"bulbus fritillariae cirrhosae 852 mg, folium eriobotryae 195 mg, radix adenophorae 27 mg, poria 27 mg, exocarpium citri grandis 120 mg, radix platycod",73236
+IBU-DAN-ANAK-OBAT-BATUK-75ML-1131,IBU DAN ANAK OBAT BATUK 75ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"bulbus fritillariae cirrhosae 852 mg, folium eriobotryae 195 mg, radix adenophorae 27 mg, poria 27 mg, exocarpium citri grandis 120 mg, radix platycod",
+OBH-COMBI-BATUK-BERDAHAK-MENTHOL-SYR-7.5ML-SACH-20S-36434,OBH COMBI BATUK BERDAHAK MENTHOL SYR 7.5ML SACHET,ya,zat_di_luar_31_kurasi,"Tiap sachet (7,5 mL) mengandung: Succus Liquiritiae Extract 250,5 mg, Ammonium Chloride 75 mg, dan Ethanol 2%.",1290
+TOLAK-ANGIN-BATUK-15ML-SACH-5S-36439,TOLAK ANGIN BATUK 15ML 1 dos isi 5 sachet,ya,zat_di_luar_31_kurasi,Amomum Compactum Fructus,24214
+TOLAK-ANGIN-CAIR-MADU-15ML-SACH-5S-1113,TOLAK ANGIN CAIR+MADU 15ML SACH 1 DOS ISI 5 PCS,ya,zat_di_luar_31_kurasi,"amoni fructus, foeniculli fructus, isorae fructus, myristicae semen, burmanni cortex, centellae herba, caryophylli folium, parkiae semen, oryza sativa",20154
+DE-COUGH-MENTHOL-FOR-ADULT-SYR-60ML-3064,DE-COUGH MENTHOL FOR ADULT SYRUP 60ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Tiap sendok takar 5mL: Thymus vulgaris herba 400mg, Abrus prectorius folium 40mg, Foniculum vulgare dry fruit 20mg",39365
+PIMTRAKOL-FITOTORANT-SYR-60ML-33554,PIMTRAKOL FITOTORANT SIRUP 60ML,ya,zat_di_luar_31_kurasi,hedera helix folium ekstrak (daun ivy kering) 150mg,25251
+TOLAK-ANGIN-CAIR-FLU-15ML-SACH-12S-1132,TOLAK ANGIN CAIR FLU 15ML SACH 1 DOS ISI 12 PCS,ya,zat_di_luar_31_kurasi,"amoni fructus, foeniculli fructus, isorae fructus, myristicae semen, burmanni cortex, centellae herba, caryophylli folium, parkiae semen, oryza sativa",
+NOVADRYL-TAB-10S-STRIP-10S-29638,NOVADRYL TABLET,ya,komposisi_kosong,,4590
+COPAL-CHEST-BALSEM-25G-4142,COPAL CHEST BALSEM 25G 1 TUBE,ya,zat_di_luar_31_kurasi,"Camphor 5%, menthol 2%, eucalyptus oil 2%",20202
+COLDREXIN-PILEK&DEMAM-SYR-60ML-35410,COLDREXIN PILEK&amp;DEMAM SIRUP 60ML,ya,zat_di_luar_31_kurasi,Paraceatamol,8840
+INAVITAMAX-VICOF-BLUEBERRY-SYR-100ML-33273,INAVITAMAX VICOF BLUEBERRY SIRUP 100ML,ya,zat_di_luar_31_kurasi,"per 5/ml hedera helix folium 35mg, thyme vulgaris herba ekstrak 50mg, glycyrrhizae glabra radix ekstark 150mg, echineceae purpurea ekstrak 50mg",213200
+JENNY-SEDOTAN-INGUS-1782,JENNY SEDOTAN INGUS 1 PCS,ya,komposisi_kosong,,36571
+LANG-EUCA-INHALANT-1.1G-35427,LANG EUCA INHALANT 1.1G,ya,komposisi_kosong,,69283
+HERBACOLD-TAB-6S-STRIP-5S-24279,HERBACOLD TABLET,ya,zat_di_luar_31_kurasi,"Nigela sativa semen 1,125mg, Phaleria macrocarpa pericarpium 375mg",25766
+KAPAK-INHALER-1.7G-33381,KAPAK INHALER 1.7G,ya,zat_di_luar_31_kurasi,"camphor, menthol, oleum eucalyptus",9941
+TRANSPULMIN-KIDS-BALSAM-10G-18997,TRANSPULMIN KIDS BALSAM 10G 1 TUBE,ya,zat_di_luar_31_kurasi,"Eucalyptus oil 100 mg, menthol 50 mg, camphor 25 mg, sage oil 25 mg, extractive subs from camomile flowers 2 mg",
+PHYSIOMER-NORMAL-JET-NASAL-SPRAY-135ML-42709,PHYSIOMER NORMAL JET NASAL SPRAY 135ML,ya,zat_di_luar_31_kurasi,"100% air laut alami, isotonik (setara dengan 9 g/L NaCl).",277898
+TERA-F-SYR-60ML-33409,TERA F SIRUP 60ML,ya,komposisi_kosong,,8825
+TRESNOJOYO-BALSEM-TELON-40G-2715,TRESNOJOYO BALSEM TELON 40G 1 PCS,ya,zat_di_luar_31_kurasi,"Oleum Foeniculi, camphora, eucalyptus oil, dan menthol",25417
+SILADEX-COUGH-HERBAL-SYR-60ML-29800,SILADEX COUGH HERBAL SIRUP 60ML,ya,zat_di_luar_31_kurasi,"glycyrrhiza inflata radix extract (akar manis) 37, 5mg, drymaria cordata herba extract (cemplonan) 62, 5mg, myristica fragrans semen extract (pala) 30",18057
+TELFAST-120MG-TAB-10S-25274,TELFAST 120MG TAB 10S,ya,zat_di_luar_31_kurasi,Fexofenadine HCl 120 mg,15015
+PANADOL-BIRU-500MG-CAPL-10S-AMPLOP-10S-47229,PANADOL BIRU 500MG 1 AMPLOP ISI 10 KAPLET,tidak,komposisi_html_korup,"<p style=""text-align: start; box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east",13886
+BODREX-DEMAM-CAPL-4S-STRIP-25S-29357,BODREX DEMAM TABLET 1 STRIP ISI 4 TABLET,tidak,komposisi_kosong,,10745
+KOMIX-HERBAL-KIDS-STRAW-4S-TUBE-35315,KOMIX HERBAL KIDS STRAWBERRY isi 4 tube,ya,zat_di_luar_31_kurasi,Glycyrrhyza Glabra Radix Extract,10639
+KONIDIN-OBH-7ML-SACH-30S-18339,KONIDIN OBH 7ML SACH 1 DOS ISI 30 PCS,ya,zat_di_luar_31_kurasi,"Succus Liquiritiae 233,8mg, Ammonium Chloride 70mg, Alkohol 1,38%",40381
+NUTRIMAX-C&C-SYR-100ML-38899,NUTRIMAX C&amp;C SIRUP 100ML,ya,zat_di_luar_31_kurasi,Tiap 5 ml mengandung:,223601
+GLOCOF-SYR-100ML-36438,GLOCOF SIRUP 100ML,ya,zat_di_luar_31_kurasi,Tiap 5 mL mengandung: Ekstrak daun Ivy (Hedera helix folium) 20 mg dan Ekstrak herbal Thyme (Thymus vulgaris herba) 70 mg.,95191
+DECADRYL-EXP-SYR-60ML-3191,DECADRYL EXP SYRUP 60ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Tiap 5 ml: Diprenhidramin HCL 13,5 mg, amonium klorida131,5 mg",22545
+GLOCOF-SYR-60ML-35339,GLOCOF SIRUP 60ML,ya,zat_di_luar_31_kurasi,"Per 5 ml: Hedera helix folium extract 20 mg, Thymus vulgaris herba extract 70 mg.",59636
+HERBIVI-SYR-100ML-35366,HERBIVI SIRUP 100ML,ya,zat_di_luar_31_kurasi,Hedera Helix Folium Ekstrak.,101818
+IMBOOST-FORCE-COUGH-KIDS-SYR-60ML-34416,IMBOOST FORCE COUGH KIDS SIRUP 60ML,ya,zat_di_luar_31_kurasi,"ekstrak daun ivy(hedera helix folium ekstrak), ekstrak biji timi (thymus vulgaris semen ekstrak)",
+PYFAKOF-IVY-SYR-60ML-33594,PYFAKOF IVY SIRUP 60ML,ya,zat_di_luar_31_kurasi,"pelargonium sidoiders radix extract, hedera helix folium extract",129870
+PIMTRAKOL-FITOTUSIVE-SYR-60ML-35407,PIMTRAKOL FITOTUSIVE SIRUP 60ML,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; border: 0px solid rgb(229, 231, 235); --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-",25049
+DE-COUGH-STRAWBERRY-FOR-CHILDREN-SYR-60ML-5077,DE-COUGH STRAWBERRY FOR CHILDREN SYRUP 60ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Ekstrak thymus vulgaris herba 200 mg, ekstrak abrus precatorius folium 10 mg, ekstrak foeniculum vulgare dry friut 5 mg",33640
+DE-COUGH-ORANGE-FOR-CHILDREN-SYR-60ML-5075,DE-COUGH ORANGE FOR CHILDREN SYRUP 60ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Ekstrak thymus vulgaris herba 200 mg, ekstrak abrus precatorius folium 10 mg, ekstrak foeniculum vulgare dry fruit 5 mg",33640
+LONGATIN-25MG-CAP-100S-3937,LONGATIN 25MG KAPSUL 1 STRIP ISI 4 TABLET,ya,zat_di_luar_31_kurasi,Noscapine,17635
+NUTRIMAX-COFLUSIN-TAB-10S-38117,NUTRIMAX COFLUSIN 1 STRIP ISI 10 TABLET,ya,zat_di_luar_31_kurasi,"Calcium Ascorbate (Vitamin C) 333,33 mg, Selenium 16,66 mcg, OptiZinc 15 mg, Astragalus 33,33 mg, Beta Glucan 3,33 mg, Echinacea 50 mg, Bee Propolis 1",192401
+MAMY-POKO-PANTS-XTRA-KERING-L-28S-25002,MAMY POKO PANTS XTRA KERING L,ya,komposisi_kosong,,84502
+MAMY-POKO-PANTS-XTRA-KERING-M-34S-25003,MAMY POKO PANTS XTRA KERING M,ya,komposisi_kosong,,78151
+MAMY-POKO-PANTS-XTRA-KERING-S-40S-25004,MAMY POKO PANTS XTRA KERING S,ya,komposisi_kosong,,75400
+BADAK-LARUTAN-STRAWBERRY-320ML-KALENG-19957,BADAK LARUTAN STRAWBERRY 320ML KALENG 1 PCS,ya,zat_di_luar_31_kurasi,"Gipsum fibrosum 17,5g, galcareous spar 500mL",9196
+KAKI-TIGA-LAR-ANAK-ORIGINAL-200ML-BTL-4307,KAKI TIGA LAR ANAK ORIGINAL 200ML BOTOL 1 BOTOL,ya,komposisi_kosong,,4991
+BADAK-LARUTAN-200ML-BTL-2898,BADAK LARUTAN 200ML BOTOL 1 PCS,ya,komposisi_kosong,,5108
+RICOLA-SWISS-HERB-CANDY-TIN-100G-45976,RICOLA SWISS HERB CANDY TIN 100G,ya,zat_di_luar_31_kurasi,"Gula, sirup glukosa, ekstrak campuran 13 herbal Ricola (Horehound, Burnet, Speedwell, Marshmallow, Lady's Mantle, Elder blossom, Mallow, Peppermint, S",47742
+MAMY-POKO-PANTS-XTRA-KERING-M-1S-4371,MAMY POKO PANTS XTRA KERING M 1 PCS,ya,komposisi_kosong,,2537
+MAMY-POKO-PANTS-XTRA-KERING-M-9S-5121,MAMY POKO PANTS XTRA KERING M 1 PCS,ya,komposisi_kosong,,23470
+MAMY-POKO-PANTS-XTRA-KERING-L-8S-1731,MAMY POKO PANTS XTRA KERING L 1 PCS,ya,komposisi_kosong,,23470
+ZINGOSERIN-SYR-60ML-34400,ZINGOSERIN SIRUP 60ML,tidak,komposisi_kosong,,47792
+SOLVITA-SYR-60ML-25194,SOLVITA SIRUP 60ML,tidak,komposisi_kosong,,15200
+VICKS-VAPORUB-10G-1038,VICKS VAPORUB 10G 1 PCS,ya,zat_di_luar_31_kurasi,"camphor 2630 mg, menthol 1410 mg, eucalyptus oil 665 mg",11248
+VICKS-VAPORUB-25G-1056,VICKS VAPORUB 25G 1 PCS,ya,zat_di_luar_31_kurasi,"camphor 2630 mg, menthol 1410 mg, eucalyptus oil 665 mg",26801
+VICKS-BABY-BALM-20G-35992,VICKS BABY BALM 20G,ya,zat_di_luar_31_kurasi,"Petrolatum, Aroma, Cocos nucifera Oil (minyak kelapa), Ekstrak Lidah buaya.",33819
+VICKS-BABY-BALM-8G-35993,VICKS BABY BALM 8G,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",14091
+VICKS-VAPORUB-50G-1039,VICKS VAPORUB 50G 1 PCS,ya,zat_di_luar_31_kurasi,"camphor 2630 mg, menthol 1410 mg, eucalyptus oil 665 mg",50407
+VICKS-VAPORUB-EXTRA-STRONG-10G-47161,VICKS VAPORUB EXTRA STRONG 10G,ya,komposisi_kosong,,13363
+VICKS-VAPORUB-EXTRA-STRONG-25G-47162,VICKS VAPORUB EXTRA STRONG 25G,ya,komposisi_kosong,,33338
+VICKS-F-JAHE-MADU-SYR-28ML-35352,VICKS FORMULA JAHE MADU SIRUP 28ML,ya,komposisi_html_korup,"<p style=""box-sizing: border-box; margin: 0px; padding: 10px 0px 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; fo",15272
+VICKS-INHALER-0.5ML-KEYCHAIN-1S-35979,VICKS INHALER 0.5ML KEYCHAIN Per 1 Pcs,ya,zat_di_luar_31_kurasi,Menthol dan camphor.,23936
+VICKS-INHALER-0.5ML-KEYCHAIN-2S-35436,VICKS INHALER 0.5ML TWIN isi 2 pcs,ya,zat_di_luar_31_kurasi,"Menthol 197 mg, Camphor 197 mg.",42615
+VICKS-INHALER-0.5ML-KEYCHAIN-6S-29869,VICKS INHALER 0.5ML KEYCHAIN 1 Dos isi 6 Pcs,ya,zat_di_luar_31_kurasi,"menthol 197mg, camphor 197mg",24131
+WOODS-SUGAR-FREE-CHERRY-SACH-15S-46043,WOODS SUGAR FREE CHERRY SACHET,ya,zat_di_luar_31_kurasi,"Isomalt, Menthol Kristal, Minyak Pepermin (Peppermint Oil), Perisa Artifisial Cherry, Pemanis Buatan (Aspartam, Sukralosa), Pewarna Makanan Ponceau 4R",8715
+WOODS-LOZ-ORIGINAL-SACH-15S-1258,WOODS LOZ ORIGINAL SACHET 1 PCS,ya,zat_di_luar_31_kurasi,"gula, glukosa, minyak peppermint, karamel, peppermint verona, mentol kristal, minyak anise, anetol",
+WOODS-LOZ-XTRA-PEPPERMINT-15G-47158,WOODS LOZ XTRA PEPPERMINT 15G,ya,komposisi_kosong,,14237
+WOODS-NATURALS-SYR-60ML-4016,WOODS NATURALS SYRUP 60ML 1 BOTOL,ya,zat_di_luar_31_kurasi,"Tiap 5 ml: Ekstrak daun ivy (hedera helix folii extract 35 mg, Ekstrak daun meniran (Phyllanthus niruri folii extract 25 mg, Ekstrak daun mint (Mentha",
+WOODS-BLACKCURRANT-LOZ-SACH-15S-10051,WOODS BLACKCURRANT LOZ SACHET 1 PCS,ya,zat_di_luar_31_kurasi,"mint flavour, peppermint essential oil, peppermint essential verona, menthol crystal, gula",7512
+WOODS-LOZ-CHERRY-SACH-15S-2588,WOODS LOZ CHERRY SACHET 1 PCS,ya,zat_di_luar_31_kurasi,"Glukosa, sirup glukosa, minyak atsiri peppermint (2,145%), Peppermint verona, mentol kristal, perisa artifisial ceri, pengatur keasaman asam sitrat, m",9877
+WOODS-LOZ-LEMON-SACH-15S-2589,WOODS LOZ LEMON SACHET 1 PCS,ya,zat_di_luar_31_kurasi,"Gula, Sirup glukosa, minyak atsiri peppermint (2,143 %), peppermint verona, mentol kristal, perisa identik alami lemon (mengandung antioksidan BHA), p",10458
+WOODS-LOZ-ORANGE-SACH-15S-2590,WOODS LOZ ORANGE SACHET 1 PCS,ya,zat_di_luar_31_kurasi,"Gula, sirup glukosa, minyak atsiri peppermint (2,137 %), Peppermint verona, Mentol kristal, perisan identik alami jeruk (mengandung antioksidan alfa t",10024
+WOODS-LOZ-HONEY-LEMON-SACH-15S-3241,WOODS LOZ HONEY LEMON SACHET 1 PCS,ya,zat_di_luar_31_kurasi,"Gula, Sirup Glukosa, Minyak Atsiri Peppermint, peppermint verona, mentol kristal, perisa identik alami lemon, pengatur keasaman asam sitrat, minyak at",9181
+WOODS-LEMON-LOZ-TOPLES-50S-46040,WOODS LEMON LOZ TOPLES 1 TOPLES ISI 50 SACH,ya,zat_di_luar_31_kurasi,"Peppermint Oil 3.95 mg, Menthol 7.12 mg",1744
+OSKADON-MIGRA-TAB-4S-STRIP-25S-29199,OSKADON MIGRA TABLET 1 STRIP ISI 4 TABLET,tidak,komposisi_kosong,,10814
+TERMOREX-PATCH-BAYI&ANAK-1S-SACH-6S-29115,TERMOREX PATCH BAYI &amp; ANAK,tidak,komposisi_kosong,,8860
+SOFFELL-KULIT-JERUK-60G-9330,SOFFELL KULIT JERUK 60G 1 BOTOL,tidak,komposisi_kosong,,14086
+SOFFELL-KULIT-JERUK-SPRAY-80ML-1774,SOFFELL KULIT JERUK SPRAY 80ML 1 BOTOL,tidak,komposisi_kosong,,19605
+SAFE-CARE-SKIN-CARE-BALM-4G-36136,SAFE CARE SKIN CARE BALM 4G,tidak,komposisi_html_korup,"<p style=""margin: 0px; color: rgba(0, 0, 0, 0.8);Helvetica Neue"", Helvetica, Arial, ?????, ""WenQuanYi Zen Hei"", ""Hiragino Sans GB"", ""?? Pro"", ""LiHei P",43169
+QV-CR-REPLENISHES-DRY-SKIN-100G-20226,QV CREAM REPLENISHES DRY SKIN 100G 1 PCS,tidak,komposisi_kosong,,232629
+CALADINE-MOSQUITO-REPPELENT-100ML-20250,CALADINE MOSQUITO REPPELENT 100ML 1 PCS,tidak,komposisi_kosong,,66700
+CLEAN-&-CLEAR-OIL-CONTROL-FILM-PINK-GRAPEFRUIT-50S-20201,CLEAN &amp; CLEAR OIL CONTROL FILM PINK GRAPEFRUIT 1 PCS,tidak,komposisi_kosong,,42442
+NIVEA-DRY-COMFORT-PLUS-DEODORANT-SPRAY-50ML-20255,NIVEA DRY COMFORT PLUS DEODORANT SPRAY 50ML 1 PCS,tidak,komposisi_kosong,,28952
+BDL-PAPAYA-BRIGHTENING-SOAP-128G-20209,BDL PAPAYA BRIGHTENING SOAP 128G 1 PCS,tidak,komposisi_kosong,,15584
+OVALE-FACIAL-LOT-WHITENING-BENGKOANG-60ML-20325,OVALE FACIAL LOT WHITENING BENGKOANG 60ML,tidak,komposisi_kosong,,12840
+MOSQUITO-AWAY-ANIMAL-STICKER-ANTI-NYAMUK-6S-20309,MOSQUITO AWAY ANIMAL STICKER ANTI NYAMUK 1 PCS,tidak,komposisi_kosong,,13841
+SEA-Q-CALENDULA-SOOTHING-GEL-50ML-36091,SEA Q CALENDULA SOOTHING GEL 50ML,tidak,komposisi_kosong,,239199
+OILUM-CLEANSING-WASH-HYDRATING-CARE-175ML-REFILL-28671,OILUM CLEANSING WASH HYDRATING CARE 175ML REFILL,tidak,komposisi_kosong,,44512
+SYN-NATURA-CALENDULA-CR-40G-36161,SYN NATURA CALENDULA KRIM 40G,tidak,komposisi_kosong,,143520
+EVER-E-CALMIA-SOFTCAP-30S-BTL-47092,EVER E CALMIA 1 botol isi 30 kapsul lunak,tidak,komposisi_kosong,,67176
+CALADINE-BABY-LIQUID-SOAP-200ML-BTL-39449,CALADINE BABY LIQUID 200ML,tidak,komposisi_kosong,,40982
+NATUR-E-ADVANCE-LOT-100ML-2665,NATUR E ADVANCE LOT 100ML 1 BOTOL,tidak,komposisi_kosong,,26297
+QV-SKIN-LOT-250ML-28608,QV SKIN LOT 250ML,tidak,komposisi_kosong,,245585
+CETAPHIL-GENTLE-SKIN-CLEANSER-1000ML-PUMP-1386,CETAPHIL GENTLE SKIN CLEANSER 1000ML PUMP 1 BOTOL,tidak,komposisi_kosong,,387943
+HERBANA-KUNYIT-CAP-30S-BTL-32244,HERBANA KUNYIT isi 30 kapsul,tidak,komposisi_kosong,,91000
+CURCUMA-PLUS-SUSU-VANILLA-350G-23082,CURCUMA PLUS SUSU VANILLA 350G 1 PCS,tidak,komposisi_kosong,,65397
+CURCUMA-PLUS-SUSU-MADU-180G-23077,CURCUMA PLUS SUSU MADU 180G 1 PCS,tidak,komposisi_kosong,,35429
+CURCUMA-PLUS-SUSU-VANILLA-180G-23081,CURCUMA PLUS SUSU VANILLA 180G 1 PCS,tidak,komposisi_kosong,,35429
+CURCUMA-PLUS-SUSU-COKLAT-750G-23436,CURCUMA PLUS SUSU COKLAT 750G 1 PCS,tidak,komposisi_kosong,,133968
+CURCUMA-PLUS-SUSU-MADU-750G-23437,CURCUMA PLUS SUSU MADU 750G 1 PCS,tidak,komposisi_kosong,,121524
+CURCUMA-FCT-TAB-120S-22757,CURCUMA FCT TABLET 1 STRIP ISI 12 TABLET,tidak,komposisi_kosong,,32554
+CURCUMA-FORCE-TAB-120S-28989,CURCUMA FORCE TABLET 1 STRIP ISI 12 TABLET,tidak,komposisi_kosong,,16623
+ENERGEN-JAHE-SACH-30G-23220,ENERGEN JAHE SACHET 30G 1 PCS,tidak,komposisi_kosong,,2766
+INTRA-JAHE-WANGI-18G-SACH-5S-24635,INTRA JAHE WANGI 18G SACH 1 DOS ISI 5 PCS,tidak,komposisi_kosong,,9249
+AMH-KAMBING-ETAWA-SUSU-JAHE-SACH-10S-33588,AMH KAMBING ETAWA SUSU JAHE 1 dos isi 10 sachet,tidak,komposisi_kosong,,2433
+AMH-JAHE-MERAH-CAIR-15ML-SACH-12S-35938,AMH JAHE MERAH CAIR 15ML SACHET 1 dos isi 12 sachet,tidak,komposisi_kosong,,2644
+AMH-SUSU-KAMBING-ETAWA-FULL-CREAM-JAHE-MERAH-SACH-10S-23535,AMH SUSU KAMBING ETAWA FULL CREAM JAHE MERAH SACHET 1 PCS,tidak,komposisi_kosong,,2852
+TOLAK-ANGIN-TAB-EXTRA-HANGAT-STRIP-20S-25377,TOLAK ANGIN TABLET EXTRA HANGAT STRIP,tidak,komposisi_kosong,,4205
+TOLAK-ANGIN-CAIR-ANAK-10ML-SACH-12S-29924,TOLAK ANGIN CAIR ANAK 10ML SACH 1 DOS ISI 12 PCS,tidak,komposisi_kosong,,
+TOLAK-ANGIN-CAIR-ANAK-10ML-SACH-5S-29925,TOLAK ANGIN CAIR ANAK 10ML SACH 1 DOS ISI 5 PCS,tidak,komposisi_kosong,,17172
+MADU-TJ-MASUK-ANGIN-140G-36139,MADU TJ MASUK ANGIN 140G,tidak,komposisi_kosong,,32640
+SAFE-CARE-MINYAK-ANGIN-STRONG-10ML-32259,SAFE CARE MINYAK ANGIN STRONG 10ML,tidak,komposisi_kosong,,18316
+FRESH-CARE-MINYAK-ANGIN-STRONG-20ML-47069,FRESH CARE MINYAK ANGIN STRONG 20ML,tidak,komposisi_kosong,,21583
+FRESH-CARE-MINYAK-ANGIN-KAYU-PUTIH-10ML-29933,FRESH CARE MINYAK ANGIN KAYU PUTIH 10ML,tidak,komposisi_kosong,,16681

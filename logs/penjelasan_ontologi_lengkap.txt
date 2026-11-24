@@ -1,0 +1,206 @@
+================================================================================
+PENJELASAN LENGKAP ONTOLOGI PROYEK KBR (KELOMPOK 4 - UNS)
+Basis Pengetahuan Interaksi Obat, Efek Samping, & Panduan Gejala
+================================================================================
+
+1. IDENTITAS & STATISTIK KESELURUHAN ONTOLOGI
+--------------------------------------------------------------------------------
+File ontologi utuh: out/kb_v1_lengkap.owl
+Merupakan hasil penggabungan (robot merge) antara:
+  - out/kb_referensi_lengkap.owl (5 modul referensi biomedis eksternal)
+  - out/kb_v1.owl                (skema TBox lokal, aturan GCI, & ABox produk)
+
+Spesifikasi Teknis:
+  - Standar Bahasa   : W3C OWL 2 (RDF/XML)
+  - Profil Logika    : OWL 2 DL (owl2_dl = true)
+  - Status Reasoner  : HermiT KONSISTEN (0 unsatisfiable class)
+  - Total Kelas      : 937 kelas (95 kelas lokal/terkait + 842 kelas referensi)
+  - Object Properties: 45 properti (11 properti lokal + 34 dari modul referensi)
+  - Datatype Props   : 10 properti
+  - Total Individu   : 86 individu (ABox)
+  - Logical Axioms   : 2.681 aksioma logis
+  - Total Axioms     : 12.264 aksioma (termasuk anotasi dwibahasa)
+
+
+2. ARSITEKTUR 5 MODUL REFERENSI EKSTERNAL (ONTOLOGY REUSE)
+--------------------------------------------------------------------------------
+Ontologi ini tidak dibangun dari nol, melainkan mengekstrak dan menggabungkan
+5 ontologi biomedis standar internasional menggunakan metode BOT (ROBOT CLI):
+
+a) ChEBI (out/chebi_modul_clean.owl)
+   - Menyumbang 746 kelas kimia untuk identitas baku zat aktif
+     (contoh: CHEBI_46195 Paracetamol, CHEBI_4480 Dextromethorphan).
+   - Seluruh sinonim nama dagang/brand sudah dibersihkan.
+
+b) DrON (out/dron_modul.owl)
+   - Menyumbang 19 kelas konsep farmasi dasar dan disposisi obat.
+   - Bebas dari individu produk/brand.
+
+c) PRO - Protein Ontology (out/enzim_modul.owl)
+   - Menyumbang 4 kelas enzim sitokrom P450 manusia:
+     * PR:P08684 (CYP3A4)
+     * PR:P10635 (CYP2D6)
+     * PR:P33261 (CYP2C19)
+     * PR:P11712 (CYP2C9)
+
+d) DINTO 1.2 (out/dinto_modul.owl)
+   - Menyumbang 72 kelas dan 18 properti mekanisme interaksi obat-obat
+     (farmakokinetik & farmakodinamik, misalnya inhibisi enzim CYP450).
+
+e) SYMP - Symptom Ontology (out/symptom_modul.owl)
+   - Menyumbang 22 kelas gejala klinis yang diperkaya dengan label istilah
+     awam bahasa Indonesia (skos:altLabel).
+
+
+3. STRUKTUR TBOX (TERMINOLOGICAL BOX) - SKEMA & ATURAN
+--------------------------------------------------------------------------------
+
+A. HIERARKI KELAS UTAMA (TAKSONOMI LOKAL)
+   1. ProduktObat (Kelas puncak produk komersial di apotek Indonesia)
+      +-- ObatBatukPilek
+          |-- ObatBatukMurni           (didefinisikan dgn owl:equivalentClass)
+          |-- ObatPilekMurni           (didefinisikan dgn owl:equivalentClass)
+          +-- ObatKombinasiBatukPilek
+   2. ZatAktif
+      - Berisi 29 kelas zat aktif rujukan ChEBI + 2 kelas lokal
+        (Triprolidine & Doxylamine).
+   3. EnzimCYP450
+      - Sub-kelas: CYP3A4, CYP2D6, CYP2C19, CYP2C9.
+   4. Gejala
+      |-- GejalaIndikasi    (9 gejala: batuk, batuk kering, batuk berdahak,
+      |                      pilek, hidung tersumbat, bersin, demam,
+      |                      sakit kepala, sakit tenggorokan)
+      |-- GejalaEfekSamping (8 gejala: mengantuk, pusing, mulut kering,
+      |                      retensi urin, palpitasi, takikardia, mual, muntah)
+      +-- GejalaRedFlag     (5 tanda bahaya: sesak napas, mengi, nyeri dada,
+                             batuk berdarah, urin gelap)
+   5. InteraksiObat
+      |-- InteraksiMajor
+      |-- InteraksiModerate
+      +-- InteraksiMinor
+   6. TindakLanjut
+      |-- SegeraKeDokter
+      |-- TanyaApoteker
+      +-- Pantau
+   7. GolonganObat
+      |-- ObatBebas
+      |-- ObatBebasTerbatas
+      +-- ObatHerbalJamu
+   8. BentukSediaan
+      |-- Sirup
+      |-- Tablet
+      |-- Kapsul
+      +-- Sachet
+   9. KondisiPasien
+      |-- HipertensiTidakTerkontrol
+      |-- GagalJantung
+      +-- ProstatBPH
+   10. DuplikasiTerapetik (Menangkap polifarmasi sejenis, misal CTM + DPH)
+
+B. RELASI / OBJECT PROPERTIES (11 PROPERTI LOKAL)
+   - memilikiKandungan       : ProduktObat -> ZatAktif
+   - mengindikasikanGejala   : ProduktObat -> Gejala
+   - memilikiEfekSamping     : ProduktObat -> Gejala
+   - memilikiInteraksiDengan : ZatAktif -> ZatAktif
+                               [owl:SymmetricProperty: jika A berinteraksi dgn B,
+                                otomatis B berinteraksi dengan A]
+   - menghasilkanInteraksi   : ZatAktif -> InteraksiObat
+   - membutuhkanTindakLanjut : InteraksiObat / Gejala -> TindakLanjut
+   - kontraindikasiBagi      : ProduktObat -> KondisiPasien
+   - memilikiGolongan        : ProduktObat -> GolonganObat
+                               [owl:FunctionalProperty: 1 produk tepat punya
+                                1 golongan regulasi BPOM]
+   - memilikiBentukSediaan   : ProduktObat -> BentukSediaan
+   - dimetabolismeOleh       : ZatAktif -> EnzimCYP450
+   - diproduksiOleh          : ProduktObat -> owl:Thing
+
+C. ATRIBUT DATA / DATATYPE PROPERTIES (10 PROPERTI)
+   - Atribut Produk     : namaDagang (string), namaProdusen (string),
+                          nomorBPOM (string), hargaRupiah (integer),
+                          doseInfoPer5mL (string), nomorSlugK24 (string),
+                          urlK24 (anyURI)
+   - Atribut Farmakologi: kodeATC (string), chebiID (string),
+                          tingkatBukti (string)
+
+
+4. MEKANISME PENALARAN & 8 ATURAN GCI (R-01 s.d. R-08)
+--------------------------------------------------------------------------------
+Ontologi menggunakan aksioma Description Logic (intersectionOf, unionOf,
+someValuesFrom, allValuesFrom, complementOf) sehingga reasoner HermiT dapat
+menarik kesimpulan baru secara otomatis:
+
+- R-01 (Klasifikasi Batuk Murni):
+  Produk yang mengandung antitusif/ekspektoran/mukolitik (DXM, Guaifenesin,
+  Bromhexine, Ambroxol) DAN tidak mengandung dekongestan (PSE, PE)
+  ==> otomatis diklasifikasikan sebagai ObatBatukMurni.
+
+- R-02 (Klasifikasi Pilek Murni):
+  Produk yang mengandung dekongestan (PSE, PE) DAN tidak mengandung
+  antitusif (DXM) ==> otomatis diklasifikasikan sebagai ObatPilekMurni.
+
+- R-03 (Deteksi Efek Samping Mengantuk):
+  Produk yang mengandung antihistamin-H1 gen-1 (CTM, Diphenhydramine,
+  Triprolidine, atau Doxylamine) ==> otomatis masuk kelas _AH1Product dan
+  disimpulkan memiliki efek samping Mengantuk (SYMP:0000024).
+
+- R-04 (Deteksi Efek Samping Palpitasi):
+  Produk yang mengandung dekongestan oral (Pseudoephedrine atau Phenylephrine)
+  ==> otomatis masuk kelas _DekongestanProduct dan disimpulkan memiliki
+  efek samping Palpitasi / jantung berdebar (SYMP:0000530).
+
+- R-05 (Triase Interaksi Major):
+  Setiap InteraksiMajor ==> wajib membutuhkanTindakLanjut SegeraKeDokter.
+
+- R-06 (Triase Interaksi Moderate):
+  Setiap InteraksiModerate ==> wajib membutuhkanTindakLanjut TanyaApoteker
+  atau Pantau.
+
+- R-07 (Deteksi Duplikasi Terapetik):
+  Produk/kombinasi yang mengandung CTM sekaligus Diphenhydramine
+  ==> otomatis masuk kelas DuplikasiTerapetik (sedasi berat).
+
+- R-08 (Kontraindikasi Hipertensi):
+  Produk yang mengandung Pseudoephedrine ==> otomatis masuk kelas
+  ProdukDenganPSE dan diberi status kontraindikasiBagi HipertensiTidakTerkontrol.
+
+Catatan Teknis Penting (OWL 2 Punning):
+  Zat aktif (CHEBI_xxx) dan gejala (SYMP_xxx) dideklarasikan ganda sebagai
+  owl:Class sekaligus owl:NamedIndividual. Teknik resmi OWL 2 Punning ini
+  memungkinkan entitas tersebut dipakai di aturan kelas (someValuesFrom)
+  sekaligus di relasi individu ABox tanpa melanggar profil OWL 2 DL.
+
+
+5. ISI ABOX (ASSERTIONAL BOX - 86 INDIVIDU)
+--------------------------------------------------------------------------------
+Ruang lingkup individu produk komersial pada ABox difokuskan khusus pada
+obat batuk & pilek apotek Indonesia:
+
+- 12 Individu Produk Apotek Pilot:
+  1. Siladex Cough N Cold Syrup 100mL
+  2. Actifed Plus Cough Suppress Syrup Merah 60mL
+  3. Komix Jeruk Nipis 7mL Sachet
+  4. Vicks F44 Anak Syrup 54mL
+  5. Procold Flu dan Batuk Kaplet
+  6. Paramex Flu dan Batuk Tablet
+  7. Alpara Kaplet
+  8. OB Combi ATT Menthol Sirup 60mL
+  9. Sanmol Forte 250mg/5mL Syrup 60mL
+  10. Triaminic Batuk Pilek Syrup 60mL
+  11. Promedex Tablet
+  12. Lapifed DM Syrup 100mL
+- 31 Individu Zat Aktif (29 zat kurasi master + Triprolidine & Doxylamine).
+- 22 Individu Gejala (terhubung ke SYMP, triase, & label awam bahasa Indonesia).
+- 11 Individu Pasangan Interaksi Obat.
+- 10 Individu Referensi Sistem (3 TindakLanjut, 3 GolonganObat, 4 BentukSediaan).
+
+
+6. RENCANA PENGEMBANGAN SELANJUTNYA (VERSI kb_v2.owl)
+--------------------------------------------------------------------------------
+1. Menambahkan domain Waktu Konsumsi (SebelumMakan, SesudahMakan, BersamaMakan)
+   beserta aturan deteksi KonflikJadwalMakan.
+2. Menambahkan domain Pantangan Makanan & Minuman (alkohol, kafein, susu, dll.).
+3. Mengisi fakta relasi dimetabolismeOleh dari 29 zat aktif ke enzim CYP450
+   (untuk penalaran mekanistik herbal -> enzim -> obat).
+4. Memperluas ABox dari 12 produk pilot menjadi ratusan produk batuk-pilek
+   + herbal dari CSV apotek dan seluruh 20 pasangan interaksi kurasi.
+================================================================================

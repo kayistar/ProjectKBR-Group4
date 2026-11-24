@@ -239,3 +239,86 @@ Folder Kerja: D:\UNS\SMT_5\KBR\PROJECT
   - `robot reason --reasoner HermiT --input "out/kb_v1_lengkap.owl" validate-profile --profile DL`: **LULUS (100% konsisten & in profile DL)**.
 
 
+## 15. Pelengkapan Dataset v2 & Pembuatan KB Non-Hardcode (2026-11-24)
+- Skrip pelengkap dataset (mengacu `docs/RENCANA_KERJA.md`):
+  1. `scrape/build_apotek_derivatives.py`:
+     - `data/curation/sinonim_zat.csv` (31 baris pola normalisasi ejaan & singkatan komposisi Indonesia).
+     - `data/apotek/dikecualikan.csv` (176 produk dengan komposisi kosong/HTML korup/di luar 31 zat kurasi; 112 di antaranya dari kelompok batuk-pilek).
+     - `data/apotek/harga_per_unit.csv` (933 produk; 710 sukses terurai ke satuan mL/tablet/kapsul/sachet, 105 tanpa harga, 118 perkiraan kemasan).
+     - `data/interactions/ddinter_31zat_pairs.csv` (158 pasangan unik antar 31 zat dari 7 file `KB/ddinter_*.csv`; 51 pasangan domain batuk-pilek × kronis: 1 Major, 15 Moderate, 35 Unknown bertanda eksplisit `unknown_perlu_tanya_apoteker`).
+  2. `scrape/build_curation_datasets.py`:
+     - `data/curation/sheet1_zat_aktif.csv`: melengkapi `enzim_terkait` untuk `ZAT-030` (Triprolidine) & `ZAT-031` (Doxylamine).
+     - `data/curation/substansi_aturan_pakai.csv` (31 baris dosis dewasa/anak, frekuensi, waktu makan, maks hari & maks dosis harian PIONAS BPOM).
+     - `data/curation/substansi_kontraindikasi.csv` (31 zat × 13 kondisi pasien + pantangan makanan/minuman).
+     - `data/curation/aturan_durasi.csv` (22 gejala × batas hari swamedikasi & aksi rujukan).
+     - `data/curation/evidence_interaksi.csv` & `data/interactions/interaction_evidence.csv` (21 baris bukti lengkap mencakup seluruh 20 pasangan `INT-001`..`INT-020`).
+- Skrip KB Non-Hardcode (`scrape/build_kb_v1_clean.py`):
+  - Menghapus seluruh hardcode produk, interaksi, gejala, pola sinonim, serta kelas/efek samping/tindak lanjut hasil inferensi; menambahkan `owl:AllDisjointClasses` untuk 31 zat dan *closure axiom* pada `memilikiKandungan`.
+  - Output: `out/kb_v1_clean.owl` (697,104 bytes; 345 produk apotek, 31 zat, 22 gejala, 20 interaksi).
+  - Materialisasi HermiT (`out/kb_v1_clean_reasoned.owl`): **LULUS OWL 2 DL**. Hasil inferensi murni HermiT pada 345 produk: `ObatBatukMurni` = 118, `ObatPilekMurni` = 153, `ObatKombinasiBatukPilek` = 96, `_AH1Product` = 190, `ProdukDenganPSE` = 83, `_DekongestanProduct` (PE) = 18.
+  3. `scrape/collect_allergies_openfda.py`:
+     - Pengambilan otomatis data alergi & *cross-reactivity* dari **OpenFDA Drug Label API** (`api.fda.gov/drug/label.json`) dengan prioritas label tunggal (*single-ingredient*) + tautan verifikasi DailyMed (`setid`).
+     - Output: `data/curation/substansi_alergi.csv` (31 baris: 26 terverifikasi OpenFDA Drug Label API + 5 PIONAS/Herbal) & `data/curation/openfda_allergy_raw.json`.
+     - Penambahan kolom terstruktur berat badan (`dosis_mg_per_kg`, `bb_min_swamedikasi_kg`, `aksi_jika_bawah_batas`) dan umur (`usia_min_swamedikasi_tahun`, `lansia_65_plus`) di `substansi_aturan_pakai.csv` & `substansi_kontraindikasi.csv`.
+
+
+
+
+
+## 16. Pelaksanaan Penuh Rencana Kerja v2 (Fase 0–5), KB v2, SPARQL q5–q9, & Uji Regresi T1–T5 (2026-11-24)
+- **Fase 0 — Pembersihan & Reproducibility:**
+  - Mengarsipkan 4 skrip generator lama (`generate_dataset_apotek.py`, `generate_katalog_apotek_lengkap.py`, `generate_master_apotek.py`, `scrape_obat_apotek.py`) dan 4 CSV dummy lama ke `archive_legacy/`.
+  - Menghapus file uji sisa `out/test_term.owl`.
+  - Memperbaiki `queries/q1_daftar_produk.rq` dengan menambahkan `FILTER (lang(?golongan) = "id")`.
+  - Menambahkan `requirements.txt` dan memperbarui `README.md` lengkap dengan cara reproduksi.
+- **Fase 1–4 — Perakitan `out/kb_v2.owl`, Reasoning HermiT, & Penggabungan `out/kb_v2_lengkap.owl`:**
+  - Skrip: `scrape/build_kb_v2.py` (100% path relatif, non-hardcode, namespace kosakata kompatibel `kb_v1.owl#`, `owl:AllDisjointClasses` untuk 31 zat aktif, *closure axiom* `memilikiKandungan`, serta `owl:propertyChainAxiom` untuk `kontraindikasiBagi` dan `mengindikasikanGejala`).
+  - Cakupan ABox: 31 Zat Aktif (dengan dosis dewasa/anak/mg-per-kg, batas umur & BB, pantangan makan, data alergi OpenFDA/PIONAS, 31 tautan CYP450 `dimetabolismeOleh`, 72 tautan `kontraindikasiBagi`), 24 kelas terapi `KelasTerapiATC4`, 22 Gejala + batas durasi, 20 interaksi terkurasi + 45 interaksi domain DDInter (termasuk 35 `InteraksiUnknown` eksplisit), 21 `SumberBukti`, 345 produk apotek bersih + 1 produk herbal (`HERB-001`), serta 3 `KasusPasien` uji (`kasus_ActifedDigoxin`, `kasus_DobelParacetamol`, `kasus_KomixActifed`).
+  - Ukuran & SHA-256 terverifikasi:
+    - `out/kb_v2.owl`: 1,017,008 bytes | SHA-256: `233B79AD4B06EC1F9497B85980D776A3618E25595B13809E2CAA4DE941ADECD5`
+    - `out/kb_v2_reasoned.owl`: 1,498,750 bytes | SHA-256: `8C2847B82D2EE47F812549CA171BB47CFB5B9DBB2BE867039A91B59DA6420715`
+    - `out/kb_v2_lengkap.owl`: 3,225,334 bytes | SHA-256: `78C09F8EA6220A4FB6184C4585634BABCC1620A59C3B5523DE949B2B7D2A06FD`
+  - Metrik ROBOT (`data/curation/measure_kb_v2.tsv` & `data/curation/measure_kb_v2_lengkap.tsv`):
+    - `out/kb_v2_reasoned.owl`: **114 classes**, **18 object properties**, **45 data properties**, **546 individuals**, **11,246 logical axioms**, **12,651 total axioms**, **OWL 2 DL = TRUE** (`[Ontology and imports closure in profile]`).
+    - `out/kb_v2_lengkap.owl`: **952 classes**, **52 object properties**, **45 data properties**, **546 individuals**, **13,265 logical axioms**, **23,710 total axioms**, **OWL 2 DL = TRUE** (`[Ontology and imports closure in profile]`).
+  - Inferensi murni HermiT (0 asserted $\rightarrow$ dimaterialisasi di `out/kb_v2_reasoned.owl`): `ObatBatukMurni` = **118**, `ObatPilekMurni` = **158**, `ObatKombinasiBatukPilek` = **96**, `_AH1Product` = **190**, `_DekongestanProduct` = **18**, `ProdukDenganPSE` = **83**.
+- **Eksekusi Query SPARQL terhadap `out/kb_v2_reasoned.owl` (`robot query`):**
+  - `q1_daftar_produk.rq` $\rightarrow$ `out/q1_result.csv` (**345 baris**)
+  - `q4_skenario_pasien_actifed_digoxin.rq` $\rightarrow$ `out/q4_result.csv` (**1 baris**: `Actifed Plus Merah + Digoxin -> Moderate -> Konsultasikan ke Apoteker`)
+  - `q5_rekomendasi.rq` (T1) $\rightarrow$ `out/q5_result.csv` (**30 baris**)
+  - `q6_alternatif_murah.rq` (T2) $\rightarrow$ `out/q6_result.csv` (**12 baris**)
+  - `q7_keranjang.rq` (T3) $\rightarrow$ `out/q7_result.csv` (**2 baris**: dobel Paracetamol & dobel Dextromethorphan)
+  - `q8_substitusi_aman.rq` (T4) $\rightarrow$ `out/q8_result.csv` (**20 baris**)
+  - `q9_kartu_edukasi.rq` (T5) $\rightarrow$ `out/q9_result.csv` (**30 baris**: rantai `Produk -> Zat -> Interaksi -> SumberBukti`)
+- **Fase 5 — Engine T1–T5 (`scrape/kbr_engine.py`), 5 Kartu Edukasi, & Uji Regresi (`tests/test_kbr_regression.py`):**
+  - 5 kartu edukasi Markdown T5 dihasilkan di `out/kartu_edukasi/`: `kartu_01_actifed_merah.md`, `kartu_02_komix_jeruk_nipis.md`, `kartu_03_sanmol_forte.md`, `kartu_04_ob_combi_att.md`, `kartu_05_siladex_cough_n_cold.md`.
+  - Uji regresi formal (`python tests/test_kbr_regression.py`): **LULUS 100%** (5 skenario T1, 10 kelompok T2, 3 keranjang T3 + uji negatif `Unknown != aman`, 3 skenario substitusi T4 termasuk Ibuprofen/Proris pada tukak lambung, dan 5 kartu edukasi T5).
+
+## 17. Penambahan 11 Aturan SWRL (`swrl:Imp` / `DLSafeRule`) & Validasi HermiT (2026-11-24)
+- Menambahkan 11 aturan **SWRL DL-safe** (`SWRL-R01` s.d. `SWRL-R11`) di `scrape/build_kb_v2.py` lengkap dengan `owl:AllDifferent` untuk fixture `ObatPasien` agar terbaca langsung di tab **Rules** Protégé dan dieksekusi oleh **HermiT**:
+  - `SWRL-R01` (`_AH1Product(?p) -> memilikiEfekSamping(?p, SYMP_0000024)` / Mengantuk berat)
+  - `SWRL-R02` (`_DekongestanProduct(?p) -> memilikiEfekSamping(?p, SYMP_0000530)` / Palpitasi)
+  - `SWRL-R03` (`ProdukDenganPSE(?p) -> kontraindikasiBagi(?p, HipertensiTidakTerkontrol)`)
+  - `SWRL-R04` s.d. `SWRL-R06` (`InteraksiMajor` $\rightarrow$ `SegeraKeDokter`; `InteraksiModerate` & `InteraksiUnknown` $\rightarrow$ `TanyaApoteker`)
+  - `SWRL-R07` (`ObatPasien(?op) ^ menggunakanProdukObat(?op, ?p) ^ memilikiKandungan(?p, ?z) -> menggunakanZatAktif(?op, ?z)`)
+  - `SWRL-R08` & `SWRL-R10` (Deteksi `DuplikasiKandungan` pada `KasusPasien` dengan 2 `ObatPasien` berbeda mengandung zat aktif sama / Paracetamol)
+  - `SWRL-R09` (Kasus `Pseudoephedrine + Digoxin` $\rightarrow$ `TanyaApoteker`)
+  - `SWRL-R11` (Kasus `HipertensiTidakTerkontrol + Pseudoephedrine` $\rightarrow$ `SegeraKeDokter`)
+- Verifikasi ROBOT HermiT & OWL 2 DL (`out/kb_v2.owl`, `out/kb_v2_reasoned.owl`, `out/kb_v2_lengkap.owl`):
+  - **OWL 2 DL = TRUE** (`[Ontology and imports closure in profile]`).
+  - **11 aturan `swrl:Imp` (`DLSafeRule`)** terverifikasi tersimpan di `kb_v2.owl`, `kb_v2_reasoned.owl`, dan `kb_v2_lengkap.owl`.
+  - Inferensi SWRL oleh HermiT terbukti aktif: `kasus_DobelParacetamol` dan `kasus_KomixActifed` terklasifikasi otomatis menjadi `DuplikasiKandungan` di `out/kb_v2_reasoned.owl`.
+
+## 18. Penyempurnaan Ekspresivitas Penuh SROIQ(D) + 11 SWRL (2026-11-24)
+- Melengkapi seluruh konstruktor **$\mathcal{SROIQ(D)}$** pada `scrape/build_kb_v2.py`:
+  - **$\mathcal{S}$ (`TransitiveProperty`):** `bagianDariHierarkiTerapi`
+  - **$\mathcal{R}$ (`propertyChainAxiom`):** `kontraindikasiBagi`, `mengindikasikanGejala`
+  - **$\mathcal{O}$ (`owl:oneOf`):** `TindakLanjut ≡ {SegeraKeDokter, TanyaApoteker, Pantau}`
+  - **$\mathcal{I}$ (`owl:inverseOf`):** `digunakanPadaKasus ≡ memilikiObatPasien⁻`
+  - **$\mathcal{Q}$ (`minQualifiedCardinality`):** `KasusPolifarmasi ≡ KasusPasien ⊓ (≥ 2 memilikiObatPasien ObatPasien)`
+  - **$\mathcal{(D)}$:** 47 Datatype Properties (`string`, `integer`, `decimal`, `anyURI`)
+- Validasi ROBOT HermiT & OWL 2 DL:
+  - `out/kb_v2.owl`, `out/kb_v2_reasoned.owl`, dan `out/kb_v2_lengkap.owl`: **LULUS OWL 2 DL** (`[Ontology and imports closure in profile]`), masing-masing menyimpan **11 aturan SWRL (`swrl:Imp`)**.
+  - Metrik `measure_kb_v2.tsv`: **115 classes, 21 object properties, 47 data properties, 546 individuals, 8,741 logical axioms, 10,169 total axioms**.
+  - Metrik `measure_kb_v2_lengkap.tsv`: **953 classes, 55 object properties, 47 data properties, 546 individuals, 10,760 logical axioms, 21,228 total axioms**.
+  - Inferensi HermiT terverifikasi pada 3 `KasusPasien`: `kasus_ActifedDigoxin` $\rightarrow$ `KasusPolifarmasi`; `kasus_DobelParacetamol` & `kasus_KomixActifed` $\rightarrow$ `KasusPolifarmasi` + `DuplikasiKandungan`.

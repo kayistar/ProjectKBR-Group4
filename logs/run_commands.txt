@@ -95,4 +95,23 @@ java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/kb_referensi_lengka
 java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" measure --input "out/kb_v1.owl" --output "data/curation/measure_kb_v1.tsv"
 java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" measure --input "out/kb_v1_lengkap.owl" --output "data/curation/measure_kb_v1_lengkap.tsv"
 
+# --- Pembaruan 2026-11-24: Pelengkapan Dataset Rencana Kerja v2 & KB Non-Hardcode ---
+python scrape/build_apotek_derivatives.py
+python scrape/build_curation_datasets.py
+python scrape/build_kb_v1_clean.py
+java -Xmx8G -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --axiom-generators "SubClass ClassAssertion PropertyAssertion" --input "out/kb_v1_clean.owl" --output "out/kb_v1_clean_reasoned.owl" validate-profile --profile DL
+python scrape/collect_allergies_openfda.py
 
+
+
+
+# --- Pembaruan 2026-11-24: Perakitan KB v2, HermiT Materialization, SPARQL q1/q4-q9, & Uji Regresi T1-T5 ---
+python scrape/build_kb_v2.py
+java -jar "D:\UNS\ROBOT\robot.jar" reason --reasoner HermiT --input "out/kb_v2.owl" --axiom-generators "SubClass EquivalentClass DisjointClasses ClassAssertion" --annotate-inferred-axioms true --output "out/kb_v2_reasoned.owl" validate-profile --profile DL
+java -jar "D:\UNS\ROBOT\robot.jar" measure --input "out/kb_v2_reasoned.owl" --format tsv --output "data/curation/measure_kb_v2.tsv"
+java -jar "D:\UNS\ROBOT\robot.jar" merge --input "out/kb_v2_reasoned.owl" --input "out/kb_referensi_lengkap.owl" annotate --ontology-iri "http://purl.obolibrary.org/obo/kbr-group4/kb_v2_lengkap.owl" --version-iri "http://purl.obolibrary.org/obo/kbr-group4/kb_v2_lengkap.owl/2.0" --output "out/kb_v2_lengkap.owl"
+java -jar "D:\UNS\ROBOT\robot.jar" validate-profile --profile DL --input "out/kb_v2_lengkap.owl"
+java -jar "D:\UNS\ROBOT\robot.jar" measure --input "out/kb_v2_lengkap.owl" --format tsv --output "data/curation/measure_kb_v2_lengkap.tsv"
+java -jar "D:\UNS\ROBOT\robot.jar" query --input "out/kb_v2_reasoned.owl" --query "queries/q1_daftar_produk.rq" "out/q1_result.csv" --query "queries/q4_skenario_pasien_actifed_digoxin.rq" "out/q4_result.csv" --query "queries/q5_rekomendasi.rq" "out/q5_result.csv" --query "queries/q6_alternatif_murah.rq" "out/q6_result.csv" --query "queries/q7_keranjang.rq" "out/q7_result.csv" --query "queries/q8_substitusi_aman.rq" "out/q8_result.csv" --query "queries/q9_kartu_edukasi.rq" "out/q9_result.csv"
+python scrape/kbr_engine.py
+python tests/test_kbr_regression.py

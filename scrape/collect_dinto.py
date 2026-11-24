@@ -27,7 +27,7 @@ from pathlib import Path
 
 DINTO_ZIP_URL = "https://raw.githubusercontent.com/labda/DINTO/master/DINTO1.2/DINTO_1.2.owl.zip"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ProjectKBR-Group4"
-ROBOT_JAR = Path(r"D:\UNS\ROBOT\robot.jar")
+ROBOT_JAR = Path(os.environ.get("ROBOT_JAR", "robot.jar"))
 ONTOLOGY_IRI = "http://purl.obolibrary.org/obo/kbr-group4/dinto_modul.owl"
 
 CORE_TERMS = [

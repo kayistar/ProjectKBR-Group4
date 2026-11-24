@@ -1,0 +1,23 @@
+obo_id,label_id,kategori,batas_hari_swamedikasi,tindak_lanjut_jika_lewat_batas,alasan_rujuk,sumber
+SYMP:0000614,Batuk,GejalaIndikasi,7,SegeraKeDokter,Batuk menetap >7 hari berisiko infeksi bakteri/kronis atau efek samping ACE-inhibitor.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000025,Batuk kering / tidak berdahak,GejalaIndikasi,7,SegeraKeDokter,"Batuk kering tidak membaik >7 hari perlu evaluasi dokter (asma, GERD, atau efek Captopril).",PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0020027,Batuk berdahak / produktif,GejalaIndikasi,5,SegeraKeDokter,Batuk berdahak >5 hari atau dahak berubah kuning-hijau kental/demam perlu periksa dokter.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000869,Hidung tersumbat,GejalaIndikasi,5,TanyaApoteker,Hidung tersumbat >5 hari atau dekongestan tidak mempan berisiko sinusitis/rhinitis medikamentosa.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000372,Pilek / hidung berair,GejalaIndikasi,7,TanyaApoteker,Pilek encer >7 hari dapat mengarah ke rhinitis alergi atau infeksi sekunder.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000139,Bersin-bersin,GejalaIndikasi,7,TanyaApoteker,Bersin terus-menerus >7 hari perlu evaluasi alergi oleh apoteker/dokter.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000505,Sakit tenggorokan / nyeri menelan,GejalaIndikasi,3,SegeraKeDokter,Nyeri tenggorokan berat >3 hari disertai demam atau sulit menelan butuh pemeriksaan faringitis.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000613,Demam / suhu tubuh meningkat,GejalaIndikasi,3,SegeraKeDokter,"Demam tidak turun >3 hari (>72 jam) berisiko DBD, tifoid, atau infeksi bakteri sistemik.",PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000504,Sakit kepala / pening,GejalaIndikasi,3,SegeraKeDokter,Sakit kepala berulang >3 hari atau makin berat perlu evaluasi medis.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000024,Mengantuk / rasa kantuk berat,GejalaEfekSamping,1,TanyaApoteker,"Jika mengantuk berat mengganggu aktivitas, hentikan antihistamin gen-1 dan konsultasi penggantian.",PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000610,Pusing / melayang,GejalaEfekSamping,1,TanyaApoteker,Pusing melayang akibat obat flu harus segera dievaluasi dosis atau tekanan darahnya.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000260,Mulut kering / haus,GejalaEfekSamping,3,Pantau,Mulut kering ringan umumnya membaik dengan hidrasi; bila menetap >3 hari konsultasi apoteker.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000557,Sulit buang air kecil / retensi urin,GejalaEfekSamping,0,SegeraKeDokter,Sulit buang air kecil akut akibat obat flu (terutama BPH) harus hentikan obat & periksa segera.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000530,Jantung berdebar-debar,GejalaEfekSamping,0,SegeraKeDokter,Jantung berdebar setelah minum dekongestan harus segera hentikan obat & cek nadi/tensi.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000529,Denyut jantung terlalu cepat,GejalaEfekSamping,0,SegeraKeDokter,Takikardia (>100 bpm) berisiko komplikasi kardiovaskular; butuh evaluasi medis segera.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000458,Mual / eneg di ulu hati,GejalaEfekSamping,2,TanyaApoteker,Mual menetap >2 hari setelah minum mukolitik/NSAID perlu evaluasi penghentian/penggantian obat.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0019145,Muntah,GejalaEfekSamping,0,SegeraKeDokter,Muntah berulang pasca minum obat berisiko dehidrasi dan intoleransi lambung berat.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0019153,Sesak napas / kesulitan bernapas,GejalaRedFlag,0,SegeraKeDokter,"RED FLAG: Sesak napas merupakan tanda gawat darurat napas bawah, rujuk IGD/dokter segera.",PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000604,Napas berbunyi mengi / ngik-ngik,GejalaRedFlag,0,SegeraKeDokter,RED FLAG: Napas mengi menandakan penyempitan bronkus akut (asma/bronkospasme).,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000576,Nyeri dada / dada terasa tertekan,GejalaRedFlag,0,SegeraKeDokter,RED FLAG: Nyeri dada harus segera disingkirkan penyebab jantung/pleuritis.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0000242,Batuk berdarah / dahak bercampur darah,GejalaRedFlag,0,SegeraKeDokter,RED FLAG: Batuk berdarah (hemoptisis) bukan batuk biasa; segera rujuk ke dokter.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI
+SYMP:0020043,Urin berwarna gelap pekat seperti teh,GejalaRedFlag,0,SegeraKeDokter,RED FLAG: Urin gelap pekat seperti teh menandakan potensi rhabdomyolysis atau hepatotoksisitas.,PIONAS BPOM RI (REF-02) & Pedoman Swamedikasi IAI

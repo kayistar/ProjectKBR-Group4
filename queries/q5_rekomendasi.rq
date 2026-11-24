@@ -1,0 +1,20 @@
+PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# T1: Rekomendasi produk + aturan pakai untuk gejala Batuk Kering (aman tanpa PSE / hipertensi)
+SELECT DISTINCT ?namaProduk ?hargaPerUnit ?satuan ?namaZat ?dosisDewasa ?waktuMinum ?maksHari
+WHERE {
+  ?prod a kbr:ProduktObat ;
+        kbr:namaDagang ?namaProduk ;
+        kbr:memilikiKandungan ?zat .
+  ?prod kbr:memilikiKandungan/kbr:mengindikasikanGejalaZat <http://purl.obolibrary.org/obo/SYMP_0000025> .
+  ?zat rdfs:label ?namaZat .
+  OPTIONAL { ?zat kbr:dosisDewasa ?dosisDewasa }
+  OPTIONAL { ?zat kbr:waktuMinumTeks ?waktuMinum }
+  OPTIONAL { ?zat kbr:maksHariSwamedikasi ?maksHari }
+  OPTIONAL { ?prod kbr:hargaPerUnitRp ?hargaPerUnit ; kbr:satuanUnit ?satuan }
+  FILTER NOT EXISTS { ?prod kbr:memilikiKandungan/kbr:kontraindikasiBagi kbr:HipertensiTidakTerkontrol }
+  FILTER (lang(?namaZat) = "id")
+}
+ORDER BY ?hargaPerUnit ?namaProduk
+LIMIT 30

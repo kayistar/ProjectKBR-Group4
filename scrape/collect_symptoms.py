@@ -14,13 +14,14 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import subprocess
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-ROBOT_JAR = Path(r"D:\UNS\ROBOT\robot.jar")
+ROBOT_JAR = Path(os.environ.get("ROBOT_JAR", "robot.jar"))
 ONTOLOGY_IRI = "http://purl.obolibrary.org/obo/kbr-group4/symptom_modul.owl"
 
 PILOT_SYMPTOM_IDS = {

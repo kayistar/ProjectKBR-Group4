@@ -1,0 +1,5 @@
+# Python dependencies for ProjectKBR-Group4
+# Core KB build, dataset processing, and T1-T5 engine use Python 3.11+ standard library only.
+# Optional packages for Excel export and automated testing:
+openpyxl>=3.1.0
+pytest>=8.0.0

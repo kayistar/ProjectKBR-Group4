@@ -1,0 +1,24 @@
+PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# T3: Skrining keranjang KasusPasien untuk deteksi dobel kandungan zat aktif antar 2 produk berbeda
+SELECT DISTINCT ?namaKasus ?produk1 ?produk2 ?zatDobel ?kodeATC4
+WHERE {
+  ?kasus a kbr:KasusPasien ;
+         rdfs:label ?namaKasus ;
+         kbr:memilikiObatPasien ?op1, ?op2 .
+  FILTER (?op1 != ?op2)
+
+  ?op1 kbr:menggunakanProdukObat ?p1 .
+  ?op2 kbr:menggunakanProdukObat ?p2 .
+  FILTER (STR(?p1) < STR(?p2))
+
+  ?p1 kbr:namaDagang ?produk1 ;
+      kbr:memilikiKandungan ?zat .
+  ?p2 kbr:namaDagang ?produk2 ;
+      kbr:memilikiKandungan ?zat .
+  ?zat rdfs:label ?zatDobel .
+  OPTIONAL { ?zat kbr:kodeATC4 ?kodeATC4 }
+  FILTER (lang(?namaKasus) = "id" && lang(?zatDobel) = "id")
+}
+ORDER BY ?namaKasus ?zatDobel

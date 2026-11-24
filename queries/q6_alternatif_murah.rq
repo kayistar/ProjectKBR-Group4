@@ -1,0 +1,25 @@
+PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# T2: Alternatif lebih murah per unit untuk produk mono-kandungan Paracetamol (CHEBI_46195)
+SELECT DISTINCT ?namaProduk ?sediaan ?hargaRp ?jumlahUnit ?satuan ?hargaPerUnit ?kemasan
+WHERE {
+  ?prod a kbr:ObatPilekMurni ;
+        kbr:namaDagang ?namaProduk ;
+        kbr:memilikiKandungan <http://purl.obolibrary.org/obo/CHEBI_46195> ;
+        kbr:memilikiBentukSediaan ?bs ;
+        kbr:hargaRupiah ?hargaRp ;
+        kbr:hargaPerUnitRp ?hargaPerUnit ;
+        kbr:jumlahUnitKemasan ?jumlahUnit ;
+        kbr:satuanUnit ?satuan ;
+        kbr:statusParsingHarga "ok" .
+  ?bs rdfs:label ?sediaan .
+  OPTIONAL { ?prod kbr:kemasanTeks ?kemasan }
+  FILTER NOT EXISTS {
+    ?prod kbr:memilikiKandungan ?zatLain .
+    FILTER (?zatLain != <http://purl.obolibrary.org/obo/CHEBI_46195>)
+  }
+  FILTER (lang(?sediaan) = "id")
+}
+ORDER BY ?sediaan ?hargaPerUnit
+LIMIT 25

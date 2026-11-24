@@ -1,0 +1,32 @@
+id_zat,nama_zat,chebi_id,chebi_iri,regex_komposisi,sinonim_katalog,cakupan_v1
+ZAT-001,Paracetamol,CHEBI:46195,http://purl.obolibrary.org/obo/CHEBI_46195,paracetamol|parasetamol|acetaminophen|asetaminofen|pct,paracetamol; asetaminofen; pct,zat_aktif_v1
+ZAT-002,Ibuprofen,CHEBI:5855,http://purl.obolibrary.org/obo/CHEBI_5855,ibuprofen,ibuprofen,zat_aktif_v1
+ZAT-003,Dextromethorphan,CHEBI:4480,http://purl.obolibrary.org/obo/CHEBI_4480,dextromethorphan|dekstrometorfan|dextrometorphan|dxm|dmp,dxm; dmp; dekstrometorfan,zat_aktif_v1
+ZAT-004,Pseudoephedrine,CHEBI:50346,http://purl.obolibrary.org/obo/CHEBI_50346,pseudoephedrine|pseudoefedrin|pse,pseudoefedrin; pse,zat_aktif_v1
+ZAT-005,Phenylephrine,CHEBI:8093,http://purl.obolibrary.org/obo/CHEBI_8093,phenylephrine|phenylefrine|fenilefrin|phenilefrin,fenilefrin; pe,di_luar_pilot_v1
+ZAT-006,Chlorpheniramine (CTM),CHEBI:3587,http://purl.obolibrary.org/obo/CHEBI_3587,chlorpheniramine|chlorpeniramine|chlorpheniramini|klorfeniramin|klorfeniramina|dexchlorpheniramine|ctm,ctm; klorfeniramin,zat_aktif_v1
+ZAT-007,Diphenhydramine,CHEBI:4634,http://purl.obolibrary.org/obo/CHEBI_4634,diphenhydramine|difenhidramin|dph,difenhidramin; dph,zat_aktif_v1
+ZAT-008,Cetirizine,CHEBI:3561,http://purl.obolibrary.org/obo/CHEBI_3561,cetirizine|cetirizin|setirizin,setirizin,di_luar_pilot_v1
+ZAT-009,Bromhexine,CHEBI:3180,http://purl.obolibrary.org/obo/CHEBI_3180,bromhexine|bromheksin|bromhexin,bromheksin,di_luar_pilot_v1
+ZAT-010,Ambroxol,CHEBI:2688,http://purl.obolibrary.org/obo/CHEBI_2688,ambroxol|ambroksol,ambroksol,di_luar_pilot_v1
+ZAT-011,Guaifenesin (Glyceryl Guaiacolate),CHEBI:5536,http://purl.obolibrary.org/obo/CHEBI_5536,guaifenesin|guafenesin|glyceryl guaiacolate|gliceryl guaiacolate|glicerylguaiacolat|gliseril guaiakolat|gg,gg; glyceryl guaiacolate; guafenesin,zat_aktif_v1
+ZAT-012,Simvastatin,CHEBI:9150,http://purl.obolibrary.org/obo/CHEBI_9150,simvastatin,simvastatin,zat_aktif_v1
+ZAT-013,Atorvastatin,CHEBI:39548,http://purl.obolibrary.org/obo/CHEBI_39548,atorvastatin,atorvastatin,di_luar_pilot_v1
+ZAT-014,Amlodipine,CHEBI:2668,http://purl.obolibrary.org/obo/CHEBI_2668,amlodipine|amlodipin,amlodipin,zat_aktif_v1
+ZAT-015,Captopril,CHEBI:3380,http://purl.obolibrary.org/obo/CHEBI_3380,captopril|kaptopril,kaptopril,di_luar_pilot_v1
+ZAT-016,Metformin,CHEBI:6801,http://purl.obolibrary.org/obo/CHEBI_6801,metformin,metformin,di_luar_pilot_v1
+ZAT-017,Glimepiride,CHEBI:5383,http://purl.obolibrary.org/obo/CHEBI_5383,glimepiride|glimepirid,glimepirid,di_luar_pilot_v1
+ZAT-018,Warfarin,CHEBI:10033,http://purl.obolibrary.org/obo/CHEBI_10033,warfarin,warfarin,zat_aktif_v1
+ZAT-019,Clopidogrel,CHEBI:37941,http://purl.obolibrary.org/obo/CHEBI_37941,clopidogrel|klopidogrel,klopidogrel,zat_aktif_v1
+ZAT-020,Digoxin,CHEBI:4551,http://purl.obolibrary.org/obo/CHEBI_4551,digoxin|digoksin,digoksin,zat_aktif_v1
+ZAT-021,Omeprazole,CHEBI:7772,http://purl.obolibrary.org/obo/CHEBI_7772,omeprazole|omeprazol,omeprazol,zat_aktif_v1
+ZAT-022,Ciprofloxacin,CHEBI:100241,http://purl.obolibrary.org/obo/CHEBI_100241,ciprofloxacin|siprofloksasin,siprofloksasin,di_luar_pilot_v1
+ZAT-023,Amoxicillin,CHEBI:2676,http://purl.obolibrary.org/obo/CHEBI_2676,amoxicillin|amoksisilin,amoksisilin,di_luar_pilot_v1
+ZAT-024,Itraconazole,CHEBI:6076,http://purl.obolibrary.org/obo/CHEBI_6076,itraconazole|itrakonazol,itrakonazol,di_luar_pilot_v1
+ZAT-025,Ketoconazole,CHEBI:47519,http://purl.obolibrary.org/obo/CHEBI_47519,ketoconazole|ketokonazol,ketokonazol,di_luar_pilot_v1
+ZAT-026,Fluconazole,CHEBI:46081,http://purl.obolibrary.org/obo/CHEBI_46081,fluconazole|flukonazol,flukonazol,di_luar_pilot_v1
+ZAT-027,Alpha-Mangostin,CHEBI:67547,http://purl.obolibrary.org/obo/CHEBI_67547,alpha-mangostin|alpha mangostin|mangostin|kulit manggis|ekstrak kulit manggis|garcinia mangostana,kulit manggis; garcinia mangostana,senyawa_herbal_kandidat_v1
+ZAT-028,Curcumin,CHEBI:3962,http://purl.obolibrary.org/obo/CHEBI_3962,curcumin|kurkumin|kunyit|temulawak|curcuma,kurkumin; kunyit; temulawak; curcuma,senyawa_herbal_kandidat_v1
+ZAT-029,Gingerol,CHEBI:10136,http://purl.obolibrary.org/obo/CHEBI_10136,gingerol|jahe merah|jahe|zingiber,jahe; jahe merah; zingiber,senyawa_herbal_kandidat_v1
+ZAT-030,Triprolidine,CHEBI:84116,http://purl.obolibrary.org/obo/CHEBI_84116,triprolidine|tripolidine|triprolidin,tripolidine; triprolidin,zat_aktif_v1
+ZAT-031,Doxylamine,CHEBI:51380,http://purl.obolibrary.org/obo/CHEBI_51380,doxylamine|doksilamin|doxylamin,doksilamin suksinat,zat_aktif_v1

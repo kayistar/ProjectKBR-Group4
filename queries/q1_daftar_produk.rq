@@ -1,13 +1,14 @@
 PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?namaProduk ?produsen ?harga ?golongan
+SELECT DISTINCT ?namaProduk ?produsen ?harga ?golongan
 WHERE {
   ?prod a kbr:ProduktObat ;
         kbr:namaDagang ?namaProduk ;
-        kbr:namaProdusen ?produsen ;
         kbr:memilikiGolongan ?gol .
   ?gol rdfs:label ?golongan .
+  OPTIONAL { ?prod kbr:namaProdusen ?produsen }
   OPTIONAL { ?prod kbr:hargaRupiah ?harga }
+  FILTER (lang(?golongan) = "id")
 }
 ORDER BY ?namaProduk

@@ -1,0 +1,2 @@
+kasus,namaKasus,namaProduk,obatRutin,zatProduk,statusData,tingkatBahaya,tindakLanjut,penjelasan,tingkatBukti
+http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#kasus_ActifedDigoxin,Kasus Uji 1: Actifed Plus Merah + Digoxin Rutin,ACTIFED PLUS COUGH SUPPRESS SYRUP MERAH 60ML 1 BOTOL,Digoxin,Pseudoephedrine,interaksi_terdeteksi,Interaksi Moderate (Perlu Pemantauan Klinis),Konsultasikan ke Apoteker,Pseudoephedrine + Digoxin (Moderate),Sumber kurasi DDInter dan label regulator; bukan bukti uji klinis langsung yang mengukur insidensi.

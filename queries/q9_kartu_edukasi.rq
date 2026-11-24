@@ -1,0 +1,23 @@
+PREFIX kbr: <http://purl.obolibrary.org/obo/kbr-group4/kb_v1.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# T5: Rantai explainability Produk -> Zat -> Interaksi -> SumberBukti
+SELECT DISTINCT ?namaProduk ?namaZat ?interaksiLabel ?tingkatBukti ?namaSumber ?urlSumber ?batasBukti
+WHERE {
+  ?prod a kbr:ProduktObat ;
+        kbr:namaDagang ?namaProduk ;
+        kbr:memilikiKandungan ?zat .
+  ?zat rdfs:label ?namaZat .
+  ?interaksi rdf:type/rdfs:subClassOf* kbr:InteraksiObat ;
+             kbr:melibatkanZatAktif ?zat ;
+             rdfs:label ?interaksiLabel ;
+             kbr:didukungOleh ?bukti .
+  ?bukti rdfs:label ?namaSumber ;
+         kbr:urlSumber ?urlSumber ;
+         kbr:batasBukti ?batasBukti .
+  OPTIONAL { ?interaksi kbr:tingkatBukti ?tingkatBukti }
+  FILTER (lang(?namaZat) = "id" && lang(?interaksiLabel) = "id")
+}
+ORDER BY ?namaProduk ?namaZat
+LIMIT 30
